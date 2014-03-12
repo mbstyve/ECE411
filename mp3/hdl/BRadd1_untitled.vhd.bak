@@ -1,0 +1,36 @@
+--
+-- VHDL Architecture ece411.BRadd1.untitled
+--
+-- Created:
+--          by - freed2.ews (gelib-057-21.ews.illinois.edu)
+--          at - 16:42:14 01/31/14
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY BRadd1 IS
+   PORT( 
+      ADJ9out : IN     LC3b_word;
+      clk     : IN     std_logic;
+      A       : IN     LC3b_word;
+      B       : OUT    LC3b_word
+   );
+
+-- Declarations
+
+END BRadd1 ;
+
+--
+ARCHITECTURE untitled OF BRadd1 IS
+BEGIN
+  	PROCESS (A, ADJ9out)
+	BEGIN  -- PROCESS
+		B <= STD_LOGIC_VECTOR(UNSIGNED(A)+UNSIGNED(ADJ9out)) AFTER DELAY_ADDER;
+	END PROCESS;
+END ARCHITECTURE untitled;
