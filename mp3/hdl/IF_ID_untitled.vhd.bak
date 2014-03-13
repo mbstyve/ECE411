@@ -7,7 +7,7 @@
 --
 -- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
 --
-LIBRARY ieee;
+zLIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.NUMERIC_STD.all;
 LIBRARY ece411;
@@ -18,7 +18,7 @@ ENTITY IF_ID IS
    PORT( 
       RESET_L      : IN     std_logic;
       clk          : IN     std_logic;
-      Load        : IN     std_logic;
+      Load         : IN     std_logic;
       Instr        : IN     LC3b_word;
       iPC          : IN     LC3b_word;
       Instr_out    : OUT    LC3b_word;
