@@ -16,10 +16,10 @@ USE ece411.LC3b_types.all;
 
 ENTITY RegMux2 IS
    PORT( 
-      dest       : IN     LC3B_REG;
-      R7         : IN     LC3B_REG;
-      DestMuxSel : IN     std_logic;
-      DestMuxout : OUT    LC3B_REG
+      a      : IN     LC3B_REG;
+      b      : IN     LC3B_REG;
+      Sel    : IN     std_logic;
+      Muxout : OUT    LC3B_REG
    );
 
 -- Declarations
@@ -32,15 +32,15 @@ BEGIN
   PROCESS (dest,R7,DestMuxout, DestMuxSel)
     variable state : LC3b_reg;
   BEGIN
-    case DestMuxSel is
+    case Sel is
       when '0' =>
-        state := dest;
+        state := a;
       when '1' =>
-        state := "111";
+        state := b;
     when others =>
       state := (OTHERS => 'X');
     end case;
-    DestMuxOut <= state after delay_MUX2;
+    MuxOut <= state after delay_MUX2;
   END PROCESS;
 END ARCHITECTURE untitled;
 
