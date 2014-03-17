@@ -26,7 +26,7 @@ model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
 ordering 1
-suid 11,0
+suid 15,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -68,51 +68,51 @@ tm "EolColHdrMgr"
 *14 (LogPort
 port (LogicalPort
 lang 11
-m 1
 decl (Decl
-n "DestMuxout"
+n "a"
 t "LC3B_REG"
-o 4
-suid 8,0
+o 1
+suid 12,0
 )
 )
-uid 153,0
+uid 215,0
 )
 *15 (LogPort
 port (LogicalPort
 lang 11
 decl (Decl
-n "DestMuxSel"
-t "std_logic"
-o 3
-suid 9,0
+n "b"
+t "LC3B_REG"
+o 2
+suid 13,0
 )
 )
-uid 155,0
+uid 217,0
 )
 *16 (LogPort
 port (LogicalPort
 lang 11
+m 1
 decl (Decl
-n "dest"
+n "Muxout"
 t "LC3B_REG"
-o 1
-suid 10,0
+o 4
+suid 14,0
 )
 )
-uid 167,0
+uid 219,0
 )
 *17 (LogPort
 port (LogicalPort
 lang 11
 decl (Decl
-n "R7"
-t "LC3B_REG"
-o 2
-suid 11,0
+n "Sel"
+t "std_logic"
+o 3
+suid 15,0
 )
 )
-uid 169,0
+uid 221,0
 )
 ]
 )
@@ -168,25 +168,25 @@ uid 71,0
 litem &14
 pos 0
 dimension 20
-uid 154,0
+uid 216,0
 )
 *24 (MRCItem
 litem &15
 pos 1
 dimension 20
-uid 156,0
+uid 218,0
 )
 *25 (MRCItem
 litem &16
 pos 2
 dimension 20
-uid 168,0
+uid 220,0
 )
 *26 (MRCItem
 litem &17
 pos 3
 dimension 20
-uid 170,0
+uid 222,0
 )
 ]
 )
@@ -417,23 +417,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/freed2/ece411/mp2/hdl"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/freed2/ece411/mp2/hds"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/freed2/ece411/mp2/hds/@reg@mux2/symbol.sb.info"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@reg@mux2/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/freed2/ece411/mp2/hds/@reg@mux2/symbol.sb.user"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@reg@mux2/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/freed2/ece411/mp2/hds"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -449,27 +449,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/freed2/ece411/mp2/hds/@reg@mux2"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@reg@mux2"
 )
 (vvPair
 variable "d_logical"
-value "/home/freed2/ece411/mp2/hds/RegMux2"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/RegMux2"
 )
 (vvPair
 variable "date"
-value "02/05/14"
+value "03/14/14"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Fri"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Friday"
 )
 (vvPair
 variable "dd"
-value "05"
+value "14"
 )
 (vvPair
 variable "entity_name"
@@ -497,7 +497,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-27.ews.illinois.edu"
+value "linux-a1.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -513,7 +513,7 @@ value "$HDS_PROJECT_DIR/compile"
 )
 (vvPair
 variable "mm"
-value "02"
+value "03"
 )
 (vvPair
 variable "module_name"
@@ -521,19 +521,19 @@ value "RegMux2"
 )
 (vvPair
 variable "month"
-value "Feb"
+value "Mar"
 )
 (vvPair
 variable "month_long"
-value "February"
+value "March"
 )
 (vvPair
 variable "p"
-value "/home/freed2/ece411/mp2/hds/@reg@mux2/symbol.sb"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@reg@mux2/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/freed2/ece411/mp2/hds/RegMux2/symbol.sb"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/RegMux2/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -541,7 +541,7 @@ value "<Undefined Variable>"
 )
 (vvPair
 variable "project_name"
-value "ece411"
+value "ece411_mp3"
 )
 (vvPair
 variable "series"
@@ -589,7 +589,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:46:49"
+value "14:20:07"
 )
 (vvPair
 variable "unit"
@@ -597,7 +597,7 @@ value "RegMux2"
 )
 (vvPair
 variable "user"
-value "freed2"
+value "styve1"
 )
 (vvPair
 variable "version"
@@ -624,106 +624,10 @@ optionalChildren [
 uid 8,0
 optionalChildren [
 *60 (CptPort
-uid 139,0
+uid 195,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 140,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "43000,14625,43750,15375"
-)
-tg (CPTG
-uid 141,0
-ps "CptPortTextPlaceStrategy"
-stg "RightVerticalLayoutStrategy"
-f (Text
-uid 142,0
-va (VaSet
-font "courier,8,0"
-)
-xt "36500,14550,42000,15450"
-st "DestMuxout"
-ju 2
-blo "42000,15250"
-tm "CptPortNameMgr"
-)
-)
-dt (MLText
-uid 143,0
-va (VaSet
-font "courier,8,0"
-)
-xt "44000,4500,59000,5400"
-st "DestMuxout : OUT    LC3B_REG 
-"
-)
-thePort (LogicalPort
-lang 11
-m 1
-decl (Decl
-n "DestMuxout"
-t "LC3B_REG"
-o 4
-suid 8,0
-)
-)
-)
-*61 (CptPort
-uid 144,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 145,0
-ro 180
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "34625,11795,35375,12545"
-)
-tg (CPTG
-uid 146,0
-ps "CptPortTextPlaceStrategy"
-stg "RightVerticalLayoutStrategy"
-f (Text
-uid 147,0
-ro 270
-va (VaSet
-font "courier,8,0"
-)
-xt "34550,13545,35450,19045"
-st "DestMuxSel"
-ju 2
-blo "35250,13545"
-tm "CptPortNameMgr"
-)
-)
-dt (MLText
-uid 148,0
-va (VaSet
-font "courier,8,0"
-)
-xt "44000,3600,60500,4500"
-st "DestMuxSel : IN     std_logic  ;
-"
-)
-thePort (LogicalPort
-lang 11
-decl (Decl
-n "DestMuxSel"
-t "std_logic"
-o 3
-suid 9,0
-)
-)
-)
-*62 (CptPort
-uid 157,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 158,0
+uid 196,0
 ro 90
 va (VaSet
 vasetType 1
@@ -732,44 +636,45 @@ fg "0,65535,0"
 xt "31250,12625,32000,13375"
 )
 tg (CPTG
-uid 159,0
+uid 197,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 160,0
+uid 198,0
 va (VaSet
+isHidden 1
 font "courier,8,0"
 )
-xt "33000,12550,35000,13450"
-st "dest"
+xt "33000,12550,33500,13450"
+st "a"
 blo "33000,13250"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 161,0
+uid 199,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,1800,60000,2700"
-st "dest       : IN     LC3B_REG  ;
+xt "44000,1800,58000,2700"
+st "a      : IN     LC3B_REG  ;
 "
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
-n "dest"
+n "a"
 t "LC3B_REG"
 o 1
-suid 10,0
+suid 12,0
 )
 )
 )
-*63 (CptPort
-uid 162,0
+*61 (CptPort
+uid 200,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 163,0
+uid 201,0
 ro 90
 va (VaSet
 vasetType 1
@@ -778,48 +683,146 @@ fg "0,65535,0"
 xt "31250,13625,32000,14375"
 )
 tg (CPTG
-uid 164,0
+uid 202,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 165,0
+uid 203,0
 va (VaSet
+isHidden 1
 font "courier,8,0"
 )
-xt "33000,13550,34000,14450"
-st "R7"
+xt "33000,13550,33500,14450"
+st "b"
 blo "33000,14250"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 166,0
+uid 204,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,2700,60000,3600"
-st "R7         : IN     LC3B_REG  ;
+xt "44000,2700,58000,3600"
+st "b      : IN     LC3B_REG  ;
 "
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
-n "R7"
+n "b"
 t "LC3B_REG"
 o 2
-suid 11,0
+suid 13,0
+)
+)
+)
+*62 (CptPort
+uid 205,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 206,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "39000,15625,39750,16375"
+)
+tg (CPTG
+uid 207,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 208,0
+va (VaSet
+isHidden 1
+font "courier,8,0"
+)
+xt "35000,15550,38000,16450"
+st "Muxout"
+ju 2
+blo "38000,16250"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 209,0
+va (VaSet
+font "courier,8,0"
+)
+xt "44000,4500,57000,5400"
+st "Muxout : OUT    LC3B_REG 
+"
+)
+thePort (LogicalPort
+lang 11
+m 1
+decl (Decl
+n "Muxout"
+t "LC3B_REG"
+o 4
+suid 14,0
+)
+)
+)
+*63 (CptPort
+uid 210,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 211,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "31250,14625,32000,15375"
+)
+tg (CPTG
+uid 212,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 213,0
+va (VaSet
+isHidden 1
+font "courier,8,0"
+)
+xt "33000,14550,34500,15450"
+st "Sel"
+blo "33000,15250"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 214,0
+va (VaSet
+font "courier,8,0"
+)
+xt "44000,3600,58500,4500"
+st "Sel    : IN     std_logic  ;
+"
+)
+thePort (LogicalPort
+lang 11
+decl (Decl
+n "Sel"
+t "std_logic"
+o 3
+suid 15,0
 )
 )
 )
 ]
 shape (Mux
+uid 194,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "32000,12000,43000,18000"
+xt "32000,12000,39000,18000"
 )
 biTextGroup (BiTextGroup
 uid 10,0
@@ -865,9 +868,11 @@ elements [
 )
 portInstanceVisAsIs 1
 portInstanceVis (PortSigDisplay
+sN 0
 sIVOD 1
 )
 portVis (PortSigDisplay
+sN 0
 sIVOD 1
 )
 )
@@ -1246,8 +1251,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "762,218,1777,908"
-viewArea "28161,11448,46846,24353"
+windowSize "259,89,1274,779"
+viewArea "28200,11400,44832,22887"
 cachedDiagramExtent "0,0,69000,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
@@ -1519,6 +1524,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 170,0
+lastUid 222,0
 activeModelName "Symbol"
 )
