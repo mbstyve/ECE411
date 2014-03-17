@@ -63,23 +63,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hdl"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd.info"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd.user"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -95,11 +95,11 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l"
 )
 (vvPair
 variable "d_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/MEMCALL"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/MEMCALL"
 )
 (vvPair
 variable "date"
@@ -143,7 +143,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-08.ews.illinois.edu"
+value "gelib-057-29.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -175,11 +175,11 @@ value "March"
 )
 (vvPair
 variable "p"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/MEMCALL/struct.bd"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/MEMCALL/struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -235,7 +235,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "11:54:58"
+value "14:18:45"
 )
 (vvPair
 variable "unit"
@@ -243,7 +243,7 @@ value "MEMCALL"
 )
 (vvPair
 variable "user"
-value "styve1"
+value "draguna1"
 )
 (vvPair
 variable "version"
@@ -1418,7 +1418,7 @@ uid 327,0
 decl (Decl
 n "Clk"
 t "std_logic"
-o 1
+o 2
 suid 1,0
 )
 declText (MLText
@@ -1427,7 +1427,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "22000,2700,33000,3600"
-st "Clk       : std_logic"
+st "Clk       : std_logic
+"
 )
 )
 *40 (Net
@@ -1435,7 +1436,7 @@ uid 329,0
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 2
+o 7
 suid 2,0
 )
 declText (MLText
@@ -1444,7 +1445,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "22000,7200,33000,8100"
-st "RESET_L   : std_logic"
+st "RESET_L   : std_logic
+"
 )
 )
 *41 (Net
@@ -1452,7 +1454,7 @@ uid 341,0
 decl (Decl
 n "D_MRESP_H"
 t "std_logic"
-o 4
+o 6
 suid 8,0
 )
 declText (MLText
@@ -1461,7 +1463,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "22000,6300,33000,7200"
-st "D_MRESP_H : std_logic"
+st "D_MRESP_H : std_logic
+"
 )
 )
 *42 (Net
@@ -1478,7 +1481,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "22000,5400,33000,6300"
-st "D_DATAIN  : LC3b_word"
+st "D_DATAIN  : LC3b_word
+"
 )
 )
 *43 (Net
@@ -1486,7 +1490,7 @@ uid 345,0
 decl (Decl
 n "D_DATAOUT"
 t "LC3b_word"
-o 6
+o 8
 suid 10,0
 )
 declText (MLText
@@ -1495,7 +1499,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "22000,8100,33000,9000"
-st "D_DATAOUT : LC3b_word"
+st "D_DATAOUT : LC3b_word
+"
 )
 )
 *44 (PortIoIn
@@ -1549,7 +1554,7 @@ uid 361,0
 decl (Decl
 n "ADDR"
 t "std_logic"
-o 6
+o 1
 suid 12,0
 )
 declText (MLText
@@ -1558,7 +1563,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "22000,1800,33000,2700"
-st "ADDR      : std_logic"
+st "ADDR      : std_logic
+"
 )
 )
 *46 (Net
@@ -1566,7 +1572,7 @@ uid 375,0
 decl (Decl
 n "Load_dMAR"
 t "std_logic"
-o 7
+o 10
 suid 14,0
 )
 declText (MLText
@@ -1575,7 +1581,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "22000,10800,36500,11700"
-st "SIGNAL Load_dMAR : std_logic"
+st "SIGNAL Load_dMAR : std_logic
+"
 )
 )
 *47 (Net
@@ -1583,7 +1590,7 @@ uid 389,0
 decl (Decl
 n "Load_dMDR"
 t "std_logic"
-o 8
+o 11
 suid 16,0
 )
 declText (MLText
@@ -1592,7 +1599,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "22000,11700,36500,12600"
-st "SIGNAL Load_dMDR : std_logic"
+st "SIGNAL Load_dMDR : std_logic
+"
 )
 )
 *48 (Blk
@@ -1725,7 +1733,7 @@ uid 441,0
 decl (Decl
 n "Control"
 t "Control_Word"
-o 10
+o 3
 suid 19,0
 )
 declText (MLText
@@ -1734,7 +1742,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "22000,3600,34500,4500"
-st "Control   : Control_Word"
+st "Control   : Control_Word
+"
 )
 )
 *54 (PortIoIn
@@ -1833,7 +1842,7 @@ uid 528,0
 decl (Decl
 n "DEST"
 t "std_logic"
-o 10
+o 4
 suid 23,0
 )
 declText (MLText
@@ -1842,7 +1851,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "22000,4500,33000,5400"
-st "DEST      : std_logic"
+st "DEST      : std_logic
+"
 )
 )
 *57 (Net
@@ -1850,7 +1860,7 @@ uid 530,0
 decl (Decl
 n "DestOut"
 t "std_logic"
-o 11
+o 9
 suid 24,0
 )
 declText (MLText
@@ -1859,7 +1869,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "22000,9000,33000,9900"
-st "DestOut   : std_logic"
+st "DestOut   : std_logic
+"
 )
 )
 *58 (HdlText
@@ -2688,7 +2699,7 @@ viewArea "1056,8556,58080,46068"
 cachedDiagramExtent "-2500,0,69000,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-69000,0"
-lastUid 545,0
+lastUid 594,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -3790,7 +3801,7 @@ port (LogicalPort
 decl (Decl
 n "Clk"
 t "std_logic"
-o 1
+o 2
 suid 1,0
 )
 )
@@ -3801,7 +3812,7 @@ port (LogicalPort
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 2
+o 7
 suid 2,0
 )
 )
@@ -3812,7 +3823,7 @@ port (LogicalPort
 decl (Decl
 n "D_MRESP_H"
 t "std_logic"
-o 4
+o 6
 suid 8,0
 )
 )
@@ -3835,7 +3846,7 @@ m 1
 decl (Decl
 n "D_DATAOUT"
 t "LC3b_word"
-o 6
+o 8
 suid 10,0
 )
 )
@@ -3846,7 +3857,7 @@ port (LogicalPort
 decl (Decl
 n "ADDR"
 t "std_logic"
-o 6
+o 1
 suid 12,0
 )
 )
@@ -3858,7 +3869,7 @@ m 4
 decl (Decl
 n "Load_dMAR"
 t "std_logic"
-o 7
+o 10
 suid 14,0
 )
 )
@@ -3870,7 +3881,7 @@ m 4
 decl (Decl
 n "Load_dMDR"
 t "std_logic"
-o 8
+o 11
 suid 16,0
 )
 )
@@ -3881,7 +3892,7 @@ port (LogicalPort
 decl (Decl
 n "Control"
 t "Control_Word"
-o 10
+o 3
 suid 19,0
 )
 )
@@ -3892,7 +3903,7 @@ port (LogicalPort
 decl (Decl
 n "DEST"
 t "std_logic"
-o 10
+o 4
 suid 23,0
 )
 )
@@ -3904,7 +3915,7 @@ m 1
 decl (Decl
 n "DestOut"
 t "std_logic"
-o 11
+o 9
 suid 24,0
 )
 )
@@ -3998,31 +4009,31 @@ uid 402,0
 )
 *145 (MRCItem
 litem &129
-pos 6
+pos 9
 dimension 20
 uid 404,0
 )
 *146 (MRCItem
 litem &130
-pos 7
+pos 10
 dimension 20
 uid 406,0
 )
 *147 (MRCItem
 litem &131
-pos 8
+pos 6
 dimension 20
 uid 454,0
 )
 *148 (MRCItem
 litem &132
-pos 9
+pos 7
 dimension 20
 uid 543,0
 )
 *149 (MRCItem
 litem &133
-pos 10
+pos 8
 dimension 20
 uid 545,0
 )
