@@ -81,7 +81,7 @@ port (LogicalPort
 m 1
 decl (Decl
 n "iPC"
-t "std_logic"
+t "LC3b_word"
 o 6
 suid 2,0
 )
@@ -184,13 +184,13 @@ uid 71,0
 )
 *25 (MRCItem
 litem &14
-pos 0
+pos 4
 dimension 20
 uid 119,0
 )
 *26 (MRCItem
 litem &15
-pos 1
+pos 5
 dimension 20
 uid 121,0
 )
@@ -202,19 +202,19 @@ uid 148,0
 )
 *28 (MRCItem
 litem &17
-pos 3
+pos 1
 dimension 20
 uid 150,0
 )
 *29 (MRCItem
 litem &18
-pos 4
+pos 0
 dimension 20
 uid 152,0
 )
 *30 (MRCItem
 litem &19
-pos 5
+pos 3
 dimension 20
 uid 154,0
 )
@@ -447,23 +447,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hdl"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@i@f@e@t@c@h/symbol.sb.info"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@i@f@e@t@c@h/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@i@f@e@t@c@h/symbol.sb.user"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@i@f@e@t@c@h/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -479,27 +479,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@i@f@e@t@c@h"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@i@f@e@t@c@h"
 )
 (vvPair
 variable "d_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/IFETCH"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/IFETCH"
 )
 (vvPair
 variable "date"
-value "03/14/14"
+value "03/17/14"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "14"
+value "17"
 )
 (vvPair
 variable "entity_name"
@@ -527,7 +527,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "linux-a1.ews.illinois.edu"
+value "gelib-057-29.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -559,11 +559,11 @@ value "March"
 )
 (vvPair
 variable "p"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@i@f@e@t@c@h/symbol.sb"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@i@f@e@t@c@h/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/IFETCH/symbol.sb"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/IFETCH/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -619,7 +619,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "12:12:11"
+value "13:55:40"
 )
 (vvPair
 variable "unit"
@@ -627,7 +627,7 @@ value "IFETCH"
 )
 (vvPair
 variable "user"
-value "styve1"
+value "draguna1"
 )
 (vvPair
 variable "version"
@@ -663,7 +663,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "39000,18625,39750,19375"
+xt "28000,6625,28750,7375"
 )
 tg (CPTG
 uid 110,0
@@ -674,10 +674,10 @@ uid 111,0
 va (VaSet
 font "courier,8,0"
 )
-xt "35500,18550,38000,19450"
+xt "24500,6550,27000,7450"
 st "Instr"
 ju 2
-blo "38000,19250"
+blo "27000,7250"
 tm "CptPortNameMgr"
 )
 )
@@ -710,7 +710,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "39000,21625,39750,22375"
+xt "28000,7625,28750,8375"
 )
 tg (CPTG
 uid 115,0
@@ -721,10 +721,10 @@ uid 116,0
 va (VaSet
 font "courier,8,0"
 )
-xt "36500,21550,38000,22450"
+xt "25500,7550,27000,8450"
 st "iPC"
 ju 2
-blo "38000,22250"
+blo "27000,8250"
 tm "CptPortNameMgr"
 )
 )
@@ -734,14 +734,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,6300,59000,7200"
-st "iPC       : OUT    std_logic 
+st "iPC       : OUT    LC3b_word 
 "
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "iPC"
-t "std_logic"
+t "LC3b_word"
 o 6
 suid 2,0
 )
@@ -757,7 +757,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,23625,15000,24375"
+xt "14250,9625,15000,10375"
 )
 tg (CPTG
 uid 124,0
@@ -768,9 +768,9 @@ uid 125,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,23550,20500,24450"
+xt "16000,9550,20500,10450"
 st "I_MRESP_H"
-blo "16000,24250"
+blo "16000,10250"
 tm "CptPortNameMgr"
 )
 )
@@ -802,7 +802,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,20625,15000,21375"
+xt "14250,8625,15000,9375"
 )
 tg (CPTG
 uid 129,0
@@ -813,9 +813,9 @@ uid 130,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,20550,20000,21450"
+xt "16000,8550,20000,9450"
 st "I_DATAIN"
-blo "16000,21250"
+blo "16000,9250"
 tm "CptPortNameMgr"
 )
 )
@@ -847,7 +847,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,17625,15000,18375"
+xt "14250,6625,15000,7375"
 )
 tg (CPTG
 uid 134,0
@@ -858,9 +858,9 @@ uid 135,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,17550,17500,18450"
+xt "16000,6550,17500,7450"
 st "Clk"
-blo "16000,18250"
+blo "16000,7250"
 tm "CptPortNameMgr"
 )
 )
@@ -892,7 +892,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,14625,15000,15375"
+xt "14250,7625,15000,8375"
 )
 tg (CPTG
 uid 139,0
@@ -903,9 +903,9 @@ uid 140,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,14550,19500,15450"
+xt "16000,7550,19500,8450"
 st "RESET_L"
-blo "16000,15250"
+blo "16000,8250"
 tm "CptPortNameMgr"
 )
 )
@@ -936,8 +936,9 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "15000,6000,39000,26000"
+xt "15000,6000,28000,16000"
 )
+oxt "15000,6000,39000,26000"
 biTextGroup (BiTextGroup
 uid 10,0
 ps "CenterOffsetStrategy"
@@ -947,18 +948,18 @@ uid 11,0
 va (VaSet
 font "courier,8,1"
 )
-xt "24750,15100,27750,16000"
+xt "21750,11100,24750,12000"
 st "ece411"
-blo "24750,15800"
+blo "21750,11800"
 )
 second (Text
 uid 12,0
 va (VaSet
 font "courier,8,1"
 )
-xt "24750,16000,27750,16900"
+xt "21750,12000,24750,12900"
 st "IFETCH"
-blo "24750,16700"
+blo "21750,12700"
 )
 )
 gi *70 (GenericInterface
@@ -1296,7 +1297,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,49050,41200,49950"
+xt "32200,49050,42700,49950"
 st "
 %library/%unit/%view
 "
@@ -1362,8 +1363,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "615,34,1266,724"
-viewArea "4810,-500,43330,43870"
+windowSize "-8,-3,1928,1088"
+viewArea "-6749,-4718,57276,30715"
 cachedDiagramExtent "0,0,69000,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
@@ -1635,6 +1636,8 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 156,0
+lastUid 179,0
+okToSyncOnLoad 1
+OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"
 )

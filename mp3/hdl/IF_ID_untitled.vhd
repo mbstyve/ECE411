@@ -14,16 +14,17 @@ LIBRARY ece411;
 USE ece411.LC3b_types.all;
 
 ENTITY IF_ID IS
--- Declarations
    PORT( 
-      RESET_L      : IN     std_logic;
-      clk          : IN     std_logic;
-      Load         : IN     std_logic;
-      Instr        : IN     LC3b_word;
-      iPC          : IN     LC3b_word;
-      Instr_out    : OUT    LC3b_word;
-      iPC_out      : OUT    LC3b_word
+      RESET_L   : IN     std_logic;
+      clk       : IN     std_logic;
+      Load      : IN     std_logic;
+      Instr     : IN     LC3b_word;
+      iPC       : IN     LC3b_word;
+      Instr_out : OUT    LC3b_word;
+      iPC_out   : OUT    LC3b_word
    );
+
+-- Declarations
 
 END IF_ID ;
 
