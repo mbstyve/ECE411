@@ -42,6 +42,7 @@ PACKAGE LC3B_TYPES IS
 	TYPE OPNAME IS (add_op, and_op, not_op, pass_op, sll_op, srl_op, sra_op, bad_op);
 	TYPE EX_CONTROL IS RECORD
 	    aluop : LC3B_ALUOP;
+	    ALUMuxsel : std_logic;
 	END RECORD;
 	
 	TYPE CONTROL_WORD IS RECORD
