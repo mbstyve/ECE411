@@ -20,10 +20,8 @@ ENTITY ID_EX IS
       Load            : IN     std_logic;
       Instr           : IN     LC3b_word;
       iPC             : IN     LC3b_word;
-      RegA            : IN     LC3b_reg;
-      RegA_out        : OUT    LC3b_reg;
-      RegB            : IN     LC3b_reg;
-      RegB_out        : OUT    LC3b_reg;
+      Dest            : IN     LC3b_reg;
+      Dest_out        : OUT    LC3b_reg;
       Src1            : IN     LC3b_reg;
       Src1_out        : OUT    LC3b_reg;
       Src2            : IN     LC3b_reg;
@@ -56,8 +54,7 @@ BEGIN
   vhdl_REG_IF : PROCESS (clk, RESET_L, Load, Instr, iPC)
   VARIABLE tempInstr : LC3b_word;
   VARIABLE tempiPC   : LC3b_word;
-  VARIABLE tempRegA   : LC3b_reg;
-  VARIABLE tempRegB   : LC3b_reg;
+  VARIABLE tempDest   : LC3b_reg;
   VARIABLE tempSrc1   : LC3b_reg;
   VARIABLE tempSrc2   : LC3b_reg;
   VARIABLE tempimm4   : LC3b_nibble;
@@ -86,8 +83,7 @@ BEGIN
      IF (Load = '1') THEN
       tempiPC := iPC;
       tempInstr := Instr;
-      tempRegA := RegA;
-      tempRegB := RegB;
+      tempDest := Dest;
       tempSrc1 := Src1;
       tempSrc2 := Src2;
       tempimm4 := imm4;
@@ -100,8 +96,7 @@ BEGIN
   END IF;
   iPC_out   <= tempiPC AFTER DELAY_REG;
   Instr_out <= tempInstr AFTER DELAY_REG;
-  RegA_out <= tempRegA AFTER DELAY_REG;
-  RegB_out <= tempRegB AFTER DELAY_REG;
+  Dest_out <= tempDest AFTER DELAY_REG;
   Src1_out <= tempSrc1 AFTER DELAY_REG;
   Src2_out <= tempSrc2 AFTER DELAY_REG;
   imm4_out <= tempimm4 AFTER DELAY_REG;
