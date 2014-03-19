@@ -22,10 +22,10 @@ ENTITY ID_EX IS
       iPC             : IN     LC3b_word;
       Dest            : IN     LC3b_reg;
       Dest_out        : OUT    LC3b_reg;
-      Src1            : IN     LC3b_reg;
-      Src1_out        : OUT    LC3b_reg;
-      Src2            : IN     LC3b_reg;
-      Src2_out        : OUT    LC3b_reg;
+      SrcA            : IN     LC3b_reg;
+      SrcA_out        : OUT    LC3b_reg;
+      SrcB            : IN     LC3b_reg;
+      SrcB_out        : OUT    LC3b_reg;
       ADJ4            : IN     LC3b_nibble;
       ADJ4_out        : OUT    LC3b_nibble;
       ADJ5            : IN     LC3b_imm5;
@@ -83,14 +83,27 @@ BEGIN
      tempoffset11 := "00000000000";
      tempRFAOut := "0000000000000000";
      tempRFBOut := "0000000000000000";
+     Control.ex.ALUMuxsel := '0';
+     Control.ex.aluop := "000";
+     Control.dec.StoreMuxSel := '0';
+     Control.memory.LoadSETCCSEL := '0';  
+     Control.memory.LoadNZP := '0';
+     Control.memory.Load_dMDR := '0';
+     Control.memory.Load_dMAR := '0';
+     Control.memory.ISBranch := '0';   
+     Control.write.RFMuxSel := '0';  
+     Control.write.Reg_Write := '0'; 
+     Control.memory.D_MREAD := '0';
+     Control.memory.D_MWRITEH_L := '0';
+     Control.memory.D_MWRITEL_L := '0';    
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
       tempiPC := iPC;
       tempInstr := Instr;
       tempDest := Dest;
-      tempSrc1 := Src1;
-      tempSrc2 := Src2;
+      tempSrc1 := SrcA;
+      tempSrc2 := SrcB;
       tempimm4 := imm4;
       tempimm5 := imm5;
       temptrapvector8 := trapvector8;
@@ -104,8 +117,8 @@ BEGIN
   iPC_out   <= tempiPC AFTER DELAY_REG;
   Instr_out <= tempInstr AFTER DELAY_REG;
   Dest_out <= tempDest AFTER DELAY_REG;
-  Src1_out <= tempSrc1 AFTER DELAY_REG;
-  Src2_out <= tempSrc2 AFTER DELAY_REG;
+  SrcA_out <= tempSrc1 AFTER DELAY_REG;
+  SrcB_out <= tempSrc2 AFTER DELAY_REG;
   ADJ4_out <= tempimm4 AFTER DELAY_REG;
   ADJ5_out <= tempimm5 AFTER DELAY_REG;
   ADJ9_out <= tempoffset9 AFTER DELAY_REG;

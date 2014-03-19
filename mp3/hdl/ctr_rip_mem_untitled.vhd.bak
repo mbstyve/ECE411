@@ -15,11 +15,15 @@ USE ece411.LC3b_types.all;
 
 ENTITY ctr_rip_mem IS
    PORT( 
-      Control   : IN     Control_Word;
-      Load_dMAR : OUT    std_logic;
-      Load_dMDR : OUT    std_logic;
-      LoadSETCCSEL :  OUT std_logic;
-      LoadNZP : OUT std_logic
+      Control      : IN     Control_Word;
+      Load_dMAR    : OUT    std_logic;
+      Load_dMDR    : OUT    std_logic;
+      LoadSETCCSEL : OUT    std_logic;
+      LoadNZP      : OUT    std_logic;
+      ISBranch     : OUT    std_Logic;
+      D_MREAD    : OUT    std_logic;
+      D_MWRITEH  : OUT    std_logic;
+      D_MWRITEL  : OUT    std_logic
    );
 
 -- Declarations
@@ -33,5 +37,9 @@ BEGIN
   Load_dMDR <= contol.memory.Load_dMDR;
   LoadSETCCSEL <= control.memory.LoadSETCCSEL;
   LoadNZP <= control.memory.LoadNZP;
+  D_MREAD <= control.memory.D_MREAD;
+  D_MWRITEH <= control.memory.D_MWRITEH;
+  D_MWRITEL <= control.memory.D_MWRITEL;
+  ISBranch  <= control.memory.ISBranch;
 END ARCHITECTURE untitled;
 

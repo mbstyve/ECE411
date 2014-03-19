@@ -55,6 +55,20 @@ BEGIN
      tempSRCA     := "000";
      tempSRCB     := "000";
      tempCTRL     := "000";
+     Control.ex.ALUMuxsel := '0';
+     Control.ex.aluop := "000";
+     Control.dec.StoreMuxSel := '0';
+     Control.memory.LoadSETCCSEL := '0';  
+     Control.memory.LoadNZP := '0';
+     Control.memory.Load_dMDR := '0';
+     Control.memory.Load_dMAR := '0';
+     Control.memory.ISBranch := '0';   
+     Control.write.RFMuxSel := '0';  
+     Control.write.Reg_Write := '0'; 
+     Control.memory.D_MREAD := '0';
+     Control.memory.D_MWRITEH := '0';
+     Control.memory.D_MWRITEL := '0';    
+     
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
       tempALUout    := ALUout;

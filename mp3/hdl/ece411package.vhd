@@ -50,17 +50,21 @@ PACKAGE LC3B_TYPES IS
 	END RECORD;
 	
 	TYPE MEM_CONTROL IS RECORD
-	    LoadSETCCSEL : std_logic;
-      LoadNZP : std_logic;
-      Load_dMDR : std_logic;
-      Load_dMAR : std_logic;
-      ISBranch  : std_logic;
+	    LoadSETCCSEL  : std_logic;
+      LoadNZP       : std_logic;
+      Load_dMDR     : std_logic;
+      Load_dMAR     : std_logic;
+      ISBranch      : std_logic;
+      D_MREAD     : std_logic;
+      D_MWRITEH   : std_logic;
+      D_MWRITEL   : std_logic;
 	END RECORD;
 	
 	TYPE WB_CONTROL IS RECORD
 	    RFMuxSel : std_logic;
 	    Reg_Write : std_logic;
 	END RECORD;
+	
 	
 	TYPE CONTROL_WORD IS RECORD
 	    dec : DEC_CONTROL;
