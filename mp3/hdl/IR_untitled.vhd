@@ -19,7 +19,6 @@ ENTITY IR IS
       clk      : IN     std_logic;
       Load_IR  : IN     std_logic;
       MDRout   : IN     LC3b_word;
-      Instr    : IN     LC3b_word;
       OPCODE   : OUT    LC3b_opcode;
       SRCA     : OUT    LC3b_reg;
       SRCB     : OUT    LC3b_reg;

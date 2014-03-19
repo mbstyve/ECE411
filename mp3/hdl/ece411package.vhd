@@ -45,8 +45,28 @@ PACKAGE LC3B_TYPES IS
 	    ALUMuxsel : std_logic;
 	END RECORD;
 	
+	TYPE DEC_CONTROL IS RECORD
+	    StoreMuxSel : std_logic;
+	END RECORD;
+	
+	TYPE MEM_CONTROL IS RECORD
+	    LoadSETCCSEL : std_logic;
+      LoadNZP : std_logic;
+      Load_dMDR : std_logic;
+      Load_dMAR : std_logic;
+      ISBranch  : std_logic;
+	END RECORD;
+	
+	TYPE WB_CONTROL IS RECORD
+	    RFMuxSel : std_logic;
+	    Reg_Write : std_logic;
+	END RECORD;
+	
 	TYPE CONTROL_WORD IS RECORD
+	    dec : DEC_CONTROL;
 	    ex : EX_CONTROL;
+	    memory : MEM_CONTROL;
+	    write  : WB_CONTROL;
 	    mem, wb : LC3B_WORD;
 	    name : OPNAME;
 	END RECORD;

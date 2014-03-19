@@ -19,6 +19,7 @@ ENTITY NZP IS
   PORT(
     GENCCOUT  : IN    LC3B_CC;
     CLK       : IN    std_logic;
+    LoadNZP   : IN    std_logic;
     N         : OUT   std_logic;
     Z         : OUT   std_logic;
     P         : OUT   std_logic

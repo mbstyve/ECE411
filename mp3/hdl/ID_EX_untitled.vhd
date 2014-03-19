@@ -18,31 +18,34 @@ ENTITY ID_EX IS
       RESET_L         : IN     std_logic;
       clk             : IN     std_logic;
       Load            : IN     std_logic;
-      Instr           : IN     LC3b_word;
+      Control         : IN     control_word;
       iPC             : IN     LC3b_word;
       Dest            : IN     LC3b_reg;
       Dest_out        : OUT    LC3b_reg;
-      Src1            : IN     LC3b_reg;
-      Src1_out        : OUT    LC3b_reg;
-      Src2            : IN     LC3b_reg;
-      Src2_out        : OUT    LC3b_reg;
-      imm4            : IN     LC3b_nibble;
-      imm4_out        : OUT    LC3b_nibble;
-      imm5            : IN     LC3b_imm5;
-      imm5_out        : OUT    LC3b_imm5;
-      offset6         : IN     LC3b_index6;
-      offset6_out     : OUT    LC3b_index6;
+      SrcA            : IN     LC3b_reg;
+      SrcA_out        : OUT    LC3b_reg;
+      SrcB            : IN     LC3b_reg;
+      SrcB_out        : OUT    LC3b_reg;
+      ADJ4            : IN     LC3b_nibble;
+      ADJ4_out        : OUT    LC3b_nibble;
+      ADJ5            : IN     LC3b_imm5;
+      ADJ5_out        : OUT    LC3b_imm5;
+      ADJ6            : IN     LC3b_index6;
+      ADJ6_out        : OUT    LC3b_index6;
       trapvector8     : IN     LC3b_byte;
       trapvector8_out : OUT    LC3b_byte;
-      bitfive         : IN     std_logic;
-      bitfive_out     : OUT    std_logic;
-      offset9         : IN     LC3b_OFFSET9;
-      offset9_out     : OUT    LC3b_OFFSET9;
-      pcoffset11      : IN     LC3B_OFFSET11;
-      pcoffset11_out  : OUT    LC3B_OFFSET11;
+      ADJ9            : IN     LC3b_OFFSET9;
+      ADJ9_out        : OUT    LC3b_OFFSET9;
+      ADJ11           : IN     LC3B_OFFSET11;
+      ADJ11_out       : OUT    LC3B_OFFSET11;
       Instr_out       : OUT    LC3b_word;
-      iPC_out         : OUT    LC3b_word
-   );
+      iPC_out         : OUT    LC3b_word;
+      RFAOut          : IN     LC3b_word;
+      RFBOut          : IN     LC3b_word;
+      RFAOut_Out      : OUT     LC3b_word;
+      RFBOut_Out      : OUT     LC3b_word;
+      Control_Out      : OUT   Control_word
+      );
 
 -- Declarations
 
@@ -52,7 +55,7 @@ END ID_EX ;
 ARCHITECTURE untitled OF ID_EX IS
 BEGIN
   vhdl_REG_IF : PROCESS (clk, RESET_L, Load, Instr, iPC)
-  VARIABLE tempInstr : LC3b_word;
+  VARIABLE tempControl : control_word;
   VARIABLE tempiPC   : LC3b_word;
   VARIABLE tempDest   : LC3b_reg;
   VARIABLE tempSrc1   : LC3b_reg;
@@ -60,10 +63,11 @@ BEGIN
   VARIABLE tempimm4   : LC3b_nibble;
   VARIABLE tempimm5   : LC3b_imm5;
   VARIABLE temptrapvector8   : LC3b_byte;
-  VARIABLE tempbitfive   : LC3b_logic;
   VARIABLE tempoffset9   : LC3b_offset9;
   VARIABLE temppcoffset11   : LC3b_offset11;
   VARIABLE tempiPC   : LC3b_word;
+  VARIABLE tempRFAOut : LC3b_word;
+  VARIABLE tempRFBOut : LC3b_word;
   BEGIN
    IF (RESET_L = '0') THEN
      tempiPC := "0000000000000000";
@@ -75,35 +79,40 @@ BEGIN
      tempimm4 := "0000";
      tempimm5 := "00000";
      temptrapvector8 := "00000000";
-     tempbitfive := '0';
      tempoffset9 := "000000000";
      tempoffset11 := "00000000000";
+     tempRFAOut := "0000000000000000";
+     tempRFBOut := "0000000000000000";
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
       tempiPC := iPC;
       tempInstr := Instr;
       tempDest := Dest;
-      tempSrc1 := Src1;
-      tempSrc2 := Src2;
+      tempSrc1 := SrcA;
+      tempSrc2 := SrcB;
       tempimm4 := imm4;
       tempimm5 := imm5;
       temptrapvector8 := trapvector8;
-      tempbitfive := bitfive;
       tempoffset9 := offset9;
       tempoffset11 := offset11;
+      tempRFAOut := RFAOut;
+      tempRFBOut := RFBOut;
+      tempControl := Control;
     END IF;
   END IF;
   iPC_out   <= tempiPC AFTER DELAY_REG;
   Instr_out <= tempInstr AFTER DELAY_REG;
   Dest_out <= tempDest AFTER DELAY_REG;
-  Src1_out <= tempSrc1 AFTER DELAY_REG;
-  Src2_out <= tempSrc2 AFTER DELAY_REG;
-  imm4_out <= tempimm4 AFTER DELAY_REG;
-  imm5_out <= tempimm5 AFTER DELAY_REG;
-  bitfive_out <= tempbitfive AFTER DELAY_REG;
-  offset9_out <= tempoffset9 AFTER DELAY_REG;
-  offset11_out <= tempoffset11 AFTER DELAY_REG;
+  SrcA_out <= tempSrc1 AFTER DELAY_REG;
+  SrcB_out <= tempSrc2 AFTER DELAY_REG;
+  ADJ4_out <= tempimm4 AFTER DELAY_REG;
+  ADJ5_out <= tempimm5 AFTER DELAY_REG;
+  ADJ9_out <= tempoffset9 AFTER DELAY_REG;
+  ADJ11_out <= tempoffset11 AFTER DELAY_REG;
+  RFAOut_Out   <= tempRFAOut AFTER DELAY_REG;
+  RFBOut_Out   <= tempRFBOut AFTER DELAY_REG;
+  Control_Out <= tempControl  AFTER DELAY_REG;
 END PROCESS vhdl_REG_IF;
 END ARCHITECTURE untitled;
 

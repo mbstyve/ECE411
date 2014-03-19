@@ -35,6 +35,8 @@ BEGIN
                 newControl.name := and_op;
                 newControl.ex.aluop := ALU_AND;
             -- add more opcodes
+            WHEN OP_STR =>
+                newControl.dec.StoreMuxSel := '1';
             WHEN OTHERS =>
                 newControl.name := bad_op;
                 newControl.ex.aluop := ALU_PASS;
