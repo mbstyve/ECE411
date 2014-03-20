@@ -111,23 +111,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hdl"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@pipelined_@datapath/struct.bd.info"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@pipelined_@datapath/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@pipelined_@datapath/struct.bd.user"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@pipelined_@datapath/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -143,27 +143,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@pipelined_@datapath"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@pipelined_@datapath"
 )
 (vvPair
 variable "d_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/Pipelined_Datapath"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/Pipelined_Datapath"
 )
 (vvPair
 variable "date"
-value "03/19/14"
+value "03/20/14"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "19"
+value "20"
 )
 (vvPair
 variable "entity_name"
@@ -191,7 +191,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-14.ews.illinois.edu"
+value "gelib-057-27.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -223,11 +223,11 @@ value "March"
 )
 (vvPair
 variable "p"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@pipelined_@datapath/struct.bd"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@pipelined_@datapath/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/Pipelined_Datapath/struct.bd"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/Pipelined_Datapath/struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -283,7 +283,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "17:43:36"
+value "17:16:29"
 )
 (vvPair
 variable "unit"
@@ -291,7 +291,7 @@ value "Pipelined_Datapath"
 )
 (vvPair
 variable "user"
-value "styve1"
+value "draguna1"
 )
 (vvPair
 variable "version"
@@ -336,7 +336,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,44700,50950"
+xt "32200,50050,45700,50950"
 st "
 by %user on %dd %month %year
 "
@@ -6147,7 +6147,7 @@ thePort (LogicalPort
 m 1
 decl (Decl
 n "trapvect8"
-t "LC3b_trapvect"
+t "LC3b_word"
 o 21
 suid 10,0
 )
@@ -6324,7 +6324,7 @@ thePort (LogicalPort
 m 1
 decl (Decl
 n "ADJ11Out"
-t "LC3b_offset11"
+t "LC3b_word"
 o 8
 suid 30,0
 )
@@ -6361,7 +6361,7 @@ thePort (LogicalPort
 m 1
 decl (Decl
 n "ADJ4Out"
-t "LC3b_imm4"
+t "LC3b_word"
 o 9
 suid 27,0
 )
@@ -6398,7 +6398,7 @@ thePort (LogicalPort
 m 1
 decl (Decl
 n "ADJ5Out"
-t "LC3b_imm5"
+t "LC3b_word"
 o 10
 suid 28,0
 )
@@ -6435,7 +6435,7 @@ thePort (LogicalPort
 m 1
 decl (Decl
 n "ADJ6Out"
-t "LC3b_index6"
+t "LC3b_word"
 o 11
 suid 29,0
 )
@@ -6472,7 +6472,7 @@ thePort (LogicalPort
 m 1
 decl (Decl
 n "ADJ9Out"
-t "Lc3b_offset9"
+t "Lc3b_word"
 o 12
 suid 31,0
 )
@@ -6618,7 +6618,7 @@ blo "52000,29250"
 thePort (LogicalPort
 decl (Decl
 n "RFMUXOUT"
-t "std_logic"
+t "LC3b_word"
 o 4
 suid 24,0
 )
@@ -6729,7 +6729,7 @@ thePort (LogicalPort
 m 1
 decl (Decl
 n "iPC_Out"
-t "std_logic"
+t "LC3b_word"
 o 20
 suid 33,0
 )
@@ -7138,7 +7138,7 @@ blo "192000,24250"
 thePort (LogicalPort
 decl (Decl
 n "DEST"
-t "std_logic"
+t "LC3b_reg"
 o 6
 suid 8,0
 )
@@ -7175,7 +7175,7 @@ thePort (LogicalPort
 m 1
 decl (Decl
 n "DestOut"
-t "std_logic"
+t "LC3b_reg"
 o 23
 suid 9,0
 )
@@ -7429,43 +7429,6 @@ suid 16,0
 )
 )
 *216 (CptPort
-uid 2640,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 2641,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "205000,38625,205750,39375"
-)
-tg (CPTG
-uid 2642,0
-ps "CptPortTextPlaceStrategy"
-stg "RightVerticalLayoutStrategy"
-f (Text
-uid 2643,0
-va (VaSet
-font "courier,8,0"
-)
-xt "201000,38550,204000,39450"
-st "BRAddr"
-ju 2
-blo "204000,39250"
-)
-)
-thePort (LogicalPort
-m 1
-decl (Decl
-n "BRAddr"
-t "std_logic"
-o 15
-suid 19,0
-)
-)
-)
-*217 (CptPort
 uid 2644,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7502,7 +7465,7 @@ suid 18,0
 )
 )
 )
-*218 (CptPort
+*217 (CptPort
 uid 2648,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7539,7 +7502,7 @@ suid 17,0
 )
 )
 )
-*219 (CptPort
+*218 (CptPort
 uid 2652,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7576,7 +7539,7 @@ suid 20,0
 )
 )
 )
-*220 (CptPort
+*219 (CptPort
 uid 2656,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7613,7 +7576,7 @@ suid 21,0
 )
 )
 )
-*221 (CptPort
+*220 (CptPort
 uid 2660,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7650,7 +7613,7 @@ suid 22,0
 )
 )
 )
-*222 (CptPort
+*221 (CptPort
 uid 2776,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7687,7 +7650,7 @@ suid 23,0
 )
 )
 )
-*223 (CptPort
+*222 (CptPort
 uid 2894,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7725,7 +7688,7 @@ suid 24,0
 )
 )
 )
-*224 (CptPort
+*223 (CptPort
 uid 2898,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7753,17 +7716,16 @@ blo "204000,29250"
 )
 )
 thePort (LogicalPort
-lang 11
 m 1
 decl (Decl
 n "D_MWRITEH_L"
-t "std_logic"
+t "STD_LOGIC"
 o 21
 suid 25,0
 )
 )
 )
-*225 (CptPort
+*224 (CptPort
 uid 2902,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7791,13 +7753,49 @@ blo "204000,30250"
 )
 )
 thePort (LogicalPort
-lang 11
 m 1
 decl (Decl
 n "D_MWRITEL_L"
-t "std_logic"
+t "STD_LOGIC"
 o 22
 suid 26,0
+)
+)
+)
+*225 (CptPort
+uid 2937,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 2938,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "205000,38625,205750,39375"
+)
+tg (CPTG
+uid 2939,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 2940,0
+va (VaSet
+font "courier,8,0"
+)
+xt "199500,38550,204000,39450"
+st "BRAddress"
+ju 2
+blo "204000,39250"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "BRAddress"
+t "LC3b_word"
+o 15
+suid 32,0
 )
 )
 )
@@ -7962,7 +7960,7 @@ st "SIGNAL Dest            : LC3b_reg
 uid 2008,0
 decl (Decl
 n "ADJ11Out"
-t "LC3b_offset11"
+t "LC3b_word"
 o 26
 suid 41,0
 )
@@ -7971,8 +7969,8 @@ uid 2009,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-55000,16700,-35500,17600"
-st "SIGNAL ADJ11Out        : LC3b_offset11
+xt "-55000,16700,-37500,17600"
+st "SIGNAL ADJ11Out        : LC3b_word
 "
 )
 )
@@ -7980,7 +7978,7 @@ st "SIGNAL ADJ11Out        : LC3b_offset11
 uid 2014,0
 decl (Decl
 n "ADJ9Out"
-t "Lc3b_offset9"
+t "Lc3b_word"
 o 27
 suid 42,0
 )
@@ -7989,8 +7987,8 @@ uid 2015,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-55000,25700,-36000,26600"
-st "SIGNAL ADJ9Out         : Lc3b_offset9
+xt "-55000,25700,-37500,26600"
+st "SIGNAL ADJ9Out         : Lc3b_word
 "
 )
 )
@@ -7998,7 +7996,7 @@ st "SIGNAL ADJ9Out         : Lc3b_offset9
 uid 2020,0
 decl (Decl
 n "ADJ6Out"
-t "LC3b_index6"
+t "LC3b_word"
 o 28
 suid 43,0
 )
@@ -8007,8 +8005,8 @@ uid 2021,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-55000,23900,-36500,24800"
-st "SIGNAL ADJ6Out         : LC3b_index6
+xt "-55000,23900,-37500,24800"
+st "SIGNAL ADJ6Out         : LC3b_word
 "
 )
 )
@@ -8016,7 +8014,7 @@ st "SIGNAL ADJ6Out         : LC3b_index6
 uid 2026,0
 decl (Decl
 n "ADJ5Out"
-t "LC3b_imm5"
+t "LC3b_word"
 o 29
 suid 44,0
 )
@@ -8026,7 +8024,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-55000,22100,-37500,23000"
-st "SIGNAL ADJ5Out         : LC3b_imm5
+st "SIGNAL ADJ5Out         : LC3b_word
 "
 )
 )
@@ -8034,7 +8032,7 @@ st "SIGNAL ADJ5Out         : LC3b_imm5
 uid 2032,0
 decl (Decl
 n "ADJ4Out"
-t "LC3b_imm4"
+t "LC3b_word"
 o 30
 suid 45,0
 )
@@ -8044,7 +8042,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-55000,20300,-37500,21200"
-st "SIGNAL ADJ4Out         : LC3b_imm4
+st "SIGNAL ADJ4Out         : LC3b_word
 "
 )
 )
@@ -8052,7 +8050,7 @@ st "SIGNAL ADJ4Out         : LC3b_imm4
 uid 2038,0
 decl (Decl
 n "trapvect8"
-t "LC3b_trapvect"
+t "LC3b_word"
 o 31
 suid 46,0
 )
@@ -8061,8 +8059,8 @@ uid 2039,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-55000,72500,-35500,73400"
-st "SIGNAL trapvect8       : LC3b_trapvect
+xt "-55000,72500,-37500,73400"
+st "SIGNAL trapvect8       : LC3b_word
 "
 )
 )
@@ -8127,7 +8125,7 @@ st "SIGNAL ControlOut      : CONTROL_WORD
 uid 2120,0
 decl (Decl
 n "iPC_Out1"
-t "std_logic"
+t "LC3b_word"
 o 35
 suid 50,0
 )
@@ -8137,7 +8135,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-55000,69800,-37500,70700"
-st "SIGNAL iPC_Out1        : std_logic
+st "SIGNAL iPC_Out1        : LC3b_word
 "
 )
 )
@@ -8724,7 +8722,7 @@ st "SIGNAL ALUOut_OUT      : lc3b_word
 uid 2676,0
 decl (Decl
 n "BRAddr"
-t "std_logic"
+t "LC3b_word"
 o 66
 suid 83,0
 )
@@ -8734,7 +8732,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-55000,32900,-37500,33800"
-st "SIGNAL BRAddr          : std_logic
+st "SIGNAL BRAddr          : LC3b_word
 "
 )
 )
@@ -8760,7 +8758,7 @@ st "SIGNAL BRMuxSel        : STD_LOGIC
 uid 2718,0
 decl (Decl
 n "DestOut"
-t "std_logic"
+t "LC3b_reg"
 o 68
 suid 85,0
 )
@@ -8769,8 +8767,8 @@ uid 2719,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-55000,41000,-37500,41900"
-st "SIGNAL DestOut         : std_logic
+xt "-55000,41000,-38000,41900"
+st "SIGNAL DestOut         : LC3b_reg
 "
 )
 )
@@ -9762,7 +9760,7 @@ pts [
 "206000,28000"
 ]
 )
-start &223
+start &222
 end &26
 sat 32
 eat 32
@@ -9800,7 +9798,7 @@ pts [
 "206000,29000"
 ]
 )
-start &224
+start &223
 end &28
 ss 0
 sat 32
@@ -9839,7 +9837,7 @@ pts [
 "206000,30000"
 ]
 )
-start &225
+start &224
 end &30
 ss 0
 sat 32
@@ -9917,7 +9915,7 @@ pts [
 "207000,38000"
 ]
 )
-start &218
+start &217
 end &34
 ss 0
 sat 32
@@ -12735,7 +12733,7 @@ pts [
 "221250,36000"
 ]
 )
-start &221
+start &220
 end &102
 sat 32
 eat 32
@@ -12775,7 +12773,7 @@ pts [
 "-9750,24000"
 ]
 )
-start &216
+start &225
 end &127
 sat 32
 eat 32
@@ -12816,7 +12814,7 @@ pts [
 "-9750,25000"
 ]
 )
-start &217
+start &216
 end &129
 sat 32
 eat 32
@@ -12889,7 +12887,7 @@ pts [
 "221250,25000"
 ]
 )
-start &219
+start &218
 end &111
 sat 32
 eat 32
@@ -12925,7 +12923,7 @@ pts [
 "221250,26000"
 ]
 )
-start &220
+start &219
 end &113
 sat 32
 eat 32
@@ -12961,7 +12959,7 @@ pts [
 "221250,34000"
 ]
 )
-start &222
+start &221
 end &115
 sat 32
 eat 32
@@ -13442,12 +13440,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "6,73,1926,1106"
-viewArea "-25309,2032,68183,46888"
+windowSize "1916,24,3844,1057"
+viewArea "139767,-8625,264798,56640"
 cachedDiagramExtent "-57000,-3900,263250,74300"
 hasePageBreakOrigin 1
 pageBreakOrigin "-69000,-51000"
-lastUid 2909,0
+lastUid 2967,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -14838,7 +14836,7 @@ port (LogicalPort
 m 4
 decl (Decl
 n "ADJ11Out"
-t "LC3b_offset11"
+t "LC3b_word"
 o 26
 suid 41,0
 )
@@ -14850,7 +14848,7 @@ port (LogicalPort
 m 4
 decl (Decl
 n "ADJ9Out"
-t "Lc3b_offset9"
+t "Lc3b_word"
 o 27
 suid 42,0
 )
@@ -14862,7 +14860,7 @@ port (LogicalPort
 m 4
 decl (Decl
 n "ADJ6Out"
-t "LC3b_index6"
+t "LC3b_word"
 o 28
 suid 43,0
 )
@@ -14874,7 +14872,7 @@ port (LogicalPort
 m 4
 decl (Decl
 n "ADJ5Out"
-t "LC3b_imm5"
+t "LC3b_word"
 o 29
 suid 44,0
 )
@@ -14886,7 +14884,7 @@ port (LogicalPort
 m 4
 decl (Decl
 n "ADJ4Out"
-t "LC3b_imm4"
+t "LC3b_word"
 o 30
 suid 45,0
 )
@@ -14898,7 +14896,7 @@ port (LogicalPort
 m 4
 decl (Decl
 n "trapvect8"
-t "LC3b_trapvect"
+t "LC3b_word"
 o 31
 suid 46,0
 )
@@ -14949,7 +14947,7 @@ port (LogicalPort
 m 4
 decl (Decl
 n "iPC_Out1"
-t "std_logic"
+t "LC3b_word"
 o 35
 suid 50,0
 )
@@ -15354,7 +15352,7 @@ port (LogicalPort
 m 4
 decl (Decl
 n "BRAddr"
-t "std_logic"
+t "LC3b_word"
 o 66
 suid 83,0
 )
@@ -15378,7 +15376,7 @@ port (LogicalPort
 m 4
 decl (Decl
 n "DestOut"
-t "std_logic"
+t "LC3b_reg"
 o 68
 suid 85,0
 )

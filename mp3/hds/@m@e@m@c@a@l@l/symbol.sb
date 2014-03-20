@@ -25,7 +25,7 @@ appVersion "2012.1 (Build 6)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-suid 31,0
+suid 32,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -135,7 +135,7 @@ uid 144,0
 port (LogicalPort
 decl (Decl
 n "DEST"
-t "std_logic"
+t "LC3b_reg"
 o 6
 suid 8,0
 )
@@ -147,7 +147,7 @@ port (LogicalPort
 m 1
 decl (Decl
 n "DestOut"
-t "std_logic"
+t "LC3b_reg"
 o 23
 suid 9,0
 )
@@ -261,18 +261,6 @@ uid 366,0
 port (LogicalPort
 m 1
 decl (Decl
-n "BRAddr"
-t "std_logic"
-o 15
-suid 19,0
-)
-)
-uid 396,0
-)
-*32 (LogPort
-port (LogicalPort
-m 1
-decl (Decl
 n "SRCA_OUT"
 t "lc3b_reg"
 o 24
@@ -281,7 +269,7 @@ suid 20,0
 )
 uid 449,0
 )
-*33 (LogPort
+*32 (LogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -293,7 +281,7 @@ suid 21,0
 )
 uid 451,0
 )
-*34 (LogPort
+*33 (LogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -305,7 +293,7 @@ suid 22,0
 )
 uid 486,0
 )
-*35 (LogPort
+*34 (LogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -317,7 +305,7 @@ suid 23,0
 )
 uid 516,0
 )
-*36 (LogPort
+*35 (LogPort
 port (LogicalPort
 lang 11
 m 1
@@ -330,7 +318,7 @@ suid 27,0
 )
 uid 636,0
 )
-*37 (LogPort
+*36 (LogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -342,7 +330,7 @@ suid 30,0
 )
 uid 680,0
 )
-*38 (LogPort
+*37 (LogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -353,6 +341,18 @@ suid 31,0
 )
 )
 uid 682,0
+)
+*38 (LogPort
+port (LogicalPort
+m 1
+decl (Decl
+n "BRAddress"
+t "LC3b_word"
+o 15
+suid 32,0
+)
+)
+uid 740,0
 )
 ]
 )
@@ -510,49 +510,49 @@ uid 365,0
 litem &31
 pos 17
 dimension 20
-uid 395,0
+uid 448,0
 )
 *62 (MRCItem
 litem &32
 pos 18
 dimension 20
-uid 448,0
+uid 450,0
 )
 *63 (MRCItem
 litem &33
 pos 19
 dimension 20
-uid 450,0
+uid 485,0
 )
 *64 (MRCItem
 litem &34
 pos 20
 dimension 20
-uid 485,0
+uid 515,0
 )
 *65 (MRCItem
 litem &35
 pos 21
 dimension 20
-uid 515,0
+uid 635,0
 )
 *66 (MRCItem
 litem &36
 pos 22
 dimension 20
-uid 635,0
+uid 679,0
 )
 *67 (MRCItem
 litem &37
 pos 23
 dimension 20
-uid 679,0
+uid 681,0
 )
 *68 (MRCItem
 litem &38
 pos 24
 dimension 20
-uid 681,0
+uid 739,0
 )
 ]
 )
@@ -783,23 +783,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hdl"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/symbol.sb.info"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/symbol.sb.user"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -815,27 +815,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l"
 )
 (vvPair
 variable "d_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/MEMCALL"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/MEMCALL"
 )
 (vvPair
 variable "date"
-value "03/19/14"
+value "03/20/14"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "19"
+value "20"
 )
 (vvPair
 variable "entity_name"
@@ -863,7 +863,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-14.ews.illinois.edu"
+value "gelib-057-27.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -895,11 +895,11 @@ value "March"
 )
 (vvPair
 variable "p"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/symbol.sb"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/MEMCALL/symbol.sb"
+value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/MEMCALL/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -955,7 +955,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "17:37:13"
+value "17:13:28"
 )
 (vvPair
 variable "unit"
@@ -963,7 +963,7 @@ value "MEMCALL"
 )
 (vvPair
 variable "user"
-value "styve1"
+value "draguna1"
 )
 (vvPair
 variable "version"
@@ -1022,7 +1022,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,4500,61000,5400"
-st "Clk         : IN     std_logic  ;"
+st "Clk         : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1066,7 +1067,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9000,61000,9900"
-st "RESET_L     : IN     std_logic  ;"
+st "RESET_L     : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1110,7 +1112,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,8100,61000,9000"
-st "D_MRESP_H   : IN     std_logic  ;"
+st "D_MRESP_H   : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1154,7 +1157,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,7200,61000,8100"
-st "D_DATAIN    : IN     LC3b_word  ;"
+st "D_DATAIN    : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1199,7 +1203,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,18000,61000,18900"
-st "D_DATAOUT   : OUT    LC3b_word  ;"
+st "D_DATAOUT   : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1244,7 +1249,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,5400,62500,6300"
-st "Control     : IN     Control_Word  ;"
+st "Control     : IN     Control_Word  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1287,13 +1293,14 @@ uid 188,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,6300,61000,7200"
-st "DEST        : IN     std_logic  ;"
+xt "44000,6300,60500,7200"
+st "DEST        : IN     LC3b_reg  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "DEST"
-t "std_logic"
+t "LC3b_reg"
 o 6
 suid 8,0
 )
@@ -1332,14 +1339,15 @@ uid 193,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,21600,61000,22500"
-st "DestOut     : OUT    std_logic  ;"
+xt "44000,21600,60500,22500"
+st "DestOut     : OUT    LC3b_reg  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "DestOut"
-t "std_logic"
+t "LC3b_reg"
 o 23
 suid 9,0
 )
@@ -1378,7 +1386,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,3600,61000,4500"
-st "ALUOut      : IN     lc3b_word  ;"
+st "ALUOut      : IN     lc3b_word  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1422,7 +1431,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,1800,60500,2700"
-st "ADJ11       : IN     lc3b_reg  ;"
+st "ADJ11       : IN     lc3b_reg  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1466,7 +1476,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,2700,61000,3600"
-st "ADJ9        : IN     lc3b_word  ;"
+st "ADJ9        : IN     lc3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1511,7 +1522,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,12600,61000,13500"
-st "iPC         : IN     lc3b_word  ;"
+st "iPC         : IN     lc3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1556,7 +1568,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9900,60500,10800"
-st "SRCA        : IN     lc3b_reg  ;"
+st "SRCA        : IN     lc3b_reg  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1600,7 +1613,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,10800,60500,11700"
-st "SRCB        : IN     lc3b_reg  ;"
+st "SRCB        : IN     lc3b_reg  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1644,7 +1658,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,11700,60500,12600"
-st "TRAP8       : IN     lc3b_reg  ;"
+st "TRAP8       : IN     lc3b_reg  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1689,7 +1704,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,17100,61000,18000"
-st "D_ADDR      : OUT    LC3b_word  ;"
+st "D_ADDR      : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1735,7 +1751,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,15300,61000,16200"
-st "BRMuxSel    : OUT    STD_LOGIC  ;"
+st "BRMuxSel    : OUT    STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1748,52 +1765,6 @@ suid 18,0
 )
 )
 *119 (CptPort
-uid 397,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 398,0
-ro 90
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "29000,10625,29750,11375"
-)
-tg (CPTG
-uid 399,0
-ps "CptPortTextPlaceStrategy"
-stg "RightVerticalLayoutStrategy"
-f (Text
-uid 400,0
-va (VaSet
-font "courier,8,0"
-)
-xt "25000,10550,28000,11450"
-st "BRAddr"
-ju 2
-blo "28000,11250"
-tm "CptPortNameMgr"
-)
-)
-dt (MLText
-uid 401,0
-va (VaSet
-font "courier,8,0"
-)
-xt "44000,14400,61000,15300"
-st "BRAddr      : OUT    std_logic  ;"
-)
-thePort (LogicalPort
-m 1
-decl (Decl
-n "BRAddr"
-t "std_logic"
-o 15
-suid 19,0
-)
-)
-)
-*120 (CptPort
 uid 452,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1827,7 +1798,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,22500,60500,23400"
-st "SRCA_OUT    : OUT    lc3b_reg  ;"
+st "SRCA_OUT    : OUT    lc3b_reg  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1839,7 +1811,7 @@ suid 20,0
 )
 )
 )
-*121 (CptPort
+*120 (CptPort
 uid 457,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1873,7 +1845,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,23400,59500,24300"
-st "SRCB_OUT    : OUT    lc3b_reg "
+st "SRCB_OUT    : OUT    lc3b_reg 
+"
 )
 thePort (LogicalPort
 m 1
@@ -1885,7 +1858,7 @@ suid 21,0
 )
 )
 )
-*122 (CptPort
+*121 (CptPort
 uid 487,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1919,7 +1892,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,13500,61000,14400"
-st "ALUOut_OUT  : OUT    lc3b_word  ;"
+st "ALUOut_OUT  : OUT    lc3b_word  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1931,7 +1905,7 @@ suid 22,0
 )
 )
 )
-*123 (CptPort
+*122 (CptPort
 uid 517,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1965,7 +1939,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,16200,62500,17100"
-st "Control_OUT : OUT    CONTROL_WORD  ;"
+st "Control_OUT : OUT    CONTROL_WORD  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1977,7 +1952,7 @@ suid 23,0
 )
 )
 )
-*124 (CptPort
+*123 (CptPort
 uid 641,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -2011,7 +1986,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,18900,61000,19800"
-st "D_MREAD_L   : OUT    std_logic  ;"
+st "D_MREAD_L   : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -2024,7 +2000,7 @@ suid 27,0
 )
 )
 )
-*125 (CptPort
+*124 (CptPort
 uid 683,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -2058,7 +2034,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,19800,61000,20700"
-st "D_MWRITEH_L : OUT    STD_LOGIC  ;"
+st "D_MWRITEH_L : OUT    STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -2070,7 +2047,7 @@ suid 30,0
 )
 )
 )
-*126 (CptPort
+*125 (CptPort
 uid 688,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -2104,7 +2081,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,20700,61000,21600"
-st "D_MWRITEL_L : OUT    STD_LOGIC  ;"
+st "D_MWRITEL_L : OUT    STD_LOGIC  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -2113,6 +2091,53 @@ n "D_MWRITEL_L"
 t "STD_LOGIC"
 o 22
 suid 31,0
+)
+)
+)
+*126 (CptPort
+uid 741,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 742,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "29000,18625,29750,19375"
+)
+tg (CPTG
+uid 743,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 744,0
+va (VaSet
+font "courier,8,0"
+)
+xt "23500,18550,28000,19450"
+st "BRAddress"
+ju 2
+blo "28000,19250"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 745,0
+va (VaSet
+font "courier,8,0"
+)
+xt "44000,14400,61000,15300"
+st "BRAddress   : OUT    LC3b_word  ;
+"
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "BRAddress"
+t "LC3b_word"
+o 15
+suid 32,0
 )
 )
 )
@@ -2200,7 +2225,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,50050,44700,50950"
+xt "32200,50050,45700,50950"
 st "
 by %user on %dd %month %year
 "
@@ -2825,7 +2850,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 715,0
+lastUid 837,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"

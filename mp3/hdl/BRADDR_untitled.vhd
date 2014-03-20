@@ -15,9 +15,9 @@ USE ece411.LC3b_types.all;
 
 ENTITY BRADDR IS
    PORT( 
-      ADJ9   : IN     lc3b_word;
-      iPC    : IN     lc3b_word;
-      BRAddr : OUT    std_logic
+      ADJ9      : IN     lc3b_word;
+      iPC       : IN     lc3b_word;
+      BRAddress : OUT    LC3b_word
    );
 
 -- Declarations
