@@ -1,0 +1,107 @@
+# //  ModelSim SE 10.1d Nov  1 2012 Linux 2.6.32-358.23.2.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L ece411 -L mp3lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll} -pli {"/software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll"} ece411.mp3_cpu(struct) 
+# Loading /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.lc3b_types(body)
+# Loading work.mp3_cpu(struct)#1
+# Loading work.clkgen(untitled)#1
+# Loading work.dram16_dp(untitled)#1
+# Loading work.pipelined_datapath(struct)#1
+# Loading work.execute(struct)#1
+# Loading work.ctl_rip_execute(untitled)#1
+# Loading mp3lib.alu(untitled)#1
+# Loading mp3lib.mux2_16(untitled)#1
+# Loading work.ex_mem(untitled)#1
+# Loading work.idecode(struct)#1
+# Loading work.adj11(untitled)#1
+# Loading work.adj4(untitled)#1
+# Loading work.adj5(untitled)#1
+# Loading work.adj6(untitled)#1
+# Loading work.adj9(untitled)#1
+# Loading work.ctl_rip_dec(untitled)#1
+# Loading work.controlrom(untitled)#1
+# Loading work.ir(untitled)#1
+# Loading work.reg_file(untitled)#1
+# Loading work.regmux2(untitled)#1
+# Loading work.id_ex(untitled)#1
+# Loading work.ifetch(struct)#1
+# Loading work.plus2(untitled)#1
+# Loading work.reg16(untitled)#1
+# Loading mp3lib.not1(untitled)#1
+# Loading work.if_id(untitled)#1
+# Loading work.memcall(struct)#1
+# Loading work.braddr(untitled)#1
+# Loading work.gencc(untitled)#1
+# Loading work.nzp(untitled)#1
+# Loading work.nzpsplit(untitled)#1
+# Loading work.ctr_rip_mem(untitled)#1
+# Loading mp3lib.and2(untitled)#1
+# Loading mp3lib.or3(untitled)#1
+# Loading work.mem_wb(untitled)#1
+# Loading work.writeback(struct)#1
+# Loading work.ctl_rip_wb(untitled)#1
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.name has no driver.
+# This port will contribute value (add_op) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.dec.StoreMuxSel has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.ex.ALUMuxsel has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.ex.aluop(2 downto 0) has no driver.
+# This port will contribute value (UUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.memory.LoadSETCCSEL has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.memory.LoadNZP has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.memory.Load_dMDR has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.memory.Load_dMAR has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.memory.ISBranch has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.memory.D_MREAD has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.memory.D_MWRITEH has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.memory.D_MWRITEL has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.write.RFMuxSel has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.write.Reg_Write has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.mem(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/EX_MEM_REG/control_out.wb(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/iDEC/INSTR_REG/OFFSET11(10) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/iDEC/INSTR_REG/OFFSET11(9 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/iDEC/INSTR_REG/IMM5(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/iDEC/INSTR_REG/IMM5(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/iDEC/INSTR_REG/IMM4(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/iDEC/INSTR_REG/IMM4(2 downto 0) has no driver.
+# This port will contribute value (UUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/iDEC/trapvect8(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/ID_EX_REG/ADJ6_out(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/ID_EX_REG/trapvector8_out(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/I_DATAOUT(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/U_0/I_MWRITE_L has no driver.
+# This port will contribute value (U) to the signal network.
