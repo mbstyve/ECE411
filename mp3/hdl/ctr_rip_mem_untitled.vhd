@@ -33,13 +33,13 @@ END ctr_rip_mem ;
 --
 ARCHITECTURE untitled OF ctr_rip_mem IS
 BEGIN
-  Load_dMAR <= control.memory.Load_dMAR;
-  Load_dMDR <= contol.memory.Load_dMDR;
-  LoadSETCCSEL <= control.memory.LoadSETCCSEL;
-  LoadNZP <= control.memory.LoadNZP;
-  D_MREAD <= control.memory.D_MREAD;
-  D_MWRITEH <= control.memory.D_MWRITEH;
-  D_MWRITEL <= control.memory.D_MWRITEL;
-  ISBranch  <= control.memory.ISBranch;
+  Load_dMAR <= Control.memory.Load_dMAR;
+  Load_dMDR <= Control.memory.Load_dMDR;
+  LoadSETCCSEL <= Control.memory.LoadSETCCSEL;
+  LoadNZP <= Control.memory.LoadNZP;
+  D_MREAD <= Control.memory.D_MREAD;
+  D_MWRITEH <= Control.memory.D_MWRITEH;
+  D_MWRITEL <= Control.memory.D_MWRITEL;
+  ISBranch  <= Control.memory.ISBranch;
 END ARCHITECTURE untitled;
 

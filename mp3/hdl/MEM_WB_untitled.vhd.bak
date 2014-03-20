@@ -42,11 +42,11 @@ BEGIN
 
   vhdl_REG_MEM : PROCESS (clk, RESET_L, Load, ReadData, ALUout)
   VARIABLE tempALUout   : LC3b_word;
-  VARIABLE tempReadData : LC3b_reg;
+  VARIABLE tempReadData : LC3b_word;
   VARIABLE tempDEST     : LC3b_reg;
   VARIABLE tempSRCA     : LC3b_reg;
   VARIABLE tempSRCB     : LC3b_reg;
-  VARIABLE tempCTRL     : control_word;
+  VARIABLE tempControl     : control_word;
   BEGIN
    IF (RESET_L = '0') THEN
      tempALUout   := "0000000000000000";
@@ -54,20 +54,19 @@ BEGIN
      tempDEST     := "000";
      tempSRCA     := "000";
      tempSRCB     := "000";
-     tempCTRL     := "000";
-     Control.ex.ALUMuxsel := '0';
-     Control.ex.aluop := "000";
-     Control.dec.StoreMuxSel := '0';
-     Control.memory.LoadSETCCSEL := '0';  
-     Control.memory.LoadNZP := '0';
-     Control.memory.Load_dMDR := '0';
-     Control.memory.Load_dMAR := '0';
-     Control.memory.ISBranch := '0';   
-     Control.write.RFMuxSel := '0';  
-     Control.write.Reg_Write := '0'; 
-     Control.memory.D_MREAD_L := '0';
-     Control.memory.D_MWRITEH := '0';
-     Control.memory.D_MWRITEL := '0';    
+     tempControl.ex.ALUMuxsel := '0';
+     tempControl.ex.aluop := "000";
+     tempControl.dec.StoreMuxSel := '0';
+     tempControl.memory.LoadSETCCSEL := '0';  
+     tempControl.memory.LoadNZP := '0';
+     tempControl.memory.Load_dMDR := '0';
+     tempControl.memory.Load_dMAR := '0';
+     tempControl.memory.ISBranch := '0';   
+     tempControl.write.RFMuxSel := '0';  
+     tempControl.write.Reg_Write := '0'; 
+     tempControl.memory.D_MREAD := '0';
+     tempControl.memory.D_MWRITEH := '0';
+     tempControl.memory.D_MWRITEL := '0';    
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
@@ -76,7 +75,7 @@ BEGIN
       tempDEST      := DEST;
       tempSRCA      := SRCA;
       tempSRCB      := SRCB;
-      tempCTRL      := Control;
+      tempControl      := Control;
     END IF;
   END IF;
   ALUout_out    <= tempALUout AFTER DELAY_REG;
@@ -84,7 +83,7 @@ BEGIN
   DEST_OUT      <= tempDEST AFTER DELAY_REG;
   SRCA_OUT      <= tempSRCA AFTER DELAY_REG;
   SRCB_OUT      <= tempSRCB AFTER DELAY_REG; 
-  Control_OUT   <= tempCTRL AFTER DELAY_REG;
+  Control_OUT   <= tempControl AFTER DELAY_REG;
 END PROCESS vhdl_REG_MEM;
 END ARCHITECTURE untitled;
 

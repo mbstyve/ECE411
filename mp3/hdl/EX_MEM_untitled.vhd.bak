@@ -47,7 +47,7 @@ END EX_MEM ;
 ARCHITECTURE untitled OF EX_MEM IS
 BEGIN
 
-  vhdl_REG_EX : PROCESS (clk, RESET_L, Load, ALUout, Dest, Opcode, SRCA, SRCB, ADJ11, ADJ9,TRAP8,iPC)
+  vhdl_REG_EX : PROCESS (clk, RESET_L, Load, ALUout, Dest, SRCA, SRCB, ADJ11, ADJ9,TRAP8,iPC)
   VARIABLE tempALUout : LC3b_word;
   VARIABLE tempDest   : LC3b_reg;
   VARIABLE tempControl : control_word;
@@ -61,26 +61,25 @@ BEGIN
    IF (RESET_L = '0') THEN
      tempALUout := "0000000000000000";
      tempDest := "000";
-     tempControl := "000";
      tempADJ9 := "0000000000000000";
      tempADJ11:= "0000000000000000";
      tempSRCA := "000";
      tempSRCB := "000";
      tempiPC := "0000000000000000";
      tempTRAP8 := "0000000000000000";
-     Control.ex.ALUMuxsel := '0';
-     Control.ex.aluop := "000";
-     Control.dec.StoreMuxSel := '0';
-     Control.memory.LoadSETCCSEL := '0';  
-     Control.memory.LoadNZP := '0';
-     Control.memory.Load_dMDR := '0';
-     Control.memory.Load_dMAR := '0';
-     Control.memory.ISBranch := '0';   
-     Control.write.RFMuxSel := '0';  
-     Control.write.Reg_Write := '0'; 
-     Control.memory.D_MREAD_L := '0';
-     Control.memory.D_MWRITEH_L := '0';
-     Control.memory.D_MWRITEL_L := '0';  
+     tempControl.ex.ALUMuxsel := '0';
+     tempControl.ex.aluop := "000";
+     tempControl.dec.StoreMuxSel := '0';
+     tempControl.memory.LoadSETCCSEL := '0';  
+     tempControl.memory.LoadNZP := '0';
+     tempControl.memory.Load_dMDR := '0';
+     tempControl.memory.Load_dMAR := '0';
+     tempControl.memory.ISBranch := '0';   
+     tempControl.write.RFMuxSel := '0';  
+     tempControl.write.Reg_Write := '0'; 
+     tempControl.memory.D_MREAD := '0';
+     tempControl.memory.D_MWRITEH := '0';
+     tempControl.memory.D_MWRITEL := '0';  
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
@@ -97,7 +96,6 @@ BEGIN
   END IF;
   ALUout_out   <= tempALUout AFTER DELAY_REG;
   Dest_out     <= tempDest AFTER DELAY_REG;
-  Opcode_out   <= tempOpcode AFTER DELAY_REG;
   ADJ9 <= tempADJ9 AFTER DELAY_REG;
   ADJ11 <= tempADJ11 AFTER DELAY_REG;
   SRCA <= tempSRCA AFTER DELAY_REG;

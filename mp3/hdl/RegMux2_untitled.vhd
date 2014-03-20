@@ -29,7 +29,7 @@ END RegMux2 ;
 --
 ARCHITECTURE untitled OF RegMux2 IS
 BEGIN
-  PROCESS (dest,R7,DestMuxout, DestMuxSel)
+  PROCESS (a, b, Sel, Muxout)
     variable state : LC3b_reg;
   BEGIN
     case Sel is
