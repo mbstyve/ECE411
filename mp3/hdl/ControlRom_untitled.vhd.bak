@@ -24,7 +24,7 @@ END ENTITY ControlRom;
 --
 ARCHITECTURE untitled OF ControlRom IS
 BEGIN
-    PROCESS (opcode)
+    PROCESS (opcode, NOPSig)
     VARIABLE newControl : CONTROL_WORD;
     BEGIN
         CASE opcode IS
@@ -94,7 +94,7 @@ BEGIN
             WHEN OP_STR =>
               newControl.name := str_op;
                 newControl.ex.aluop := ALU_ADD;
-                newControl.dec.StoreMuxSel := '0';
+                newControl.dec.StoreMuxSel := '1';
                 newControl.ex.ALUMuxsel :='1';
                 newControl.memory.D_MWRITEH :='1';
                 newControl.memory.D_MWRITEL :='1';
@@ -105,10 +105,10 @@ BEGIN
                 newControl.memory.D_MREAD := '0';
             -- add more opcodes
             WHEN OP_BR =>
-                IF (NOPSig /= "000") THEN
-                  newControl.name := br_op;
+                IF (NOPSig = "000") THEN
+                  newControl.name := no_op;
                   newControl.ex.aluop := ALU_PASS;
-                  newControl.memory.ISBranch :='1';
+                  newControl.memory.ISBranch :='0';
                   newControl.ex.ALUMuxsel := '0';
                   newControl.dec.StoreMuxSel := '0';
            	      newControl.memory.LoadSETCCSEL := '0';
@@ -117,8 +117,10 @@ BEGIN
                   newControl.memory.D_MREAD := '0';
                   newControl.memory.D_MWRITEH := '0';
                   newControl.memory.D_MWRITEL := '0';
+  	               newControl.write.RFMuxSel := '0';
+  	               newControl.write.Reg_Write := '0';
                 ELSE 
-                  newControl.name := no_op;
+                  newControl.name := br_op;
                   newControl.ex.aluop := ALU_PASS;
   	               newControl.ex.ALUMuxsel := '0';
                   newControl.dec.StoreMuxSel := '0';
@@ -126,7 +128,7 @@ BEGIN
                   newControl.memory.LoadNZP := '0';
                   newControl.memory.Load_dMDR  := '0';
                   newControl.memory.Load_dMAR := '0';
-                  newControl.memory.ISBranch := '0';
+                  newControl.memory.ISBranch := '1';
                   newControl.memory.D_MREAD := '0';
                   newControl.memory.D_MWRITEH := '0';
                   newControl.memory.D_MWRITEL := '0';
