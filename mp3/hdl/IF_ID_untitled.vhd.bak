@@ -36,8 +36,8 @@ BEGIN
   VARIABLE tempiPC   : LC3b_word;
   BEGIN
    IF (RESET_L = '0') THEN
-     tempiPC := "0000";
-     tempInstr := "0000";
+     tempiPC := "0000000000000000";
+     tempInstr := "0000000000000000";
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
       tempiPC := iPC;

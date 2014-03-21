@@ -92,6 +92,7 @@ BEGIN
       tempSRCB := SRCB;
       tempiPC := iPC;
       tempTRAP8 := TRAP8;
+      tempControl := Control;
     END IF;
   END IF;
   ALUout_out   <= tempALUout AFTER DELAY_REG;
@@ -101,7 +102,8 @@ BEGIN
   SRCA_out <= tempSRCA AFTER DELAY_REG;
   SRCB_out <= tempSRCB AFTER DELAY_REG;
   iPC_out <= tempiPC AFTER DELAY_REG;
-  TRAP8_out <= tempTRAP8 AFTER DELAY_REG;   
+  TRAP8_out <= tempTRAP8 AFTER DELAY_REG;
+  Control_out <= tempControl AFTER DELAY_REG;    
 END PROCESS vhdl_REG_EX;
 END ARCHITECTURE untitled;
 

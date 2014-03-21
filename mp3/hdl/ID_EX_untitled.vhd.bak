@@ -61,6 +61,7 @@ BEGIN
   VARIABLE tempSrc2   : LC3b_reg;
   VARIABLE tempimm4   : LC3b_word;
   VARIABLE tempimm5   : LC3b_word;
+  VARIABLE tempADJ6 : LC3b_word;
   VARIABLE temptrapvector8   : LC3b_word;
   VARIABLE tempoffset9   : LC3b_word;
   VARIABLE temppcoffset11   : LC3b_word;
@@ -75,11 +76,10 @@ BEGIN
      tempSrc2 := "000";
      tempimm4 := "0000000000000000";
      tempimm5 := "0000000000000000";
+     tempADJ6 := "0000000000000000";
      temptrapvector8 := "0000000000000000";
      tempoffset9 := "0000000000000000";
      temppcoffset11 := "0000000000000000";
-     tempRFAOut := "0000000000000000";
-     tempRFBOut := "0000000000000000";
      tempControl.ex.ALUMuxsel := '0';
      tempControl.ex.aluop := "000";
      tempControl.dec.StoreMuxSel := '0';

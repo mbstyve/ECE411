@@ -61,6 +61,7 @@ BEGIN
   VARIABLE tempSrc2   : LC3b_reg;
   VARIABLE tempimm4   : LC3b_word;
   VARIABLE tempimm5   : LC3b_word;
+  VARIABLE tempADJ6 : LC3b_word;
   VARIABLE temptrapvector8   : LC3b_word;
   VARIABLE tempoffset9   : LC3b_word;
   VARIABLE temppcoffset11   : LC3b_word;
@@ -75,6 +76,7 @@ BEGIN
      tempSrc2 := "000";
      tempimm4 := "0000000000000000";
      tempimm5 := "0000000000000000";
+     tempADJ6 := "0000000000000000";
      temptrapvector8 := "0000000000000000";
      tempoffset9 := "0000000000000000";
      temppcoffset11 := "0000000000000000";
@@ -100,6 +102,7 @@ BEGIN
       tempSrc2 := SrcB;
       tempimm4 := ADJ4;
       tempimm5 := ADJ5;
+      tempADJ6 := ADJ6;
       temptrapvector8 := trapvector8;
       tempoffset9 := ADJ9;
       temppcoffset11 := ADJ11;
@@ -114,6 +117,7 @@ BEGIN
   SrcB_out <= tempSrc2 AFTER DELAY_REG;
   ADJ4_out <= tempimm4 AFTER DELAY_REG;
   ADJ5_out <= tempimm5 AFTER DELAY_REG;
+  ADJ6_out <= tempADJ6 AFTER DELAY_REG;
   ADJ9_out <= tempoffset9 AFTER DELAY_REG;
   ADJ11_out <= temppcoffset11 AFTER DELAY_REG;
   RFAOut_Out   <= tempRFAOut AFTER DELAY_REG;

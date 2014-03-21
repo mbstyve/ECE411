@@ -40,7 +40,7 @@ PACKAGE LC3B_TYPES IS
 
 	TYPE MEMORY_ARRAY_64K IS ARRAY (0 TO 65535) OF LC3B_BYTE;
 	
-	TYPE OPNAME IS (add_op, and_op, not_op, pass_op, sll_op, srl_op, sra_op, bad_op, ldr_op, str_op, br_op);
+	TYPE OPNAME IS (add_op, and_op, not_op, pass_op, sll_op, srl_op, sra_op, bad_op, ldr_op, str_op, br_op, no_op);
 	TYPE EX_CONTROL IS RECORD
 	    aluop : LC3B_ALUOP;
 	    ALUMuxsel : std_logic;
@@ -122,7 +122,7 @@ PACKAGE LC3B_TYPES IS
 	CONSTANT DELAY_MUX8         : TIME := 6 NS;
 	CONSTANT DELAY_DECODE3      : TIME := 6 NS;
 	CONSTANT DELAY_GENCC        : TIME := 6 NS;
-	CONSTANT DELAY_ALU          : TIME := 15 NS;
+	CONSTANT DELAY_ALU          : TIME := 12 NS;
 	CONSTANT DELAY_ADDER        : TIME := 12 NS;
 	CONSTANT DELAY_SHIFTER      : TIME := 10 NS;
 	CONSTANT DELAY_REGFILE_READ : TIME := 7 NS;
