@@ -105,9 +105,10 @@ uid 172,0
 )
 *17 (LogPort
 port (LogicalPort
+lang 11
 m 1
 decl (Decl
-n "SrcB"
+n "SRCB"
 t "LC3b_reg"
 o 19
 suid 4,0
@@ -893,7 +894,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "19:42:45"
+value "22:27:07"
 )
 (vvPair
 variable "unit"
@@ -961,7 +962,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,14400,61500,15300"
-st "OPCODE     : OUT    LC3b_opcode  ;"
+st "OPCODE     : OUT    LC3b_opcode  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1008,7 +1010,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,13500,60000,14400"
-st "DEST       : OUT    LC3b_reg  ;"
+st "DEST       : OUT    LC3b_reg  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1055,7 +1058,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,17100,60000,18000"
-st "SRCA       : OUT    LC3b_reg  ;"
+st "SRCA       : OUT    LC3b_reg  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1090,7 +1094,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "34000,9550,36000,10450"
-st "SrcB"
+st "SRCB"
 ju 2
 blo "36000,10250"
 tm "CptPortNameMgr"
@@ -1102,12 +1106,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,18000,60000,18900"
-st "SrcB       : OUT    LC3b_reg  ;"
+st "SRCB       : OUT    LC3b_reg  ;
+"
 )
 thePort (LogicalPort
+lang 11
 m 1
 decl (Decl
-n "SrcB"
+n "SRCB"
 t "LC3b_reg"
 o 19
 suid 4,0
@@ -1148,7 +1154,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,19800,59500,20700"
-st "trapvect8  : OUT    LC3b_word "
+st "trapvect8  : OUT    LC3b_word 
+"
 )
 thePort (LogicalPort
 m 1
@@ -1193,7 +1200,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,3600,60500,4500"
-st "RESET_L    : IN     std_logic  ;"
+st "RESET_L    : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1237,7 +1245,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,1800,60500,2700"
-st "Clk        : IN     std_logic  ;"
+st "Clk        : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1281,7 +1290,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,7200,60500,8100"
-st "iPC        : IN     LC3b_word  ;"
+st "iPC        : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1325,7 +1335,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,2700,60500,3600"
-st "Instr      : IN     LC3b_word  ;"
+st "Instr      : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1370,7 +1381,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,15300,60500,16200"
-st "RFAout     : OUT    LC3b_word  ;"
+st "RFAout     : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1417,7 +1429,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,16200,60500,17100"
-st "RFBout     : OUT    LC3b_word  ;"
+st "RFBout     : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1463,7 +1476,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,5400,60500,6300"
-st "RegWrite   : IN     std_logic  ;"
+st "RegWrite   : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1507,7 +1521,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,4500,60500,5400"
-st "RFMUXOUT   : IN     LC3b_word  ;"
+st "RFMUXOUT   : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1551,7 +1566,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,6300,60000,7200"
-st "WBDEST     : IN     LC3b_REG  ;"
+st "WBDEST     : IN     LC3b_REG  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1597,7 +1613,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9000,60500,9900"
-st "ADJ4Out    : OUT    LC3b_word  ;"
+st "ADJ4Out    : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1643,7 +1660,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9900,60500,10800"
-st "ADJ5Out    : OUT    LC3b_word  ;"
+st "ADJ5Out    : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1689,7 +1707,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,10800,60500,11700"
-st "ADJ6Out    : OUT    LC3b_word  ;"
+st "ADJ6Out    : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1735,7 +1754,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,8100,60500,9000"
-st "ADJ11Out   : OUT    LC3b_word  ;"
+st "ADJ11Out   : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1781,7 +1801,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,11700,60500,12600"
-st "ADJ9Out    : OUT    Lc3b_word  ;"
+st "ADJ9Out    : OUT    Lc3b_word  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1827,7 +1848,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,12600,62000,13500"
-st "ControlOut : OUT    CONTROL_WORD  ;"
+st "ControlOut : OUT    CONTROL_WORD  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1874,7 +1896,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,18900,60500,19800"
-st "iPC_Out    : OUT    LC3b_word  ;"
+st "iPC_Out    : OUT    LC3b_word  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -2595,6 +2618,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 731,0
+lastUid 754,0
 activeModelName "Symbol"
 )
