@@ -1,0 +1,35 @@
+--
+-- VHDL Architecture cachelib.ZEXT.untitled
+--
+-- Created:
+--          by - freed2.ews (gelib-057-22.ews.illinois.edu)
+--          at - 19:18:52 02/06/14
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY cachelib;
+USE cachelib.LC3b_types.all;
+
+ENTITY ZEXT IS
+   PORT( 
+      MDRout : IN     LC3b_word;
+      clk    : IN     std_logic;
+      HIGH    : OUT    LC3b_word;
+      LOW      : OUT    LC3b_word
+   );
+
+-- Declarations
+
+END ZEXT ;
+
+--
+ARCHITECTURE untitled OF ZEXT IS
+BEGIN
+    LOW <= '0'&'0'&'0'&'0'&'0'&'0'&'0'&'0'& MDRout(7 downto 0);
+    HIGH <= '0'&'0'&'0'&'0'&'0'&'0'&'0'&'0'& MDRout(15 downto 8);
+END ARCHITECTURE untitled;
+

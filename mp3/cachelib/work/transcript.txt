@@ -1,0 +1,75 @@
+# //  ModelSim SE 10.1d Nov  1 2012 Linux 2.6.32-358.23.2.el6.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L cachelib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll} -pli {"/software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll"} cachelib.mp2_CPU(struct) 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Control(fsm)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "Cache_Controller(fsm)".
+# Loading /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.lc3b_types(body)
+# Loading work.mp2_cpu(struct)#1
+# Loading work.clkgen(untitled)#1
+# Loading work.control(fsm)#1
+# Loading work.datapath(struct)#1
+# Loading work.adj11(untitled)#1
+# Loading work.adj6(untitled)#1
+# Loading work.adj6noshift(untitled)#1
+# Loading work.adj7(untitled)#1
+# Loading work.adj9(untitled)#1
+# Loading work.alu(untitled)#1
+# Loading work.and2(untitled)#1
+# Loading work.bradd(untitled)#1
+# Loading work.bit0rip(untitled)#1
+# Loading work.gencc(untitled)#1
+# Loading work.ir(untitled)#1
+# Loading work.jsradd(untitled)#1
+# Loading work.makeeven(untitled)#1
+# Loading work.nzp(untitled)#1
+# Loading work.nzpsplit(untitled)#1
+# Loading work.plus2(untitled)#1
+# Loading work.reg16(untitled)#1
+# Loading work.regfile(untitled)#1
+# Loading work.regmux2(untitled)#1
+# Loading work.stbadj2(untitled)#1
+# Loading work.shifterunit(untitled)#1
+# Loading work.storemux(untitled)#1
+# Loading work.trapzext(untitled)#1
+# Loading work.wordmux2(untitled)#1
+# Loading work.wordmux4(untitled)#1
+# Loading work.zext(untitled)#1
+# Loading work.memory(struct)#1
+# Loading work.cache_controller(fsm)#1
+# Loading work.cache_datapath(struct)#1
+# Loading work.addr_split(untitled)#1
+# Loading work.and3bit(untitled)#1
+# Loading work.and4bit(untitled)#1
+# Loading work.cache_joiner(struct)#1
+# Loading work.bytemux2(untitled)#1
+# Loading work.bytesplitter(untitled)#1
+# Loading work.decode8(untitled)#1
+# Loading work.inputsplitter(untitled)#1
+# Loading work.oword_combine(untitled)#1
+# Loading work.twobyteconc(untitled)#1
+# Loading work.wordmux8(untitled)#1
+# Loading work.compare9(untitled)#1
+# Loading work.dataarray(untitled)#1
+# Loading work.memstoreaddresscalc(untitled)#1
+# Loading work.or2(untitled)#1
+# Loading work.owordmux2(untitled)#1
+# Loading work.std_one(untitled)#1
+# Loading work.singlebitarray(untitled)#1
+# Loading work.tagarray(untitled)#1
+# Loading work.wordmux2sel2(untitled)#1
+# Loading work.bitmux2(untitled)#1
+# Loading work.physical_memory(untitled)#1

@@ -1,0 +1,46 @@
+--
+-- VHDL Architecture cachelib.bitmux2.untitled
+--
+-- Created:
+--          by - freed2.ews (gelib-057-05.ews.illinois.edu)
+--          at - 14:03:02 02/28/14
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY cachelib;
+USE cachelib.LC3b_types.all;
+
+ENTITY bitmux2 IS
+   PORT( 
+      A  : IN     std_logic;
+      B  : IN     std_logic;
+      Sel  : IN     std_logic;
+      bitout : OUT    std_logic
+   );
+
+-- Declarations
+
+END bitmux2 ;
+
+--
+ARCHITECTURE untitled OF bitmux2 IS
+BEGIN
+ 	PROCESS (A, B, Sel)
+	VARIABLE temp : std_logic;
+	BEGIN
+		CASE Sel IS
+			WHEN '0' =>
+				temp := A;
+			WHEN '1' =>
+				temp := B;
+      WHEN OTHERS =>
+        temp := (OTHERS => 'X');
+		END CASE;
+	  bitout <= temp AFTER DELAY_MUX2;
+	END PROCESS;
+END ARCHITECTURE untitled;
+

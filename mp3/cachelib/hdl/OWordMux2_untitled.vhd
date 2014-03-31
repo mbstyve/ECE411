@@ -1,0 +1,46 @@
+--
+-- VHDL Architecture cachelib.OWordMux2.untitled
+--
+-- Created:
+--          by - freed2.ews (gelib-057-08.ews.illinois.edu)
+--          at - 02:12:58 02/28/14
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY cachelib;
+USE cachelib.LC3b_types.all;
+
+ENTITY OWordMux2 IS
+   PORT( 
+      A        : IN     LC3B_OWORD;
+      B        : IN     LC3B_OWORD;
+      SEL      : IN     std_logic;
+      OWORDOUT : OUT    LC3B_OWORD
+   );
+
+-- Declarations
+
+END OWordMux2 ;
+
+--
+ARCHITECTURE untitled OF OWordMux2 IS
+BEGIN
+  PROCESS (A, B, SEL)
+  VARIABLE GETOUTOFHERE : LC3B_OWORD;
+  BEGIN
+    CASE SEL IS
+    WHEN '0' =>
+      getoutofhere := A;
+    WHEN '1' =>
+      getoutofhere := B;
+    WHEN OTHERS =>
+      getoutofhere := (OTHERS => 'X');
+    END CASE;
+    OWORDOUT <= getoutofhere after delay_mux2;
+    END PROCESS;
+END ARCHITECTURE untitled;
+
