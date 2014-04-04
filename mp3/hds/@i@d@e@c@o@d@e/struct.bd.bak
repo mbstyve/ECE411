@@ -298,7 +298,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "19:42:45"
+value "22:27:07"
 )
 (vvPair
 variable "unit"
@@ -389,7 +389,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,6600,86000,7500"
-st "Clk         : std_logic"
+st "Clk         : std_logic
+"
 )
 )
 *3 (PortIoOut
@@ -451,7 +452,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,18300,85500,19200"
-st "DEST        : LC3b_reg"
+st "DEST        : LC3b_reg
+"
 )
 )
 *5 (PortIoOut
@@ -604,7 +606,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,7500,86000,8400"
-st "Instr       : LC3b_word"
+st "Instr       : LC3b_word
+"
 )
 )
 *9 (PortIoIn
@@ -667,7 +670,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,12000,86000,12900"
-st "iPC         : LC3b_word"
+st "iPC         : LC3b_word
+"
 )
 )
 *11 (PortIoOut
@@ -910,7 +914,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,8400,86000,9300"
-st "RESET_L     : std_logic"
+st "RESET_L     : std_logic
+"
 )
 )
 *17 (PortIoOut
@@ -972,7 +977,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,21900,85500,22800"
-st "SRCA        : LC3b_reg"
+st "SRCA        : LC3b_reg
+"
 )
 )
 *19 (PortIoOut
@@ -1013,7 +1019,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "14550,38000,15450,40000"
-st "SrcB"
+st "SRCB"
 blo "14750,38000"
 tm "WireNameMgr"
 )
@@ -1021,8 +1027,9 @@ tm "WireNameMgr"
 )
 *20 (Net
 uid 189,0
+lang 11
 decl (Decl
-n "SrcB"
+n "SRCB"
 t "LC3b_reg"
 o 11
 suid 13,0
@@ -1033,7 +1040,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,22800,85500,23700"
-st "SrcB        : LC3b_reg"
+st "SRCB        : LC3b_reg
+"
 )
 )
 *21 (PortIoOut
@@ -1095,7 +1103,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,24600,86000,25500"
-st "trapvect8   : LC3b_word"
+st "trapvect8   : LC3b_word
+"
 )
 )
 *23 (Grouping
@@ -2527,7 +2536,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,20100,86000,21000"
-st "RFAout      : LC3b_word"
+st "RFAout      : LC3b_word
+"
 )
 )
 *67 (Net
@@ -2545,7 +2555,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,21000,86000,21900"
-st "RFBout      : LC3b_word"
+st "RFBout      : LC3b_word
+"
 )
 )
 *68 (SaComponent
@@ -2805,7 +2816,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,30900,89000,31800"
-st "SIGNAL STOREMUXOUT : LC3B_REG"
+st "SIGNAL STOREMUXOUT : LC3B_REG
+"
 )
 )
 *77 (SaComponent
@@ -3813,7 +3825,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,26400,89500,27300"
-st "SIGNAL IMM6        : LC3b_imm4"
+st "SIGNAL IMM6        : LC3b_imm4
+"
 )
 )
 *113 (Net
@@ -3831,7 +3844,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,27300,89500,28200"
-st "SIGNAL IMM7        : LC3b_imm5"
+st "SIGNAL IMM7        : LC3b_imm5
+"
 )
 )
 *114 (Net
@@ -3849,7 +3863,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,28200,90500,29100"
-st "SIGNAL INDEX7      : LC3b_index6"
+st "SIGNAL INDEX7      : LC3b_index6
+"
 )
 )
 *115 (Net
@@ -3867,7 +3882,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,29100,91500,30000"
-st "SIGNAL OFFSET11    : LC3b_offset11"
+st "SIGNAL OFFSET11    : LC3b_offset11
+"
 )
 )
 *116 (Net
@@ -3885,7 +3901,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,30000,91000,30900"
-st "SIGNAL OFFSET9     : LC3b_offset9"
+st "SIGNAL OFFSET9     : LC3b_offset9
+"
 )
 )
 *117 (PortIoIn
@@ -3994,7 +4011,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,10200,86000,11100"
-st "RegWrite    : std_logic"
+st "RegWrite    : std_logic
+"
 )
 )
 *120 (Net
@@ -4011,7 +4029,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,9300,86000,10200"
-st "RFMUXOUT    : LC3b_word"
+st "RFMUXOUT    : LC3b_word
+"
 )
 )
 *121 (Net
@@ -4028,7 +4047,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,31800,89500,32700"
-st "SIGNAL StoreMuxSel : std_logic"
+st "SIGNAL StoreMuxSel : std_logic
+"
 )
 )
 *122 (PortIoIn
@@ -4092,7 +4112,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,11100,85500,12000"
-st "WBDEST      : LC3b_REG"
+st "WBDEST      : LC3b_REG
+"
 )
 )
 *124 (Net
@@ -4109,7 +4130,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,13800,86000,14700"
-st "ADJ4Out     : LC3b_word"
+st "ADJ4Out     : LC3b_word
+"
 )
 )
 *125 (Net
@@ -4126,7 +4148,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,14700,86000,15600"
-st "ADJ5Out     : LC3b_word"
+st "ADJ5Out     : LC3b_word
+"
 )
 )
 *126 (Net
@@ -4143,7 +4166,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,15600,86000,16500"
-st "ADJ6Out     : LC3b_word"
+st "ADJ6Out     : LC3b_word
+"
 )
 )
 *127 (Net
@@ -4160,7 +4184,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,12900,86000,13800"
-st "ADJ11Out    : LC3b_word"
+st "ADJ11Out    : LC3b_word
+"
 )
 )
 *128 (Net
@@ -4177,7 +4202,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,16500,86000,17400"
-st "ADJ9Out     : Lc3b_word"
+st "ADJ9Out     : Lc3b_word
+"
 )
 )
 *129 (SaComponent
@@ -4393,7 +4419,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,19200,87000,20100"
-st "OPCODE      : LC3b_opcode"
+st "OPCODE      : LC3b_opcode
+"
 )
 )
 *137 (PortIoOut
@@ -4456,7 +4483,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,17400,87500,18300"
-st "ControlOut  : CONTROL_WORD"
+st "ControlOut  : CONTROL_WORD
+"
 )
 )
 *139 (PortIoOut
@@ -4518,7 +4546,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "74000,23700,86000,24600"
-st "iPC_Out     : LC3b_word"
+st "iPC_Out     : LC3b_word
+"
 )
 )
 *141 (HdlText
@@ -5233,7 +5262,7 @@ isHidden 1
 font "courier,8,0"
 )
 xt "14100,32000,15000,34000"
-st "SrcB"
+st "SRCB"
 blo "14800,34000"
 tm "WireNameMgr"
 )
@@ -5473,13 +5502,13 @@ uid 536,0
 va (VaSet
 font "courier,8,0"
 )
-xt "29000,27100,35000,28000"
-st "STOREMUXOUT"
-blo "29000,27800"
+xt "32000,27100,34000,28000"
+st "SRCA"
+blo "32000,27800"
 tm "WireNameMgr"
 )
 )
-on &76
+on &18
 )
 *174 (Wire
 uid 539,0
@@ -5510,12 +5539,12 @@ va (VaSet
 font "courier,8,0"
 )
 xt "33000,36100,35000,37000"
-st "SRCA"
+st "SRCB"
 blo "33000,36800"
 tm "WireNameMgr"
 )
 )
-on &18
+on &20
 )
 *175 (Wire
 uid 547,0
@@ -5580,13 +5609,13 @@ uid 560,0
 va (VaSet
 font "courier,8,0"
 )
-xt "32000,28100,34000,29000"
-st "SrcB"
-blo "32000,28800"
+xt "29000,28100,35000,29000"
+st "STOREMUXOUT"
+blo "29000,28800"
 tm "WireNameMgr"
 )
 )
-on &20
+on &76
 )
 *177 (Wire
 uid 571,0
@@ -6660,7 +6689,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "1914,27,3842,1059"
-viewArea "-21500,-6600,96145,52809"
+viewArea "-21500,5268,96145,64677"
 cachedDiagramExtent "-6500,0,91500,78000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,0"
@@ -7833,9 +7862,10 @@ uid 223,0
 )
 *253 (LeafLogPort
 port (LogicalPort
+lang 11
 m 1
 decl (Decl
-n "SrcB"
+n "SRCB"
 t "LC3b_reg"
 o 11
 suid 13,0
