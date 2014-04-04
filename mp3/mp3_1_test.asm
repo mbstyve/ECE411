@@ -1,88 +1,115 @@
-SEGMENT  CodeSegment:
+SEGMENT BOOT:
+	BRnzp ldr_str_test
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+DSP:	DATA2 DataSeg
+	; cache line boundary
 
-   LDR  R1, R0, ONE		; R1 <= 1
-   LDR  R2, R0, TWO		; R2 <= 2
-   LDR  R4, R0, NEGONE		; R4 <= -1
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   BRnzp LOOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-        
+ldr_str_test:
+	LDR R0, R0, DSP
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+	LDR R1, R0, W
+	LDR R3, R0, Y
+	; cache line boundary
+	LDR R2, R0, X
+	LDR R4, R0, Z
+	NOP
+	STR R1, R0, Z
+	STR R2, R0, Y
+	STR R3, R0, X
+	STR R4, R0, W
+	NOP
+	; cache line boundary
+	LDR R1, R0, W
+	LDR R2, R0, X
+	LDR R3, R0, Y
+	LDR R4, R0, Z
+	BRnzp fetch_stall_test
+	NOP
+	NOP
+	NOP
+	; cache line boundary
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+	; cache line boundary
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+	NOP
+fetch_stall_test:
+	ADD R5, R1, R2
+	; cache line boundary
+	ADD R6, R3, R4
+	NOP
+	NOP
+	NOP
+	NOP
+	STR R5, R0, VICTIM
+	ADD R7, R5, R6
+	NOP
+	; cache line boundary
+	NOP
+	NOP
+	NOP
+	STR R7, R0, TOTAL
+	LDR R1, R0, TOTAL
+inf:
+	BRnzp inf
+	NOP
+	NOP
 
-ONE:	DATA2 4x0001
-TWO:	DATA2 4x0002
-NEGONE: DATA2 4xFFFF
-TEMP1:  DATA2 4x0001
-GOOD:	DATA2 4x600D
-BADD:	DATA2 4xBADD
-                        
-LOOP:
-   ADD R3, R1, R2		; R3 <= R1 + R2
-   AND R5, R2, R2		; R5 <= R2 AND R2
-   NOT R6, R1			; R6 <= NOT R1
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   STR R6, R0, TEMP1		; M[TEMP1] <= R6
-   LDR R7, R0, TEMP1		; R7 <= M[TEMP1]
-   ADD R1, R1, R4		; R1 <= R1-1
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   BRn DONE
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   BRnzp LOOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-                
-HALT:		
-   LDR  R1, R0, BADD
-   BRnzp HALT
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
+; cache line boundary
+SEGMENT DataSeg:
+NOP
+NOP
+NOP
+NOP
+NOP
+NOP
+W:	DATA2 4x0009
+X:	DATA2 4x0002
+; cache line boundary
+Y:	DATA2 4x0001
+Z:	DATA2 4x0003
+NOP
+NOP
+NOP
+NOP
+NOP
+NOP
+; cache line boundary
+TOTAL:	DATA2 4x0000
+NOP
+NOP
+NOP
+NOP
+NOP
+NOP
+NOP
+; cache line boundary
+VICTIM: DATA2 4x0000
+NOP
+NOP
+NOP
+NOP
+NOP
+NOP
+NOP
 
-DONE:
-   LDR  R1, R0, GOOD
-   BRnzp DONE
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP
-   NOP

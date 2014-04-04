@@ -23,9 +23,9 @@ ldr_str_test:
 	LDR R4, R0, Z
 	NOP
 	STR R1, R0, Z
-    NOP
-    NOP
-    NOP
+	STR R2, R0, Y
+	STR R3, R0, X
+	STR R4, R0, W
 	NOP
 	; cache line boundary
 	LDR R1, R0, W
