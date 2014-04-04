@@ -36,6 +36,7 @@ BEGIN
 	VHDL_NZP : PROCESS (CLK, GENCCOUT)
 	------------------------------
 	BEGIN
+	  PRE_NZP <= "010";
 		IF (CLK'EVENT AND (CLK = '1') AND (CLK'LAST_VALUE = '0')) THEN
 			IF (LOADNZP = '1') THEN
 				PRE_NZP <= GENCCOUT;
