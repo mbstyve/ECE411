@@ -44,6 +44,8 @@ PACKAGE LC3B_TYPES IS
 	TYPE EX_CONTROL IS RECORD
 	    aluop : LC3B_ALUOP;
 	    ALUMuxsel : std_logic;
+	    ALUAMuxsel : std_logic;
+	    Shift : std_logic;
 	END RECORD;
 	
 	TYPE DEC_CONTROL IS RECORD
@@ -55,7 +57,7 @@ PACKAGE LC3B_TYPES IS
       LoadNZP       : std_logic;
       Load_dMDR     : std_logic;
       Load_dMAR     : std_logic;
-      ISBranch      : std_logic;
+      ISBranch      : STD_LOGIC_VECTOR (1 DOWNTO 0);
       D_MREAD     : std_logic;
       D_MWRITEH   : std_logic;
       D_MWRITEL   : std_logic;

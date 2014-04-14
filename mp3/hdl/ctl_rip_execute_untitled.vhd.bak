@@ -18,7 +18,9 @@ ENTITY ctl_rip_execute IS
    PORT( 
       control   : IN     CONTROL_WORD;
       ALUOP     : OUT    LC3B_ALUOP;
-      ALUMuxSel : OUT    std_logic
+      ALUMuxSel : OUT    std_logic;
+      ALUAMuxSel : OUT   std_logic;
+      Shift     : OUT    std_logic
    );
 
 -- Declarations
@@ -30,5 +32,6 @@ ARCHITECTURE untitled OF ctl_rip_execute IS
 BEGIN
   ALUOP <= control.ex.aluop;
   ALUMuxSel <= control.ex.ALUMuxsel;
+  ALUAMuxSel <= control.ex.ALUAMuxsel;
 END ARCHITECTURE untitled;
 

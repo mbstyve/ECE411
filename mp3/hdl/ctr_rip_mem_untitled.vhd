@@ -20,10 +20,10 @@ ENTITY ctr_rip_mem IS
       Load_dMDR    : OUT    std_logic;
       LoadSETCCSEL : OUT    std_logic;
       LoadNZP      : OUT    std_logic;
-      ISBranch     : OUT    std_Logic;
-      D_MREAD    : OUT    std_logic;
-      D_MWRITEH  : OUT    std_logic;
-      D_MWRITEL  : OUT    std_logic
+      IsBranch     : OUT    STD_LOGIC_VECTOR (1 DOWNTO 0);
+      D_MREAD      : OUT    std_logic;
+      D_MWRITEH    : OUT    std_logic;
+      D_MWRITEL    : OUT    std_logic
    );
 
 -- Declarations

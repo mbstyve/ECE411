@@ -27,7 +27,9 @@ ENTITY IR IS
       OFFSET9  : OUT    LC3b_offset9;
       INDEX6   : OUT    LC3b_index6;
       IMM5     : OUT    LC3b_imm5;
-      IMM4     : OUT    LC3b_imm4
+      IMM4     : OUT    LC3b_imm4;
+      IMM5Sel   : OUT   std_logic;
+      SHFTOP   : OUT    LC3b_SHFTOP
    );
 
 -- Declarations
@@ -45,5 +47,8 @@ BEGIN
 	DEST <= VAL_IR(11 DOWNTO 9);
 	OFFSET9 <= VAL_IR(8 DOWNTO 0);
 	INDEX6 <= VAL_IR(5 DOWNTO 0);
+	IMM5 <= VAL_IR(4 DOWNTO 0);
+	IMM5Sel <= VAL_IR (5);
+	SHFTOP <= VAL_IR(5 DOWNTO 4); 
 END ARCHITECTURE untitled;
 

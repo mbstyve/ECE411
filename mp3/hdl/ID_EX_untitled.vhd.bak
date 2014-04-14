@@ -43,7 +43,11 @@ ENTITY ID_EX IS
       RFBOut          : IN     LC3b_word;
       RFAOut_Out      : OUT     LC3b_word;
       RFBOut_Out      : OUT     LC3b_word;
-      Control_Out      : OUT   Control_word
+      Control_Out      : OUT   Control_word;
+      IMM5Sel         : IN    std_logic;
+      IMM5Sel_Out     : OUT   std_logic;
+      SHFTOP          : IN     LC3b_SHFTOP;
+      SHFTOP_Out      : OUT     LC3b_SHFTOP
       );
 
 -- Declarations
@@ -67,6 +71,8 @@ BEGIN
   VARIABLE temppcoffset11   : LC3b_word;
   VARIABLE tempRFAOut : LC3b_word;
   VARIABLE tempRFBOut : LC3b_word;
+  VARIABLE tempIMM5Sel : std_logic;
+  VARIABLE tempSHFTOP : LC3b_SHFTOP;
   BEGIN
    IF (RESET_L = '0') THEN
      tempiPC := "0000000000000000";
@@ -80,6 +86,7 @@ BEGIN
      temptrapvector8 := "0000000000000000";
      tempoffset9 := "0000000000000000";
      temppcoffset11 := "0000000000000000";
+     tempIMM5Sel := '0';
      tempControl.ex.ALUMuxsel := '0';
      tempControl.ex.aluop := "000";
      tempControl.dec.StoreMuxSel := '0';
@@ -92,7 +99,8 @@ BEGIN
      tempControl.write.Reg_Write := '0'; 
      tempControl.memory.D_MREAD := '0';
      tempControl.memory.D_MWRITEH := '0';
-     tempControl.memory.D_MWRITEL := '0';    
+     tempControl.memory.D_MWRITEL := '0';
+     tempSHFTOP := "00";    
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
@@ -102,12 +110,15 @@ BEGIN
       tempSrc2 := SrcB;
       tempimm4 := ADJ4;
       tempimm5 := ADJ5;
+      tempADJ6 := ADJ6;
       temptrapvector8 := trapvector8;
       tempoffset9 := ADJ9;
       temppcoffset11 := ADJ11;
       tempRFAOut := RFAOut;
       tempRFBOut := RFBOut;
       tempControl := Control;
+      tempIMM5Sel := IMM5Sel;
+      tempSHFTOP := SHFTOP; 
     END IF;
   END IF;
   iPC_out   <= tempiPC AFTER DELAY_REG;
@@ -116,11 +127,13 @@ BEGIN
   SrcB_out <= tempSrc2 AFTER DELAY_REG;
   ADJ4_out <= tempimm4 AFTER DELAY_REG;
   ADJ5_out <= tempimm5 AFTER DELAY_REG;
+  ADJ6_out <= tempADJ6 AFTER DELAY_REG;
   ADJ9_out <= tempoffset9 AFTER DELAY_REG;
   ADJ11_out <= temppcoffset11 AFTER DELAY_REG;
   RFAOut_Out   <= tempRFAOut AFTER DELAY_REG;
   RFBOut_Out   <= tempRFBOut AFTER DELAY_REG;
   Control_Out <= tempControl  AFTER DELAY_REG;
+  IMM5Sel_Out   <= tempIMM5Sel AFTER DELAY_REG;
 END PROCESS vhdl_REG_IF;
 END ARCHITECTURE untitled;
 
