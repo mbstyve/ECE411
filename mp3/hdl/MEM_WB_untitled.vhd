@@ -55,13 +55,15 @@ BEGIN
      tempSRCA     := "000";
      tempSRCB     := "000";
      tempControl.ex.ALUMuxsel := '0';
+     tempControl.ex.ALUAMuxsel := '0';
      tempControl.ex.aluop := "000";
+     tempControl.ex.Shift := '0';
      tempControl.dec.StoreMuxSel := '0';
      tempControl.memory.LoadSETCCSEL := '0';  
      tempControl.memory.LoadNZP := '0';
      tempControl.memory.Load_dMDR := '0';
      tempControl.memory.Load_dMAR := '0';
-     tempControl.memory.ISBranch := '0';   
+     tempControl.memory.ISBranch := "00";   
      tempControl.write.RFMuxSel := '0';  
      tempControl.write.Reg_Write := '0'; 
      tempControl.memory.D_MREAD := '0';
