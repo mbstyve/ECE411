@@ -29,7 +29,8 @@ ENTITY IR IS
       IMM5     : OUT    LC3b_imm5;
       IMM4     : OUT    LC3b_imm4;
       IMM5Sel   : OUT   std_logic;
-      SHFTOP   : OUT    LC3b_SHFTOP
+      SHFTOP   : OUT    LC3b_SHFTOP;
+      JSR11    : OUT    std_logic
    );
 
 -- Declarations
@@ -50,5 +51,6 @@ BEGIN
 	IMM5 <= VAL_IR(4 DOWNTO 0);
 	IMM5Sel <= VAL_IR (5);
 	SHFTOP <= VAL_IR(5 DOWNTO 4); 
+	JSR11 <= VAL_IR(11 DOWNTO 11); 
 END ARCHITECTURE untitled;
 

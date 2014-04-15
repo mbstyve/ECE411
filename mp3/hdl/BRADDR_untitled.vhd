@@ -17,7 +17,7 @@ ENTITY BRADDR IS
    PORT( 
       ADJ9      : IN     lc3b_word;
       iPC       : IN     lc3b_word;
-      BRAddr : OUT    LC3b_word
+      BRAddressOut : OUT    LC3b_word
    );
 
 -- Declarations
@@ -29,7 +29,7 @@ ARCHITECTURE untitled OF BRADDR IS
 BEGIN
   PROCESS (iPC, ADJ9)
   BEGIN
-    BRAddr <= STD_LOGIC_VECTOR(UNSIGNED(iPC) + UNSIGNED(ADJ9));  
+    BRAddressOut <= STD_LOGIC_VECTOR(UNSIGNED(iPC) + UNSIGNED(ADJ9));  
   END PROCESS;
 END ARCHITECTURE untitled;
 
