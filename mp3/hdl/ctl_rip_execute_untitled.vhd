@@ -20,7 +20,8 @@ ENTITY ctl_rip_execute IS
       ALUOP     : OUT    LC3B_ALUOP;
       ALUMuxSel : OUT    std_logic;
       ALUAMuxSel : OUT   std_logic;
-      Shift     : OUT    std_logic
+      Shift     : OUT    std_logic;
+      ALUTrapSel : OUT  std_logic
    );
 
 -- Declarations
@@ -34,5 +35,6 @@ BEGIN
   ALUMuxSel <= control.ex.ALUMuxsel;
   ALUAMuxSel <= control.ex.ALUAMuxsel;
   Shift <= control.ex.Shift;
+  ALUTrapSel <= control.ex.ALUTrapSel;
 END ARCHITECTURE untitled;
 

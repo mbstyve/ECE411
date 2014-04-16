@@ -23,7 +23,8 @@ ENTITY ctr_rip_mem IS
       IsBranch     : OUT    STD_LOGIC_VECTOR (1 DOWNTO 0);
       D_MREAD      : OUT    std_logic;
       D_MWRITEH    : OUT    std_logic;
-      D_MWRITEL    : OUT    std_logic
+      D_MWRITEL    : OUT    std_logic;
+      TRAPMuxSel   : OUT    std_logic
    );
 
 -- Declarations
@@ -41,5 +42,6 @@ BEGIN
   D_MWRITEH <= Control.memory.D_MWRITEH;
   D_MWRITEL <= Control.memory.D_MWRITEL;
   ISBranch  <= Control.memory.ISBranch;
+  TRAPMuxSel <= Control.memory.TRAPMuxSel;
 END ARCHITECTURE untitled;
 

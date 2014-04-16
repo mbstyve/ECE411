@@ -20,10 +20,11 @@ ENTITY ctr_rip_mem IS
       Load_dMDR    : OUT    std_logic;
       LoadSETCCSEL : OUT    std_logic;
       LoadNZP      : OUT    std_logic;
-      ISBranch     : OUT    std_Logic;
-      D_MREAD    : OUT    std_logic;
-      D_MWRITEH  : OUT    std_logic;
-      D_MWRITEL  : OUT    std_logic
+      IsBranch     : OUT    STD_LOGIC_VECTOR (1 DOWNTO 0);
+      D_MREAD      : OUT    std_logic;
+      D_MWRITEH    : OUT    std_logic;
+      D_MWRITEL    : OUT    std_logic;
+      TRAPMuxSel   : OUT    std_logic
    );
 
 -- Declarations
@@ -34,12 +35,13 @@ END ctr_rip_mem ;
 ARCHITECTURE untitled OF ctr_rip_mem IS
 BEGIN
   Load_dMAR <= Control.memory.Load_dMAR;
-  Load_dMDR <= Contol.memory.Load_dMDR;
+  Load_dMDR <= Control.memory.Load_dMDR;
   LoadSETCCSEL <= Control.memory.LoadSETCCSEL;
   LoadNZP <= Control.memory.LoadNZP;
   D_MREAD <= Control.memory.D_MREAD;
   D_MWRITEH <= Control.memory.D_MWRITEH;
   D_MWRITEL <= Control.memory.D_MWRITEL;
   ISBranch  <= Control.memory.ISBranch;
+  TRAPMuxSel <= Control.memory.TRAPMuxSel;
 END ARCHITECTURE untitled;
 

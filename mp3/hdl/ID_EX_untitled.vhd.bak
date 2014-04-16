@@ -47,7 +47,9 @@ ENTITY ID_EX IS
       IMM5Sel         : IN    std_logic;
       IMM5Sel_Out     : OUT   std_logic;
       SHFTOP          : IN     LC3b_SHFTOP;
-      SHFTOP_Out      : OUT     LC3b_SHFTOP
+      SHFTOP_Out      : OUT     LC3b_SHFTOP;
+      JSR11           : IN      std_logic;
+      JSR11_Out       : OUT     std_logic
       );
 
 -- Declarations
@@ -73,6 +75,7 @@ BEGIN
   VARIABLE tempRFBOut : LC3b_word;
   VARIABLE tempIMM5Sel : std_logic;
   VARIABLE tempSHFTOP : LC3b_SHFTOP;
+  VARIABLE tempJSR11   : std_logic;
   BEGIN
    IF (RESET_L = '0') THEN
      tempiPC := "0000000000000000";
@@ -89,6 +92,7 @@ BEGIN
      tempIMM5Sel := '0';
      tempControl.ex.ALUMuxsel := '0';
      tempControl.ex.ALUAMuxsel := '0';
+     tempControl.ex.ALUTrapSel := '0';
      tempControl.ex.aluop := "000";
      tempControl.ex.Shift := '0';
      tempControl.dec.StoreMuxSel := '0';
@@ -102,7 +106,9 @@ BEGIN
      tempControl.memory.D_MREAD := '0';
      tempControl.memory.D_MWRITEH := '0';
      tempControl.memory.D_MWRITEL := '0';
+     tempControl.memory.TRAPMuxSel := '0';
      tempSHFTOP := "00";    
+     tempJSR11 := '0';
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
@@ -121,6 +127,7 @@ BEGIN
       tempControl := Control;
       tempIMM5Sel := IMM5Sel;
       tempSHFTOP := SHFTOP; 
+      tempJSR11 := JSR11;
     END IF;
   END IF;
   iPC_out   <= tempiPC AFTER DELAY_REG;
@@ -137,6 +144,7 @@ BEGIN
   Control_Out <= tempControl  AFTER DELAY_REG;
   IMM5Sel_Out   <= tempIMM5Sel AFTER DELAY_REG;
   SHFTOP_Out   <= tempSHFTOP AFTER DELAY_REG;
+  JSR11_Out   <= tempJSR11 AFTER DELAY_REG;
 END PROCESS vhdl_REG_IF;
 END ARCHITECTURE untitled;
 

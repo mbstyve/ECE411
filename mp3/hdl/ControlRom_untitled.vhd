@@ -36,6 +36,7 @@ BEGIN
                 newControl.write.Reg_Write := '1';
  	              newControl.ex.ALUMuxsel := '0';
                 newControl.ex.ALUAMuxsel := '0';
+                newControl.ex.ALUTrapSel := '0';
                 newControl.dec.StoreMuxSel := '0';
          	      newControl.memory.LoadSETCCSEL := '0';
                 newControl.memory.Load_dMDR  := '0';
@@ -44,6 +45,7 @@ BEGIN
                 newControl.memory.D_MREAD := '0';
                 newControl.memory.D_MWRITEH := '0';
                 newControl.memory.D_MWRITEL := '0';
+                newControl.memory.TRAPMuxSel := '0';
                 newControl.ex.Shift := '0';
                 -- add more signals
             WHEN OP_AND =>
@@ -54,6 +56,7 @@ BEGIN
                 newControl.write.Reg_Write := '1';
                 newControl.ex.ALUMuxsel := '0';
                 newControl.ex.ALUAMuxsel := '0';
+                newControl.ex.ALUTrapSel := '0';
                 newControl.dec.StoreMuxSel := '0';
          	      newControl.memory.LoadSETCCSEL := '0';
                 newControl.memory.Load_dMDR  := '0';
@@ -62,6 +65,7 @@ BEGIN
                 newControl.memory.D_MREAD := '0';
                 newControl.memory.D_MWRITEH := '0';
                 newControl.memory.D_MWRITEL := '0';
+                newControl.memory.TRAPMuxSel := '0';
                 newControl.ex.Shift := '0';
             WHEN OP_SHF =>
                 newControl.name := and_op;
@@ -71,6 +75,7 @@ BEGIN
                 newControl.write.Reg_Write := '1';
                 newControl.ex.ALUMuxsel := '0';
                 newControl.ex.ALUAMuxsel := '0';
+                newControl.ex.ALUTrapSel := '0';
                 newControl.ex.Shift := '1';
                 newControl.dec.StoreMuxSel := '0';
          	      newControl.memory.LoadSETCCSEL := '0';
@@ -80,6 +85,7 @@ BEGIN
                 newControl.memory.D_MREAD := '0';
                 newControl.memory.D_MWRITEH := '0';
                 newControl.memory.D_MWRITEL := '0';
+                newControl.memory.TRAPMuxSel := '0';
                 newControl.ex.Shift := '0';
             -- add more opcodes
             WHEN OP_NOT =>
@@ -90,6 +96,7 @@ BEGIN
                 newControl.write.Reg_Write := '1';
                 newControl.ex.ALUMuxsel := '0';
                 newControl.ex.ALUAMuxsel := '0';
+                newControl.ex.ALUTrapSel := '0';
                 newControl.dec.StoreMuxSel := '0';
          	      newControl.memory.LoadSETCCSEL := '0';
                 newControl.memory.Load_dMDR  := '0';
@@ -98,6 +105,7 @@ BEGIN
                 newControl.memory.D_MREAD := '0';
                 newControl.memory.D_MWRITEH := '0';
                 newControl.memory.D_MWRITEL := '0';
+                newControl.memory.TRAPMuxSel := '0';
                 newControl.ex.Shift := '0';
             WHEN OP_LDR =>
                 newControl.name := ldr_op;
@@ -105,6 +113,7 @@ BEGIN
                 newControl.dec.StoreMuxSel := '1';
                 newControl.ex.ALUMuxsel :='1';
                 newControl.ex.ALUAMuxsel := '0';
+                newControl.ex.ALUTrapSel := '0';
                 newControl.write.RFMuxSel := '0';
                 newControl.memory.LoadNZP := '1';
                 newControl.memory.LoadSETCCSEL :='1';
@@ -115,6 +124,7 @@ BEGIN
                 newControl.memory.ISBranch := "00";
                 newControl.memory.D_MWRITEH := '0';
                 newControl.memory.D_MWRITEL := '0';
+                newControl.memory.TRAPMuxSel := '0';
                 newControl.ex.Shift := '0';
             -- add more opcodes
             WHEN OP_STR =>
@@ -123,6 +133,7 @@ BEGIN
                 newControl.dec.StoreMuxSel := '1';
                 newControl.ex.ALUMuxsel :='1';
                 newControl.ex.ALUAMuxsel := '0';
+                newControl.ex.ALUTrapSel := '0';
                 newControl.memory.D_MWRITEH :='1';
                 newControl.memory.D_MWRITEL :='1';
                 newControl.memory.Load_dMDR :='1';
@@ -130,6 +141,7 @@ BEGIN
          	      newControl.memory.LoadSETCCSEL := '0';
                 newControl.memory.ISBranch := "00";
                 newControl.memory.D_MREAD := '0';
+                newControl.memory.TRAPMuxSel := '0';
                 newControl.ex.Shift := '0';
             -- add more opcodes
             WHEN OP_BR =>
@@ -139,6 +151,7 @@ BEGIN
                   newControl.memory.ISBranch :="00";
                   newControl.ex.ALUMuxsel := '0';
                   newControl.ex.ALUAMuxsel := '0';
+                  newControl.ex.ALUTrapSel := '0';
                   newControl.dec.StoreMuxSel := '0';
            	      newControl.memory.LoadSETCCSEL := '0';
                   newControl.memory.Load_dMDR  := '0';
@@ -147,6 +160,7 @@ BEGIN
                   newControl.memory.D_MREAD := '0';
                   newControl.memory.D_MWRITEH := '0';
                   newControl.memory.D_MWRITEL := '0';
+                  newControl.memory.TRAPMuxSel := '0';
   	               newControl.write.RFMuxSel := '0';
   	               newControl.write.Reg_Write := '0';
   	               newControl.ex.Shift := '0';
@@ -155,6 +169,7 @@ BEGIN
                   newControl.ex.aluop := ALU_PASS;
   	               newControl.ex.ALUMuxsel := '0';
   	               newControl.ex.ALUAMuxsel := '0';
+  	               newControl.ex.ALUTrapSel := '0';
                   newControl.dec.StoreMuxSel := '0';
            	      newControl.memory.LoadSETCCSEL := '0';
                   newControl.memory.LoadNZP := '0';
@@ -164,6 +179,7 @@ BEGIN
                   newControl.memory.D_MREAD := '0';
                   newControl.memory.D_MWRITEH := '0';
                   newControl.memory.D_MWRITEL := '0';
+                  newControl.memory.TRAPMuxSel := '0';
   	               newControl.write.RFMuxSel := '0';
   	               newControl.write.Reg_Write := '0';
   	               newControl.ex.Shift := '0';
@@ -173,6 +189,7 @@ BEGIN
                 newControl.ex.aluop := ALU_PASS;
 	              newControl.ex.ALUMuxsel := '0';
 	              newControl.ex.ALUAMuxsel := '0';
+	              newControl.ex.ALUTrapSel := '0';
                 newControl.dec.StoreMuxSel := '0';
          	      newControl.memory.LoadSETCCSEL := '0';
                 newControl.memory.LoadNZP := '0';
@@ -182,6 +199,7 @@ BEGIN
                 newControl.memory.D_MREAD := '0';
                 newControl.memory.D_MWRITEH := '0';
                 newControl.memory.D_MWRITEL := '0';
+                newControl.memory.TRAPMuxSel := '0';
 	              newControl.write.RFMuxSel := '0';
 	              newControl.write.Reg_Write := '0';
 	              newControl.ex.Shift := '0';
@@ -190,6 +208,7 @@ BEGIN
                 newControl.ex.aluop := ALU_PASS;
 	              newControl.ex.ALUMuxsel := '0';
 	              newControl.ex.ALUAMuxsel := '0';
+	              newControl.ex.ALUTrapSel := '0';
                 newControl.dec.StoreMuxSel := '0';
          	      newControl.memory.LoadSETCCSEL := '0';
                 newControl.memory.LoadNZP := '0';
@@ -199,6 +218,7 @@ BEGIN
                 newControl.memory.D_MREAD := '0';
                 newControl.memory.D_MWRITEH := '0';
                 newControl.memory.D_MWRITEL := '0';
+                newControl.memory.TRAPMuxSel := '0';
 	              newControl.write.RFMuxSel := '0';
 	              newControl.write.Reg_Write := '0';
 	              newControl.ex.Shift := '0';
@@ -210,6 +230,7 @@ BEGIN
                 newControl.write.Reg_Write := '1';
  	              newControl.ex.ALUMuxsel := '1';
                 newControl.ex.ALUAMuxsel := '1';
+                newControl.ex.ALUTrapSel := '0';
                 newControl.dec.StoreMuxSel := '0';
          	      newControl.memory.LoadSETCCSEL := '0';
                 newControl.memory.Load_dMDR  := '0';
@@ -218,12 +239,34 @@ BEGIN
                 newControl.memory.D_MREAD := '0';
                 newControl.memory.D_MWRITEH := '0';
                 newControl.memory.D_MWRITEL := '0';
+                newControl.memory.TRAPMuxSel := '0';
+                newControl.ex.Shift := '0';
+             WHEN OP_TRAP =>
+                newControl.name := trap_op;
+                newControl.ex.aluop := ALU_ADD;
+                newControl.dec.StoreMuxSel := '1';
+                newControl.ex.ALUMuxsel :='1';
+                newControl.ex.ALUAMuxsel := '1';
+                newControl.ex.ALUTrapSel := '1';
+                newControl.write.RFMuxSel := '0';
+                newControl.memory.LoadNZP := '1';
+                newControl.memory.LoadSETCCSEL :='0';
+                newControl.memory.Load_dMDR :='1';
+                newControl.memory.Load_dMAR :='1';
+                newControl.memory.D_MREAD :='1';
+                newControl.write.Reg_Write := '1';
+                newControl.memory.ISBranch := "11";
+                newControl.memory.D_MWRITEH := '0';
+                newControl.memory.D_MWRITEL := '0';
+                newControl.memory.TRAPMuxSel := '1';
                 newControl.ex.Shift := '0';
             -- add more opcodes
             WHEN OTHERS =>
                 newControl.name := bad_op;
                 newControl.ex.aluop := ALU_PASS;
 	              newControl.ex.ALUMuxsel := '0';
+	              newControl.ex.ALUAMuxsel := '0';
+	              newControl.ex.ALUTrapSel := '0';
 	              newControl.write.RFMuxSel := '0';
                 newControl.dec.StoreMuxSel := '0';
          	      newControl.memory.LoadSETCCSEL := '0';
@@ -234,6 +277,7 @@ BEGIN
                 newControl.memory.D_MREAD := '0';
                 newControl.memory.D_MWRITEH := '0';
                 newControl.memory.D_MWRITEL := '0';
+                newControl.memory.TRAPMuxSel := '0';
 	              newControl.write.RFMuxSel := '0';
 	              newControl.write.Reg_Write := '0';
 	              newControl.ex.Shift := '0';
