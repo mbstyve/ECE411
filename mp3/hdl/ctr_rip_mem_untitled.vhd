@@ -24,7 +24,8 @@ ENTITY ctr_rip_mem IS
       D_MREAD      : OUT    std_logic;
       D_MWRITEH    : OUT    std_logic;
       D_MWRITEL    : OUT    std_logic;
-      TRAPMuxSel   : OUT    std_logic
+      TRAPMuxSel   : OUT    std_logic;
+      LDBMuxSel    : OUT    std_logic
    );
 
 -- Declarations
@@ -43,5 +44,6 @@ BEGIN
   D_MWRITEL <= Control.memory.D_MWRITEL;
   ISBranch  <= Control.memory.ISBranch;
   TRAPMuxSel <= Control.memory.TRAPMuxSel;
+  LDBMuxSel <= Control.dec.LDBMuxSel;
 END ARCHITECTURE untitled;
 

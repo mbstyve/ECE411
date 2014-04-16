@@ -16,7 +16,8 @@ USE ece411.LC3b_types.all;
 ENTITY CTL_RIP_DEC IS
    PORT( 
       ControlOut  : IN     CONTROL_WORD;
-      StoreMuxSel : OUT    std_logic
+      StoreMuxSel : OUT    std_logic;
+      LDBMuxSel   : OUT    std_logic
    );
 
 -- Declarations
@@ -27,5 +28,6 @@ END CTL_RIP_DEC ;
 ARCHITECTURE untitled OF CTL_RIP_DEC IS
 BEGIN
   StoreMuxSel <= ControlOut.dec.StoreMuxSel;
+  LDBMuxSel <= ControlOut.dec.LDBMuxSel;
 END ARCHITECTURE untitled;
 

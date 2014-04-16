@@ -1,0 +1,31 @@
+--
+-- VHDL Architecture ece411.ADJTrap.untitled
+--
+-- Created:
+--          by - styve1.ews (gelib-057-14.ews.illinois.edu)
+--          at - 01:05:08 04/16/14
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.NUMERIC_STD.all;
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY ADJTrap IS
+   PORT( 
+      TrapOffset : IN     LC3b_trapvect8;
+      clk        : IN     std_logic;
+      TV8Out     : OUT    LC3b_Word
+   );
+
+-- Declarations
+
+END ADJTrap ;
+
+--
+ARCHITECTURE untitled OF ADJTrap IS
+BEGIN
+END ARCHITECTURE untitled;
+

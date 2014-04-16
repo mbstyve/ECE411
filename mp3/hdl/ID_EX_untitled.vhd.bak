@@ -76,6 +76,7 @@ BEGIN
   VARIABLE tempIMM5Sel : std_logic;
   VARIABLE tempSHFTOP : LC3b_SHFTOP;
   VARIABLE tempJSR11   : std_logic;
+  VARIABLE tempADJ4   : LC3b_word;
   BEGIN
    IF (RESET_L = '0') THEN
      tempiPC := "0000000000000000";
@@ -109,6 +110,7 @@ BEGIN
      tempControl.memory.TRAPMuxSel := '0';
      tempSHFTOP := "00";    
      tempJSR11 := '0';
+     tempADJ4 := "0000000000000000";
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
