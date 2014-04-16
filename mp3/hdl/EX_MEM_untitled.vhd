@@ -40,7 +40,9 @@ ENTITY EX_MEM IS
       TRAP8_OUT : OUT LC3B_WORD;
       SRCA_OUT     : OUT LC3B_REG;
       SRCB_OUT     : OUT LC3B_REG;
-      REGBOut_OUT   : OUT LC3b_word
+      REGBOut_OUT   : OUT LC3b_word;
+      JSR11           : IN      std_logic;
+      JSR11_Out       : OUT     std_logic
    );
 
 END EX_MEM ;
@@ -60,6 +62,7 @@ BEGIN
   VARIABLE tempiPC: LC3B_WORD;
   VARIABLE tempTRAP8: LC3B_WORD;
   VARIABLE tempRegBOut  : LC3b_WORD;
+  VARIABLE tempJSR11    : std_logic;
   BEGIN
    IF (RESET_L = '0') THEN
      tempALUout := "0000000000000000";
@@ -75,6 +78,7 @@ BEGIN
      tempControl.ex.ALUAMuxsel := '0';
      tempControl.ex.aluop := "000";
      tempControl.ex.Shift := '0';
+     tempControl.ex.ALUTrapSel := '0';
      tempControl.dec.StoreMuxSel := '0';
      tempControl.memory.LoadSETCCSEL := '0';  
      tempControl.memory.LoadNZP := '0';
@@ -85,7 +89,9 @@ BEGIN
      tempControl.write.Reg_Write := '0'; 
      tempControl.memory.D_MREAD := '0';
      tempControl.memory.D_MWRITEH := '0';
-     tempControl.memory.D_MWRITEL := '0';  
+     tempControl.memory.D_MWRITEL := '0'; 
+     tempControl.memory.TRAPMuxSel := '0';
+     tempJSR11 := '0'; 
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
@@ -100,6 +106,7 @@ BEGIN
       tempTRAP8 := TRAP8;
       tempControl := Control;
       tempRegBOut := RegBOut;
+      tempJSR11 := JSR11;
     END IF;
   END IF;
   ALUout_out   <= tempALUout AFTER DELAY_REG;
@@ -111,7 +118,8 @@ BEGIN
   iPC_out <= tempiPC AFTER DELAY_REG;
   TRAP8_out <= tempTRAP8 AFTER DELAY_REG;
   Control_out <= tempControl AFTER DELAY_REG;
-  RegBOut_Out <= tempRegBOut AFTER DELAY_REG;    
+  RegBOut_Out <= tempRegBOut AFTER DELAY_REG; 
+  JSR11_Out <= tempJSR11 AFTER DELAY_REG;   
 END PROCESS vhdl_REG_EX;
 END ARCHITECTURE untitled;
 

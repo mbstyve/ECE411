@@ -30,7 +30,8 @@ ENTITY IR IS
       IMM4     : OUT    LC3b_imm4;
       IMM5Sel   : OUT   std_logic;
       SHFTOP   : OUT    LC3b_SHFTOP;
-      JSR11    : OUT    std_logic
+      JSR11    : OUT    std_logic;
+      TrapOff   : OUT   LC3b_trapvect8
    );
 
 -- Declarations
@@ -46,11 +47,14 @@ BEGIN
 	SRCA <= VAL_IR(8 DOWNTO 6);
 	SRCB <= VAL_IR(2 DOWNTO 0);
 	DEST <= VAL_IR(11 DOWNTO 9);
+	OFFSET11 <= VAL_IR (10 DOWNTO 0);
 	OFFSET9 <= VAL_IR(8 DOWNTO 0);
 	INDEX6 <= VAL_IR(5 DOWNTO 0);
 	IMM5 <= VAL_IR(4 DOWNTO 0);
+	IMM4 <= VAL_IR(3 DOWNTO 0);
 	IMM5Sel <= VAL_IR (5);
 	SHFTOP <= VAL_IR(5 DOWNTO 4); 
-	JSR11 <= VAL_IR(11 DOWNTO 11); 
+	JSR11 <= VAL_IR(11); 
+	TrapOff <= VAL_IR(7 DOWNTO 0);
 END ARCHITECTURE untitled;
 

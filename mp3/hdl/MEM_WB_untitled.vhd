@@ -58,6 +58,7 @@ BEGIN
      tempControl.ex.ALUAMuxsel := '0';
      tempControl.ex.aluop := "000";
      tempControl.ex.Shift := '0';
+     tempControl.ex.ALUTrapSel := '0';
      tempControl.dec.StoreMuxSel := '0';
      tempControl.memory.LoadSETCCSEL := '0';  
      tempControl.memory.LoadNZP := '0';
@@ -68,7 +69,8 @@ BEGIN
      tempControl.write.Reg_Write := '0'; 
      tempControl.memory.D_MREAD := '0';
      tempControl.memory.D_MWRITEH := '0';
-     tempControl.memory.D_MWRITEL := '0';    
+     tempControl.memory.D_MWRITEL := '0';  
+     tempControl.memory.TRAPMuxSel := '0';  
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN

@@ -8,7 +8,7 @@
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
 # vsim -L ece411 -L mp3lib -L cachelib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll} -pli {"/software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll"} ece411.mp3_cpu(struct) 
-# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
 # ** Note: (vopt-143) Recognized 1 FSM in architecture body "cache_controller(fsm)".
 # Loading /software/mentor/HDS_2012.1/resources/downstream/modelsim/ModelSim_32Bit.dll
@@ -21,40 +21,44 @@
 # Loading work.clkgen(untitled)#1
 # Loading work.pipelined_datapath(struct)#1
 # Loading work.execute(struct)#1
+# Loading work.regmux2(untitled)#1
+# Loading work.siggen111(untitled)#1
 # Loading work.shifter(untitled)#1
 # Loading work.ctl_rip_execute(untitled)#1
 # Loading mp3lib.alu(untitled)#1
+# Loading mp3lib.and2(untitled)#1
 # Loading mp3lib.mux2_16(untitled)#1
+# Loading mp3lib.or2(untitled)#1
 # Loading work.ex_mem(untitled)#1
 # Loading work.idecode(struct)#1
 # Loading work.adj11(untitled)#1
 # Loading work.adj4(untitled)#1
 # Loading work.adj5(untitled)#1
 # Loading work.adj6(untitled)#1
+# Loading work.adj6ns(untitled)#1
 # Loading work.adj9(untitled)#1
+# Loading work.adjtrap(untitled)#1
 # Loading work.ctl_rip_dec(untitled)#1
 # Loading work.controlrom(untitled)#1
 # Loading work.ir(untitled)#1
 # Loading work.reg_file(untitled)#1
-# Loading work.regmux2(untitled)#1
 # Loading work.id_ex(untitled)#1
 # Loading work.ifetch(struct)#1
 # Loading work.plus2(untitled)#1
 # Loading work.reg16(untitled)#1
-# Loading mp3lib.and2(untitled)#1
 # Loading work.if_id(untitled)#1
 # Loading work.memcall(struct)#1
 # Loading work.braddr(untitled)#1
 # Loading work.gencc(untitled)#1
 # Loading work.highsig(untitled)#1
 # Loading work.jmpaddr(untitled)#1
+# Loading work.ldbdatarip(untitled)#1
 # Loading work.lowsig(untitled)#1
 # Loading work.nzp(untitled)#1
 # Loading work.nzpsplit(untitled)#1
 # Loading work.ctr_rip_mem(untitled)#1
 # Loading mp3lib.mux4_1(untitled)#1
 # Loading mp3lib.not1(untitled)#1
-# Loading mp3lib.or2(untitled)#1
 # Loading mp3lib.or3(untitled)#1
 # Loading work.mem_wb(untitled)#1
 # Loading work.writeback(struct)#1
@@ -91,28 +95,28 @@
 # Loading work.longdelay(untitled)#1
 # Loading work.longnotaf(alongnot)#1
 # Loading work.cache_controller(fsm)#1
-# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/aDataPath/iDEC/INSTR_REG/OFFSET11(10) has no driver.
+# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/aDataPath/EXE/JSR11_Out has no driver.
 # This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/aDataPath/iDEC/INSTR_REG/OFFSET11(9 downto 0) has no driver.
-# This port will contribute value (UUUUUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/aDataPath/iDEC/INSTR_REG/IMM4(3) has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/aDataPath/iDEC/INSTR_REG/IMM4(2 downto 0) has no driver.
-# This port will contribute value (UUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/aDataPath/iDEC/trapvect8(15 downto 0) has no driver.
-# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/aDataPath/ID_EX_REG/trapvector8_out(15 downto 0) has no driver.
-# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# This port will contribute value (XXXX) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/aDataPath/I_DATAOUT(15 downto 0) has no driver.
-# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# This port will contribute value (XXXX) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /mp3_cpu/aDataPath/I_MWRITE_L has no driver.
 # This port will contribute value (U) to the signal network.
 add wave -position end  sim:/mp3_cpu/aDataPath/iDEC/aREF_FILE/RAM
+<<<<<<< HEAD
 do immAdd.do; run 1000
 # --- Executing initialization force file for ../ECE411/mp3/immAdd.asm --- 
 # Resetting processor for 5 ns. 
 # Initializing the processor. 
 # Done initializing processor, loading ../ECE411/mp3/immAdd.asm program code. 
+=======
+do mp3_2_testCode.do; run 50000
+# --- Executing initialization force file for ../mp3/ECE411/mp3/mp3_2_testCode.asm --- 
+# Resetting processor for 5 ns. 
+# Initializing the processor. 
+# Done initializing processor, loading ../mp3/ECE411/mp3/mp3_2_testCode.asm program code. 
+>>>>>>> 7933d31b50383bb7b1c69148043ec0a4f94e5712
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ns  Iteration: 0  Instance: /mp3_cpu/L1_Cache/ICache/Way1Tags
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -375,12 +379,17 @@ do immAdd.do; run 1000
 #    Time: 7 ns  Iteration: 0  Instance: /mp3_cpu/aDataPath/EXE/exALU
 # 0
 # 
+<<<<<<< HEAD
 # Done loading ../ECE411/mp3/immAdd.asm program code. 
+=======
+# Done loading ../mp3/ECE411/mp3/mp3_2_testCode.asm program code. 
+>>>>>>> 7933d31b50383bb7b1c69148043ec0a4f94e5712
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 680 ns  Iteration: 2  Instance: /mp3_cpu/aDataPath/iDEC/aREF_FILE
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 684 ns  Iteration: 0  Instance: /mp3_cpu/aDataPath/EXE/exALU
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+<<<<<<< HEAD
 #    Time: 730 ns  Iteration: 0  Instance: /mp3_cpu/aDataPath/EXE/U_0
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 730 ns  Iteration: 1  Instance: /mp3_cpu/aDataPath/iDEC/aREF_FILE
@@ -429,6 +438,10 @@ do immAdd.do; run 1000
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 740 ns  Iteration: 0  Instance: /mp3_cpu/aDataPath/EXE/U_0
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+=======
+#    Time: 730 ns  Iteration: 1  Instance: /mp3_cpu/aDataPath/iDEC/aREF_FILE
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+>>>>>>> 7933d31b50383bb7b1c69148043ec0a4f94e5712
 #    Time: 750 ns  Iteration: 0  Instance: /mp3_cpu/aDataPath/iDEC/aREF_FILE
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 775 ns  Iteration: 0  Instance: /mp3_cpu/aDataPath/iDEC/aREF_FILE
@@ -440,6 +453,7 @@ do immAdd.do; run 1000
 #    Time: 825 ns  Iteration: 0  Instance: /mp3_cpu/aDataPath/iDEC/aREF_FILE
 # 0
 # 
+<<<<<<< HEAD
 run 1000
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 1030 ns  Iteration: 0  Instance: /mp3_cpu/aDataPath/EXE/U_0
@@ -6110,3 +6124,5 @@ restart -f; do shifttesties.do; run 3000
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 2990 ns  Iteration: 0  Instance: /mp3_cpu/aDataPath/EXE/U_0
 # The connection to HDS has been closed 
+=======
+>>>>>>> 7933d31b50383bb7b1c69148043ec0a4f94e5712

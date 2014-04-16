@@ -40,16 +40,18 @@ PACKAGE LC3B_TYPES IS
 
 	TYPE MEMORY_ARRAY_64K IS ARRAY (0 TO 65535) OF LC3B_BYTE;
 	
-	TYPE OPNAME IS (add_op, and_op, not_op, pass_op, sll_op, srl_op, sra_op, bad_op, ldr_op, str_op, br_op, jmp_op, jsr_op, lea_op, no_op);
+	TYPE OPNAME IS (add_op, and_op, not_op, pass_op, sll_op, srl_op, sra_op, bad_op, ldr_op, str_op, br_op, jmp_op, jsr_op, lea_op, trap_op, ldb_op, no_op);
 	TYPE EX_CONTROL IS RECORD
 	    aluop : LC3B_ALUOP;
 	    ALUMuxsel : std_logic;
 	    ALUAMuxsel : std_logic;
 	    Shift : std_logic;
+	    ALUTrapSel : std_logic;
 	END RECORD;
 	
 	TYPE DEC_CONTROL IS RECORD
 	    StoreMuxSel : std_logic;
+	    LDBMuxSel   : std_logic;
 	END RECORD;
 	
 	TYPE MEM_CONTROL IS RECORD
@@ -61,6 +63,7 @@ PACKAGE LC3B_TYPES IS
       D_MREAD     : std_logic;
       D_MWRITEH   : std_logic;
       D_MWRITEL   : std_logic;
+      TRAPMUXSel  : std_logic;
 	END RECORD;
 	
 	TYPE WB_CONTROL IS RECORD
