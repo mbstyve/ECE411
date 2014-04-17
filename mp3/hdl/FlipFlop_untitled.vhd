@@ -15,10 +15,10 @@ USE ece411.LC3b_types.all;
 
 ENTITY FlipFlop IS
    PORT( 
-      D_MRESP_H : IN     std_logic;
-      FFout     : IN     std_logic;
+      EDGE : IN     std_logic;
+      SELF     : IN     std_logic;
       Indirect  : IN     std_logic;
-      D_ADDRSel : OUT    std_logic
+      OUT1 : OUT    std_logic
    );
 
 -- Declarations
@@ -28,12 +28,12 @@ END FlipFlop ;
 --
 ARCHITECTURE untitled OF FlipFlop IS
 BEGIN
-  PROCESS (Indirect, D_MRESP_H)
+  PROCESS (EDGE)
   BEGIN
     IF(Indirect = '0') THEN
-      D_ADDRSel <= '0';
-    ELSE 
-      D_ADDRSel <= NOT FFout;
+      OUT1 <= '0' AFTER DELAY_MUX2;
+    ELSIF (EDGE = '1') THEN
+      OUT1 <= NOT SELF AFTER DELAY_MUX2;
     END IF;
     END PROCESS;
 END ARCHITECTURE untitled;

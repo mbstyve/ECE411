@@ -49,7 +49,19 @@ ENTITY ID_EX IS
       SHFTOP          : IN     LC3b_SHFTOP;
       SHFTOP_Out      : OUT     LC3b_SHFTOP;
       JSR11           : IN      std_logic;
-      JSR11_Out       : OUT     std_logic
+      JSR11_Out       : OUT     std_logic;
+      EXEDest         : IN     LC3B_REG;
+      EXEDest_Out     : OUT     LC3B_REG;
+      EXEData         : IN     LC3B_WORD;
+      EXEDATA_Out     : OUT     LC3B_WORD;
+      MEMDest         : IN     LC3B_REG;
+      MEMDest_Out     : OUT     LC3B_REG;
+      MEMData         : IN     LC3B_WORD;
+      MEMData_Out     : OUT     LC3B_WORD;
+      EXEControl      : IN      Control_word;
+      EXEControl_Out  : OUT     Control_word;
+      MEMControl      : IN      Control_word;
+      MEMControl_Out  : OUT     Control_word
       );
 
 -- Declarations
@@ -76,6 +88,12 @@ BEGIN
   VARIABLE tempIMM5Sel : std_logic;
   VARIABLE tempSHFTOP : LC3b_SHFTOP;
   VARIABLE tempJSR11   : std_logic;
+  VARIABLE tempEXEDest  : LC3B_REG;
+  VARIABLE tempEXEData  : LC3B_WORD;
+  VARIABLE tempMEMDest  : LC3B_REG;
+  VARIABLE tempMEMData  : LC3B_WORD;
+  VARIABLE tempEXEControl : Control_word;
+  VARIABLE tempMEMControl : Control_word;
   BEGIN
    IF (RESET_L = '0') THEN
      tempiPC := "0000000000000000";
@@ -112,6 +130,14 @@ BEGIN
      tempControl.memory.STIndirect := '0';
      tempSHFTOP := "00";    
      tempJSR11 := '0';
+     tempEXEDest := "000";
+     tempEXEData := "0000000000000000";
+     tempMEMDest := "000";
+     tempMEMData := "0000000000000000";
+     tempEXEControl.memory.D_MREAD := '0';
+     tempMEMControl.memory.D_MREAD := '0';
+     tempEXEControl.write.Reg_Write := '0'; 
+     tempMEMControl.write.Reg_Write := '0'; 
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
@@ -131,6 +157,12 @@ BEGIN
       tempIMM5Sel := IMM5Sel;
       tempSHFTOP := SHFTOP; 
       tempJSR11 := JSR11;
+      tempEXEDest := EXEDest;
+      tempEXEData := EXEData;
+      tempMEMDest := MEMDest;
+      tempMEMData := MEMData;
+      tempEXEControl := EXEControl;
+      tempMEMControl := MEMControl;
     END IF;
   END IF;
   iPC_out   <= tempiPC AFTER DELAY_REG;
@@ -148,6 +180,12 @@ BEGIN
   IMM5Sel_Out   <= tempIMM5Sel AFTER DELAY_REG;
   SHFTOP_Out   <= tempSHFTOP AFTER DELAY_REG;
   JSR11_Out   <= tempJSR11 AFTER DELAY_REG;
+  EXEDest_Out <= tempEXEDest AFTER DELAY_REG;
+  EXEData_Out     <= tempEXEData AFTER DELAY_REG;
+  MEMDest_Out <= tempMEMDest AFTER DELAY_REG;
+  MEMData_Out <= tempMEMData AFTER DELAY_REG;
+  EXEControl_Out  <= tempEXEControl AFTER DELAY_REG;
+  MEMControl_Out  <= tempMEMControl AFTER DELAY_REG;
 END PROCESS vhdl_REG_IF;
 END ARCHITECTURE untitled;
 
