@@ -91,6 +91,9 @@ BEGIN
      tempControl.memory.D_MWRITEH := '0';
      tempControl.memory.D_MWRITEL := '0'; 
      tempControl.memory.TRAPMuxSel := '0';
+     tempControl.memory.STBMuxSel := '0';
+     tempControl.memory.Indirect := '0';
+     tempControl.memory.STIndirect := '0';
      tempJSR11 := '0'; 
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN

@@ -91,6 +91,7 @@ BEGIN
      tempControl.memory.D_MWRITEH := '0';
      tempControl.memory.D_MWRITEL := '0'; 
      tempControl.memory.TRAPMuxSel := '0';
+     tempControl.memory.STBMuxSel := '0';
      tempJSR11 := '0'; 
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
@@ -119,7 +120,7 @@ BEGIN
   TRAP8_out <= tempTRAP8 AFTER DELAY_REG;
   Control_out <= tempControl AFTER DELAY_REG;
   RegBOut_Out <= tempRegBOut AFTER DELAY_REG; 
-  JSR11_Out <= tempJSR11 AFTER RDELAY_REG;   
+  JSR11_Out <= tempJSR11 AFTER DELAY_REG;   
 END PROCESS vhdl_REG_EX;
 END ARCHITECTURE untitled;
 

@@ -107,6 +107,9 @@ BEGIN
      tempControl.memory.D_MWRITEH := '0';
      tempControl.memory.D_MWRITEL := '0';
      tempControl.memory.TRAPMuxSel := '0';
+     tempControl.memory.STBMuxSel := '0';
+     tempControl.memory.Indirect := '0';
+     tempControl.memory.STIndirect := '0';
      tempSHFTOP := "00";    
      tempJSR11 := '0';
      

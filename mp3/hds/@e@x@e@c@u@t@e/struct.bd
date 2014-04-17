@@ -233,7 +233,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-14.ews.illinois.edu"
+value "gelib-057-20.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -325,7 +325,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "00:54:04"
+value "17:12:13"
 )
 (vvPair
 variable "unit"
@@ -1504,8 +1504,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,31600,-11500,32500"
-st "SIGNAL ALUOP        : LC3B_ALUOP
-"
+st "SIGNAL ALUOP        : LC3B_ALUOP"
 )
 )
 *37 (Net
@@ -1523,8 +1522,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,14500,-14000,15400"
-st "control      : CONTROL_WORD
-"
+st "control      : CONTROL_WORD"
 )
 )
 *38 (Net
@@ -1542,8 +1540,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,9100,-15500,10000"
-st "RegAOut      : LC3b_word
-"
+st "RegAOut      : LC3b_word"
 )
 )
 *39 (Net
@@ -1560,8 +1557,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,10000,-15500,10900"
-st "RegBOut      : LC3B_WORD
-"
+st "RegBOut      : LC3B_WORD"
 )
 )
 *40 (Net
@@ -1578,8 +1574,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,4600,-15500,5500"
-st "ADJ6out      : LC3B_WORD
-"
+st "ADJ6out      : LC3B_WORD"
 )
 )
 *41 (PortIoOut
@@ -1641,8 +1636,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,18100,-15500,19000"
-st "ALUResultout : LC3B_WORD
-"
+st "ALUResultout : LC3B_WORD"
 )
 )
 *43 (PortIoOut
@@ -1704,8 +1698,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,24400,-14000,25300"
-st "control_out  : CONTROL_WORD
-"
+st "control_out  : CONTROL_WORD"
 )
 )
 *45 (HdlText
@@ -1724,14 +1717,15 @@ fg "65535,65535,65535"
 lineColor "0,0,32768"
 lineWidth 2
 )
-xt "63000,17000,81000,22000"
+xt "63000,17000,81000,26000"
 )
+oxt "63000,17000,81000,22000"
 text (MLText
 uid 348,0
 va (VaSet
 font "courier,8,0"
 )
-xt "63200,17200,74700,21700"
+xt "63200,17200,81200,26200"
 st "
 control_out <=control;
 DEST_OUT <= DEST;
@@ -1745,8 +1739,8 @@ RegBOut_OUT <= RegBOut;
 "
 tm "HdlTextMgr"
 wrapOption 3
-visibleHeight 4600
-visibleWidth 17600
+visibleHeight 9000
+visibleWidth 18000
 )
 )
 )
@@ -1816,8 +1810,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,30700,-12000,31600"
-st "SIGNAL ALUMuxout    : LC3B_WORD
-"
+st "SIGNAL ALUMuxout    : LC3B_WORD"
 )
 )
 *50 (Net
@@ -1834,8 +1827,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,29800,-12000,30700"
-st "SIGNAL ALUMuxSel    : std_logic
-"
+st "SIGNAL ALUMuxSel    : std_logic"
 )
 )
 *51 (PortIoIn
@@ -2266,8 +2258,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,6400,-16000,7300"
-st "DEST         : lc3b_reg
-"
+st "DEST         : lc3b_reg"
 )
 )
 *61 (Net
@@ -2284,8 +2275,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,11800,-16000,12700"
-st "SRCA         : lc3b_reg
-"
+st "SRCA         : lc3b_reg"
 )
 )
 *62 (Net
@@ -2302,8 +2292,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,12700,-16000,13600"
-st "SRCB         : lc3b_reg
-"
+st "SRCB         : lc3b_reg"
 )
 )
 *63 (Net
@@ -2320,8 +2309,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,1900,-15500,2800"
-st "ADJ11        : LC3B_WORD
-"
+st "ADJ11        : LC3B_WORD"
 )
 )
 *64 (Net
@@ -2338,8 +2326,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,5500,-15500,6400"
-st "ADJ9         : lc3b_word
-"
+st "ADJ9         : lc3b_word"
 )
 )
 *65 (Net
@@ -2356,8 +2343,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,3700,-15500,4600"
-st "ADJ5         : LC3B_WORD
-"
+st "ADJ5         : LC3B_WORD"
 )
 )
 *66 (Net
@@ -2374,8 +2360,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,2800,-15500,3700"
-st "ADJ4         : LC3B_WORD
-"
+st "ADJ4         : LC3B_WORD"
 )
 )
 *67 (Net
@@ -2392,8 +2377,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,13600,-15500,14500"
-st "TRAP8        : LC3B_WORD
-"
+st "TRAP8        : LC3B_WORD"
 )
 )
 *68 (Net
@@ -2411,8 +2395,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,15400,-13500,16300"
-st "iPC          : lc3b_word BUS
-"
+st "iPC          : lc3b_word BUS"
 )
 )
 *69 (PortIoOut
@@ -2564,8 +2547,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,19000,-16000,19900"
-st "DEST_OUT     : lc3b_reg
-"
+st "DEST_OUT     : lc3b_reg"
 )
 )
 *73 (Net
@@ -2582,8 +2564,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,21700,-16000,22600"
-st "SRCA_OUT     : lc3b_reg
-"
+st "SRCA_OUT     : lc3b_reg"
 )
 )
 *74 (Net
@@ -2600,8 +2581,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,22600,-16000,23500"
-st "SRCB_OUT     : lc3b_reg
-"
+st "SRCB_OUT     : lc3b_reg"
 )
 )
 *75 (PortIoOut
@@ -2798,8 +2778,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,16300,-15500,17200"
-st "ADJ11_OUT    : LC3B_WORD
-"
+st "ADJ11_OUT    : LC3B_WORD"
 )
 )
 *80 (Net
@@ -2816,8 +2795,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,17200,-15500,18100"
-st "ADJ9_OUT     : LC3B_WORD
-"
+st "ADJ9_OUT     : LC3B_WORD"
 )
 )
 *81 (Net
@@ -2834,8 +2812,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,23500,-15500,24400"
-st "TRAP8_OUT    : LC3B_WORD
-"
+st "TRAP8_OUT    : LC3B_WORD"
 )
 )
 *82 (Net
@@ -2852,8 +2829,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,25300,-15500,26200"
-st "iPC_OUT      : lc3b_word
-"
+st "iPC_OUT      : lc3b_word"
 )
 )
 *83 (PortIoOut
@@ -2915,8 +2891,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,20800,-15500,21700"
-st "RegBOut_OUT  : LC3b_word
-"
+st "RegBOut_OUT  : LC3b_word"
 )
 )
 *85 (SaComponent
@@ -3196,8 +3171,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,37900,-12000,38800"
-st "SIGNAL IMM5Muxout   : LC3B_WORD
-"
+st "SIGNAL IMM5Muxout   : LC3B_WORD"
 )
 )
 *94 (Net
@@ -3214,8 +3188,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,7300,-15500,8200"
-st "IMM5MuxSel   : STD_LOGIC
-"
+st "IMM5MuxSel   : STD_LOGIC"
 )
 )
 *95 (PortIoIn
@@ -3542,8 +3515,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,28900,-10000,29800"
-st "SIGNAL ALUAMuxout   : LC3B_WORD BUS
-"
+st "SIGNAL ALUAMuxout   : LC3B_WORD BUS"
 )
 )
 *105 (Net
@@ -3561,8 +3533,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,28000,-12000,28900"
-st "SIGNAL ALUAMuxSel   : std_logic
-"
+st "SIGNAL ALUAMuxSel   : std_logic"
 )
 )
 *106 (SaComponent
@@ -3839,8 +3810,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,35200,-12000,36100"
-st "SIGNAL F            : LC3B_WORD
-"
+st "SIGNAL F            : LC3B_WORD"
 )
 )
 *115 (Blk
@@ -4254,8 +4224,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,39700,-12000,40600"
-st "SIGNAL SFTOUT       : LC3b_word
-"
+st "SIGNAL SFTOUT       : LC3b_word"
 )
 )
 *129 (Net
@@ -4273,8 +4242,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,10900,-14500,11800"
-st "SHFTOP       : LC3B_SHFTOP
-"
+st "SHFTOP       : LC3B_SHFTOP"
 )
 )
 *130 (Net
@@ -4292,8 +4260,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,40600,-12000,41500"
-st "SIGNAL Shift        : std_logic
-"
+st "SIGNAL Shift        : std_logic"
 )
 )
 *131 (Net
@@ -4310,8 +4277,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,33400,-12000,34300"
-st "SIGNAL ALUout       : LC3B_WORD
-"
+st "SIGNAL ALUout       : LC3B_WORD"
 )
 )
 *132 (SaComponent
@@ -4588,8 +4554,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,36100,-12000,37000"
-st "SIGNAL F1           : LC3B_WORD
-"
+st "SIGNAL F1           : LC3B_WORD"
 )
 )
 *141 (Net
@@ -4607,8 +4572,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,32500,-12000,33400"
-st "SIGNAL ALUTrapSel   : std_logic
-"
+st "SIGNAL ALUTrapSel   : std_logic"
 )
 )
 *142 (Blk
@@ -4711,8 +4675,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,34300,-12500,35200"
-st "SIGNAL B            : LC3b_reg
-"
+st "SIGNAL B            : LC3b_reg"
 )
 )
 *147 (SaComponent
@@ -5016,8 +4979,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,8200,-15500,9100"
-st "JSR11        : std_logic
-"
+st "JSR11        : std_logic"
 )
 )
 *157 (PortIoOut
@@ -5079,8 +5041,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,19900,-15500,20800"
-st "JSR11_Out    : std_logic
-"
+st "JSR11_Out    : std_logic"
 )
 )
 *159 (SaComponent
@@ -5329,8 +5290,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,37000,-12000,37900"
-st "SIGNAL F2           : STD_LOGIC
-"
+st "SIGNAL F2           : STD_LOGIC"
 )
 )
 *167 (Net
@@ -5347,8 +5307,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,27100,-12000,28000"
-st "SIGNAL A            : STD_LOGIC
-"
+st "SIGNAL A            : STD_LOGIC"
 )
 )
 *168 (SaComponent
@@ -5594,8 +5553,7 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-28000,38800,-2500,39700"
-st "SIGNAL ISBranch     : std_logic_vector(1 DOWNTO 0)
-"
+st "SIGNAL ISBranch     : std_logic_vector(1 DOWNTO 0)"
 )
 )
 *176 (Wire
@@ -7568,6 +7526,7 @@ blo "-1200,47750"
 tm "WireNameMgr"
 )
 s (Text
+uid 1893,0
 ro 270
 va (VaSet
 isHidden 1
@@ -7618,6 +7577,7 @@ blo "-200,40462"
 tm "WireNameMgr"
 )
 s (Text
+uid 1894,0
 ro 270
 va (VaSet
 isHidden 1
@@ -7861,12 +7821,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-6,34,1926,1066"
-viewArea "-39800,6436,66158,61554"
-cachedDiagramExtent "-30000,-300,81000,53000"
+windowSize "-6,36,1926,1068"
+viewArea "-27852,6400,71270,57962"
+cachedDiagramExtent "-30000,-300,81200,53000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-69000,-51000"
-lastUid 1805,0
+lastUid 1902,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
