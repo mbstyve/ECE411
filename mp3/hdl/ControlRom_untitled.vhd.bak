@@ -214,7 +214,7 @@ BEGIN
                 newControl.memory.Indirect := '0';
                 newControl.memory.STIndirect := '0';
                 
-            WHEN OP_SDB =>
+            WHEN OP_STB =>
                 newControl.name := stb_op;
                 newControl.ex.aluop := ALU_ADD;
                 newControl.dec.StoreMuxSel := '1';

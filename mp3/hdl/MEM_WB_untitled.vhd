@@ -31,7 +31,9 @@ ENTITY MEM_WB IS
       SRCA_OUT     : OUT    LC3b_reg;
       SRCB_OUT     : OUT    LC3b_reg;
       Control_Out  : OUT    control_word;
-      ReadData_out : OUT    LC3b_word
+      ReadData_out : OUT    LC3b_word;
+      iPC          : IN     LC3b_WORD;
+      iPC_Out          : OUT     LC3b_WORD
    );
 
 END MEM_WB ;
@@ -47,6 +49,7 @@ BEGIN
   VARIABLE tempSRCA     : LC3b_reg;
   VARIABLE tempSRCB     : LC3b_reg;
   VARIABLE tempControl     : control_word;
+  VARIABLE tempiPC      : LC3B_WORD;
   BEGIN
    IF (RESET_L = '0') THEN
      tempALUout   := "0000000000000000";
@@ -73,7 +76,8 @@ BEGIN
      tempControl.memory.TRAPMuxSel := '0';
      tempControl.memory.STBMuxSel := '0'; 
     tempControl.memory.Indirect := '0';
-     tempControl.memory.STIndirect := '0'; 
+     tempControl.memory.STIndirect := '0';
+     tempiPC := "0000000000000000"; 
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
@@ -83,6 +87,7 @@ BEGIN
       tempSRCA      := SRCA;
       tempSRCB      := SRCB;
       tempControl      := Control;
+      tempiPC       := iPC;
     END IF;
   END IF;
   ALUout_out    <= tempALUout AFTER DELAY_REG;
@@ -91,6 +96,7 @@ BEGIN
   SRCA_OUT      <= tempSRCA AFTER DELAY_REG;
   SRCB_OUT      <= tempSRCB AFTER DELAY_REG; 
   Control_OUT   <= tempControl AFTER DELAY_REG;
+  iPC_Out       <= tempiPC  AFTER DELAY_REG;
 END PROCESS vhdl_REG_MEM;
 END ARCHITECTURE untitled;
 

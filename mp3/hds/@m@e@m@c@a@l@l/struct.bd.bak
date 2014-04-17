@@ -459,23 +459,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hdl"
+value "/home/freed2/ece411/ECE411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
+value "/home/freed2/ece411/ECE411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd.info"
+value "/home/freed2/ece411/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd.user"
+value "/home/freed2/ece411/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
+value "/home/freed2/ece411/ECE411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -491,11 +491,11 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l"
+value "/home/freed2/ece411/ECE411/mp3/hds/@m@e@m@c@a@l@l"
 )
 (vvPair
 variable "d_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/MEMCALL"
+value "/home/freed2/ece411/ECE411/mp3/hds/MEMCALL"
 )
 (vvPair
 variable "date"
@@ -539,7 +539,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-20.ews.illinois.edu"
+value "gelib-057-16.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -571,11 +571,11 @@ value "April"
 )
 (vvPair
 variable "p"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd"
+value "/home/freed2/ece411/ECE411/mp3/hds/@m@e@m@c@a@l@l/struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/MEMCALL/struct.bd"
+value "/home/freed2/ece411/ECE411/mp3/hds/MEMCALL/struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -631,7 +631,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "19:55:32"
+value "20:25:52"
 )
 (vvPair
 variable "unit"
@@ -639,7 +639,7 @@ value "MEMCALL"
 )
 (vvPair
 variable "user"
-value "styve1"
+value "freed2"
 )
 (vvPair
 variable "version"
@@ -1700,15 +1700,14 @@ uid 541,0
 va (VaSet
 font "courier,8,0"
 )
-xt "50200,20200,62200,26500"
+xt "50200,20200,62200,25600"
 st "
 DestOut <= DEST;
 SRCA_OUT <= SRCA;
 SRCB_OUT <= SRCB;
 ALUOut_OUT <= ALUOut;
 Control_OUT <= Control;
-D_ADDR <= ALUout;
-D_ADDRSel <= FFout;
+FFout <= D_ADDRSel;
 "
 tm "HdlTextMgr"
 wrapOption 3
@@ -18567,10 +18566,10 @@ uid 6522,0
 va (VaSet
 vasetType 3
 )
-xt "5000,16000,15000,16000"
+xt "-9000,11000,-3000,11000"
 pts [
-"5000,16000"
-"15000,16000"
+"-3000,11000"
+"-9000,11000"
 ]
 )
 start &25
@@ -18588,9 +18587,9 @@ uid 6528,0
 va (VaSet
 font "courier,8,0"
 )
-xt "7000,15100,11000,16000"
+xt "-9000,10100,-5000,11000"
 st "Indirect"
-blo "7000,15800"
+blo "-9000,10800"
 tm "WireNameMgr"
 )
 )
@@ -18603,10 +18602,10 @@ uid 6530,0
 va (VaSet
 vasetType 3
 )
-xt "5000,17000,15000,17000"
+xt "-9000,10000,-3000,10000"
 pts [
-"5000,17000"
-"15000,17000"
+"-3000,10000"
+"-9000,10000"
 ]
 )
 start &25
@@ -18624,9 +18623,9 @@ uid 6536,0
 va (VaSet
 font "courier,8,0"
 )
-xt "7000,16100,12500,17000"
+xt "-9000,9100,-3500,10000"
 st "STIndirect"
-blo "7000,16800"
+blo "-9000,9800"
 tm "WireNameMgr"
 )
 )
@@ -18748,12 +18747,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "1914,29,3440,1031"
-viewArea "-14281,3200,20900,26393"
+windowSize "31,50,1557,1052"
+viewArea "10337,14784,61236,47245"
 cachedDiagramExtent "-129875,0,563455,590423"
 hasePageBreakOrigin 1
 pageBreakOrigin "-69000,0"
-lastUid 6536,0
+lastUid 6753,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

@@ -15,9 +15,11 @@ USE ece411.LC3b_types.all;
 
 ENTITY ctl_rip_wb IS
    PORT( 
-      Control  : IN     Control_Word;
-      RFMuxSel : OUT    std_logic;
-      Reg_Write : OUT   std_logic
+      Control    : IN     Control_Word;
+      RFMuxSel   : OUT    std_logic;
+      Reg_Write  : OUT    std_logic;
+      ISBranch   : OUT    STD_LOGIC_VECTOR (1 DOWNTO 0);
+      ALUTRAPSel : OUT    std_logic
    );
 
 -- Declarations
@@ -29,5 +31,7 @@ ARCHITECTURE untitled OF ctl_rip_wb IS
 BEGIN
   RFMuxSel <= Control.write.RFMuxSel;
   Reg_Write <= Control.write.Reg_Write;
+  ALUTrapSel <= control.ex.ALUTrapSel;
+  ISBranch <= control.memory.ISBranch;
 END ARCHITECTURE untitled;
 

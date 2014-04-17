@@ -95,7 +95,7 @@ BEGIN
                 newControl.memory.D_MWRITEH := '0';
                 newControl.memory.D_MWRITEL := '0';
                 newControl.memory.TRAPMuxSel := '0';
-                newControl.ex.Shift := '0';
+                newControl.ex.Shift := '1';
                 newControl.memory.STBMuxSel := '0';
                 newControl.memory.Indirect := '0';
                 newControl.memory.STIndirect := '0';

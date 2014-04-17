@@ -29,8 +29,8 @@ END RegMux2 ;
 --
 ARCHITECTURE untitled OF RegMux2 IS
 BEGIN
-  PROCESS (a, b, Sel, Muxout)
-    variable state : LC3b_reg;
+  PROCESS (a, b, Sel)
+    variable state : LC3B_REG;
   BEGIN
     case Sel is
       when '0' =>
@@ -38,7 +38,7 @@ BEGIN
       when '1' =>
         state := b;
     when others =>
-      state := (OTHERS => 'X');
+      state := (OTHERS => '0');
     end case;
     MuxOut <= state after delay_MUX2;
   END PROCESS;
