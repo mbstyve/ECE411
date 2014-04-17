@@ -23,10 +23,12 @@ ENTITY ctr_rip_mem IS
       IsBranch     : OUT    STD_LOGIC_VECTOR (1 DOWNTO 0);
       D_MREAD      : OUT    std_logic;
       D_MWRITEH    : OUT    std_logic;
+      D_MWRITEL    : OUT    std_logic;
       TRAPMuxSel   : OUT    std_logic;
       LDBMuxSel    : OUT    std_logic;
       STBMuxSel    : OUT    STD_LOGIC;
-      D_MWRITEL    : OUT    std_logic
+      Indirect      : OUT   std_logic;
+      STIndirect    : OUT   std_logic
    );
 
 -- Declarations
@@ -47,5 +49,7 @@ BEGIN
   TRAPMuxSel <= Control.memory.TRAPMuxSel;
   LDBMuxSel <= Control.dec.LDBMuxSel;
   STBMuxSel <= Control.memory.STBMuxSel;
+  Indirect <= Control.memory.Indirect;
+  STIndirect <= Control.memory.STIndirect;
 END ARCHITECTURE untitled;
 
