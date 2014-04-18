@@ -1,0 +1,9 @@
+SEGMENT BOOT:
+    ADD R1, R0, 7
+    NOP
+    NOP
+    NOP
+    AND R2, R1, 3
+    AND R3, R1, 4
+    AND R4, R1, 7
+    AND R5, R2, R1

@@ -18,6 +18,8 @@ ENTITY AND4 IS
    PORT( 
       A : IN     std_logic;
       B : IN     std_logic;
+      C : IN     std_logic;
+      D : IN     std_logic;
       F : OUT    std_logic
    );
 
@@ -28,6 +30,6 @@ END AND4 ;
 --
 ARCHITECTURE untitled OF AND4 IS
 BEGIN
-F <= A AND B AFTER DELAY_LOGIC2;
+F <= (A AND B) AND (C AND D) AFTER DELAY_LOGIC2;
 END ARCHITECTURE untitled;
 

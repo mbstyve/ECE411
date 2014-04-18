@@ -1,7 +1,7 @@
 ORIGIN
 SEGMENT  CodeSegment:
     LDR R1, R0, ONE
-    NOP
+    ADD R2, R1, 3
     NOP
     NOP
     NOP

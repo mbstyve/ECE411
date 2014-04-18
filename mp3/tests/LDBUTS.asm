@@ -1,0 +1,23 @@
+SEGMENT BOOT:
+    LEA R1, BULLSHIT
+    NOP
+    NOP
+    NOP
+    LDB R2, R1, 3
+    NOP
+    NOP
+    NOP
+    NOP
+    
+
+
+
+
+
+
+BULLSHIT:
+    DATA2 4X0001
+    DATA2 4x0101
+    DATA2 4x1010
+    DATA2 4x1111
+    
