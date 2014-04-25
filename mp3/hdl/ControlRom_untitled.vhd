@@ -376,13 +376,13 @@ BEGIN
                 newControl.memory.STIndirect := '0';
              WHEN OP_TRAP =>
                 newControl.name := trap_op;
-                newControl.ex.aluop := ALU_ADD;
+                newControl.ex.aluop := ALU_PASS;
                 newControl.dec.StoreMuxSel := '1';
                 newControl.dec.LDBMuxSel := '0';
                 newControl.ex.ALUMuxsel :='1';
                 newControl.ex.ALUAMuxsel := '1';
                 newControl.ex.ALUTrapSel := '1';
-                newControl.write.RFMuxSel := '0';
+                newControl.write.RFMuxSel := '1';
                 newControl.memory.LoadNZP := '1';
                 newControl.memory.LoadSETCCSEL :='0';
                 newControl.memory.Load_dMDR :='1';

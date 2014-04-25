@@ -136,6 +136,8 @@ BEGIN
      tempMEMData := "0000000000000000";
      tempEXEControl.memory.D_MREAD := '0';
      tempMEMControl.memory.D_MREAD := '0';
+     tempEXEControl.write.Reg_Write := '0'; 
+     tempMEMControl.write.Reg_Write := '0'; 
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
@@ -184,6 +186,7 @@ BEGIN
   MEMData_Out <= tempMEMData AFTER DELAY_REG;
   EXEControl_Out  <= tempEXEControl AFTER DELAY_REG;
   MEMControl_Out  <= tempMEMControl AFTER DELAY_REG;
+  trapvector8_out <= tempTRAPVECTOR8 AFTER DELAY_REG;
 END PROCESS vhdl_REG_IF;
 END ARCHITECTURE untitled;
 
