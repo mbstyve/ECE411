@@ -95,7 +95,7 @@ BEGIN
                 newControl.memory.D_MWRITEH := '0';
                 newControl.memory.D_MWRITEL := '0';
                 newControl.memory.TRAPMuxSel := '0';
-                newControl.ex.Shift := '0';
+                newControl.ex.Shift := '1';
                 newControl.memory.STBMuxSel := '0';
                 newControl.memory.Indirect := '0';
                 newControl.memory.STIndirect := '0';
@@ -376,7 +376,7 @@ BEGIN
                 newControl.memory.STIndirect := '0';
              WHEN OP_TRAP =>
                 newControl.name := trap_op;
-                newControl.ex.aluop := ALU_ADD;
+                newControl.ex.aluop := ALU_PASS;
                 newControl.dec.StoreMuxSel := '1';
                 newControl.dec.LDBMuxSel := '0';
                 newControl.ex.ALUMuxsel :='1';

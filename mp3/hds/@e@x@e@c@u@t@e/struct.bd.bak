@@ -367,6 +367,42 @@ elements [
 mwi 0
 uid 4344,0
 )
+(Instance
+name "A_EXCMP1"
+duLibraryName "ece411"
+duName "COMP3"
+elements [
+]
+mwi 0
+uid 4394,0
+)
+(Instance
+name "B_MEMCMP1"
+duLibraryName "ece411"
+duName "COMP3"
+elements [
+]
+mwi 0
+uid 4442,0
+)
+(Instance
+name "U_26"
+duLibraryName "mp3lib"
+duName "AND3"
+elements [
+]
+mwi 0
+uid 4490,0
+)
+(Instance
+name "U_27"
+duLibraryName "mp3lib"
+duName "AND3"
+elements [
+]
+mwi 0
+uid 4520,0
+)
 ]
 embeddedInstances [
 (EmbeddedInstance
@@ -559,7 +595,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "14:02:32"
+value "15:25:15"
 )
 (vvPair
 variable "unit"
@@ -2260,16 +2296,16 @@ optionalChildren [
 uid 481,0
 sl 0
 ro 270
-xt "-8000,32625,-6500,33375"
+xt "1000,34625,2500,35375"
 )
 (Line
 uid 482,0
 sl 0
 ro 270
-xt "-6500,33000,-6000,33000"
+xt "2500,35000,3000,35000"
 pts [
-"-6500,33000"
-"-6000,33000"
+"2500,35000"
+"3000,35000"
 ]
 )
 ]
@@ -2285,10 +2321,10 @@ uid 484,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-11000,32550,-9000,33450"
+xt "-2000,34550,0,35450"
 st "ADJ9"
 ju 2
-blo "-9000,33250"
+blo "0,35250"
 tm "WireNameMgr"
 )
 )
@@ -2398,16 +2434,16 @@ optionalChildren [
 uid 499,0
 sl 0
 ro 270
-xt "-8000,36625,-6500,37375"
+xt "-17000,37625,-15500,38375"
 )
 (Line
 uid 500,0
 sl 0
 ro 270
-xt "-6500,37000,-6000,37000"
+xt "-15500,38000,-15000,38000"
 pts [
-"-6500,37000"
-"-6000,37000"
+"-15500,38000"
+"-15000,38000"
 ]
 )
 ]
@@ -2423,10 +2459,10 @@ uid 502,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-11500,36550,-9000,37450"
+xt "-20500,37550,-18000,38450"
 st "TRAP8"
 ju 2
-blo "-9000,37250"
+blo "-18000,38250"
 tm "WireNameMgr"
 )
 )
@@ -3403,7 +3439,7 @@ uid 987,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,65000,-25000,65900"
+xt "-41000,65900,-25000,66800"
 st "SIGNAL IMM5Muxout   : LC3B_WORD"
 )
 )
@@ -4042,7 +4078,7 @@ uid 1091,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,57800,-25000,58700"
+xt "-41000,59600,-25000,60500"
 st "SIGNAL F            : LC3B_WORD"
 )
 )
@@ -4456,7 +4492,7 @@ uid 1217,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,71300,-25000,72200"
+xt "-41000,72200,-25000,73100"
 st "SIGNAL SFTOUT       : LC3b_word"
 )
 )
@@ -4492,7 +4528,7 @@ uid 1251,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,72200,-25000,73100"
+xt "-41000,74900,-25000,75800"
 st "SIGNAL Shift        : std_logic"
 )
 )
@@ -4526,7 +4562,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "-5750,32625,-5000,33375"
+xt "-12750,33625,-12000,34375"
 )
 tg (CPTG
 uid 1356,0
@@ -4537,17 +4573,17 @@ uid 1357,0
 sl 0
 va (VaSet
 )
-xt "-4000,32450,-3400,33450"
+xt "-11000,33450,-10400,34450"
 st "A"
-blo "-4000,33250"
+blo "-11000,34250"
 )
 s (Text
 uid 1380,0
 sl 0
 va (VaSet
 )
-xt "-4000,33450,-4000,33450"
-blo "-4000,33450"
+xt "-11000,34450,-11000,34450"
+blo "-11000,34450"
 )
 )
 thePort (LogicalPort
@@ -4569,7 +4605,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "-5750,36625,-5000,37375"
+xt "-12750,37625,-12000,38375"
 )
 tg (CPTG
 uid 1360,0
@@ -4580,17 +4616,17 @@ uid 1361,0
 sl 0
 va (VaSet
 )
-xt "-4000,36450,-3400,37450"
+xt "-11000,37450,-10400,38450"
 st "B"
-blo "-4000,37250"
+blo "-11000,38250"
 )
 s (Text
 uid 1381,0
 sl 0
 va (VaSet
 )
-xt "-4000,37450,-4000,37450"
-blo "-4000,37450"
+xt "-11000,38450,-11000,38450"
+blo "-11000,38450"
 )
 )
 thePort (LogicalPort
@@ -4612,7 +4648,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "2000,34625,2750,35375"
+xt "-5000,35625,-4250,36375"
 )
 tg (CPTG
 uid 1364,0
@@ -4623,19 +4659,19 @@ uid 1365,0
 sl 0
 va (VaSet
 )
-xt "400,34450,1000,35450"
+xt "-6600,35450,-6000,36450"
 st "F"
 ju 2
-blo "1000,35250"
+blo "-6000,36250"
 )
 s (Text
 uid 1382,0
 sl 0
 va (VaSet
 )
-xt "1000,35450,1000,35450"
+xt "-6000,36450,-6000,36450"
 ju 2
-blo "1000,35450"
+blo "-6000,36450"
 )
 )
 thePort (LogicalPort
@@ -4657,7 +4693,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "-2375,37142,-1625,37892"
+xt "-9375,38142,-8625,38892"
 )
 tg (CPTG
 uid 1368,0
@@ -4669,9 +4705,9 @@ sl 0
 ro 270
 va (VaSet
 )
-xt "-2450,34342,-1450,36142"
+xt "-9450,35342,-8450,37142"
 st "SEL"
-blo "-1650,36142"
+blo "-8650,37142"
 )
 s (Text
 uid 1383,0
@@ -4679,8 +4715,8 @@ sl 0
 ro 270
 va (VaSet
 )
-xt "-1450,36142,-1450,36142"
-blo "-1450,36142"
+xt "-8450,37142,-8450,37142"
+blo "-8450,37142"
 )
 )
 thePort (LogicalPort
@@ -4699,7 +4735,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "-5000,32000,2000,38000"
+xt "-12000,33000,-5000,39000"
 )
 oxt "0,13000,7000,19000"
 ttg (MlTextGroup
@@ -4712,27 +4748,27 @@ uid 1373,0
 va (VaSet
 isHidden 1
 )
-xt "-4200,32800,-600,33800"
+xt "-11200,32800,-7600,33800"
 st "mp3lib"
-blo "-4200,33600"
+blo "-11200,33600"
 tm "BdLibraryNameMgr"
 )
 *138 (Text
 uid 1374,0
 va (VaSet
 )
-xt "-4200,33800,0,34800"
+xt "-11200,33800,-7000,34800"
 st "MUX2_16"
-blo "-4200,34600"
+blo "-11200,34600"
 tm "CptNameMgr"
 )
 *139 (Text
 uid 1375,0
 va (VaSet
 )
-xt "-4200,34800,600,35800"
+xt "-11200,34800,-6400,35800"
 st "PCoffMux"
-blo "-4200,35600"
+blo "-11200,35600"
 tm "InstanceNameMgr"
 )
 ]
@@ -4746,7 +4782,7 @@ text (MLText
 uid 1378,0
 va (VaSet
 )
-xt "-20000,31000,-20000,31000"
+xt "-27000,32000,-27000,32000"
 )
 header ""
 )
@@ -4760,7 +4796,7 @@ va (VaSet
 vasetType 1
 fg "49152,49152,49152"
 )
-xt "-4750,36250,-3250,37750"
+xt "-11750,37250,-10250,38750"
 iconName "VhdlFileViewIcon.png"
 iconMaskName "VhdlFileViewIcon.msk"
 ftype 10
@@ -4774,23 +4810,6 @@ selT 0
 archFileType "UNKNOWN"
 )
 *140 (Net
-uid 1384,0
-decl (Decl
-n "F1"
-t "LC3B_WORD"
-o 36
-suid 84,0
-)
-declText (MLText
-uid 1385,0
-va (VaSet
-font "courier,8,0"
-)
-xt "-41000,58700,-25000,59600"
-st "SIGNAL F1           : LC3B_WORD"
-)
-)
-*141 (Net
 uid 1398,0
 lang 11
 decl (Decl
@@ -4808,7 +4827,7 @@ xt "-41000,42500,-25000,43400"
 st "SIGNAL ALUTrapSel   : std_logic"
 )
 )
-*142 (Blk
+*141 (Blk
 uid 1456,0
 shape (Rectangle
 uid 1457,0
@@ -4826,7 +4845,7 @@ uid 1458,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*143 (Text
+*142 (Text
 uid 1459,0
 va (VaSet
 font "courier,8,1"
@@ -4836,7 +4855,7 @@ st "ece411"
 blo "-11750,50350"
 tm "BdLibraryNameMgr"
 )
-*144 (Text
+*143 (Text
 uid 1460,0
 va (VaSet
 font "courier,8,1"
@@ -4846,7 +4865,7 @@ st "SIGGEN111"
 blo "-11750,51250"
 tm "BlkNameMgr"
 )
-*145 (Text
+*144 (Text
 uid 1461,0
 va (VaSet
 font "courier,8,1"
@@ -4893,7 +4912,7 @@ blkPorts [
 "B"
 ]
 )
-*146 (Net
+*145 (Net
 uid 1466,0
 lang 11
 decl (Decl
@@ -4911,10 +4930,10 @@ xt "-41000,48800,-25500,49700"
 st "SIGNAL B            : LC3b_reg"
 )
 )
-*147 (SaComponent
+*146 (SaComponent
 uid 1490,0
 optionalChildren [
-*148 (CptPort
+*147 (CptPort
 uid 1474,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -4951,7 +4970,7 @@ suid 12,0
 )
 )
 )
-*149 (CptPort
+*148 (CptPort
 uid 1478,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -4988,7 +5007,7 @@ suid 13,0
 )
 )
 )
-*150 (CptPort
+*149 (CptPort
 uid 1482,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -5027,7 +5046,7 @@ suid 14,0
 )
 )
 )
-*151 (CptPort
+*150 (CptPort
 uid 1486,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -5083,7 +5102,7 @@ uid 1492,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*152 (Text
+*151 (Text
 uid 1493,0
 va (VaSet
 font "courier,8,1"
@@ -5093,7 +5112,7 @@ st "ece411"
 blo "-3250,48800"
 tm "BdLibraryNameMgr"
 )
-*153 (Text
+*152 (Text
 uid 1494,0
 va (VaSet
 font "courier,8,1"
@@ -5103,7 +5122,7 @@ st "RegMux2"
 blo "-3250,49700"
 tm "CptNameMgr"
 )
-*154 (Text
+*153 (Text
 uid 1495,0
 va (VaSet
 font "courier,8,1"
@@ -5152,7 +5171,7 @@ sIVOD 1
 )
 archFileType "UNKNOWN"
 )
-*155 (PortIoIn
+*154 (PortIoIn
 uid 1587,0
 shape (CompositeShape
 uid 1588,0
@@ -5198,7 +5217,7 @@ tm "WireNameMgr"
 )
 )
 )
-*156 (Net
+*155 (Net
 uid 1601,0
 decl (Decl
 n "JSR11"
@@ -5215,7 +5234,7 @@ xt "-41000,11900,-28500,12800"
 st "JSR11        : std_logic"
 )
 )
-*157 (PortIoOut
+*156 (PortIoOut
 uid 1603,0
 shape (CompositeShape
 uid 1604,0
@@ -5260,7 +5279,7 @@ tm "WireNameMgr"
 )
 )
 )
-*158 (Net
+*157 (Net
 uid 1617,0
 decl (Decl
 n "JSR11_Out"
@@ -5277,10 +5296,10 @@ xt "-41000,28100,-28500,29000"
 st "JSR11_Out    : std_logic"
 )
 )
-*159 (SaComponent
+*158 (SaComponent
 uid 1722,0
 optionalChildren [
-*160 (CptPort
+*159 (CptPort
 uid 1710,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -5329,7 +5348,7 @@ suid 1,0
 )
 )
 )
-*161 (CptPort
+*160 (CptPort
 uid 1714,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -5378,7 +5397,7 @@ suid 2,0
 )
 )
 )
-*162 (CptPort
+*161 (CptPort
 uid 1718,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -5442,7 +5461,7 @@ uid 1724,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*163 (Text
+*162 (Text
 uid 1725,0
 va (VaSet
 isHidden 1
@@ -5452,7 +5471,7 @@ st "mp3lib"
 blo "-1700,42100"
 tm "BdLibraryNameMgr"
 )
-*164 (Text
+*163 (Text
 uid 1726,0
 va (VaSet
 )
@@ -5461,7 +5480,7 @@ st "OR2"
 blo "-1700,43100"
 tm "CptNameMgr"
 )
-*165 (Text
+*164 (Text
 uid 1727,0
 va (VaSet
 )
@@ -5509,7 +5528,7 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*166 (Net
+*165 (Net
 uid 1735,0
 decl (Decl
 n "F2"
@@ -5522,11 +5541,11 @@ uid 1736,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,59600,-25000,60500"
+xt "-41000,60500,-25000,61400"
 st "SIGNAL F2           : STD_LOGIC"
 )
 )
-*167 (Net
+*166 (Net
 uid 1741,0
 decl (Decl
 n "A"
@@ -5543,10 +5562,10 @@ xt "-41000,36200,-25000,37100"
 st "SIGNAL A            : STD_LOGIC"
 )
 )
-*168 (SaComponent
+*167 (SaComponent
 uid 1761,0
 optionalChildren [
-*169 (CptPort
+*168 (CptPort
 uid 1749,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -5593,7 +5612,7 @@ suid 1,0
 )
 )
 )
-*170 (CptPort
+*169 (CptPort
 uid 1753,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -5640,7 +5659,7 @@ suid 2,0
 )
 )
 )
-*171 (CptPort
+*170 (CptPort
 uid 1757,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -5702,7 +5721,7 @@ uid 1763,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*172 (Text
+*171 (Text
 uid 1764,0
 va (VaSet
 isHidden 1
@@ -5712,7 +5731,7 @@ st "mp3lib"
 blo "2800,38600"
 tm "BdLibraryNameMgr"
 )
-*173 (Text
+*172 (Text
 uid 1765,0
 va (VaSet
 )
@@ -5721,7 +5740,7 @@ st "AND2"
 blo "2800,39600"
 tm "CptNameMgr"
 )
-*174 (Text
+*173 (Text
 uid 1766,0
 va (VaSet
 )
@@ -5770,7 +5789,7 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*175 (Net
+*174 (Net
 uid 1782,0
 lang 11
 decl (Decl
@@ -5785,11 +5804,11 @@ uid 1783,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,65900,-15500,66800"
+xt "-41000,66800,-15500,67700"
 st "SIGNAL ISBranch     : std_logic_vector(1 DOWNTO 0)"
 )
 )
-*176 (PortIoIn
+*175 (PortIoIn
 uid 1998,0
 shape (CompositeShape
 uid 1999,0
@@ -5835,7 +5854,7 @@ tm "WireNameMgr"
 )
 )
 )
-*177 (PortIoIn
+*176 (PortIoIn
 uid 2004,0
 shape (CompositeShape
 uid 2005,0
@@ -5881,7 +5900,7 @@ tm "WireNameMgr"
 )
 )
 )
-*178 (PortIoIn
+*177 (PortIoIn
 uid 2010,0
 shape (CompositeShape
 uid 2011,0
@@ -5920,14 +5939,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-10500,61550,-7000,62450"
-st "MEMDest"
+st "MEMDEST"
 ju 2
 blo "-7000,62250"
 tm "WireNameMgr"
 )
 )
 )
-*179 (PortIoIn
+*178 (PortIoIn
 uid 2016,0
 shape (CompositeShape
 uid 2017,0
@@ -5973,7 +5992,7 @@ tm "WireNameMgr"
 )
 )
 )
-*180 (Net
+*179 (Net
 uid 2054,0
 decl (Decl
 n "EXEDest"
@@ -5990,7 +6009,7 @@ xt "-41000,10100,-29000,11000"
 st "EXEDest      : LC3B_Reg"
 )
 )
-*181 (Net
+*180 (Net
 uid 2056,0
 decl (Decl
 n "EXEDATA"
@@ -6007,10 +6026,10 @@ xt "-41000,9200,-28500,10100"
 st "EXEDATA      : LC3B_word"
 )
 )
-*182 (Net
+*181 (Net
 uid 2058,0
 decl (Decl
-n "MEMDest"
+n "MEMDEST"
 t "LC3B_REG"
 o 46
 suid 104,0
@@ -6021,10 +6040,10 @@ va (VaSet
 font "courier,8,0"
 )
 xt "-41000,14600,-29000,15500"
-st "MEMDest      : LC3B_REG"
+st "MEMDEST      : LC3B_REG"
 )
 )
-*183 (Net
+*182 (Net
 uid 2060,0
 decl (Decl
 n "MEMDATA"
@@ -6041,10 +6060,10 @@ xt "-41000,13700,-28500,14600"
 st "MEMDATA      : LC3B_WORD"
 )
 )
-*184 (SaComponent
+*183 (SaComponent
 uid 2086,0
 optionalChildren [
-*185 (CptPort
+*184 (CptPort
 uid 2070,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6087,7 +6106,7 @@ suid 1,0
 )
 )
 )
-*186 (CptPort
+*185 (CptPort
 uid 2074,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6130,7 +6149,7 @@ suid 2,0
 )
 )
 )
-*187 (CptPort
+*186 (CptPort
 uid 2078,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6176,7 +6195,7 @@ suid 3,0
 )
 )
 )
-*188 (CptPort
+*187 (CptPort
 uid 2082,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6238,7 +6257,7 @@ uid 2088,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*189 (Text
+*188 (Text
 uid 2089,0
 va (VaSet
 isHidden 1
@@ -6248,7 +6267,7 @@ st "mp3lib"
 blo "-4200,13600"
 tm "BdLibraryNameMgr"
 )
-*190 (Text
+*189 (Text
 uid 2090,0
 va (VaSet
 )
@@ -6257,7 +6276,7 @@ st "MUX2_16"
 blo "-4200,14600"
 tm "CptNameMgr"
 )
-*191 (Text
+*190 (Text
 uid 2091,0
 va (VaSet
 )
@@ -6304,7 +6323,7 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*192 (PortIoIn
+*191 (PortIoIn
 uid 2100,0
 shape (CompositeShape
 uid 2101,0
@@ -6350,7 +6369,7 @@ tm "WireNameMgr"
 )
 )
 )
-*193 (PortIoIn
+*192 (PortIoIn
 uid 2106,0
 shape (CompositeShape
 uid 2107,0
@@ -6396,7 +6415,7 @@ tm "WireNameMgr"
 )
 )
 )
-*194 (Net
+*193 (Net
 uid 2128,0
 decl (Decl
 n "EXEControl"
@@ -6413,7 +6432,7 @@ xt "-41000,8300,-27000,9200"
 st "EXEControl   : Control_word"
 )
 )
-*195 (Net
+*194 (Net
 uid 2130,0
 decl (Decl
 n "MEMControl"
@@ -6430,10 +6449,10 @@ xt "-41000,12800,-27000,13700"
 st "MEMControl   : Control_word"
 )
 )
-*196 (SaComponent
+*195 (SaComponent
 uid 2198,0
 optionalChildren [
-*197 (CptPort
+*196 (CptPort
 uid 2186,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6470,7 +6489,7 @@ suid 1,0
 )
 )
 )
-*198 (CptPort
+*197 (CptPort
 uid 2190,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6505,7 +6524,7 @@ suid 3,0
 )
 )
 )
-*199 (CptPort
+*198 (CptPort
 uid 2194,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6557,7 +6576,7 @@ uid 2200,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*200 (Text
+*199 (Text
 uid 2201,0
 va (VaSet
 font "courier,8,1"
@@ -6567,7 +6586,7 @@ st "ece411"
 blo "22750,53800"
 tm "BdLibraryNameMgr"
 )
-*201 (Text
+*200 (Text
 uid 2202,0
 va (VaSet
 font "courier,8,1"
@@ -6577,7 +6596,7 @@ st "COMP3"
 blo "22750,54700"
 tm "CptNameMgr"
 )
-*202 (Text
+*201 (Text
 uid 2203,0
 va (VaSet
 font "courier,8,1"
@@ -6624,10 +6643,10 @@ sIVOD 1
 )
 archFileType "UNKNOWN"
 )
-*203 (SaComponent
+*202 (SaComponent
 uid 2220,0
 optionalChildren [
-*204 (CptPort
+*203 (CptPort
 uid 2208,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6664,7 +6683,7 @@ suid 1,0
 )
 )
 )
-*205 (CptPort
+*204 (CptPort
 uid 2212,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6699,7 +6718,7 @@ suid 3,0
 )
 )
 )
-*206 (CptPort
+*205 (CptPort
 uid 2216,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6751,7 +6770,7 @@ uid 2222,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*207 (Text
+*206 (Text
 uid 2223,0
 va (VaSet
 font "courier,8,1"
@@ -6761,7 +6780,7 @@ st "ece411"
 blo "22750,56800"
 tm "BdLibraryNameMgr"
 )
-*208 (Text
+*207 (Text
 uid 2224,0
 va (VaSet
 font "courier,8,1"
@@ -6771,7 +6790,7 @@ st "COMP3"
 blo "22750,57700"
 tm "CptNameMgr"
 )
-*209 (Text
+*208 (Text
 uid 2225,0
 va (VaSet
 font "courier,8,1"
@@ -6818,10 +6837,10 @@ sIVOD 1
 )
 archFileType "UNKNOWN"
 )
-*210 (SaComponent
+*209 (SaComponent
 uid 2242,0
 optionalChildren [
-*211 (CptPort
+*210 (CptPort
 uid 2230,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6858,7 +6877,7 @@ suid 1,0
 )
 )
 )
-*212 (CptPort
+*211 (CptPort
 uid 2234,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6893,7 +6912,7 @@ suid 3,0
 )
 )
 )
-*213 (CptPort
+*212 (CptPort
 uid 2238,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -6945,7 +6964,7 @@ uid 2244,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*214 (Text
+*213 (Text
 uid 2245,0
 va (VaSet
 font "courier,8,1"
@@ -6955,7 +6974,7 @@ st "ece411"
 blo "22750,59800"
 tm "BdLibraryNameMgr"
 )
-*215 (Text
+*214 (Text
 uid 2246,0
 va (VaSet
 font "courier,8,1"
@@ -6965,7 +6984,7 @@ st "COMP3"
 blo "22750,60700"
 tm "CptNameMgr"
 )
-*216 (Text
+*215 (Text
 uid 2247,0
 va (VaSet
 font "courier,8,1"
@@ -7012,10 +7031,10 @@ sIVOD 1
 )
 archFileType "UNKNOWN"
 )
-*217 (SaComponent
+*216 (SaComponent
 uid 2264,0
 optionalChildren [
-*218 (CptPort
+*217 (CptPort
 uid 2252,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7052,7 +7071,7 @@ suid 1,0
 )
 )
 )
-*219 (CptPort
+*218 (CptPort
 uid 2256,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7087,7 +7106,7 @@ suid 3,0
 )
 )
 )
-*220 (CptPort
+*219 (CptPort
 uid 2260,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7139,7 +7158,7 @@ uid 2266,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*221 (Text
+*220 (Text
 uid 2267,0
 va (VaSet
 font "courier,8,1"
@@ -7149,7 +7168,7 @@ st "ece411"
 blo "22750,62800"
 tm "BdLibraryNameMgr"
 )
-*222 (Text
+*221 (Text
 uid 2268,0
 va (VaSet
 font "courier,8,1"
@@ -7159,7 +7178,7 @@ st "COMP3"
 blo "22750,63700"
 tm "CptNameMgr"
 )
-*223 (Text
+*222 (Text
 uid 2269,0
 va (VaSet
 font "courier,8,1"
@@ -7206,7 +7225,7 @@ sIVOD 1
 )
 archFileType "UNKNOWN"
 )
-*224 (Blk
+*223 (Blk
 uid 2318,0
 shape (Rectangle
 uid 2319,0
@@ -7224,7 +7243,7 @@ uid 2320,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*225 (Text
+*224 (Text
 uid 2321,0
 va (VaSet
 font "courier,8,1"
@@ -7234,7 +7253,7 @@ st "ece411"
 blo "22250,66350"
 tm "BdLibraryNameMgr"
 )
-*226 (Text
+*225 (Text
 uid 2322,0
 va (VaSet
 font "courier,8,1"
@@ -7244,7 +7263,7 @@ st "EXE_DF_RIP"
 blo "22250,67250"
 tm "BlkNameMgr"
 )
-*227 (Text
+*226 (Text
 uid 2323,0
 va (VaSet
 font "courier,8,1"
@@ -7287,7 +7306,7 @@ ftype 10
 )
 viewiconposition 0
 )
-*228 (Blk
+*227 (Blk
 uid 2328,0
 shape (Rectangle
 uid 2329,0
@@ -7305,7 +7324,7 @@ uid 2330,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*229 (Text
+*228 (Text
 uid 2331,0
 va (VaSet
 font "courier,8,1"
@@ -7315,7 +7334,7 @@ st "ece411"
 blo "22250,70350"
 tm "BdLibraryNameMgr"
 )
-*230 (Text
+*229 (Text
 uid 2332,0
 va (VaSet
 font "courier,8,1"
@@ -7325,7 +7344,7 @@ st "MEM_DF_RIP"
 blo "22250,71250"
 tm "BlkNameMgr"
 )
-*231 (Text
+*230 (Text
 uid 2333,0
 va (VaSet
 font "courier,8,1"
@@ -7368,7 +7387,7 @@ ftype 10
 )
 viewiconposition 0
 )
-*232 (Net
+*231 (Net
 uid 2362,0
 decl (Decl
 n "EXEMREAD"
@@ -7381,11 +7400,11 @@ uid 2363,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,55100,-25000,56000"
+xt "-41000,56900,-25000,57800"
 st "SIGNAL EXEMREAD     : STD_LOGIC"
 )
 )
-*233 (Net
+*232 (Net
 uid 2364,0
 decl (Decl
 n "MEMMREAD"
@@ -7398,11 +7417,11 @@ uid 2365,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,67700,-25000,68600"
+xt "-41000,68600,-25000,69500"
 st "SIGNAL MEMMREAD     : STD_LOGIC"
 )
 )
-*234 (Net
+*233 (Net
 uid 2380,0
 decl (Decl
 n "EXEREG_WRITE"
@@ -7415,11 +7434,11 @@ uid 2381,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,56900,-25000,57800"
+xt "-41000,58700,-25000,59600"
 st "SIGNAL EXEREG_WRITE : STD_LOGIC"
 )
 )
-*235 (Net
+*234 (Net
 uid 2392,0
 decl (Decl
 n "MEMREG_WRITE"
@@ -7432,11 +7451,11 @@ uid 2393,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,68600,-25000,69500"
+xt "-41000,69500,-25000,70400"
 st "SIGNAL MEMREG_WRITE : STD_LOGIC"
 )
 )
-*236 (Net
+*235 (Net
 uid 2430,0
 decl (Decl
 n "A_EXE"
@@ -7453,7 +7472,7 @@ xt "-41000,44300,-25000,45200"
 st "SIGNAL A_EXE        : std_logic"
 )
 )
-*237 (Net
+*236 (Net
 uid 2432,0
 decl (Decl
 n "B_EXE"
@@ -7470,7 +7489,7 @@ xt "-41000,49700,-25000,50600"
 st "SIGNAL B_EXE        : std_logic"
 )
 )
-*238 (Net
+*237 (Net
 uid 2434,0
 decl (Decl
 n "A_MEM"
@@ -7487,7 +7506,7 @@ xt "-41000,46100,-25000,47000"
 st "SIGNAL A_MEM        : std_logic"
 )
 )
-*239 (Net
+*238 (Net
 uid 2436,0
 decl (Decl
 n "B_MEM"
@@ -7504,10 +7523,10 @@ xt "-41000,51500,-25000,52400"
 st "SIGNAL B_MEM        : std_logic"
 )
 )
-*240 (SaComponent
+*239 (SaComponent
 uid 2599,0
 optionalChildren [
-*241 (CptPort
+*240 (CptPort
 uid 2583,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7550,7 +7569,7 @@ suid 1,0
 )
 )
 )
-*242 (CptPort
+*241 (CptPort
 uid 2587,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7593,7 +7612,7 @@ suid 2,0
 )
 )
 )
-*243 (CptPort
+*242 (CptPort
 uid 2591,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7636,7 +7655,7 @@ suid 3,0
 )
 )
 )
-*244 (CptPort
+*243 (CptPort
 uid 2595,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7697,7 +7716,7 @@ uid 2601,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*245 (Text
+*244 (Text
 uid 2602,0
 va (VaSet
 isHidden 1
@@ -7707,7 +7726,7 @@ st "mp3lib"
 blo "47800,64600"
 tm "BdLibraryNameMgr"
 )
-*246 (Text
+*245 (Text
 uid 2603,0
 va (VaSet
 )
@@ -7716,7 +7735,7 @@ st "AND3"
 blo "47800,65600"
 tm "CptNameMgr"
 )
-*247 (Text
+*246 (Text
 uid 2604,0
 va (VaSet
 )
@@ -7763,10 +7782,10 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*248 (SaComponent
+*247 (SaComponent
 uid 2613,0
 optionalChildren [
-*249 (CptPort
+*248 (CptPort
 uid 2623,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7808,7 +7827,7 @@ o 1
 )
 )
 )
-*250 (CptPort
+*249 (CptPort
 uid 2628,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7850,7 +7869,7 @@ o 2
 )
 )
 )
-*251 (CptPort
+*250 (CptPort
 uid 2633,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7892,7 +7911,7 @@ o 3
 )
 )
 )
-*252 (CptPort
+*251 (CptPort
 uid 2638,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -7952,7 +7971,7 @@ uid 2615,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*253 (Text
+*252 (Text
 uid 2616,0
 va (VaSet
 isHidden 1
@@ -7962,7 +7981,7 @@ st "mp3lib"
 blo "47800,68600"
 tm "BdLibraryNameMgr"
 )
-*254 (Text
+*253 (Text
 uid 2617,0
 va (VaSet
 )
@@ -7971,7 +7990,7 @@ st "AND3"
 blo "47800,69600"
 tm "CptNameMgr"
 )
-*255 (Text
+*254 (Text
 uid 2618,0
 va (VaSet
 )
@@ -8018,10 +8037,10 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*256 (SaComponent
+*255 (SaComponent
 uid 2703,0
 optionalChildren [
-*257 (CptPort
+*256 (CptPort
 uid 2713,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8063,7 +8082,7 @@ o 1
 )
 )
 )
-*258 (CptPort
+*257 (CptPort
 uid 2718,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8105,7 +8124,7 @@ o 2
 )
 )
 )
-*259 (CptPort
+*258 (CptPort
 uid 2723,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8147,7 +8166,7 @@ o 3
 )
 )
 )
-*260 (CptPort
+*259 (CptPort
 uid 2728,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8207,7 +8226,7 @@ uid 2705,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*261 (Text
+*260 (Text
 uid 2706,0
 va (VaSet
 isHidden 1
@@ -8217,7 +8236,7 @@ st "mp3lib"
 blo "47800,85600"
 tm "BdLibraryNameMgr"
 )
-*262 (Text
+*261 (Text
 uid 2707,0
 va (VaSet
 )
@@ -8226,7 +8245,7 @@ st "AND3"
 blo "47800,86600"
 tm "CptNameMgr"
 )
-*263 (Text
+*262 (Text
 uid 2708,0
 va (VaSet
 )
@@ -8273,10 +8292,10 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*264 (SaComponent
+*263 (SaComponent
 uid 2733,0
 optionalChildren [
-*265 (CptPort
+*264 (CptPort
 uid 2743,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8318,7 +8337,7 @@ o 1
 )
 )
 )
-*266 (CptPort
+*265 (CptPort
 uid 2748,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8360,7 +8379,7 @@ o 2
 )
 )
 )
-*267 (CptPort
+*266 (CptPort
 uid 2753,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8402,7 +8421,7 @@ o 3
 )
 )
 )
-*268 (CptPort
+*267 (CptPort
 uid 2758,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8462,7 +8481,7 @@ uid 2735,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*269 (Text
+*268 (Text
 uid 2736,0
 va (VaSet
 isHidden 1
@@ -8472,7 +8491,7 @@ st "mp3lib"
 blo "47800,89600"
 tm "BdLibraryNameMgr"
 )
-*270 (Text
+*269 (Text
 uid 2737,0
 va (VaSet
 )
@@ -8481,7 +8500,7 @@ st "AND3"
 blo "47800,90600"
 tm "CptNameMgr"
 )
-*271 (Text
+*270 (Text
 uid 2738,0
 va (VaSet
 )
@@ -8528,10 +8547,10 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*272 (SaComponent
+*271 (SaComponent
 uid 2916,0
 optionalChildren [
-*273 (CptPort
+*272 (CptPort
 uid 2907,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8576,10 +8595,10 @@ suid 1,0
 )
 )
 )
-*274 (CptPort
+*273 (CptPort
 uid 2911,0
 optionalChildren [
-*275 (Circle
+*274 (Circle
 uid 2915,0
 va (VaSet
 vasetType 1
@@ -8651,7 +8670,7 @@ uid 2918,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*276 (Text
+*275 (Text
 uid 2919,0
 va (VaSet
 isHidden 1
@@ -8661,7 +8680,7 @@ st "mp3lib"
 blo "33800,64700"
 tm "BdLibraryNameMgr"
 )
-*277 (Text
+*276 (Text
 uid 2920,0
 va (VaSet
 )
@@ -8670,7 +8689,7 @@ st "NOT1"
 blo "33800,65700"
 tm "CptNameMgr"
 )
-*278 (Text
+*277 (Text
 uid 2921,0
 va (VaSet
 )
@@ -8719,7 +8738,7 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*279 (Net
+*278 (Net
 uid 2928,0
 decl (Decl
 n "EXENOTREAD"
@@ -8732,11 +8751,11 @@ uid 2929,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,56000,-25000,56900"
+xt "-41000,57800,-25000,58700"
 st "SIGNAL EXENOTREAD   : STD_LOGIC"
 )
 )
-*280 (Net
+*279 (Net
 uid 2951,0
 decl (Decl
 n "B_MEMSEL"
@@ -8753,7 +8772,7 @@ xt "-41000,52400,-25000,53300"
 st "SIGNAL B_MEMSEL     : STD_LOGIC"
 )
 )
-*281 (Net
+*280 (Net
 uid 2961,0
 decl (Decl
 n "A_MEMSEL"
@@ -8770,7 +8789,7 @@ xt "-41000,47000,-25000,47900"
 st "SIGNAL A_MEMSEL     : STD_LOGIC"
 )
 )
-*282 (Net
+*281 (Net
 uid 2979,0
 decl (Decl
 n "A_EXESEL"
@@ -8787,7 +8806,7 @@ xt "-41000,45200,-25000,46100"
 st "SIGNAL A_EXESEL     : std_logic"
 )
 )
-*283 (Net
+*282 (Net
 uid 2989,0
 decl (Decl
 n "B_EXESEL"
@@ -8804,10 +8823,10 @@ xt "-41000,50600,-25000,51500"
 st "SIGNAL B_EXESEL     : std_logic"
 )
 )
-*284 (SaComponent
+*283 (SaComponent
 uid 3003,0
 optionalChildren [
-*285 (CptPort
+*284 (CptPort
 uid 2991,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8852,7 +8871,7 @@ suid 1,0
 )
 )
 )
-*286 (CptPort
+*285 (CptPort
 uid 2995,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8897,7 +8916,7 @@ suid 2,0
 )
 )
 )
-*287 (CptPort
+*286 (CptPort
 uid 2999,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -8960,7 +8979,7 @@ uid 3005,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*288 (Text
+*287 (Text
 uid 3006,0
 va (VaSet
 isHidden 1
@@ -8970,7 +8989,7 @@ st "mp3lib"
 blo "55800,72600"
 tm "BdLibraryNameMgr"
 )
-*289 (Text
+*288 (Text
 uid 3007,0
 va (VaSet
 )
@@ -8979,7 +8998,7 @@ st "OR2"
 blo "55800,73600"
 tm "CptNameMgr"
 )
-*290 (Text
+*289 (Text
 uid 3008,0
 va (VaSet
 )
@@ -9027,7 +9046,7 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*291 (Net
+*290 (Net
 uid 3028,0
 decl (Decl
 n "A_STALL"
@@ -9044,7 +9063,7 @@ xt "-41000,47900,-25000,48800"
 st "SIGNAL A_STALL      : STD_LOGIC"
 )
 )
-*292 (Net
+*291 (Net
 uid 3030,0
 decl (Decl
 n "B_STALL"
@@ -9061,7 +9080,7 @@ xt "-41000,53300,-25000,54200"
 st "SIGNAL B_STALL      : STD_LOGIC"
 )
 )
-*293 (PortIoOut
+*292 (PortIoOut
 uid 3040,0
 shape (CompositeShape
 uid 3041,0
@@ -9106,7 +9125,7 @@ tm "WireNameMgr"
 )
 )
 )
-*294 (Net
+*293 (Net
 uid 3046,0
 decl (Decl
 n "STALL"
@@ -9123,10 +9142,10 @@ xt "-41000,31700,-28500,32600"
 st "STALL        : STD_LOGIC"
 )
 )
-*295 (SaComponent
+*294 (SaComponent
 uid 3096,0
 optionalChildren [
-*296 (CptPort
+*295 (CptPort
 uid 3080,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9169,7 +9188,7 @@ suid 1,0
 )
 )
 )
-*297 (CptPort
+*296 (CptPort
 uid 3084,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9212,7 +9231,7 @@ suid 2,0
 )
 )
 )
-*298 (CptPort
+*297 (CptPort
 uid 3088,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9258,7 +9277,7 @@ suid 3,0
 )
 )
 )
-*299 (CptPort
+*298 (CptPort
 uid 3092,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9320,7 +9339,7 @@ uid 3098,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*300 (Text
+*299 (Text
 uid 3099,0
 va (VaSet
 isHidden 1
@@ -9330,7 +9349,7 @@ st "mp3lib"
 blo "4800,15600"
 tm "BdLibraryNameMgr"
 )
-*301 (Text
+*300 (Text
 uid 3100,0
 va (VaSet
 )
@@ -9339,7 +9358,7 @@ st "MUX2_16"
 blo "4800,16600"
 tm "CptNameMgr"
 )
-*302 (Text
+*301 (Text
 uid 3101,0
 va (VaSet
 )
@@ -9386,7 +9405,7 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*303 (Net
+*302 (Net
 uid 3110,0
 decl (Decl
 n "F3"
@@ -9399,11 +9418,11 @@ uid 3111,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,60500,-25000,61400"
+xt "-41000,61400,-25000,62300"
 st "SIGNAL F3           : LC3B_WORD"
 )
 )
-*304 (Net
+*303 (Net
 uid 3132,0
 decl (Decl
 n "F4"
@@ -9416,14 +9435,14 @@ uid 3133,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,61400,-25000,62300"
+xt "-41000,62300,-25000,63200"
 st "SIGNAL F4           : LC3B_WORD"
 )
 )
-*305 (SaComponent
+*304 (SaComponent
 uid 3154,0
 optionalChildren [
-*306 (CptPort
+*305 (CptPort
 uid 3138,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9466,7 +9485,7 @@ suid 1,0
 )
 )
 )
-*307 (CptPort
+*306 (CptPort
 uid 3142,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9509,7 +9528,7 @@ suid 2,0
 )
 )
 )
-*308 (CptPort
+*307 (CptPort
 uid 3146,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9555,7 +9574,7 @@ suid 3,0
 )
 )
 )
-*309 (CptPort
+*308 (CptPort
 uid 3150,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9617,7 +9636,7 @@ uid 3156,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*310 (Text
+*309 (Text
 uid 3157,0
 va (VaSet
 isHidden 1
@@ -9627,7 +9646,7 @@ st "mp3lib"
 blo "-14200,21600"
 tm "BdLibraryNameMgr"
 )
-*311 (Text
+*310 (Text
 uid 3158,0
 va (VaSet
 )
@@ -9636,7 +9655,7 @@ st "MUX2_16"
 blo "-14200,22600"
 tm "CptNameMgr"
 )
-*312 (Text
+*311 (Text
 uid 3159,0
 va (VaSet
 )
@@ -9683,10 +9702,10 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*313 (SaComponent
+*312 (SaComponent
 uid 3184,0
 optionalChildren [
-*314 (CptPort
+*313 (CptPort
 uid 3168,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9729,7 +9748,7 @@ suid 1,0
 )
 )
 )
-*315 (CptPort
+*314 (CptPort
 uid 3172,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9772,7 +9791,7 @@ suid 2,0
 )
 )
 )
-*316 (CptPort
+*315 (CptPort
 uid 3176,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9818,7 +9837,7 @@ suid 3,0
 )
 )
 )
-*317 (CptPort
+*316 (CptPort
 uid 3180,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -9880,7 +9899,7 @@ uid 3186,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*318 (Text
+*317 (Text
 uid 3187,0
 va (VaSet
 isHidden 1
@@ -9890,7 +9909,7 @@ st "mp3lib"
 blo "-5200,23600"
 tm "BdLibraryNameMgr"
 )
-*319 (Text
+*318 (Text
 uid 3188,0
 va (VaSet
 )
@@ -9899,7 +9918,7 @@ st "MUX2_16"
 blo "-5200,24600"
 tm "CptNameMgr"
 )
-*320 (Text
+*319 (Text
 uid 3189,0
 va (VaSet
 )
@@ -9946,7 +9965,7 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*321 (Net
+*320 (Net
 uid 3206,0
 decl (Decl
 n "F5"
@@ -9959,11 +9978,11 @@ uid 3207,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,62300,-25000,63200"
+xt "-41000,63200,-25000,64100"
 st "SIGNAL F5           : LC3B_WORD"
 )
 )
-*322 (Net
+*321 (Net
 uid 3212,0
 decl (Decl
 n "F6"
@@ -9976,14 +9995,14 @@ uid 3213,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,63200,-25000,64100"
+xt "-41000,64100,-25000,65000"
 st "SIGNAL F6           : LC3B_WORD"
 )
 )
-*323 (SaComponent
+*322 (SaComponent
 uid 3267,0
 optionalChildren [
-*324 (CptPort
+*323 (CptPort
 uid 3258,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10028,10 +10047,10 @@ suid 1,0
 )
 )
 )
-*325 (CptPort
+*324 (CptPort
 uid 3262,0
 optionalChildren [
-*326 (Circle
+*325 (Circle
 uid 3266,0
 va (VaSet
 vasetType 1
@@ -10103,7 +10122,7 @@ uid 3269,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*327 (Text
+*326 (Text
 uid 3270,0
 va (VaSet
 isHidden 1
@@ -10113,7 +10132,7 @@ st "mp3lib"
 blo "77800,79700"
 tm "BdLibraryNameMgr"
 )
-*328 (Text
+*327 (Text
 uid 3271,0
 va (VaSet
 )
@@ -10122,7 +10141,7 @@ st "NOT1"
 blo "77800,80700"
 tm "CptNameMgr"
 )
-*329 (Text
+*328 (Text
 uid 3272,0
 va (VaSet
 )
@@ -10171,7 +10190,7 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*330 (PortIoOut
+*329 (PortIoOut
 uid 3287,0
 shape (CompositeShape
 uid 3288,0
@@ -10216,7 +10235,7 @@ tm "WireNameMgr"
 )
 )
 )
-*331 (Net
+*330 (Net
 uid 3293,0
 decl (Decl
 n "INV_STALL"
@@ -10233,10 +10252,10 @@ xt "-41000,27200,-28500,28100"
 st "INV_STALL    : STD_LOGIC"
 )
 )
-*332 (SaComponent
+*331 (SaComponent
 uid 3305,0
 optionalChildren [
-*333 (CptPort
+*332 (CptPort
 uid 3297,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10271,7 +10290,7 @@ suid 1,0
 )
 )
 )
-*334 (CptPort
+*333 (CptPort
 uid 3301,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10326,7 +10345,7 @@ uid 3307,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*335 (Text
+*334 (Text
 uid 3308,0
 va (VaSet
 font "courier,8,1"
@@ -10336,7 +10355,7 @@ st "ece411"
 blo "-21250,34800"
 tm "BdLibraryNameMgr"
 )
-*336 (Text
+*335 (Text
 uid 3309,0
 va (VaSet
 font "courier,8,1"
@@ -10346,7 +10365,7 @@ st "PLUS2"
 blo "-21250,35700"
 tm "CptNameMgr"
 )
-*337 (Text
+*336 (Text
 uid 3310,0
 va (VaSet
 font "courier,8,1"
@@ -10393,7 +10412,7 @@ sIVOD 1
 )
 archFileType "UNKNOWN"
 )
-*338 (Net
+*337 (Net
 uid 3315,0
 decl (Decl
 n "PCplus2"
@@ -10406,14 +10425,14 @@ uid 3316,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,70400,-25000,71300"
+xt "-41000,71300,-25000,72200"
 st "SIGNAL PCplus2      : LC3b_word"
 )
 )
-*339 (SaComponent
+*338 (SaComponent
 uid 3574,0
 optionalChildren [
-*340 (CptPort
+*339 (CptPort
 uid 3562,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10451,7 +10470,7 @@ suid 1,0
 )
 )
 )
-*341 (CptPort
+*340 (CptPort
 uid 3566,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10487,7 +10506,7 @@ suid 3,0
 )
 )
 )
-*342 (CptPort
+*341 (CptPort
 uid 3570,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10523,7 +10542,7 @@ suid 8,0
 )
 )
 )
-*343 (CptPort
+*342 (CptPort
 uid 3584,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10559,7 +10578,7 @@ suid 9,0
 )
 )
 )
-*344 (CptPort
+*343 (CptPort
 uid 3588,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10612,7 +10631,7 @@ uid 3576,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*345 (Text
+*344 (Text
 uid 3577,0
 va (VaSet
 font "courier,8,1"
@@ -10622,7 +10641,7 @@ st "ece411"
 blo "45750,71800"
 tm "BdLibraryNameMgr"
 )
-*346 (Text
+*345 (Text
 uid 3578,0
 va (VaSet
 font "courier,8,1"
@@ -10632,7 +10651,7 @@ st "AND4"
 blo "45750,72700"
 tm "CptNameMgr"
 )
-*347 (Text
+*346 (Text
 uid 3579,0
 va (VaSet
 font "courier,8,1"
@@ -10680,10 +10699,10 @@ sIVOD 1
 )
 archFileType "UNKNOWN"
 )
-*348 (SaComponent
+*347 (SaComponent
 uid 3601,0
 optionalChildren [
-*349 (CptPort
+*348 (CptPort
 uid 3592,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10728,10 +10747,10 @@ suid 1,0
 )
 )
 )
-*350 (CptPort
+*349 (CptPort
 uid 3596,0
 optionalChildren [
-*351 (Circle
+*350 (Circle
 uid 3600,0
 va (VaSet
 vasetType 1
@@ -10803,7 +10822,7 @@ uid 3603,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*352 (Text
+*351 (Text
 uid 3604,0
 va (VaSet
 isHidden 1
@@ -10813,7 +10832,7 @@ st "mp3lib"
 blo "22800,13700"
 tm "BdLibraryNameMgr"
 )
-*353 (Text
+*352 (Text
 uid 3605,0
 va (VaSet
 )
@@ -10822,7 +10841,7 @@ st "NOT1"
 blo "22800,14700"
 tm "CptNameMgr"
 )
-*354 (Text
+*353 (Text
 uid 3606,0
 va (VaSet
 )
@@ -10871,7 +10890,7 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*355 (Net
+*354 (Net
 uid 3627,0
 decl (Decl
 n "ALUASELNOT"
@@ -10888,10 +10907,10 @@ xt "-41000,38900,-25000,39800"
 st "SIGNAL ALUASELNOT   : STD_LOGIC"
 )
 )
-*356 (SaComponent
+*355 (SaComponent
 uid 3629,0
 optionalChildren [
-*357 (CptPort
+*356 (CptPort
 uid 3639,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10928,7 +10947,7 @@ o 5
 )
 )
 )
-*358 (CptPort
+*357 (CptPort
 uid 3643,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10963,7 +10982,7 @@ o 1
 )
 )
 )
-*359 (CptPort
+*358 (CptPort
 uid 3647,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -10998,7 +11017,7 @@ o 2
 )
 )
 )
-*360 (CptPort
+*359 (CptPort
 uid 3651,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -11033,7 +11052,7 @@ o 3
 )
 )
 )
-*361 (CptPort
+*360 (CptPort
 uid 3655,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -11085,7 +11104,7 @@ uid 3631,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*362 (Text
+*361 (Text
 uid 3632,0
 va (VaSet
 font "courier,8,1"
@@ -11095,7 +11114,7 @@ st "ece411"
 blo "45750,77800"
 tm "BdLibraryNameMgr"
 )
-*363 (Text
+*362 (Text
 uid 3633,0
 va (VaSet
 font "courier,8,1"
@@ -11105,7 +11124,7 @@ st "AND4"
 blo "45750,78700"
 tm "CptNameMgr"
 )
-*364 (Text
+*363 (Text
 uid 3634,0
 va (VaSet
 font "courier,8,1"
@@ -11153,10 +11172,10 @@ sIVOD 1
 )
 archFileType "UNKNOWN"
 )
-*365 (SaComponent
+*364 (SaComponent
 uid 3659,0
 optionalChildren [
-*366 (CptPort
+*365 (CptPort
 uid 3669,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -11200,7 +11219,7 @@ o 1
 )
 )
 )
-*367 (CptPort
+*366 (CptPort
 uid 3674,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -11244,7 +11263,7 @@ o 2
 )
 )
 )
-*368 (CptPort
+*367 (CptPort
 uid 3679,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -11306,7 +11325,7 @@ uid 3661,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*369 (Text
+*368 (Text
 uid 3662,0
 va (VaSet
 isHidden 1
@@ -11316,7 +11335,7 @@ st "mp3lib"
 blo "54800,83600"
 tm "BdLibraryNameMgr"
 )
-*370 (Text
+*369 (Text
 uid 3663,0
 va (VaSet
 )
@@ -11325,7 +11344,7 @@ st "OR2"
 blo "54800,84600"
 tm "CptNameMgr"
 )
-*371 (Text
+*370 (Text
 uid 3664,0
 va (VaSet
 )
@@ -11373,10 +11392,10 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*372 (SaComponent
+*371 (SaComponent
 uid 3970,0
 optionalChildren [
-*373 (CptPort
+*372 (CptPort
 uid 3961,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -11421,10 +11440,10 @@ suid 1,0
 )
 )
 )
-*374 (CptPort
+*373 (CptPort
 uid 3965,0
 optionalChildren [
-*375 (Circle
+*374 (Circle
 uid 3969,0
 va (VaSet
 vasetType 1
@@ -11496,7 +11515,7 @@ uid 3972,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*376 (Text
+*375 (Text
 uid 3973,0
 va (VaSet
 isHidden 1
@@ -11506,7 +11525,7 @@ st "mp3lib"
 blo "60800,85700"
 tm "BdLibraryNameMgr"
 )
-*377 (Text
+*376 (Text
 uid 3974,0
 va (VaSet
 )
@@ -11515,7 +11534,7 @@ st "NOT1"
 blo "60800,86700"
 tm "CptNameMgr"
 )
-*378 (Text
+*377 (Text
 uid 3975,0
 va (VaSet
 )
@@ -11564,10 +11583,10 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*379 (SaComponent
+*378 (SaComponent
 uid 4000,0
 optionalChildren [
-*380 (CptPort
+*379 (CptPort
 uid 3988,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -11612,7 +11631,7 @@ suid 1,0
 )
 )
 )
-*381 (CptPort
+*380 (CptPort
 uid 3992,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -11657,7 +11676,7 @@ suid 2,0
 )
 )
 )
-*382 (CptPort
+*381 (CptPort
 uid 3996,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -11720,7 +11739,7 @@ uid 4002,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*383 (Text
+*382 (Text
 uid 4003,0
 va (VaSet
 isHidden 1
@@ -11730,7 +11749,7 @@ st "mp3lib"
 blo "68800,78600"
 tm "BdLibraryNameMgr"
 )
-*384 (Text
+*383 (Text
 uid 4004,0
 va (VaSet
 )
@@ -11739,7 +11758,7 @@ st "AND2"
 blo "68800,79600"
 tm "CptNameMgr"
 )
-*385 (Text
+*384 (Text
 uid 4005,0
 va (VaSet
 )
@@ -11788,7 +11807,7 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*386 (Net
+*385 (Net
 uid 4027,0
 decl (Decl
 n "MemFWDEn"
@@ -11801,11 +11820,11 @@ uid 4028,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,69500,-25000,70400"
+xt "-41000,70400,-25000,71300"
 st "SIGNAL MemFWDEn     : STD_LOGIC"
 )
 )
-*387 (Net
+*386 (Net
 uid 4029,0
 decl (Decl
 n "EXEFWDEN"
@@ -11818,11 +11837,11 @@ uid 4030,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,54200,-25000,55100"
+xt "-41000,56000,-25000,56900"
 st "SIGNAL EXEFWDEN     : STD_LOGIC"
 )
 )
-*388 (PortIoIn
+*387 (PortIoIn
 uid 4049,0
 shape (CompositeShape
 uid 4050,0
@@ -11868,7 +11887,7 @@ tm "WireNameMgr"
 )
 )
 )
-*389 (Net
+*388 (Net
 uid 4063,0
 decl (Decl
 n "MEMDest2"
@@ -11885,10 +11904,10 @@ xt "-41000,15500,-29000,16400"
 st "MEMDest2     : LC3b_reg"
 )
 )
-*390 (SaComponent
+*389 (SaComponent
 uid 4298,0
 optionalChildren [
-*391 (CptPort
+*390 (CptPort
 uid 4282,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -11931,7 +11950,7 @@ suid 1,0
 )
 )
 )
-*392 (CptPort
+*391 (CptPort
 uid 4286,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -11974,7 +11993,7 @@ suid 2,0
 )
 )
 )
-*393 (CptPort
+*392 (CptPort
 uid 4290,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -12020,7 +12039,7 @@ suid 3,0
 )
 )
 )
-*394 (CptPort
+*393 (CptPort
 uid 4294,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -12082,7 +12101,7 @@ uid 4300,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*395 (Text
+*394 (Text
 uid 4301,0
 va (VaSet
 isHidden 1
@@ -12092,7 +12111,7 @@ st "mp3lib"
 blo "66800,58600"
 tm "BdLibraryNameMgr"
 )
-*396 (Text
+*395 (Text
 uid 4302,0
 va (VaSet
 )
@@ -12101,7 +12120,7 @@ st "MUX2_16"
 blo "66800,59600"
 tm "CptNameMgr"
 )
-*397 (Text
+*396 (Text
 uid 4303,0
 va (VaSet
 )
@@ -12148,10 +12167,10 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*398 (SaComponent
+*397 (SaComponent
 uid 4344,0
 optionalChildren [
-*399 (CptPort
+*398 (CptPort
 uid 4328,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -12194,7 +12213,7 @@ suid 1,0
 )
 )
 )
-*400 (CptPort
+*399 (CptPort
 uid 4332,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -12237,7 +12256,7 @@ suid 2,0
 )
 )
 )
-*401 (CptPort
+*400 (CptPort
 uid 4336,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -12283,7 +12302,7 @@ suid 3,0
 )
 )
 )
-*402 (CptPort
+*401 (CptPort
 uid 4340,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -12345,7 +12364,7 @@ uid 4346,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*403 (Text
+*402 (Text
 uid 4347,0
 va (VaSet
 isHidden 1
@@ -12355,7 +12374,7 @@ st "mp3lib"
 blo "76800,60600"
 tm "BdLibraryNameMgr"
 )
-*404 (Text
+*403 (Text
 uid 4348,0
 va (VaSet
 )
@@ -12364,7 +12383,7 @@ st "MUX2_16"
 blo "76800,61600"
 tm "CptNameMgr"
 )
-*405 (Text
+*404 (Text
 uid 4349,0
 va (VaSet
 )
@@ -12411,7 +12430,7 @@ selT 0
 )
 archFileType "UNKNOWN"
 )
-*406 (Net
+*405 (Net
 uid 4358,0
 decl (Decl
 n "F8"
@@ -12424,11 +12443,11 @@ uid 4359,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,64100,-25000,65000"
+xt "-41000,65000,-25000,65900"
 st "SIGNAL F8           : LC3B_WORD"
 )
 )
-*407 (Net
+*406 (Net
 uid 4390,0
 decl (Decl
 n "MEMFWD"
@@ -12441,11 +12460,988 @@ uid 4391,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-41000,66800,-25000,67700"
+xt "-41000,67700,-25000,68600"
 st "SIGNAL MEMFWD       : STD_LOGIC"
 )
 )
-*408 (Wire
+*407 (SaComponent
+uid 4394,0
+optionalChildren [
+*408 (CptPort
+uid 4404,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4405,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "27000,73625,27750,74375"
+)
+tg (CPTG
+uid 4406,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 4407,0
+va (VaSet
+font "courier,8,0"
+)
+xt "25500,73550,26000,74450"
+st "F"
+ju 2
+blo "26000,74250"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "F"
+t "std_logic"
+o 1
+)
+)
+)
+*409 (CptPort
+uid 4408,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4409,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "20250,73625,21000,74375"
+)
+tg (CPTG
+uid 4410,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4411,0
+va (VaSet
+font "courier,8,0"
+)
+xt "22000,73550,22500,74450"
+st "A"
+blo "22000,74250"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "A"
+t "LC3b_Reg"
+o 2
+)
+)
+)
+*410 (CptPort
+uid 4412,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4413,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "20250,74625,21000,75375"
+)
+tg (CPTG
+uid 4414,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4415,0
+va (VaSet
+font "courier,8,0"
+)
+xt "22000,74550,22500,75450"
+st "B"
+blo "22000,75250"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "B"
+t "LC3B_Reg"
+o 3
+)
+)
+)
+]
+shape (Rectangle
+uid 4395,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "21000,73000,27000,76000"
+)
+oxt "23000,15000,29000,18000"
+ttg (MlTextGroup
+uid 4396,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*411 (Text
+uid 4397,0
+va (VaSet
+font "courier,8,1"
+)
+xt "22750,73100,25750,74000"
+st "ece411"
+blo "22750,73800"
+tm "BdLibraryNameMgr"
+)
+*412 (Text
+uid 4398,0
+va (VaSet
+font "courier,8,1"
+)
+xt "22750,74000,25250,74900"
+st "COMP3"
+blo "22750,74700"
+tm "CptNameMgr"
+)
+*413 (Text
+uid 4399,0
+va (VaSet
+font "courier,8,1"
+)
+xt "22750,74900,26750,75800"
+st "A_EXCMP1"
+blo "22750,75600"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 4400,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 4401,0
+text (MLText
+uid 4402,0
+va (VaSet
+font "courier,8,0"
+)
+xt "-2000,70900,-2000,70900"
+)
+header ""
+)
+elements [
+]
+)
+viewicon (ZoomableIcon
+uid 4403,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "21250,74250,22750,75750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+viewiconposition 0
+portVis (PortSigDisplay
+sIVOD 1
+)
+archFileType "UNKNOWN"
+)
+*414 (Net
+uid 4440,0
+decl (Decl
+n "DEST_EXE"
+t "std_logic"
+o 78
+suid 208,0
+)
+declText (MLText
+uid 4441,0
+va (VaSet
+font "courier,8,0"
+)
+xt "-41000,54200,-25000,55100"
+st "SIGNAL DEST_EXE     : std_logic"
+)
+)
+*415 (SaComponent
+uid 4442,0
+optionalChildren [
+*416 (CptPort
+uid 4452,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4453,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "27000,76625,27750,77375"
+)
+tg (CPTG
+uid 4454,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 4455,0
+va (VaSet
+font "courier,8,0"
+)
+xt "25500,76550,26000,77450"
+st "F"
+ju 2
+blo "26000,77250"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "F"
+t "std_logic"
+o 1
+)
+)
+)
+*417 (CptPort
+uid 4456,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4457,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "20250,76625,21000,77375"
+)
+tg (CPTG
+uid 4458,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4459,0
+va (VaSet
+font "courier,8,0"
+)
+xt "22000,76550,22500,77450"
+st "A"
+blo "22000,77250"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "A"
+t "LC3b_Reg"
+o 2
+)
+)
+)
+*418 (CptPort
+uid 4460,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4461,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "20250,77625,21000,78375"
+)
+tg (CPTG
+uid 4462,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4463,0
+va (VaSet
+font "courier,8,0"
+)
+xt "22000,77550,22500,78450"
+st "B"
+blo "22000,78250"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "B"
+t "LC3B_Reg"
+o 3
+)
+)
+)
+]
+shape (Rectangle
+uid 4443,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+lineColor "0,32896,0"
+lineWidth 2
+)
+xt "21000,76000,27000,79000"
+)
+oxt "23000,15000,29000,18000"
+ttg (MlTextGroup
+uid 4444,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*419 (Text
+uid 4445,0
+va (VaSet
+font "courier,8,1"
+)
+xt "22750,76100,25750,77000"
+st "ece411"
+blo "22750,76800"
+tm "BdLibraryNameMgr"
+)
+*420 (Text
+uid 4446,0
+va (VaSet
+font "courier,8,1"
+)
+xt "22750,77000,25250,77900"
+st "COMP3"
+blo "22750,77700"
+tm "CptNameMgr"
+)
+*421 (Text
+uid 4447,0
+va (VaSet
+font "courier,8,1"
+)
+xt "22750,77900,27250,78800"
+st "B_MEMCMP1"
+blo "22750,78600"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 4448,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 4449,0
+text (MLText
+uid 4450,0
+va (VaSet
+font "courier,8,0"
+)
+xt "-2000,73900,-2000,73900"
+)
+header ""
+)
+elements [
+]
+)
+viewicon (ZoomableIcon
+uid 4451,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "21250,77250,22750,78750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+viewiconposition 0
+portVis (PortSigDisplay
+sIVOD 1
+)
+archFileType "UNKNOWN"
+)
+*422 (Net
+uid 4488,0
+decl (Decl
+n "DEST_MEM"
+t "std_logic"
+o 81
+suid 212,0
+)
+declText (MLText
+uid 4489,0
+va (VaSet
+font "courier,8,0"
+)
+xt "-41000,55100,-25000,56000"
+st "SIGNAL DEST_MEM     : std_logic"
+)
+)
+*423 (SaComponent
+uid 4490,0
+optionalChildren [
+*424 (CptPort
+uid 4500,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4501,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "44250,58625,45000,59375"
+)
+tg (CPTG
+uid 4502,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4503,0
+sl 0
+va (VaSet
+)
+xt "46000,58450,46600,59450"
+st "A"
+blo "46000,59250"
+)
+s (Text
+uid 4504,0
+sl 0
+va (VaSet
+)
+xt "46000,59450,46000,59450"
+blo "46000,59450"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "A"
+t "STD_LOGIC"
+o 1
+)
+)
+)
+*425 (CptPort
+uid 4505,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4506,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "44250,59625,45000,60375"
+)
+tg (CPTG
+uid 4507,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4508,0
+sl 0
+va (VaSet
+)
+xt "46000,59450,46600,60450"
+st "B"
+blo "46000,60250"
+)
+s (Text
+uid 4509,0
+sl 0
+va (VaSet
+)
+xt "46000,60450,46000,60450"
+blo "46000,60450"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "B"
+t "STD_LOGIC"
+o 2
+)
+)
+)
+*426 (CptPort
+uid 4510,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4511,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "44250,60625,45000,61375"
+)
+tg (CPTG
+uid 4512,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4513,0
+sl 0
+va (VaSet
+)
+xt "46000,60450,46600,61450"
+st "C"
+blo "46000,61250"
+)
+s (Text
+uid 4514,0
+sl 0
+va (VaSet
+)
+xt "46000,61450,46000,61450"
+blo "46000,61450"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "C"
+t "STD_LOGIC"
+o 3
+)
+)
+)
+*427 (CptPort
+uid 4515,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4516,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "47950,59625,48700,60375"
+)
+tg (CPTG
+uid 4517,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 4518,0
+sl 0
+va (VaSet
+)
+xt "45975,59825,46575,60825"
+st "F"
+ju 2
+blo "46575,60625"
+)
+s (Text
+uid 4519,0
+sl 0
+va (VaSet
+)
+xt "46575,60825,46575,60825"
+ju 2
+blo "46575,60825"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "F"
+t "STD_LOGIC"
+o 4
+)
+)
+)
+]
+shape (And
+uid 4491,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "45000,58000,48000,62000"
+)
+oxt "1000,12000,9000,20000"
+ttg (MlTextGroup
+uid 4492,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*428 (Text
+uid 4493,0
+va (VaSet
+isHidden 1
+)
+xt "47800,59800,51400,60800"
+st "mp3lib"
+blo "47800,60600"
+tm "BdLibraryNameMgr"
+)
+*429 (Text
+uid 4494,0
+va (VaSet
+)
+xt "47800,60800,50200,61800"
+st "AND3"
+blo "47800,61600"
+tm "CptNameMgr"
+)
+*430 (Text
+uid 4495,0
+va (VaSet
+)
+xt "47800,61800,50200,62800"
+st "U_26"
+blo "47800,62600"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 4496,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 4497,0
+text (MLText
+uid 4498,0
+va (VaSet
+)
+xt "30000,60000,30000,60000"
+)
+header ""
+)
+elements [
+]
+)
+viewicon (ZoomableIcon
+uid 4499,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "45250,60250,46750,61750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+ordering 1
+viewiconposition 0
+portVis (PortSigDisplay
+disp 1
+selT 0
+)
+archFileType "UNKNOWN"
+)
+*431 (SaComponent
+uid 4520,0
+optionalChildren [
+*432 (CptPort
+uid 4530,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4531,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "44250,54625,45000,55375"
+)
+tg (CPTG
+uid 4532,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4533,0
+sl 0
+va (VaSet
+)
+xt "46000,54450,46600,55450"
+st "A"
+blo "46000,55250"
+)
+s (Text
+uid 4534,0
+sl 0
+va (VaSet
+)
+xt "46000,55450,46000,55450"
+blo "46000,55450"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "A"
+t "STD_LOGIC"
+o 1
+)
+)
+)
+*433 (CptPort
+uid 4535,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4536,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "44250,55625,45000,56375"
+)
+tg (CPTG
+uid 4537,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4538,0
+sl 0
+va (VaSet
+)
+xt "46000,55450,46600,56450"
+st "B"
+blo "46000,56250"
+)
+s (Text
+uid 4539,0
+sl 0
+va (VaSet
+)
+xt "46000,56450,46000,56450"
+blo "46000,56450"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "B"
+t "STD_LOGIC"
+o 2
+)
+)
+)
+*434 (CptPort
+uid 4540,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4541,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "44250,56625,45000,57375"
+)
+tg (CPTG
+uid 4542,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4543,0
+sl 0
+va (VaSet
+)
+xt "46000,56450,46600,57450"
+st "C"
+blo "46000,57250"
+)
+s (Text
+uid 4544,0
+sl 0
+va (VaSet
+)
+xt "46000,57450,46000,57450"
+blo "46000,57450"
+)
+)
+thePort (LogicalPort
+decl (Decl
+n "C"
+t "STD_LOGIC"
+o 3
+)
+)
+)
+*435 (CptPort
+uid 4545,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 4546,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "47950,55625,48700,56375"
+)
+tg (CPTG
+uid 4547,0
+ps "CptPortTextPlaceStrategy"
+stg "RightVerticalLayoutStrategy"
+f (Text
+uid 4548,0
+sl 0
+va (VaSet
+)
+xt "45975,55825,46575,56825"
+st "F"
+ju 2
+blo "46575,56625"
+)
+s (Text
+uid 4549,0
+sl 0
+va (VaSet
+)
+xt "46575,56825,46575,56825"
+ju 2
+blo "46575,56825"
+)
+)
+thePort (LogicalPort
+m 1
+decl (Decl
+n "F"
+t "STD_LOGIC"
+o 4
+)
+)
+)
+]
+shape (And
+uid 4521,0
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "45000,54000,48000,58000"
+)
+oxt "1000,12000,9000,20000"
+ttg (MlTextGroup
+uid 4522,0
+ps "CenterOffsetStrategy"
+stg "VerticalLayoutStrategy"
+textVec [
+*436 (Text
+uid 4523,0
+va (VaSet
+isHidden 1
+)
+xt "47800,55800,51400,56800"
+st "mp3lib"
+blo "47800,56600"
+tm "BdLibraryNameMgr"
+)
+*437 (Text
+uid 4524,0
+va (VaSet
+)
+xt "47800,56800,50200,57800"
+st "AND3"
+blo "47800,57600"
+tm "CptNameMgr"
+)
+*438 (Text
+uid 4525,0
+va (VaSet
+)
+xt "47800,57800,50200,58800"
+st "U_27"
+blo "47800,58600"
+tm "InstanceNameMgr"
+)
+]
+)
+ga (GenericAssociation
+uid 4526,0
+ps "EdgeToEdgeStrategy"
+matrix (Matrix
+uid 4527,0
+text (MLText
+uid 4528,0
+va (VaSet
+)
+xt "30000,56000,30000,56000"
+)
+header ""
+)
+elements [
+]
+)
+viewicon (ZoomableIcon
+uid 4529,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "45250,56250,46750,57750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+ordering 1
+viewiconposition 0
+portVis (PortSigDisplay
+disp 1
+selT 0
+)
+archFileType "UNKNOWN"
+)
+*439 (Net
+uid 4598,0
+decl (Decl
+n "STR_EXEFWD"
+t "std_logic"
+o 62
+suid 219,0
+)
+declText (MLText
+uid 4599,0
+va (VaSet
+font "courier,8,0"
+)
+xt "-41000,73100,-25000,74000"
+st "SIGNAL STR_EXEFWD   : std_logic"
+)
+)
+*440 (Net
+uid 4616,0
+decl (Decl
+n "STR_MEMFWD"
+t "STD_LOGIC"
+o 81
+suid 222,0
+)
+declText (MLText
+uid 4617,0
+va (VaSet
+font "courier,8,0"
+)
+xt "-41000,74000,-25000,74900"
+st "SIGNAL STR_MEMFWD   : STD_LOGIC"
+)
+)
+*441 (Net
+uid 4634,0
+decl (Decl
+n "TRAPMuxOut"
+t "LC3B_WORD"
+o 81
+suid 224,0
+)
+declText (MLText
+uid 4635,0
+va (VaSet
+font "courier,8,0"
+)
+xt "-41000,75800,-25000,76700"
+st "SIGNAL TRAPMuxOut   : LC3B_WORD"
+)
+)
+*442 (Wire
 uid 241,0
 shape (OrthoPolyLine
 uid 242,0
@@ -12484,7 +13480,7 @@ tm "WireNameMgr"
 )
 on &37
 )
-*409 (Wire
+*443 (Wire
 uid 249,0
 shape (OrthoPolyLine
 uid 250,0
@@ -12531,7 +13527,7 @@ tm "SignalTypeMgr"
 )
 on &36
 )
-*410 (Wire
+*444 (Wire
 uid 257,0
 shape (OrthoPolyLine
 uid 258,0
@@ -12546,7 +13542,7 @@ pts [
 ]
 )
 start &20
-end &185
+end &184
 es 0
 sat 32
 eat 32
@@ -12583,7 +13579,7 @@ tm "SignalTypeMgr"
 )
 on &38
 )
-*411 (Wire
+*445 (Wire
 uid 263,0
 shape (OrthoPolyLine
 uid 264,0
@@ -12598,7 +13594,7 @@ pts [
 ]
 )
 start &21
-end &306
+end &305
 sat 32
 eat 32
 sty 1
@@ -12634,7 +13630,7 @@ tm "SignalTypeMgr"
 )
 on &39
 )
-*412 (Wire
+*446 (Wire
 uid 269,0
 shape (OrthoPolyLine
 uid 270,0
@@ -12686,7 +13682,7 @@ tm "SignalTypeMgr"
 )
 on &40
 )
-*413 (Wire
+*447 (Wire
 uid 275,0
 shape (OrthoPolyLine
 uid 276,0
@@ -12734,7 +13730,7 @@ tm "SignalTypeMgr"
 )
 on &49
 )
-*414 (Wire
+*448 (Wire
 uid 307,0
 shape (OrthoPolyLine
 uid 308,0
@@ -12785,7 +13781,7 @@ tm "SignalTypeMgr"
 )
 on &42
 )
-*415 (Wire
+*449 (Wire
 uid 329,0
 shape (OrthoPolyLine
 uid 330,0
@@ -12825,7 +13821,7 @@ tm "WireNameMgr"
 )
 on &44
 )
-*416 (Wire
+*450 (Wire
 uid 419,0
 shape (OrthoPolyLine
 uid 420,0
@@ -12861,7 +13857,7 @@ tm "WireNameMgr"
 )
 on &50
 )
-*417 (Wire
+*451 (Wire
 uid 431,0
 shape (OrthoPolyLine
 uid 432,0
@@ -12907,7 +13903,7 @@ tm "SignalTypeMgr"
 )
 on &50
 )
-*418 (Wire
+*452 (Wire
 uid 529,0
 shape (OrthoPolyLine
 uid 530,0
@@ -12921,7 +13917,7 @@ pts [
 ]
 )
 start &51
-end &148
+end &147
 sat 32
 eat 32
 stc 0
@@ -12946,7 +13942,7 @@ tm "WireNameMgr"
 )
 on &60
 )
-*419 (Wire
+*453 (Wire
 uid 537,0
 shape (OrthoPolyLine
 uid 538,0
@@ -12984,7 +13980,7 @@ tm "WireNameMgr"
 )
 on &61
 )
-*420 (Wire
+*454 (Wire
 uid 545,0
 shape (OrthoPolyLine
 uid 546,0
@@ -13022,7 +14018,7 @@ tm "WireNameMgr"
 )
 on &62
 )
-*421 (Wire
+*455 (Wire
 uid 553,0
 shape (OrthoPolyLine
 uid 554,0
@@ -13060,21 +14056,21 @@ tm "WireNameMgr"
 )
 on &63
 )
-*422 (Wire
+*456 (Wire
 uid 561,0
 shape (OrthoPolyLine
 uid 562,0
 va (VaSet
 vasetType 3
 )
-xt "-6000,33000,-5750,33000"
+xt "3000,35000,3250,35000"
 pts [
-"-6000,33000"
-"-5750,33000"
+"3000,35000"
+"3250,35000"
 ]
 )
 start &55
-end &133
+end &108
 es 0
 sat 32
 eat 32
@@ -13092,15 +14088,15 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "-8000,32100,-6000,33000"
+xt "1000,34100,3000,35000"
 st "ADJ9"
-blo "-8000,32800"
+blo "1000,34800"
 tm "WireNameMgr"
 )
 )
 on &64
 )
-*423 (Wire
+*457 (Wire
 uid 569,0
 shape (OrthoPolyLine
 uid 570,0
@@ -13140,7 +14136,7 @@ tm "WireNameMgr"
 )
 on &65
 )
-*424 (Wire
+*458 (Wire
 uid 577,0
 shape (OrthoPolyLine
 uid 578,0
@@ -13179,17 +14175,17 @@ tm "WireNameMgr"
 )
 on &66
 )
-*425 (Wire
+*459 (Wire
 uid 585,0
 shape (OrthoPolyLine
 uid 586,0
 va (VaSet
 vasetType 3
 )
-xt "-6000,37000,-5750,37000"
+xt "-15000,38000,-12750,38000"
 pts [
-"-6000,37000"
-"-5750,37000"
+"-15000,38000"
+"-12750,38000"
 ]
 )
 start &58
@@ -13210,15 +14206,15 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "-8000,36100,-5500,37000"
+xt "-17000,37100,-14500,38000"
 st "TRAP8"
-blo "-8000,36800"
+blo "-17000,37800"
 tm "WireNameMgr"
 )
 )
 on &67
 )
-*426 (Wire
+*460 (Wire
 uid 593,0
 shape (OrthoPolyLine
 uid 594,0
@@ -13232,7 +14228,7 @@ pts [
 ]
 )
 start &59
-end &333
+end &332
 sat 32
 eat 32
 stc 0
@@ -13257,7 +14253,7 @@ tm "WireNameMgr"
 )
 on &68
 )
-*427 (Wire
+*461 (Wire
 uid 601,0
 shape (OrthoPolyLine
 uid 602,0
@@ -13271,7 +14267,7 @@ pts [
 ]
 )
 start &71
-end &150
+end &149
 sat 32
 eat 32
 stc 0
@@ -13296,7 +14292,7 @@ tm "WireNameMgr"
 )
 on &72
 )
-*428 (Wire
+*462 (Wire
 uid 609,0
 shape (OrthoPolyLine
 uid 610,0
@@ -13334,7 +14330,7 @@ tm "WireNameMgr"
 )
 on &73
 )
-*429 (Wire
+*463 (Wire
 uid 617,0
 shape (OrthoPolyLine
 uid 618,0
@@ -13372,7 +14368,7 @@ tm "WireNameMgr"
 )
 on &74
 )
-*430 (Wire
+*464 (Wire
 uid 703,0
 shape (OrthoPolyLine
 uid 704,0
@@ -13410,7 +14406,7 @@ tm "WireNameMgr"
 )
 on &79
 )
-*431 (Wire
+*465 (Wire
 uid 711,0
 shape (OrthoPolyLine
 uid 712,0
@@ -13448,7 +14444,7 @@ tm "WireNameMgr"
 )
 on &80
 )
-*432 (Wire
+*466 (Wire
 uid 735,0
 shape (OrthoPolyLine
 uid 736,0
@@ -13486,7 +14482,7 @@ tm "WireNameMgr"
 )
 on &81
 )
-*433 (Wire
+*467 (Wire
 uid 743,0
 shape (OrthoPolyLine
 uid 744,0
@@ -13524,7 +14520,7 @@ tm "WireNameMgr"
 )
 on &82
 )
-*434 (Wire
+*468 (Wire
 uid 871,0
 shape (OrthoPolyLine
 uid 872,0
@@ -13537,7 +14533,7 @@ pts [
 "85000,62000"
 ]
 )
-start &401
+start &400
 end &83
 sat 32
 eat 32
@@ -13563,7 +14559,7 @@ tm "WireNameMgr"
 )
 on &84
 )
-*435 (Wire
+*469 (Wire
 uid 982,0
 shape (OrthoPolyLine
 uid 983,0
@@ -13610,7 +14606,7 @@ tm "SignalTypeMgr"
 )
 on &93
 )
-*436 (Wire
+*470 (Wire
 uid 990,0
 shape (OrthoPolyLine
 uid 991,0
@@ -13657,7 +14653,7 @@ tm "SignalTypeMgr"
 )
 on &94
 )
-*437 (Wire
+*471 (Wire
 uid 1040,0
 shape (OrthoPolyLine
 uid 1041,0
@@ -13705,10 +14701,10 @@ tm "SignalTypeMgr"
 )
 on &104
 )
-*438 (Wire
+*472 (Wire
 uid 1046,0
 optionalChildren [
-*439 (BdJunction
+*473 (BdJunction
 uid 3617,0
 ps "OnConnectorStrategy"
 shape (Circle
@@ -13757,7 +14753,7 @@ tm "WireNameMgr"
 )
 on &105
 )
-*440 (Wire
+*474 (Wire
 uid 1092,0
 shape (OrthoPolyLine
 uid 1093,0
@@ -13805,7 +14801,7 @@ tm "SignalTypeMgr"
 )
 on &114
 )
-*441 (Wire
+*475 (Wire
 uid 1098,0
 shape (OrthoPolyLine
 uid 1099,0
@@ -13851,7 +14847,7 @@ tm "SignalTypeMgr"
 )
 on &105
 )
-*442 (Wire
+*476 (Wire
 uid 1118,0
 shape (OrthoPolyLine
 uid 1119,0
@@ -13887,7 +14883,7 @@ tm "WireNameMgr"
 )
 on &38
 )
-*443 (Wire
+*477 (Wire
 uid 1188,0
 shape (OrthoPolyLine
 uid 1189,0
@@ -13935,7 +14931,7 @@ tm "SignalTypeMgr"
 )
 on &131
 )
-*444 (Wire
+*478 (Wire
 uid 1208,0
 shape (OrthoPolyLine
 uid 1209,0
@@ -13974,7 +14970,7 @@ tm "WireNameMgr"
 )
 on &128
 )
-*445 (Wire
+*479 (Wire
 uid 1218,0
 shape (OrthoPolyLine
 uid 1219,0
@@ -14012,7 +15008,7 @@ tm "WireNameMgr"
 )
 on &129
 )
-*446 (Wire
+*480 (Wire
 uid 1244,0
 shape (OrthoPolyLine
 uid 1245,0
@@ -14058,7 +15054,7 @@ tm "SignalTypeMgr"
 )
 on &130
 )
-*447 (Wire
+*481 (Wire
 uid 1258,0
 shape (OrthoPolyLine
 uid 1259,0
@@ -14094,53 +15090,7 @@ tm "WireNameMgr"
 )
 on &130
 )
-*448 (Wire
-uid 1386,0
-shape (OrthoPolyLine
-uid 1387,0
-va (VaSet
-vasetType 3
-)
-xt "2750,35000,3250,35000"
-pts [
-"2750,35000"
-"3250,35000"
-]
-)
-start &135
-end &108
-sat 32
-eat 32
-st 0
-sf 1
-si 0
-tg (WTG
-uid 1388,0
-ps "ConnStartEndStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 1389,0
-va (VaSet
-font "courier,8,0"
-)
-xt "4750,34100,5750,35000"
-st "F1"
-blo "4750,34800"
-tm "WireNameMgr"
-)
-s (Text
-uid 1577,0
-va (VaSet
-font "courier,8,0"
-)
-xt "4750,35000,4750,35000"
-blo "4750,35000"
-tm "SignalTypeMgr"
-)
-)
-on &140
-)
-*449 (Wire
+*482 (Wire
 uid 1400,0
 shape (OrthoPolyLine
 uid 1401,0
@@ -14174,12 +15124,12 @@ blo "18000,8800"
 tm "WireNameMgr"
 )
 )
-on &141
+on &140
 )
-*450 (Wire
+*483 (Wire
 uid 1414,0
 optionalChildren [
-*451 (BdJunction
+*484 (BdJunction
 uid 1454,0
 ps "OnConnectorStrategy"
 shape (Circle
@@ -14187,7 +15137,7 @@ uid 1455,0
 va (VaSet
 vasetType 1
 )
-xt "-2400,39600,-1600,40400"
+xt "-9400,39600,-8600,40400"
 radius 400
 )
 )
@@ -14197,10 +15147,10 @@ uid 1415,0
 va (VaSet
 vasetType 3
 )
-xt "-5000,37892,-2000,40000"
+xt "-9000,38892,-5000,40000"
 pts [
-"-2000,37892"
-"-2000,40000"
+"-9000,38892"
+"-9000,40000"
 "-5000,40000"
 ]
 )
@@ -14234,23 +15184,25 @@ blo "-5800,43300"
 tm "SignalTypeMgr"
 )
 )
-on &141
+on &140
 )
-*452 (Wire
+*485 (Wire
 uid 1450,0
 shape (OrthoPolyLine
 uid 1451,0
 va (VaSet
 vasetType 3
 )
-xt "-2000,40000,-2000,41461"
+xt "-9000,40000,-2000,41461"
 pts [
-"-2000,40000"
+"-9000,40000"
+"-9000,41000"
+"-2000,41000"
 "-2000,41461"
 ]
 )
-start &451
-end &161
+start &484
+end &160
 es 0
 sat 32
 eat 32
@@ -14269,15 +15221,15 @@ va (VaSet
 isHidden 1
 font "courier,8,0"
 )
-xt "-1900,35583,-1000,41083"
+xt "-8900,35583,-8000,41083"
 st "ALUTrapSel"
-blo "-1200,41083"
+blo "-8200,41083"
 tm "WireNameMgr"
 )
 )
-on &141
+on &140
 )
-*453 (Wire
+*486 (Wire
 uid 1468,0
 shape (OrthoPolyLine
 uid 1469,0
@@ -14290,8 +15242,8 @@ pts [
 "-5750,51000"
 ]
 )
-start &142
-end &149
+start &141
+end &148
 sat 2
 eat 32
 stc 0
@@ -14314,9 +15266,9 @@ blo "-5000,50800"
 tm "WireNameMgr"
 )
 )
-on &146
+on &145
 )
-*454 (Wire
+*487 (Wire
 uid 1595,0
 shape (OrthoPolyLine
 uid 1596,0
@@ -14329,7 +15281,7 @@ pts [
 "24000,50000"
 ]
 )
-start &155
+start &154
 sat 32
 eat 16
 stc 0
@@ -14352,9 +15304,9 @@ blo "22000,49800"
 tm "WireNameMgr"
 )
 )
-on &156
+on &155
 )
-*455 (Wire
+*488 (Wire
 uid 1611,0
 shape (OrthoPolyLine
 uid 1612,0
@@ -14367,7 +15319,7 @@ pts [
 "13000,43000"
 ]
 )
-start &157
+start &156
 sat 32
 eat 16
 stc 0
@@ -14390,9 +15342,9 @@ blo "14000,42800"
 tm "WireNameMgr"
 )
 )
-on &158
+on &157
 )
-*456 (Wire
+*489 (Wire
 uid 1737,0
 shape (OrthoPolyLine
 uid 1738,0
@@ -14405,8 +15357,8 @@ pts [
 "-1000,46392"
 ]
 )
-start &162
-end &151
+start &161
+end &150
 sat 32
 eat 32
 st 0
@@ -14440,9 +15392,9 @@ blo "-1000,47750"
 tm "SignalTypeMgr"
 )
 )
-on &166
+on &165
 )
-*457 (Wire
+*490 (Wire
 uid 1743,0
 shape (OrthoPolyLine
 uid 1744,0
@@ -14456,8 +15408,8 @@ pts [
 "1300,40000"
 ]
 )
-start &160
-end &171
+start &159
+end &170
 sat 32
 eat 32
 st 0
@@ -14491,9 +15443,9 @@ blo "0,40462"
 tm "SignalTypeMgr"
 )
 )
-on &167
+on &166
 )
-*458 (Wire
+*491 (Wire
 uid 1774,0
 shape (OrthoPolyLine
 uid 1775,0
@@ -14529,9 +15481,9 @@ blo "19000,9800"
 tm "WireNameMgr"
 )
 )
-on &175
+on &174
 )
-*459 (Wire
+*492 (Wire
 uid 1792,0
 shape (OrthoPolyLine
 uid 1793,0
@@ -14544,7 +15496,7 @@ pts [
 "8000,39000"
 ]
 )
-start &170
+start &169
 sat 32
 eat 16
 sl "(1)"
@@ -14567,9 +15519,9 @@ blo "6000,39800"
 tm "WireNameMgr"
 )
 )
-on &175
+on &174
 )
-*460 (Wire
+*493 (Wire
 uid 1800,0
 shape (OrthoPolyLine
 uid 1801,0
@@ -14582,7 +15534,7 @@ pts [
 "8000,41000"
 ]
 )
-start &169
+start &168
 sat 32
 eat 16
 sl "(0)"
@@ -14605,12 +15557,12 @@ blo "6000,41800"
 tm "WireNameMgr"
 )
 )
-on &175
+on &174
 )
-*461 (Wire
+*494 (Wire
 uid 2024,0
 optionalChildren [
-*462 (BdJunction
+*495 (BdJunction
 uid 2278,0
 ps "OnConnectorStrategy"
 shape (Circle
@@ -14636,8 +15588,8 @@ pts [
 "20250,55000"
 ]
 )
-start &176
-end &199
+start &175
+end &198
 sat 32
 eat 32
 stc 0
@@ -14660,9 +15612,9 @@ blo "19000,55800"
 tm "WireNameMgr"
 )
 )
-on &180
+on &179
 )
-*463 (Wire
+*496 (Wire
 uid 2032,0
 shape (OrthoPolyLine
 uid 2033,0
@@ -14675,7 +15627,7 @@ pts [
 "9000,56000"
 ]
 )
-start &177
+start &176
 sat 32
 eat 16
 stc 0
@@ -14698,12 +15650,12 @@ blo "9000,55800"
 tm "WireNameMgr"
 )
 )
-on &181
+on &180
 )
-*464 (Wire
+*497 (Wire
 uid 2040,0
 optionalChildren [
-*465 (BdJunction
+*498 (BdJunction
 uid 2284,0
 ps "OnConnectorStrategy"
 shape (Circle
@@ -14729,7 +15681,7 @@ pts [
 "2000,61000"
 ]
 )
-start &178
+start &177
 sat 32
 eat 16
 stc 0
@@ -14747,14 +15699,14 @@ isHidden 1
 font "courier,8,0"
 )
 xt "1000,61100,4500,62000"
-st "MEMDest"
+st "MEMDEST"
 blo "1000,61800"
 tm "WireNameMgr"
 )
 )
-on &182
+on &181
 )
-*466 (Wire
+*499 (Wire
 uid 2048,0
 shape (OrthoPolyLine
 uid 2049,0
@@ -14767,7 +15719,7 @@ pts [
 "9000,58000"
 ]
 )
-start &179
+start &178
 sat 32
 eat 16
 stc 0
@@ -14790,9 +15742,9 @@ blo "9000,57800"
 tm "WireNameMgr"
 )
 )
-on &183
+on &182
 )
-*467 (Wire
+*500 (Wire
 uid 2114,0
 shape (OrthoPolyLine
 uid 2115,0
@@ -14805,8 +15757,8 @@ pts [
 "21000,67000"
 ]
 )
-start &192
-end &224
+start &191
+end &223
 sat 32
 eat 1
 stc 0
@@ -14829,9 +15781,9 @@ blo "21000,66800"
 tm "WireNameMgr"
 )
 )
-on &194
+on &193
 )
-*468 (Wire
+*501 (Wire
 uid 2122,0
 shape (OrthoPolyLine
 uid 2123,0
@@ -14844,8 +15796,8 @@ pts [
 "21000,70000"
 ]
 )
-start &193
-end &228
+start &192
+end &227
 sat 32
 eat 1
 stc 0
@@ -14868,9 +15820,9 @@ blo "21000,69800"
 tm "WireNameMgr"
 )
 )
-on &195
+on &194
 )
-*469 (Wire
+*502 (Wire
 uid 2274,0
 shape (OrthoPolyLine
 uid 2275,0
@@ -14884,8 +15836,8 @@ pts [
 "20250,57000"
 ]
 )
-start &462
-end &205
+start &495
+end &204
 sat 32
 eat 32
 stc 0
@@ -14907,9 +15859,9 @@ blo "15250,56800"
 tm "WireNameMgr"
 )
 )
-on &180
+on &179
 )
-*470 (Wire
+*503 (Wire
 uid 2280,0
 shape (OrthoPolyLine
 uid 2281,0
@@ -14923,7 +15875,7 @@ pts [
 "8000,63000"
 ]
 )
-start &465
+start &498
 sat 32
 eat 16
 stc 0
@@ -14940,14 +15892,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "6000,62100,9500,63000"
-st "MEMDest"
+st "MEMDEST"
 blo "6000,62800"
 tm "WireNameMgr"
 )
 )
-on &182
+on &181
 )
-*471 (Wire
+*504 (Wire
 uid 2288,0
 shape (OrthoPolyLine
 uid 2289,0
@@ -14960,7 +15912,7 @@ pts [
 "17000,54000"
 ]
 )
-start &198
+start &197
 sat 32
 eat 16
 st 0
@@ -14982,7 +15934,7 @@ tm "WireNameMgr"
 )
 on &61
 )
-*472 (Wire
+*505 (Wire
 uid 2296,0
 shape (OrthoPolyLine
 uid 2297,0
@@ -14995,7 +15947,7 @@ pts [
 "17000,58000"
 ]
 )
-start &206
+start &205
 sat 32
 eat 16
 st 0
@@ -15017,7 +15969,7 @@ tm "WireNameMgr"
 )
 on &62
 )
-*473 (Wire
+*506 (Wire
 uid 2304,0
 shape (OrthoPolyLine
 uid 2305,0
@@ -15030,7 +15982,7 @@ pts [
 "17000,60000"
 ]
 )
-start &212
+start &211
 sat 32
 eat 16
 st 0
@@ -15052,7 +16004,7 @@ tm "WireNameMgr"
 )
 on &61
 )
-*474 (Wire
+*507 (Wire
 uid 2312,0
 shape (OrthoPolyLine
 uid 2313,0
@@ -15065,7 +16017,7 @@ pts [
 "17000,64000"
 ]
 )
-start &220
+start &219
 sat 32
 eat 16
 st 0
@@ -15087,7 +16039,7 @@ tm "WireNameMgr"
 )
 on &62
 )
-*475 (Wire
+*508 (Wire
 uid 2340,0
 shape (OrthoPolyLine
 uid 2341,0
@@ -15100,8 +16052,8 @@ pts [
 "32250,66000"
 ]
 )
-start &224
-end &273
+start &223
+end &272
 es 0
 sat 2
 eat 32
@@ -15123,9 +16075,9 @@ blo "28000,65800"
 tm "WireNameMgr"
 )
 )
-on &232
+on &231
 )
-*476 (Wire
+*509 (Wire
 uid 2350,0
 shape (OrthoPolyLine
 uid 2351,0
@@ -15138,7 +16090,7 @@ pts [
 "29000,70000"
 ]
 )
-start &228
+start &227
 sat 2
 eat 16
 st 0
@@ -15159,9 +16111,9 @@ blo "29000,69800"
 tm "WireNameMgr"
 )
 )
-on &233
+on &232
 )
-*477 (Wire
+*510 (Wire
 uid 2372,0
 shape (OrthoPolyLine
 uid 2373,0
@@ -15174,7 +16126,7 @@ pts [
 "32000,67000"
 ]
 )
-start &224
+start &223
 sat 2
 eat 16
 st 0
@@ -15195,9 +16147,9 @@ blo "27000,66800"
 tm "WireNameMgr"
 )
 )
-on &234
+on &233
 )
-*478 (Wire
+*511 (Wire
 uid 2384,0
 shape (OrthoPolyLine
 uid 2385,0
@@ -15210,7 +16162,7 @@ pts [
 "29000,71000"
 ]
 )
-start &228
+start &227
 sat 2
 eat 16
 st 0
@@ -15231,9 +16183,9 @@ blo "29000,70800"
 tm "WireNameMgr"
 )
 )
-on &235
+on &234
 )
-*479 (Wire
+*512 (Wire
 uid 2400,0
 shape (OrthoPolyLine
 uid 2401,0
@@ -15246,7 +16198,7 @@ pts [
 "32000,54000"
 ]
 )
-start &197
+start &196
 sat 32
 eat 16
 st 0
@@ -15266,9 +16218,9 @@ blo "29750,53800"
 tm "WireNameMgr"
 )
 )
-on &236
+on &235
 )
-*480 (Wire
+*513 (Wire
 uid 2408,0
 shape (OrthoPolyLine
 uid 2409,0
@@ -15281,7 +16233,7 @@ pts [
 "32000,57000"
 ]
 )
-start &204
+start &203
 sat 32
 eat 16
 st 0
@@ -15301,9 +16253,9 @@ blo "29750,56800"
 tm "WireNameMgr"
 )
 )
-on &237
+on &236
 )
-*481 (Wire
+*514 (Wire
 uid 2416,0
 shape (OrthoPolyLine
 uid 2417,0
@@ -15316,7 +16268,7 @@ pts [
 "32000,60000"
 ]
 )
-start &211
+start &210
 sat 32
 eat 16
 st 0
@@ -15336,9 +16288,9 @@ blo "29750,59800"
 tm "WireNameMgr"
 )
 )
-on &238
+on &237
 )
-*482 (Wire
+*515 (Wire
 uid 2424,0
 shape (OrthoPolyLine
 uid 2425,0
@@ -15351,7 +16303,7 @@ pts [
 "32000,63000"
 ]
 )
-start &218
+start &217
 sat 32
 eat 16
 st 0
@@ -15371,9 +16323,9 @@ blo "29750,62800"
 tm "WireNameMgr"
 )
 )
-on &239
+on &238
 )
-*483 (Wire
+*516 (Wire
 uid 2765,0
 shape (OrthoPolyLine
 uid 2766,0
@@ -15386,7 +16338,7 @@ pts [
 "44250,63000"
 ]
 )
-end &241
+end &240
 sat 16
 eat 32
 st 0
@@ -15416,9 +16368,9 @@ blo "42000,63000"
 tm "SignalTypeMgr"
 )
 )
-on &236
+on &235
 )
-*484 (Wire
+*517 (Wire
 uid 2773,0
 shape (OrthoPolyLine
 uid 2774,0
@@ -15431,7 +16383,7 @@ pts [
 "44250,64000"
 ]
 )
-end &242
+end &241
 sat 16
 eat 32
 st 0
@@ -15461,12 +16413,12 @@ blo "40000,64000"
 tm "SignalTypeMgr"
 )
 )
-on &234
+on &233
 )
-*485 (Wire
+*518 (Wire
 uid 2781,0
 optionalChildren [
-*486 (BdJunction
+*519 (BdJunction
 uid 2938,0
 ps "OnConnectorStrategy"
 shape (Circle
@@ -15491,8 +16443,8 @@ pts [
 "44250,65000"
 ]
 )
-start &274
-end &243
+start &273
+end &242
 sat 32
 eat 32
 st 0
@@ -15522,9 +16474,9 @@ blo "42200,67300"
 tm "SignalTypeMgr"
 )
 )
-on &279
+on &278
 )
-*487 (Wire
+*520 (Wire
 uid 2789,0
 shape (OrthoPolyLine
 uid 2790,0
@@ -15537,7 +16489,7 @@ pts [
 "44250,67000"
 ]
 )
-end &249
+end &248
 sat 16
 eat 32
 st 0
@@ -15567,9 +16519,9 @@ blo "42000,67000"
 tm "SignalTypeMgr"
 )
 )
-on &237
+on &236
 )
-*488 (Wire
+*521 (Wire
 uid 2797,0
 shape (OrthoPolyLine
 uid 2798,0
@@ -15582,7 +16534,7 @@ pts [
 "44250,68000"
 ]
 )
-end &250
+end &249
 sat 16
 eat 32
 st 0
@@ -15612,9 +16564,9 @@ blo "40000,68000"
 tm "SignalTypeMgr"
 )
 )
-on &234
+on &233
 )
-*489 (Wire
+*522 (Wire
 uid 2813,0
 shape (OrthoPolyLine
 uid 2814,0
@@ -15627,7 +16579,7 @@ pts [
 "44250,71000"
 ]
 )
-end &341
+end &340
 sat 16
 eat 32
 st 0
@@ -15657,9 +16609,9 @@ blo "41000,71000"
 tm "SignalTypeMgr"
 )
 )
-on &236
+on &235
 )
-*490 (Wire
+*523 (Wire
 uid 2821,0
 shape (OrthoPolyLine
 uid 2822,0
@@ -15672,7 +16624,7 @@ pts [
 "44250,72000"
 ]
 )
-end &342
+end &341
 sat 16
 eat 32
 st 0
@@ -15702,12 +16654,12 @@ blo "40000,72000"
 tm "SignalTypeMgr"
 )
 )
-on &234
+on &233
 )
-*491 (Wire
+*524 (Wire
 uid 2829,0
 optionalChildren [
-*492 (BdJunction
+*525 (BdJunction
 uid 4041,0
 ps "OnConnectorStrategy"
 shape (Circle
@@ -15731,7 +16683,7 @@ pts [
 "44250,73000"
 ]
 )
-end &343
+end &342
 sat 16
 eat 32
 st 0
@@ -15761,9 +16713,9 @@ blo "40000,73000"
 tm "SignalTypeMgr"
 )
 )
-on &232
+on &231
 )
-*493 (Wire
+*526 (Wire
 uid 2837,0
 shape (OrthoPolyLine
 uid 2838,0
@@ -15776,7 +16728,7 @@ pts [
 "44250,77000"
 ]
 )
-end &358
+end &357
 sat 16
 eat 32
 st 0
@@ -15806,9 +16758,9 @@ blo "41000,77000"
 tm "SignalTypeMgr"
 )
 )
-on &237
+on &236
 )
-*494 (Wire
+*527 (Wire
 uid 2845,0
 shape (OrthoPolyLine
 uid 2846,0
@@ -15821,7 +16773,7 @@ pts [
 "44250,78000"
 ]
 )
-end &359
+end &358
 sat 16
 eat 32
 st 0
@@ -15851,12 +16803,12 @@ blo "40000,78000"
 tm "SignalTypeMgr"
 )
 )
-on &234
+on &233
 )
-*495 (Wire
+*528 (Wire
 uid 2853,0
 optionalChildren [
-*496 (BdJunction
+*529 (BdJunction
 uid 4047,0
 ps "OnConnectorStrategy"
 shape (Circle
@@ -15880,7 +16832,7 @@ pts [
 "44250,79000"
 ]
 )
-end &360
+end &359
 sat 16
 eat 32
 st 0
@@ -15910,9 +16862,9 @@ blo "41000,79000"
 tm "SignalTypeMgr"
 )
 )
-on &232
+on &231
 )
-*497 (Wire
+*530 (Wire
 uid 2861,0
 shape (OrthoPolyLine
 uid 2862,0
@@ -15925,7 +16877,7 @@ pts [
 "44250,84000"
 ]
 )
-end &257
+end &256
 sat 16
 eat 32
 st 0
@@ -15955,9 +16907,9 @@ blo "40000,84000"
 tm "SignalTypeMgr"
 )
 )
-on &238
+on &237
 )
-*498 (Wire
+*531 (Wire
 uid 2869,0
 shape (OrthoPolyLine
 uid 2870,0
@@ -15970,7 +16922,7 @@ pts [
 "44250,85000"
 ]
 )
-end &258
+end &257
 sat 16
 eat 32
 st 0
@@ -16000,9 +16952,9 @@ blo "40000,85000"
 tm "SignalTypeMgr"
 )
 )
-on &235
+on &234
 )
-*499 (Wire
+*532 (Wire
 uid 2877,0
 shape (OrthoPolyLine
 uid 2878,0
@@ -16015,7 +16967,7 @@ pts [
 "44250,86000"
 ]
 )
-end &259
+end &258
 sat 16
 eat 32
 st 0
@@ -16045,9 +16997,9 @@ blo "40000,86000"
 tm "SignalTypeMgr"
 )
 )
-on &233
+on &232
 )
-*500 (Wire
+*533 (Wire
 uid 2885,0
 shape (OrthoPolyLine
 uid 2886,0
@@ -16060,7 +17012,7 @@ pts [
 "44250,88000"
 ]
 )
-end &265
+end &264
 sat 16
 eat 32
 st 0
@@ -16090,9 +17042,9 @@ blo "40000,88000"
 tm "SignalTypeMgr"
 )
 )
-on &239
+on &238
 )
-*501 (Wire
+*534 (Wire
 uid 2893,0
 shape (OrthoPolyLine
 uid 2894,0
@@ -16105,7 +17057,7 @@ pts [
 "44250,89000"
 ]
 )
-end &266
+end &265
 sat 16
 eat 32
 st 0
@@ -16135,9 +17087,9 @@ blo "40000,89000"
 tm "SignalTypeMgr"
 )
 )
-on &235
+on &234
 )
-*502 (Wire
+*535 (Wire
 uid 2901,0
 shape (OrthoPolyLine
 uid 2902,0
@@ -16150,7 +17102,7 @@ pts [
 "44250,90000"
 ]
 )
-end &267
+end &266
 sat 16
 eat 32
 st 0
@@ -16180,9 +17132,9 @@ blo "40000,90000"
 tm "SignalTypeMgr"
 )
 )
-on &233
+on &232
 )
-*503 (Wire
+*536 (Wire
 uid 2930,0
 shape (OrthoPolyLine
 uid 2931,0
@@ -16196,8 +17148,8 @@ pts [
 "44250,69000"
 ]
 )
-start &486
-end &251
+start &519
+end &250
 es 0
 sat 32
 eat 32
@@ -16220,9 +17172,9 @@ blo "39000,68800"
 tm "WireNameMgr"
 )
 )
-on &279
+on &278
 )
-*504 (Wire
+*537 (Wire
 uid 2945,0
 shape (OrthoPolyLine
 uid 2946,0
@@ -16235,8 +17187,8 @@ pts [
 "53392,89000"
 ]
 )
-start &268
-end &367
+start &267
+end &366
 sat 32
 eat 32
 st 0
@@ -16266,9 +17218,9 @@ blo "49000,89000"
 tm "SignalTypeMgr"
 )
 )
-on &280
+on &279
 )
-*505 (Wire
+*538 (Wire
 uid 2955,0
 shape (OrthoPolyLine
 uid 2956,0
@@ -16281,8 +17233,8 @@ pts [
 "53393,85000"
 ]
 )
-start &260
-end &366
+start &259
+end &365
 sat 32
 eat 32
 st 0
@@ -16312,9 +17264,9 @@ blo "49000,85000"
 tm "SignalTypeMgr"
 )
 )
-on &281
+on &280
 )
-*506 (Wire
+*539 (Wire
 uid 2973,0
 shape (OrthoPolyLine
 uid 2974,0
@@ -16327,7 +17279,7 @@ pts [
 "53000,64000"
 ]
 )
-start &244
+start &243
 sat 32
 eat 16
 st 0
@@ -16357,9 +17309,9 @@ blo "50700,64000"
 tm "SignalTypeMgr"
 )
 )
-on &282
+on &281
 )
-*507 (Wire
+*540 (Wire
 uid 2983,0
 shape (OrthoPolyLine
 uid 2984,0
@@ -16372,7 +17324,7 @@ pts [
 "53000,68000"
 ]
 )
-start &252
+start &251
 sat 32
 eat 16
 st 0
@@ -16402,9 +17354,9 @@ blo "50700,68000"
 tm "SignalTypeMgr"
 )
 )
-on &283
+on &282
 )
-*508 (Wire
+*541 (Wire
 uid 3018,0
 shape (OrthoPolyLine
 uid 3019,0
@@ -16417,8 +17369,8 @@ pts [
 "54440,73000"
 ]
 )
-start &340
-end &285
+start &339
+end &284
 sat 32
 eat 32
 st 0
@@ -16448,9 +17400,9 @@ blo "50000,73000"
 tm "SignalTypeMgr"
 )
 )
-on &291
+on &290
 )
-*509 (Wire
+*542 (Wire
 uid 3024,0
 shape (OrthoPolyLine
 uid 3025,0
@@ -16463,8 +17415,8 @@ pts [
 "54343,79000"
 ]
 )
-start &357
-end &286
+start &356
+end &285
 ss 0
 sat 32
 eat 32
@@ -16495,12 +17447,12 @@ blo "50000,79000"
 tm "SignalTypeMgr"
 )
 )
-on &292
+on &291
 )
-*510 (Wire
+*543 (Wire
 uid 3034,0
 optionalChildren [
-*511 (BdJunction
+*544 (BdJunction
 uid 3256,0
 ps "OnConnectorStrategy"
 shape (Circle
@@ -16526,8 +17478,8 @@ pts [
 "78000,79000"
 ]
 )
-start &382
-end &293
+start &381
+end &292
 sat 32
 eat 32
 st 0
@@ -16559,9 +17511,9 @@ blo "77750,79000"
 tm "SignalTypeMgr"
 )
 )
-on &294
+on &293
 )
-*512 (Wire
+*545 (Wire
 uid 3066,0
 shape (OrthoPolyLine
 uid 3067,0
@@ -16574,7 +17526,7 @@ pts [
 "-5750,17000"
 ]
 )
-end &186
+end &185
 sat 16
 eat 32
 st 0
@@ -16604,9 +17556,9 @@ blo "-10000,17000"
 tm "SignalTypeMgr"
 )
 )
-on &181
+on &180
 )
-*513 (Wire
+*546 (Wire
 uid 3074,0
 shape (OrthoPolyLine
 uid 3075,0
@@ -16620,7 +17572,7 @@ pts [
 "-2000,11000"
 ]
 )
-start &188
+start &187
 sat 32
 eat 16
 st 0
@@ -16650,9 +17602,9 @@ blo "-550,12550"
 tm "SignalTypeMgr"
 )
 )
-on &282
+on &281
 )
-*514 (Wire
+*547 (Wire
 uid 3112,0
 shape (OrthoPolyLine
 uid 3113,0
@@ -16665,8 +17617,8 @@ pts [
 "3250,15000"
 ]
 )
-start &187
-end &296
+start &186
+end &295
 sat 32
 eat 32
 st 0
@@ -16696,9 +17648,9 @@ blo "4750,15000"
 tm "SignalTypeMgr"
 )
 )
-on &303
+on &302
 )
-*515 (Wire
+*548 (Wire
 uid 3118,0
 shape (OrthoPolyLine
 uid 3119,0
@@ -16711,7 +17663,7 @@ pts [
 "-1000,19000"
 ]
 )
-start &297
+start &296
 sat 32
 eat 16
 st 0
@@ -16741,9 +17693,9 @@ blo "0,19000"
 tm "SignalTypeMgr"
 )
 )
-on &183
+on &182
 )
-*516 (Wire
+*549 (Wire
 uid 3126,0
 shape (OrthoPolyLine
 uid 3127,0
@@ -16756,7 +17708,7 @@ pts [
 "7000,13000"
 ]
 )
-start &299
+start &298
 sat 32
 eat 16
 st 0
@@ -16786,9 +17738,9 @@ blo "7450,14550"
 tm "SignalTypeMgr"
 )
 )
-on &281
+on &280
 )
-*517 (Wire
+*550 (Wire
 uid 3134,0
 shape (OrthoPolyLine
 uid 3135,0
@@ -16801,7 +17753,7 @@ pts [
 "13250,17000"
 ]
 )
-start &298
+start &297
 end &97
 sat 32
 eat 32
@@ -16832,9 +17784,9 @@ blo "13750,17000"
 tm "SignalTypeMgr"
 )
 )
-on &304
+on &303
 )
-*518 (Wire
+*551 (Wire
 uid 3200,0
 shape (OrthoPolyLine
 uid 3201,0
@@ -16847,7 +17799,7 @@ pts [
 "-20000,25000"
 ]
 )
-start &307
+start &306
 sat 32
 eat 16
 st 0
@@ -16877,9 +17829,9 @@ blo "-17750,25000"
 tm "SignalTypeMgr"
 )
 )
-on &181
+on &180
 )
-*519 (Wire
+*552 (Wire
 uid 3208,0
 shape (OrthoPolyLine
 uid 3209,0
@@ -16892,7 +17844,7 @@ pts [
 "3250,25000"
 ]
 )
-start &316
+start &315
 end &86
 sat 32
 eat 32
@@ -16923,9 +17875,9 @@ blo "3750,25000"
 tm "SignalTypeMgr"
 )
 )
-on &321
+on &320
 )
-*520 (Wire
+*553 (Wire
 uid 3214,0
 shape (OrthoPolyLine
 uid 3215,0
@@ -16938,8 +17890,8 @@ pts [
 "-6750,23000"
 ]
 )
-start &308
-end &314
+start &307
+end &313
 sat 32
 eat 32
 st 0
@@ -16969,9 +17921,9 @@ blo "-5250,23000"
 tm "SignalTypeMgr"
 )
 )
-on &322
+on &321
 )
-*521 (Wire
+*554 (Wire
 uid 3220,0
 shape (OrthoPolyLine
 uid 3221,0
@@ -16984,7 +17936,7 @@ pts [
 "-11000,27000"
 ]
 )
-start &315
+start &314
 sat 32
 eat 16
 st 0
@@ -17014,9 +17966,9 @@ blo "-11000,27000"
 tm "SignalTypeMgr"
 )
 )
-on &183
+on &182
 )
-*522 (Wire
+*555 (Wire
 uid 3228,0
 shape (OrthoPolyLine
 uid 3229,0
@@ -17029,7 +17981,7 @@ pts [
 "-3000,21000"
 ]
 )
-start &317
+start &316
 sat 32
 eat 16
 st 0
@@ -17059,9 +18011,9 @@ blo "-3550,22550"
 tm "SignalTypeMgr"
 )
 )
-on &280
+on &279
 )
-*523 (Wire
+*556 (Wire
 uid 3236,0
 shape (OrthoPolyLine
 uid 3237,0
@@ -17074,7 +18026,7 @@ pts [
 "-12000,19000"
 ]
 )
-start &309
+start &308
 sat 32
 eat 16
 st 0
@@ -17104,9 +18056,9 @@ blo "-12550,20550"
 tm "SignalTypeMgr"
 )
 )
-on &283
+on &282
 )
-*524 (Wire
+*557 (Wire
 uid 3250,0
 shape (OrthoPolyLine
 uid 3251,0
@@ -17120,8 +18072,8 @@ pts [
 "76250,81000"
 ]
 )
-start &511
-end &324
+start &544
+end &323
 es 0
 sat 32
 eat 32
@@ -17144,9 +18096,9 @@ blo "74000,81800"
 tm "WireNameMgr"
 )
 )
-on &294
+on &293
 )
-*525 (Wire
+*558 (Wire
 uid 3281,0
 shape (OrthoPolyLine
 uid 3282,0
@@ -17159,8 +18111,8 @@ pts [
 "82000,81000"
 ]
 )
-start &325
-end &330
+start &324
+end &329
 sat 32
 eat 32
 stc 0
@@ -17183,24 +18135,28 @@ blo "82500,80800"
 tm "WireNameMgr"
 )
 )
-on &331
+on &330
 )
-*526 (Wire
+*559 (Wire
 uid 3317,0
 shape (OrthoPolyLine
 uid 3318,0
 va (VaSet
 vasetType 3
 )
-xt "-15250,33000,-14000,33000"
+xt "-15250,33000,-12750,34000"
 pts [
 "-15250,33000"
 "-14000,33000"
+"-14000,34000"
+"-12750,34000"
 ]
 )
-start &334
+start &333
+end &133
+es 0
 sat 32
-eat 16
+eat 32
 st 0
 sf 1
 tg (WTG
@@ -17212,15 +18168,15 @@ uid 3322,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-13250,32100,-9750,33000"
+xt "-16000,31100,-12500,32000"
 st "PCplus2"
-blo "-13250,32800"
+blo "-16000,31800"
 tm "WireNameMgr"
 )
 )
-on &338
+on &337
 )
-*527 (Wire
+*560 (Wire
 uid 3325,0
 shape (OrthoPolyLine
 uid 3326,0
@@ -17248,8 +18204,8 @@ uid 3330,0
 va (VaSet
 font "courier,8,0"
 )
-xt "9000,20100,12500,21000"
-st "PCplus2"
+xt "9000,20100,14500,21000"
+st "TRAPMuxOut"
 blo "9000,20800"
 tm "WireNameMgr"
 )
@@ -17263,9 +18219,9 @@ blo "9000,21000"
 tm "SignalTypeMgr"
 )
 )
-on &338
+on &441
 )
-*528 (Wire
+*561 (Wire
 uid 3613,0
 shape (OrthoPolyLine
 uid 3614,0
@@ -17278,8 +18234,8 @@ pts [
 "21250,15000"
 ]
 )
-start &439
-end &349
+start &473
+end &348
 sat 32
 eat 32
 stc 0
@@ -17303,7 +18259,7 @@ tm "WireNameMgr"
 )
 on &105
 )
-*529 (Wire
+*562 (Wire
 uid 3621,0
 shape (OrthoPolyLine
 uid 3622,0
@@ -17316,7 +18272,7 @@ pts [
 "31000,15000"
 ]
 )
-start &350
+start &349
 sat 32
 eat 16
 stc 0
@@ -17338,9 +18294,9 @@ blo "27000,14800"
 tm "WireNameMgr"
 )
 )
-on &355
+on &354
 )
-*530 (Wire
+*563 (Wire
 uid 3984,0
 shape (OrthoPolyLine
 uid 3985,0
@@ -17353,8 +18309,8 @@ pts [
 "59250,87000"
 ]
 )
-start &368
-end &373
+start &367
+end &372
 sat 32
 eat 32
 st 0
@@ -17386,9 +18342,9 @@ blo "60750,87000"
 tm "SignalTypeMgr"
 )
 )
-on &407
+on &406
 )
-*531 (Wire
+*564 (Wire
 uid 4015,0
 shape (OrthoPolyLine
 uid 4016,0
@@ -17402,8 +18358,8 @@ pts [
 "67250,82000"
 ]
 )
-start &374
-end &381
+start &373
+end &380
 sat 32
 eat 32
 stc 0
@@ -17426,9 +18382,9 @@ blo "64300,86000"
 tm "WireNameMgr"
 )
 )
-on &386
+on &385
 )
-*532 (Wire
+*565 (Wire
 uid 4021,0
 shape (OrthoPolyLine
 uid 4022,0
@@ -17443,8 +18399,8 @@ pts [
 "67250,78000"
 ]
 )
-start &287
-end &380
+start &286
+end &379
 sat 32
 eat 32
 st 0
@@ -17474,9 +18430,9 @@ blo "62000,78000"
 tm "SignalTypeMgr"
 )
 )
-on &387
+on &386
 )
-*533 (Wire
+*566 (Wire
 uid 4037,0
 shape (OrthoPolyLine
 uid 4038,0
@@ -17490,8 +18446,8 @@ pts [
 "44250,74000"
 ]
 )
-start &492
-end &344
+start &525
+end &343
 sat 32
 eat 32
 stc 0
@@ -17513,9 +18469,9 @@ blo "39250,73800"
 tm "WireNameMgr"
 )
 )
-on &232
+on &231
 )
-*534 (Wire
+*567 (Wire
 uid 4043,0
 shape (OrthoPolyLine
 uid 4044,0
@@ -17529,8 +18485,8 @@ pts [
 "44250,80000"
 ]
 )
-start &496
-end &361
+start &529
+end &360
 sat 32
 eat 32
 stc 0
@@ -17552,12 +18508,12 @@ blo "39250,79800"
 tm "WireNameMgr"
 )
 )
-on &232
+on &231
 )
-*535 (Wire
+*568 (Wire
 uid 4057,0
 optionalChildren [
-*536 (BdJunction
+*569 (BdJunction
 uid 4073,0
 ps "OnConnectorStrategy"
 shape (Circle
@@ -17583,8 +18539,8 @@ pts [
 "20250,61000"
 ]
 )
-start &388
-end &213
+start &387
+end &212
 sat 32
 eat 32
 stc 0
@@ -17607,9 +18563,9 @@ blo "17000,61800"
 tm "WireNameMgr"
 )
 )
-on &389
+on &388
 )
-*537 (Wire
+*570 (Wire
 uid 4069,0
 shape (OrthoPolyLine
 uid 4070,0
@@ -17623,8 +18579,8 @@ pts [
 "20250,63000"
 ]
 )
-start &536
-end &219
+start &569
+end &218
 sat 32
 eat 32
 stc 0
@@ -17646,9 +18602,9 @@ blo "16250,62800"
 tm "WireNameMgr"
 )
 )
-on &389
+on &388
 )
-*538 (Wire
+*571 (Wire
 uid 4274,0
 shape (OrthoPolyLine
 uid 4275,0
@@ -17661,7 +18617,7 @@ pts [
 "65250,58000"
 ]
 )
-end &391
+end &390
 es 0
 sat 16
 eat 32
@@ -17685,7 +18641,7 @@ tm "WireNameMgr"
 )
 on &39
 )
-*539 (Wire
+*572 (Wire
 uid 4314,0
 shape (OrthoPolyLine
 uid 4315,0
@@ -17698,7 +18654,7 @@ pts [
 "61000,62000"
 ]
 )
-start &392
+start &391
 sat 32
 eat 16
 st 0
@@ -17727,9 +18683,9 @@ blo "61000,62000"
 tm "SignalTypeMgr"
 )
 )
-on &181
+on &180
 )
-*540 (Wire
+*573 (Wire
 uid 4322,0
 shape (OrthoPolyLine
 uid 4323,0
@@ -17742,7 +18698,7 @@ pts [
 "69000,55000"
 ]
 )
-start &394
+start &393
 sat 32
 eat 16
 st 0
@@ -17758,8 +18714,8 @@ ro 270
 va (VaSet
 font "courier,8,0"
 )
-xt "68100,51607,69000,55607"
-st "B_EXESEL"
+xt "68100,50107,69000,55607"
+st "STR_EXEFWD"
 blo "68800,55607"
 tm "WireNameMgr"
 )
@@ -17773,9 +18729,9 @@ blo "69000,55607"
 tm "SignalTypeMgr"
 )
 )
-on &283
+on &439
 )
-*541 (Wire
+*574 (Wire
 uid 4360,0
 shape (OrthoPolyLine
 uid 4361,0
@@ -17788,8 +18744,8 @@ pts [
 "75250,60000"
 ]
 )
-start &393
-end &399
+start &392
+end &398
 sat 32
 eat 32
 st 0
@@ -17818,9 +18774,9 @@ blo "75750,60000"
 tm "SignalTypeMgr"
 )
 )
-on &406
+on &405
 )
-*542 (Wire
+*575 (Wire
 uid 4366,0
 shape (OrthoPolyLine
 uid 4367,0
@@ -17833,7 +18789,7 @@ pts [
 "70000,64000"
 ]
 )
-start &400
+start &399
 sat 32
 eat 16
 st 0
@@ -17862,9 +18818,9 @@ blo "71000,64000"
 tm "SignalTypeMgr"
 )
 )
-on &183
+on &182
 )
-*543 (Wire
+*576 (Wire
 uid 4382,0
 shape (OrthoPolyLine
 uid 4383,0
@@ -17877,7 +18833,7 @@ pts [
 "79000,56000"
 ]
 )
-start &402
+start &401
 sat 32
 eat 16
 st 0
@@ -17893,8 +18849,8 @@ ro 270
 va (VaSet
 font "courier,8,0"
 )
-xt "78100,53607,79000,57607"
-st "B_MEMSEL"
+xt "78100,52107,79000,57607"
+st "STR_MEMFWD"
 blo "78800,57607"
 tm "WireNameMgr"
 )
@@ -17908,7 +18864,613 @@ blo "79000,57607"
 tm "SignalTypeMgr"
 )
 )
-on &280
+on &440
+)
+*577 (Wire
+uid 4418,0
+shape (OrthoPolyLine
+uid 4419,0
+va (VaSet
+vasetType 3
+)
+xt "17000,74000,20250,74000"
+pts [
+"20250,74000"
+"17000,74000"
+]
+)
+start &409
+sat 32
+eat 16
+st 0
+sf 1
+tg (WTG
+uid 4422,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 4423,0
+va (VaSet
+font "courier,8,0"
+)
+xt "18250,73100,20250,74000"
+st "DEST"
+blo "18250,73800"
+tm "WireNameMgr"
+)
+)
+on &60
+)
+*578 (Wire
+uid 4426,0
+shape (OrthoPolyLine
+uid 4427,0
+va (VaSet
+vasetType 3
+)
+xt "17000,75000,20250,75000"
+pts [
+"20250,75000"
+"17000,75000"
+]
+)
+start &410
+sat 32
+eat 16
+st 0
+sf 1
+tg (WTG
+uid 4430,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 4431,0
+va (VaSet
+font "courier,8,0"
+)
+xt "18250,74100,21750,75000"
+st "EXEDest"
+blo "18250,74800"
+tm "WireNameMgr"
+)
+)
+on &179
+)
+*579 (Wire
+uid 4434,0
+shape (OrthoPolyLine
+uid 4435,0
+va (VaSet
+vasetType 3
+)
+xt "27750,74000,32000,74000"
+pts [
+"27750,74000"
+"32000,74000"
+]
+)
+start &408
+sat 32
+eat 16
+st 0
+sf 1
+tg (WTG
+uid 4438,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 4439,0
+va (VaSet
+font "courier,8,0"
+)
+xt "28000,73100,32000,74000"
+st "DEST_EXE"
+blo "28000,73800"
+tm "WireNameMgr"
+)
+)
+on &414
+)
+*580 (Wire
+uid 4466,0
+shape (OrthoPolyLine
+uid 4467,0
+va (VaSet
+vasetType 3
+)
+xt "17000,77000,20250,77000"
+pts [
+"20250,77000"
+"17000,77000"
+]
+)
+start &417
+sat 32
+eat 16
+st 0
+sf 1
+tg (WTG
+uid 4470,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 4471,0
+va (VaSet
+font "courier,8,0"
+)
+xt "18250,76100,20250,77000"
+st "DEST"
+blo "18250,76800"
+tm "WireNameMgr"
+)
+)
+on &60
+)
+*581 (Wire
+uid 4474,0
+shape (OrthoPolyLine
+uid 4475,0
+va (VaSet
+vasetType 3
+)
+xt "17000,78000,20250,78000"
+pts [
+"20250,78000"
+"17000,78000"
+]
+)
+start &418
+sat 32
+eat 16
+st 0
+sf 1
+tg (WTG
+uid 4478,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 4479,0
+va (VaSet
+font "courier,8,0"
+)
+xt "18250,77100,21750,78000"
+st "MEMDEST"
+blo "18250,77800"
+tm "WireNameMgr"
+)
+)
+on &181
+)
+*582 (Wire
+uid 4482,0
+shape (OrthoPolyLine
+uid 4483,0
+va (VaSet
+vasetType 3
+)
+xt "27750,77000,32000,77000"
+pts [
+"27750,77000"
+"32000,77000"
+]
+)
+start &416
+sat 32
+eat 16
+st 0
+sf 1
+tg (WTG
+uid 4486,0
+ps "ConnStartEndStrategy"
+stg "STSignalDisplayStrategy"
+f (Text
+uid 4487,0
+va (VaSet
+font "courier,8,0"
+)
+xt "29750,76100,33750,77000"
+st "DEST_MEM"
+blo "29750,76800"
+tm "WireNameMgr"
+)
+)
+on &422
+)
+*583 (Wire
+uid 4552,0
+shape (OrthoPolyLine
+uid 4553,0
+va (VaSet
+vasetType 3
+)
+xt "40000,55000,44250,55000"
+pts [
+"44250,55000"
+"40000,55000"
+]
+)
+start &432
+sat 32
+eat 16
+st 0
+sf 1
+si 0
+tg (WTG
+uid 4556,0
+ps "ConnStartEndStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4557,0
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,54100,46250,55000"
+st "DEST_EXE"
+blo "42250,54800"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,55000,42250,55000"
+blo "42250,55000"
+tm "SignalTypeMgr"
+)
+)
+on &414
+)
+*584 (Wire
+uid 4560,0
+shape (OrthoPolyLine
+uid 4561,0
+va (VaSet
+vasetType 3
+)
+xt "40000,56000,44250,56000"
+pts [
+"44250,56000"
+"40000,56000"
+]
+)
+start &433
+sat 32
+eat 16
+st 0
+sf 1
+si 0
+tg (WTG
+uid 4564,0
+ps "ConnStartEndStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4565,0
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,55100,48750,56000"
+st "EXEREG_WRITE"
+blo "42250,55800"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,56000,42250,56000"
+blo "42250,56000"
+tm "SignalTypeMgr"
+)
+)
+on &233
+)
+*585 (Wire
+uid 4568,0
+shape (OrthoPolyLine
+uid 4569,0
+va (VaSet
+vasetType 3
+)
+xt "40000,57000,44250,57000"
+pts [
+"44250,57000"
+"40000,57000"
+]
+)
+start &434
+sat 32
+eat 16
+st 0
+sf 1
+si 0
+tg (WTG
+uid 4572,0
+ps "ConnStartEndStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4573,0
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,56100,47750,57000"
+st "EXENOTREAD"
+blo "42250,56800"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,57000,42250,57000"
+blo "42250,57000"
+tm "SignalTypeMgr"
+)
+)
+on &278
+)
+*586 (Wire
+uid 4576,0
+shape (OrthoPolyLine
+uid 4577,0
+va (VaSet
+vasetType 3
+)
+xt "40000,60000,44250,60000"
+pts [
+"44250,60000"
+"40000,60000"
+]
+)
+start &425
+sat 32
+eat 16
+st 0
+sf 1
+si 0
+tg (WTG
+uid 4580,0
+ps "ConnStartEndStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4581,0
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,59100,48750,60000"
+st "MEMREG_WRITE"
+blo "42250,59800"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,60000,42250,60000"
+blo "42250,60000"
+tm "SignalTypeMgr"
+)
+)
+on &234
+)
+*587 (Wire
+uid 4584,0
+shape (OrthoPolyLine
+uid 4585,0
+va (VaSet
+vasetType 3
+)
+xt "40000,59000,44250,59000"
+pts [
+"44250,59000"
+"40000,59000"
+]
+)
+start &424
+sat 32
+eat 16
+st 0
+sf 1
+si 0
+tg (WTG
+uid 4588,0
+ps "ConnStartEndStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4589,0
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,58100,46250,59000"
+st "DEST_MEM"
+blo "42250,58800"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,59000,42250,59000"
+blo "42250,59000"
+tm "SignalTypeMgr"
+)
+)
+on &422
+)
+*588 (Wire
+uid 4592,0
+shape (OrthoPolyLine
+uid 4593,0
+va (VaSet
+vasetType 3
+)
+xt "40000,61000,44250,61000"
+pts [
+"44250,61000"
+"40000,61000"
+]
+)
+start &426
+sat 32
+eat 16
+st 0
+sf 1
+si 0
+tg (WTG
+uid 4596,0
+ps "ConnStartEndStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4597,0
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,60100,46250,61000"
+st "MEMMREAD"
+blo "42250,60800"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "courier,8,0"
+)
+xt "42250,61000,42250,61000"
+blo "42250,61000"
+tm "SignalTypeMgr"
+)
+)
+on &232
+)
+*589 (Wire
+uid 4602,0
+shape (OrthoPolyLine
+uid 4603,0
+va (VaSet
+vasetType 3
+)
+xt "48700,56000,53000,56000"
+pts [
+"48700,56000"
+"53000,56000"
+]
+)
+start &435
+sat 32
+eat 16
+st 0
+sf 1
+si 0
+tg (WTG
+uid 4606,0
+ps "ConnStartEndStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4607,0
+va (VaSet
+font "courier,8,0"
+)
+xt "49000,55100,54500,56000"
+st "STR_EXEFWD"
+blo "49000,55800"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "courier,8,0"
+)
+xt "49000,56000,49000,56000"
+blo "49000,56000"
+tm "SignalTypeMgr"
+)
+)
+on &439
+)
+*590 (Wire
+uid 4610,0
+shape (OrthoPolyLine
+uid 4611,0
+va (VaSet
+vasetType 3
+)
+xt "48700,60000,53000,60000"
+pts [
+"48700,60000"
+"53000,60000"
+]
+)
+start &427
+sat 32
+eat 16
+st 0
+sf 1
+si 0
+tg (WTG
+uid 4614,0
+ps "ConnStartEndStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4615,0
+va (VaSet
+font "courier,8,0"
+)
+xt "50700,59100,56200,60000"
+st "STR_MEMFWD"
+blo "50700,59800"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "courier,8,0"
+)
+xt "50700,60000,50700,60000"
+blo "50700,60000"
+tm "SignalTypeMgr"
+)
+)
+on &440
+)
+*591 (Wire
+uid 4628,0
+shape (OrthoPolyLine
+uid 4629,0
+va (VaSet
+vasetType 3
+)
+xt "-4250,36000,-1000,36000"
+pts [
+"-4250,36000"
+"-1000,36000"
+]
+)
+start &135
+sat 32
+eat 16
+st 0
+sf 1
+si 0
+tg (WTG
+uid 4632,0
+ps "ConnStartEndStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 4633,0
+va (VaSet
+font "courier,8,0"
+)
+xt "-4000,35100,1500,36000"
+st "TRAPMuxOut"
+blo "-4000,35800"
+tm "WireNameMgr"
+)
+s (Text
+va (VaSet
+font "courier,8,0"
+)
+xt "-4000,36000,-4000,36000"
+blo "-4000,36000"
+tm "SignalTypeMgr"
+)
+)
+on &441
 )
 ]
 bg "65535,65535,65535"
@@ -17922,11 +19484,11 @@ xShown 1
 yShown 1
 color "26368,26368,26368"
 )
-packageList *544 (PackageList
+packageList *592 (PackageList
 uid 41,0
 stg "VerticalLayoutStrategy"
 textVec [
-*545 (Text
+*593 (Text
 uid 42,0
 va (VaSet
 font "courier,8,1"
@@ -17935,7 +19497,7 @@ xt "-15000,-300,-8500,600"
 st "Package List"
 blo "-15000,400"
 )
-*546 (MLText
+*594 (MLText
 uid 43,0
 va (VaSet
 font "courier,8,0"
@@ -17955,7 +19517,7 @@ compDirBlock (MlTextGroup
 uid 44,0
 stg "VerticalLayoutStrategy"
 textVec [
-*547 (Text
+*595 (Text
 uid 45,0
 va (VaSet
 isHidden 1
@@ -17965,7 +19527,7 @@ xt "20000,0,30000,900"
 st "Compiler Directives"
 blo "20000,700"
 )
-*548 (Text
+*596 (Text
 uid 46,0
 va (VaSet
 isHidden 1
@@ -17975,7 +19537,7 @@ xt "20000,900,31500,1800"
 st "Pre-module directives:"
 blo "20000,1600"
 )
-*549 (MLText
+*597 (MLText
 uid 47,0
 va (VaSet
 isHidden 1
@@ -17986,7 +19548,7 @@ st "`resetall
 `timescale 1ns/10ps"
 tm "BdCompilerDirectivesTextMgr"
 )
-*550 (Text
+*598 (Text
 uid 48,0
 va (VaSet
 isHidden 1
@@ -17996,7 +19558,7 @@ xt "20000,3600,32000,4500"
 st "Post-module directives:"
 blo "20000,4300"
 )
-*551 (MLText
+*599 (MLText
 uid 49,0
 va (VaSet
 isHidden 1
@@ -18005,7 +19567,7 @@ font "courier,8,0"
 xt "20000,0,20000,0"
 tm "BdCompilerDirectivesTextMgr"
 )
-*552 (Text
+*600 (Text
 uid 50,0
 va (VaSet
 isHidden 1
@@ -18015,7 +19577,7 @@ xt "20000,4500,31500,5400"
 st "End-module directives:"
 blo "20000,5200"
 )
-*553 (MLText
+*601 (MLText
 uid 51,0
 va (VaSet
 isHidden 1
@@ -18028,11 +19590,11 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "-6,23,1274,779"
-viewArea "2396,48453,88682,94086"
+viewArea "-52624,1433,33661,47065"
 cachedDiagramExtent "-43000,-300,94000,91800"
 hasePageBreakOrigin 1
 pageBreakOrigin "-69000,-51000"
-lastUid 4393,0
+lastUid 4637,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -18123,7 +19685,7 @@ ttg (MlTextGroup
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*554 (Text
+*602 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18132,7 +19694,7 @@ st "<library>"
 blo "1750,4350"
 tm "BdLibraryNameMgr"
 )
-*555 (Text
+*603 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18141,7 +19703,7 @@ st "<block>"
 blo "1750,5250"
 tm "BlkNameMgr"
 )
-*556 (Text
+*604 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18192,7 +19754,7 @@ ttg (MlTextGroup
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*557 (Text
+*605 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18200,7 +19762,7 @@ xt "1000,3650,4500,4550"
 st "Library"
 blo "1000,4350"
 )
-*558 (Text
+*606 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18208,7 +19770,7 @@ xt "1000,4550,7000,5450"
 st "MWComponent"
 blo "1000,5250"
 )
-*559 (Text
+*607 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18257,7 +19819,7 @@ ttg (MlTextGroup
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*560 (Text
+*608 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18266,7 +19828,7 @@ st "Library"
 blo "1000,4350"
 tm "BdLibraryNameMgr"
 )
-*561 (Text
+*609 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18275,7 +19837,7 @@ st "SaComponent"
 blo "1000,5250"
 tm "CptNameMgr"
 )
-*562 (Text
+*610 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18329,7 +19891,7 @@ ttg (MlTextGroup
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*563 (Text
+*611 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18337,7 +19899,7 @@ xt "500,3650,4000,4550"
 st "Library"
 blo "500,4350"
 )
-*564 (Text
+*612 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18345,7 +19907,7 @@ xt "500,4550,7500,5450"
 st "VhdlComponent"
 blo "500,5250"
 )
-*565 (Text
+*613 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18390,7 +19952,7 @@ ttg (MlTextGroup
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*566 (Text
+*614 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18398,7 +19960,7 @@ xt "-250,3650,3250,4550"
 st "Library"
 blo "-250,4350"
 )
-*567 (Text
+*615 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18406,7 +19968,7 @@ xt "-250,4550,8250,5450"
 st "VerilogComponent"
 blo "-250,5250"
 )
-*568 (Text
+*616 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18447,7 +20009,7 @@ ttg (MlTextGroup
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*569 (Text
+*617 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18456,7 +20018,7 @@ st "eb1"
 blo "3250,4800"
 tm "HdlTextNameMgr"
 )
-*570 (Text
+*618 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18872,7 +20434,7 @@ decls (MlTextGroup
 ps "BottomRightOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*571 (Text
+*619 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18880,7 +20442,7 @@ xt "12500,20000,22000,20900"
 st "Frame Declarations"
 blo "12500,20700"
 )
-*572 (MLText
+*620 (MLText
 va (VaSet
 font "courier,8,0"
 )
@@ -18935,7 +20497,7 @@ decls (MlTextGroup
 ps "BottomRightOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
-*573 (Text
+*621 (Text
 va (VaSet
 font "courier,8,1"
 )
@@ -18943,7 +20505,7 @@ xt "12500,20000,22000,20900"
 st "Frame Declarations"
 blo "12500,20700"
 )
-*574 (MLText
+*622 (MLText
 va (VaSet
 font "courier,8,0"
 )
@@ -19090,46 +20652,46 @@ tm "BdDeclarativeTextMgr"
 )
 commonDM (CommonDM
 ldm (LogicalDM
-suid 204,0
+suid 224,0
 usingSuid 1
-emptyRow *575 (LEmptyRow
+emptyRow *623 (LEmptyRow
 )
 uid 54,0
 optionalChildren [
-*576 (RefLabelRowHdr
+*624 (RefLabelRowHdr
 )
-*577 (TitleRowHdr
+*625 (TitleRowHdr
 )
-*578 (FilterRowHdr
+*626 (FilterRowHdr
 )
-*579 (RefLabelColHdr
+*627 (RefLabelColHdr
 tm "RefLabelColHdrMgr"
 )
-*580 (RowExpandColHdr
+*628 (RowExpandColHdr
 tm "RowExpandColHdrMgr"
 )
-*581 (GroupColHdr
+*629 (GroupColHdr
 tm "GroupColHdrMgr"
 )
-*582 (NameColHdr
+*630 (NameColHdr
 tm "BlockDiagramNameColHdrMgr"
 )
-*583 (ModeColHdr
+*631 (ModeColHdr
 tm "BlockDiagramModeColHdrMgr"
 )
-*584 (TypeColHdr
+*632 (TypeColHdr
 tm "BlockDiagramTypeColHdrMgr"
 )
-*585 (BoundsColHdr
+*633 (BoundsColHdr
 tm "BlockDiagramBoundsColHdrMgr"
 )
-*586 (InitColHdr
+*634 (InitColHdr
 tm "BlockDiagramInitColHdrMgr"
 )
-*587 (EolColHdr
+*635 (EolColHdr
 tm "BlockDiagramEolColHdrMgr"
 )
-*588 (LeafLogPort
+*636 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19141,7 +20703,7 @@ suid 7,0
 )
 uid 281,0
 )
-*589 (LeafLogPort
+*637 (LeafLogPort
 port (LogicalPort
 lang 11
 decl (Decl
@@ -19153,7 +20715,7 @@ suid 12,0
 )
 uid 291,0
 )
-*590 (LeafLogPort
+*638 (LeafLogPort
 port (LogicalPort
 lang 11
 decl (Decl
@@ -19165,7 +20727,7 @@ suid 13,0
 )
 uid 313,0
 )
-*591 (LeafLogPort
+*639 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "REGBOut"
@@ -19176,7 +20738,7 @@ suid 14,0
 )
 uid 315,0
 )
-*592 (LeafLogPort
+*640 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "ADJ6out"
@@ -19187,7 +20749,7 @@ suid 15,0
 )
 uid 317,0
 )
-*593 (LeafLogPort
+*641 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19199,7 +20761,7 @@ suid 17,0
 )
 uid 319,0
 )
-*594 (LeafLogPort
+*642 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19211,7 +20773,7 @@ suid 19,0
 )
 uid 337,0
 )
-*595 (LeafLogPort
+*643 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19223,7 +20785,7 @@ suid 20,0
 )
 uid 351,0
 )
-*596 (LeafLogPort
+*644 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19235,7 +20797,7 @@ suid 22,0
 )
 uid 437,0
 )
-*597 (LeafLogPort
+*645 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "DEST"
@@ -19246,7 +20808,7 @@ suid 36,0
 )
 uid 763,0
 )
-*598 (LeafLogPort
+*646 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "SRCA"
@@ -19257,7 +20819,7 @@ suid 37,0
 )
 uid 765,0
 )
-*599 (LeafLogPort
+*647 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "SRCB"
@@ -19268,7 +20830,7 @@ suid 38,0
 )
 uid 767,0
 )
-*600 (LeafLogPort
+*648 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "ADJ11"
@@ -19279,7 +20841,7 @@ suid 39,0
 )
 uid 769,0
 )
-*601 (LeafLogPort
+*649 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "ADJ9"
@@ -19290,7 +20852,7 @@ suid 40,0
 )
 uid 771,0
 )
-*602 (LeafLogPort
+*650 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "ADJ5"
@@ -19301,7 +20863,7 @@ suid 41,0
 )
 uid 773,0
 )
-*603 (LeafLogPort
+*651 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "ADJ4"
@@ -19312,7 +20874,7 @@ suid 42,0
 )
 uid 775,0
 )
-*604 (LeafLogPort
+*652 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "TRAP8"
@@ -19323,7 +20885,7 @@ suid 43,0
 )
 uid 777,0
 )
-*605 (LeafLogPort
+*653 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "iPC"
@@ -19335,7 +20897,7 @@ k 1
 )
 uid 779,0
 )
-*606 (LeafLogPort
+*654 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19347,7 +20909,7 @@ suid 45,0
 )
 uid 781,0
 )
-*607 (LeafLogPort
+*655 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19359,7 +20921,7 @@ suid 46,0
 )
 uid 783,0
 )
-*608 (LeafLogPort
+*656 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19371,7 +20933,7 @@ suid 47,0
 )
 uid 785,0
 )
-*609 (LeafLogPort
+*657 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19383,7 +20945,7 @@ suid 54,0
 )
 uid 787,0
 )
-*610 (LeafLogPort
+*658 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19395,7 +20957,7 @@ suid 55,0
 )
 uid 789,0
 )
-*611 (LeafLogPort
+*659 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19407,7 +20969,7 @@ suid 58,0
 )
 uid 791,0
 )
-*612 (LeafLogPort
+*660 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19419,7 +20981,7 @@ suid 59,0
 )
 uid 793,0
 )
-*613 (LeafLogPort
+*661 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19431,7 +20993,7 @@ suid 62,0
 )
 uid 879,0
 )
-*614 (LeafLogPort
+*662 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19443,7 +21005,7 @@ suid 64,0
 )
 uid 998,0
 )
-*615 (LeafLogPort
+*663 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "IMM5MuxSel"
@@ -19454,7 +21016,7 @@ suid 66,0
 )
 uid 1000,0
 )
-*616 (LeafLogPort
+*664 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19467,7 +21029,7 @@ k 1
 )
 uid 1056,0
 )
-*617 (LeafLogPort
+*665 (LeafLogPort
 port (LogicalPort
 lang 11
 m 4
@@ -19480,7 +21042,7 @@ suid 69,0
 )
 uid 1058,0
 )
-*618 (LeafLogPort
+*666 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19492,7 +21054,7 @@ suid 70,0
 )
 uid 1104,0
 )
-*619 (LeafLogPort
+*667 (LeafLogPort
 port (LogicalPort
 lang 11
 m 4
@@ -19505,7 +21067,7 @@ suid 79,0
 )
 uid 1230,0
 )
-*620 (LeafLogPort
+*668 (LeafLogPort
 port (LogicalPort
 lang 11
 decl (Decl
@@ -19517,7 +21079,7 @@ suid 80,0
 )
 uid 1232,0
 )
-*621 (LeafLogPort
+*669 (LeafLogPort
 port (LogicalPort
 lang 11
 m 4
@@ -19530,7 +21092,7 @@ suid 82,0
 )
 uid 1252,0
 )
-*622 (LeafLogPort
+*670 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19542,19 +21104,7 @@ suid 83,0
 )
 uid 1256,0
 )
-*623 (LeafLogPort
-port (LogicalPort
-m 4
-decl (Decl
-n "F1"
-t "LC3B_WORD"
-o 36
-suid 84,0
-)
-)
-uid 1408,0
-)
-*624 (LeafLogPort
+*671 (LeafLogPort
 port (LogicalPort
 lang 11
 m 4
@@ -19567,7 +21117,7 @@ suid 86,0
 )
 uid 1410,0
 )
-*625 (LeafLogPort
+*672 (LeafLogPort
 port (LogicalPort
 lang 11
 m 4
@@ -19580,7 +21130,7 @@ suid 88,0
 )
 uid 1500,0
 )
-*626 (LeafLogPort
+*673 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "JSR11"
@@ -19591,7 +21141,7 @@ suid 90,0
 )
 uid 1619,0
 )
-*627 (LeafLogPort
+*674 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19603,7 +21153,7 @@ suid 92,0
 )
 uid 1621,0
 )
-*628 (LeafLogPort
+*675 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19615,7 +21165,7 @@ suid 93,0
 )
 uid 1784,0
 )
-*629 (LeafLogPort
+*676 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19627,7 +21177,7 @@ suid 94,0
 )
 uid 1786,0
 )
-*630 (LeafLogPort
+*677 (LeafLogPort
 port (LogicalPort
 lang 11
 m 4
@@ -19641,7 +21191,7 @@ suid 95,0
 )
 uid 1788,0
 )
-*631 (LeafLogPort
+*678 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "EXEDest"
@@ -19652,7 +21202,7 @@ suid 102,0
 )
 uid 2062,0
 )
-*632 (LeafLogPort
+*679 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "EXEDATA"
@@ -19663,10 +21213,10 @@ suid 103,0
 )
 uid 2064,0
 )
-*633 (LeafLogPort
+*680 (LeafLogPort
 port (LogicalPort
 decl (Decl
-n "MEMDest"
+n "MEMDEST"
 t "LC3B_REG"
 o 46
 suid 104,0
@@ -19674,7 +21224,7 @@ suid 104,0
 )
 uid 2066,0
 )
-*634 (LeafLogPort
+*681 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "MEMDATA"
@@ -19685,7 +21235,7 @@ suid 105,0
 )
 uid 2068,0
 )
-*635 (LeafLogPort
+*682 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "EXEControl"
@@ -19696,7 +21246,7 @@ suid 108,0
 )
 uid 2132,0
 )
-*636 (LeafLogPort
+*683 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "MEMControl"
@@ -19707,7 +21257,7 @@ suid 109,0
 )
 uid 2134,0
 )
-*637 (LeafLogPort
+*684 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19719,7 +21269,7 @@ suid 118,0
 )
 uid 2366,0
 )
-*638 (LeafLogPort
+*685 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19731,7 +21281,7 @@ suid 119,0
 )
 uid 2368,0
 )
-*639 (LeafLogPort
+*686 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19743,7 +21293,7 @@ suid 121,0
 )
 uid 2394,0
 )
-*640 (LeafLogPort
+*687 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19755,7 +21305,7 @@ suid 123,0
 )
 uid 2396,0
 )
-*641 (LeafLogPort
+*688 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19767,7 +21317,7 @@ suid 128,0
 )
 uid 2438,0
 )
-*642 (LeafLogPort
+*689 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19779,7 +21329,7 @@ suid 129,0
 )
 uid 2440,0
 )
-*643 (LeafLogPort
+*690 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19791,7 +21341,7 @@ suid 130,0
 )
 uid 2442,0
 )
-*644 (LeafLogPort
+*691 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19803,7 +21353,7 @@ suid 131,0
 )
 uid 2444,0
 )
-*645 (LeafLogPort
+*692 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19815,7 +21365,7 @@ suid 150,0
 )
 uid 3048,0
 )
-*646 (LeafLogPort
+*693 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19827,7 +21377,7 @@ suid 153,0
 )
 uid 3050,0
 )
-*647 (LeafLogPort
+*694 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19839,7 +21389,7 @@ suid 155,0
 )
 uid 3052,0
 )
-*648 (LeafLogPort
+*695 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19851,7 +21401,7 @@ suid 158,0
 )
 uid 3054,0
 )
-*649 (LeafLogPort
+*696 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19863,7 +21413,7 @@ suid 160,0
 )
 uid 3056,0
 )
-*650 (LeafLogPort
+*697 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19875,7 +21425,7 @@ suid 163,0
 )
 uid 3058,0
 )
-*651 (LeafLogPort
+*698 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19887,7 +21437,7 @@ suid 164,0
 )
 uid 3060,0
 )
-*652 (LeafLogPort
+*699 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19899,7 +21449,7 @@ suid 166,0
 )
 uid 3062,0
 )
-*653 (LeafLogPort
+*700 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19911,7 +21461,7 @@ suid 169,0
 )
 uid 3242,0
 )
-*654 (LeafLogPort
+*701 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19923,7 +21473,7 @@ suid 172,0
 )
 uid 3244,0
 )
-*655 (LeafLogPort
+*702 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19935,7 +21485,7 @@ suid 174,0
 )
 uid 3246,0
 )
-*656 (LeafLogPort
+*703 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19947,7 +21497,7 @@ suid 175,0
 )
 uid 3248,0
 )
-*657 (LeafLogPort
+*704 (LeafLogPort
 port (LogicalPort
 m 1
 decl (Decl
@@ -19959,7 +21509,7 @@ suid 180,0
 )
 uid 3295,0
 )
-*658 (LeafLogPort
+*705 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19971,7 +21521,7 @@ suid 181,0
 )
 uid 3331,0
 )
-*659 (LeafLogPort
+*706 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19983,7 +21533,7 @@ suid 184,0
 )
 uid 3684,0
 )
-*660 (LeafLogPort
+*707 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -19995,7 +21545,7 @@ suid 193,0
 )
 uid 4033,0
 )
-*661 (LeafLogPort
+*708 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -20007,7 +21557,7 @@ suid 194,0
 )
 uid 4035,0
 )
-*662 (LeafLogPort
+*709 (LeafLogPort
 port (LogicalPort
 decl (Decl
 n "MEMDest2"
@@ -20018,7 +21568,7 @@ suid 196,0
 )
 uid 4065,0
 )
-*663 (LeafLogPort
+*710 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -20030,7 +21580,7 @@ suid 200,0
 )
 uid 4388,0
 )
-*664 (LeafLogPort
+*711 (LeafLogPort
 port (LogicalPort
 m 4
 decl (Decl
@@ -20042,6 +21592,66 @@ suid 204,0
 )
 uid 4392,0
 )
+*712 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "DEST_EXE"
+t "std_logic"
+o 78
+suid 208,0
+)
+)
+uid 4618,0
+)
+*713 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "DEST_MEM"
+t "std_logic"
+o 81
+suid 212,0
+)
+)
+uid 4620,0
+)
+*714 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "STR_EXEFWD"
+t "std_logic"
+o 62
+suid 219,0
+)
+)
+uid 4622,0
+)
+*715 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "STR_MEMFWD"
+t "STD_LOGIC"
+o 81
+suid 222,0
+)
+)
+uid 4624,0
+)
+*716 (LeafLogPort
+port (LogicalPort
+m 4
+decl (Decl
+n "TRAPMuxOut"
+t "LC3B_WORD"
+o 81
+suid 224,0
+)
+)
+uid 4636,0
+)
 ]
 )
 pdm (PhysicalDM
@@ -20049,7 +21659,7 @@ displayShortBounds 1
 editShortBounds 1
 uid 67,0
 optionalChildren [
-*665 (Sheet
+*717 (Sheet
 sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
@@ -20066,493 +21676,517 @@ cellColor "39936,56832,65280"
 fontColor "0,0,0"
 font "courier,10,0"
 )
-emptyMRCItem *666 (MRCItem
-litem &575
-pos 77
+emptyMRCItem *718 (MRCItem
+litem &623
+pos 81
 dimension 20
 )
 uid 69,0
 optionalChildren [
-*667 (MRCItem
-litem &576
+*719 (MRCItem
+litem &624
 pos 0
 dimension 20
 uid 70,0
 )
-*668 (MRCItem
-litem &577
+*720 (MRCItem
+litem &625
 pos 1
 dimension 23
 uid 71,0
 )
-*669 (MRCItem
-litem &578
+*721 (MRCItem
+litem &626
 pos 2
 hidden 1
 dimension 20
 uid 72,0
 )
-*670 (MRCItem
-litem &588
+*722 (MRCItem
+litem &636
 pos 6
 dimension 20
 uid 282,0
 )
-*671 (MRCItem
-litem &589
+*723 (MRCItem
+litem &637
 pos 0
 dimension 20
 uid 292,0
 )
-*672 (MRCItem
-litem &590
+*724 (MRCItem
+litem &638
 pos 1
 dimension 20
 uid 314,0
 )
-*673 (MRCItem
-litem &591
+*725 (MRCItem
+litem &639
 pos 2
 dimension 20
 uid 316,0
 )
-*674 (MRCItem
-litem &592
+*726 (MRCItem
+litem &640
 pos 3
 dimension 20
 uid 318,0
 )
-*675 (MRCItem
-litem &593
+*727 (MRCItem
+litem &641
 pos 4
 dimension 20
 uid 320,0
 )
-*676 (MRCItem
-litem &594
+*728 (MRCItem
+litem &642
 pos 5
 dimension 20
 uid 338,0
 )
-*677 (MRCItem
-litem &595
+*729 (MRCItem
+litem &643
 pos 7
 dimension 20
 uid 352,0
 )
-*678 (MRCItem
-litem &596
+*730 (MRCItem
+litem &644
 pos 8
 dimension 20
 uid 438,0
 )
-*679 (MRCItem
-litem &597
+*731 (MRCItem
+litem &645
 pos 9
 dimension 20
 uid 764,0
 )
-*680 (MRCItem
-litem &598
+*732 (MRCItem
+litem &646
 pos 10
 dimension 20
 uid 766,0
 )
-*681 (MRCItem
-litem &599
+*733 (MRCItem
+litem &647
 pos 11
 dimension 20
 uid 768,0
 )
-*682 (MRCItem
-litem &600
+*734 (MRCItem
+litem &648
 pos 12
 dimension 20
 uid 770,0
 )
-*683 (MRCItem
-litem &601
+*735 (MRCItem
+litem &649
 pos 13
 dimension 20
 uid 772,0
 )
-*684 (MRCItem
-litem &602
+*736 (MRCItem
+litem &650
 pos 14
 dimension 20
 uid 774,0
 )
-*685 (MRCItem
-litem &603
+*737 (MRCItem
+litem &651
 pos 15
 dimension 20
 uid 776,0
 )
-*686 (MRCItem
-litem &604
+*738 (MRCItem
+litem &652
 pos 16
 dimension 20
 uid 778,0
 )
-*687 (MRCItem
-litem &605
+*739 (MRCItem
+litem &653
 pos 17
 dimension 20
 uid 780,0
 )
-*688 (MRCItem
-litem &606
+*740 (MRCItem
+litem &654
 pos 18
 dimension 20
 uid 782,0
 )
-*689 (MRCItem
-litem &607
+*741 (MRCItem
+litem &655
 pos 19
 dimension 20
 uid 784,0
 )
-*690 (MRCItem
-litem &608
+*742 (MRCItem
+litem &656
 pos 20
 dimension 20
 uid 786,0
 )
-*691 (MRCItem
-litem &609
+*743 (MRCItem
+litem &657
 pos 21
 dimension 20
 uid 788,0
 )
-*692 (MRCItem
-litem &610
+*744 (MRCItem
+litem &658
 pos 22
 dimension 20
 uid 790,0
 )
-*693 (MRCItem
-litem &611
+*745 (MRCItem
+litem &659
 pos 23
 dimension 20
 uid 792,0
 )
-*694 (MRCItem
-litem &612
+*746 (MRCItem
+litem &660
 pos 24
 dimension 20
 uid 794,0
 )
-*695 (MRCItem
-litem &613
+*747 (MRCItem
+litem &661
 pos 25
 dimension 20
 uid 880,0
 )
-*696 (MRCItem
-litem &614
+*748 (MRCItem
+litem &662
 pos 26
 dimension 20
 uid 999,0
 )
-*697 (MRCItem
-litem &615
+*749 (MRCItem
+litem &663
 pos 27
 dimension 20
 uid 1001,0
 )
-*698 (MRCItem
-litem &616
+*750 (MRCItem
+litem &664
 pos 28
 dimension 20
 uid 1057,0
 )
-*699 (MRCItem
-litem &617
+*751 (MRCItem
+litem &665
 pos 29
 dimension 20
 uid 1059,0
 )
-*700 (MRCItem
-litem &618
+*752 (MRCItem
+litem &666
 pos 30
 dimension 20
 uid 1105,0
 )
-*701 (MRCItem
-litem &619
+*753 (MRCItem
+litem &667
 pos 31
 dimension 20
 uid 1231,0
 )
-*702 (MRCItem
-litem &620
+*754 (MRCItem
+litem &668
 pos 32
 dimension 20
 uid 1233,0
 )
-*703 (MRCItem
-litem &621
+*755 (MRCItem
+litem &669
 pos 33
 dimension 20
 uid 1253,0
 )
-*704 (MRCItem
-litem &622
+*756 (MRCItem
+litem &670
 pos 34
 dimension 20
 uid 1257,0
 )
-*705 (MRCItem
-litem &623
+*757 (MRCItem
+litem &671
 pos 35
-dimension 20
-uid 1409,0
-)
-*706 (MRCItem
-litem &624
-pos 36
 dimension 20
 uid 1411,0
 )
-*707 (MRCItem
-litem &625
-pos 37
+*758 (MRCItem
+litem &672
+pos 36
 dimension 20
 uid 1501,0
 )
-*708 (MRCItem
-litem &626
-pos 38
+*759 (MRCItem
+litem &673
+pos 37
 dimension 20
 uid 1620,0
 )
-*709 (MRCItem
-litem &627
-pos 39
+*760 (MRCItem
+litem &674
+pos 38
 dimension 20
 uid 1622,0
 )
-*710 (MRCItem
-litem &628
-pos 40
+*761 (MRCItem
+litem &675
+pos 39
 dimension 20
 uid 1785,0
 )
-*711 (MRCItem
-litem &629
-pos 41
+*762 (MRCItem
+litem &676
+pos 40
 dimension 20
 uid 1787,0
 )
-*712 (MRCItem
-litem &630
-pos 42
+*763 (MRCItem
+litem &677
+pos 41
 dimension 20
 uid 1789,0
 )
-*713 (MRCItem
-litem &631
-pos 43
+*764 (MRCItem
+litem &678
+pos 42
 dimension 20
 uid 2063,0
 )
-*714 (MRCItem
-litem &632
-pos 44
+*765 (MRCItem
+litem &679
+pos 43
 dimension 20
 uid 2065,0
 )
-*715 (MRCItem
-litem &633
-pos 45
+*766 (MRCItem
+litem &680
+pos 44
 dimension 20
 uid 2067,0
 )
-*716 (MRCItem
-litem &634
-pos 46
+*767 (MRCItem
+litem &681
+pos 45
 dimension 20
 uid 2069,0
 )
-*717 (MRCItem
-litem &635
-pos 47
+*768 (MRCItem
+litem &682
+pos 46
 dimension 20
 uid 2133,0
 )
-*718 (MRCItem
-litem &636
-pos 48
+*769 (MRCItem
+litem &683
+pos 47
 dimension 20
 uid 2135,0
 )
-*719 (MRCItem
-litem &637
-pos 49
+*770 (MRCItem
+litem &684
+pos 48
 dimension 20
 uid 2367,0
 )
-*720 (MRCItem
-litem &638
-pos 50
+*771 (MRCItem
+litem &685
+pos 49
 dimension 20
 uid 2369,0
 )
-*721 (MRCItem
-litem &639
-pos 51
+*772 (MRCItem
+litem &686
+pos 50
 dimension 20
 uid 2395,0
 )
-*722 (MRCItem
-litem &640
-pos 52
+*773 (MRCItem
+litem &687
+pos 51
 dimension 20
 uid 2397,0
 )
-*723 (MRCItem
-litem &641
-pos 53
+*774 (MRCItem
+litem &688
+pos 52
 dimension 20
 uid 2439,0
 )
-*724 (MRCItem
-litem &642
-pos 54
+*775 (MRCItem
+litem &689
+pos 53
 dimension 20
 uid 2441,0
 )
-*725 (MRCItem
-litem &643
-pos 55
+*776 (MRCItem
+litem &690
+pos 54
 dimension 20
 uid 2443,0
 )
-*726 (MRCItem
-litem &644
-pos 56
+*777 (MRCItem
+litem &691
+pos 55
 dimension 20
 uid 2445,0
 )
-*727 (MRCItem
-litem &645
-pos 57
+*778 (MRCItem
+litem &692
+pos 56
 dimension 20
 uid 3049,0
 )
-*728 (MRCItem
-litem &646
-pos 58
+*779 (MRCItem
+litem &693
+pos 57
 dimension 20
 uid 3051,0
 )
-*729 (MRCItem
-litem &647
-pos 59
+*780 (MRCItem
+litem &694
+pos 58
 dimension 20
 uid 3053,0
 )
-*730 (MRCItem
-litem &648
-pos 60
+*781 (MRCItem
+litem &695
+pos 59
 dimension 20
 uid 3055,0
 )
-*731 (MRCItem
-litem &649
-pos 61
+*782 (MRCItem
+litem &696
+pos 60
 dimension 20
 uid 3057,0
 )
-*732 (MRCItem
-litem &650
-pos 62
+*783 (MRCItem
+litem &697
+pos 61
 dimension 20
 uid 3059,0
 )
-*733 (MRCItem
-litem &651
-pos 63
+*784 (MRCItem
+litem &698
+pos 62
 dimension 20
 uid 3061,0
 )
-*734 (MRCItem
-litem &652
-pos 64
+*785 (MRCItem
+litem &699
+pos 63
 dimension 20
 uid 3063,0
 )
-*735 (MRCItem
-litem &653
-pos 65
+*786 (MRCItem
+litem &700
+pos 64
 dimension 20
 uid 3243,0
 )
-*736 (MRCItem
-litem &654
-pos 66
+*787 (MRCItem
+litem &701
+pos 65
 dimension 20
 uid 3245,0
 )
-*737 (MRCItem
-litem &655
-pos 67
+*788 (MRCItem
+litem &702
+pos 66
 dimension 20
 uid 3247,0
 )
-*738 (MRCItem
-litem &656
-pos 68
+*789 (MRCItem
+litem &703
+pos 67
 dimension 20
 uid 3249,0
 )
-*739 (MRCItem
-litem &657
-pos 69
+*790 (MRCItem
+litem &704
+pos 68
 dimension 20
 uid 3296,0
 )
-*740 (MRCItem
-litem &658
-pos 70
+*791 (MRCItem
+litem &705
+pos 69
 dimension 20
 uid 3332,0
 )
-*741 (MRCItem
-litem &659
-pos 71
+*792 (MRCItem
+litem &706
+pos 70
 dimension 20
 uid 3685,0
 )
-*742 (MRCItem
-litem &660
-pos 72
+*793 (MRCItem
+litem &707
+pos 71
 dimension 20
 uid 4034,0
 )
-*743 (MRCItem
-litem &661
-pos 73
+*794 (MRCItem
+litem &708
+pos 72
 dimension 20
 uid 4036,0
 )
-*744 (MRCItem
-litem &662
-pos 74
+*795 (MRCItem
+litem &709
+pos 73
 dimension 20
 uid 4066,0
 )
-*745 (MRCItem
-litem &663
-pos 75
+*796 (MRCItem
+litem &710
+pos 74
 dimension 20
 uid 4389,0
 )
-*746 (MRCItem
-litem &664
-pos 76
+*797 (MRCItem
+litem &711
+pos 75
 dimension 20
 uid 4393,0
+)
+*798 (MRCItem
+litem &712
+pos 76
+dimension 20
+uid 4619,0
+)
+*799 (MRCItem
+litem &713
+pos 77
+dimension 20
+uid 4621,0
+)
+*800 (MRCItem
+litem &714
+pos 78
+dimension 20
+uid 4623,0
+)
+*801 (MRCItem
+litem &715
+pos 79
+dimension 20
+uid 4625,0
+)
+*802 (MRCItem
+litem &716
+pos 80
+dimension 20
+uid 4637,0
 )
 ]
 )
@@ -20565,50 +22199,50 @@ textAngle 90
 )
 uid 73,0
 optionalChildren [
-*747 (MRCItem
-litem &579
+*803 (MRCItem
+litem &627
 pos 0
 dimension 20
 uid 74,0
 )
-*748 (MRCItem
-litem &581
+*804 (MRCItem
+litem &629
 pos 1
 dimension 50
 uid 75,0
 )
-*749 (MRCItem
-litem &582
+*805 (MRCItem
+litem &630
 pos 2
 dimension 100
 uid 76,0
 )
-*750 (MRCItem
-litem &583
+*806 (MRCItem
+litem &631
 pos 3
 dimension 50
 uid 77,0
 )
-*751 (MRCItem
-litem &584
+*807 (MRCItem
+litem &632
 pos 4
 dimension 100
 uid 78,0
 )
-*752 (MRCItem
-litem &585
+*808 (MRCItem
+litem &633
 pos 5
 dimension 100
 uid 79,0
 )
-*753 (MRCItem
-litem &586
+*809 (MRCItem
+litem &634
 pos 6
 dimension 50
 uid 80,0
 )
-*754 (MRCItem
-litem &587
+*810 (MRCItem
+litem &635
 pos 7
 dimension 80
 uid 81,0
@@ -20628,38 +22262,38 @@ uid 53,0
 )
 genericsCommonDM (CommonDM
 ldm (LogicalDM
-emptyRow *755 (LEmptyRow
+emptyRow *811 (LEmptyRow
 )
 uid 83,0
 optionalChildren [
-*756 (RefLabelRowHdr
+*812 (RefLabelRowHdr
 )
-*757 (TitleRowHdr
+*813 (TitleRowHdr
 )
-*758 (FilterRowHdr
+*814 (FilterRowHdr
 )
-*759 (RefLabelColHdr
+*815 (RefLabelColHdr
 tm "RefLabelColHdrMgr"
 )
-*760 (RowExpandColHdr
+*816 (RowExpandColHdr
 tm "RowExpandColHdrMgr"
 )
-*761 (GroupColHdr
+*817 (GroupColHdr
 tm "GroupColHdrMgr"
 )
-*762 (NameColHdr
+*818 (NameColHdr
 tm "GenericNameColHdrMgr"
 )
-*763 (TypeColHdr
+*819 (TypeColHdr
 tm "GenericTypeColHdrMgr"
 )
-*764 (InitColHdr
+*820 (InitColHdr
 tm "GenericValueColHdrMgr"
 )
-*765 (PragmaColHdr
+*821 (PragmaColHdr
 tm "GenericPragmaColHdrMgr"
 )
-*766 (EolColHdr
+*822 (EolColHdr
 tm "GenericEolColHdrMgr"
 )
 ]
@@ -20669,7 +22303,7 @@ displayShortBounds 1
 editShortBounds 1
 uid 95,0
 optionalChildren [
-*767 (Sheet
+*823 (Sheet
 sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
@@ -20686,27 +22320,27 @@ cellColor "39936,56832,65280"
 fontColor "0,0,0"
 font "courier,10,0"
 )
-emptyMRCItem *768 (MRCItem
-litem &755
+emptyMRCItem *824 (MRCItem
+litem &811
 pos 0
 dimension 20
 )
 uid 97,0
 optionalChildren [
-*769 (MRCItem
-litem &756
+*825 (MRCItem
+litem &812
 pos 0
 dimension 20
 uid 98,0
 )
-*770 (MRCItem
-litem &757
+*826 (MRCItem
+litem &813
 pos 1
 dimension 23
 uid 99,0
 )
-*771 (MRCItem
-litem &758
+*827 (MRCItem
+litem &814
 pos 2
 hidden 1
 dimension 20
@@ -20723,44 +22357,44 @@ textAngle 90
 )
 uid 101,0
 optionalChildren [
-*772 (MRCItem
-litem &759
+*828 (MRCItem
+litem &815
 pos 0
 dimension 20
 uid 102,0
 )
-*773 (MRCItem
-litem &761
+*829 (MRCItem
+litem &817
 pos 1
 dimension 50
 uid 103,0
 )
-*774 (MRCItem
-litem &762
+*830 (MRCItem
+litem &818
 pos 2
 dimension 100
 uid 104,0
 )
-*775 (MRCItem
-litem &763
+*831 (MRCItem
+litem &819
 pos 3
 dimension 100
 uid 105,0
 )
-*776 (MRCItem
-litem &764
+*832 (MRCItem
+litem &820
 pos 4
 dimension 50
 uid 106,0
 )
-*777 (MRCItem
-litem &765
+*833 (MRCItem
+litem &821
 pos 5
 dimension 50
 uid 107,0
 )
-*778 (MRCItem
-litem &766
+*834 (MRCItem
+litem &822
 pos 6
 dimension 80
 uid 108,0
