@@ -1,4 +1,5 @@
 SEGMENT CODESEGMENT:
+    LEA R0, BULLSHIT
     ADD R1, R0, 1
     TRAP BEAR
     NOP
@@ -17,8 +18,13 @@ SEGMENT CODESEGMENT:
     
     
     BOOBS:
-        LDR R2, R1, GOOD
+        LDR R2, R0, GOOD
         BRnzp FIN
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
     
     
     
