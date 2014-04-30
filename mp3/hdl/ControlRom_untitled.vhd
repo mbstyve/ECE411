@@ -76,7 +76,7 @@ BEGIN
                 newControl.memory.Indirect := '0';
                 newControl.memory.STIndirect := '0';
             WHEN OP_SHF =>
-                newControl.name := and_op;
+                newControl.name := shf_op;
                 newControl.ex.aluop := ALU_PASS;
                 newControl.memory.LoadNZP := '1';
                 newControl.write.RFMuxSel := '1';

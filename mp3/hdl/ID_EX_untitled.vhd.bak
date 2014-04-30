@@ -186,7 +186,7 @@ BEGIN
   MEMData_Out <= tempMEMData AFTER DELAY_REG;
   EXEControl_Out  <= tempEXEControl AFTER DELAY_REG;
   MEMControl_Out  <= tempMEMControl AFTER DELAY_REG;
-  trapvector8 <= tempTRAPVECTOR8 AFTER DELAY_REG;
+  trapvector8_out <= tempTRAPVECTOR8 AFTER DELAY_REG;
 END PROCESS vhdl_REG_IF;
 END ARCHITECTURE untitled;
 

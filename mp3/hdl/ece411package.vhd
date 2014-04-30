@@ -36,11 +36,13 @@ PACKAGE LC3B_TYPES IS
   SUBTYPE LC3B_OFFSET     IS STD_LOGIC_VECTOR(3 downto 0);
   SUBTYPE LC3B_C_INDEX   IS STD_LOGIC_VECTOR(2 DOWNTO 0);
   SUBTYPE LC3B_C_TAG     IS STD_LOGIC_VECTOR(8 DOWNTO 0);
+  SUBTYPE LC3B_L2_INDEX   IS STD_LOGIC_VECTOR(3 DOWNTO 0);
+  SUBTYPE LC3B_L2_TAG     IS STD_LOGIC_VECTOR(7 DOWNTO 0);
   SUBTYPE LC3B_IMM4     IS STD_LOGIC_VECTOR(3 DOWNTO 0);
 
 	TYPE MEMORY_ARRAY_64K IS ARRAY (0 TO 65535) OF LC3B_BYTE;
 	
-	TYPE OPNAME IS (add_op, and_op, not_op, pass_op, sll_op, srl_op, sra_op, bad_op, ldr_op, str_op, br_op, jmp_op, jsr_op, lea_op, trap_op, ldb_op, stb_op, ldi_op, sti_op, no_op);
+	TYPE OPNAME IS (add_op, and_op, shf_op, not_op, pass_op, sll_op, srl_op, sra_op, bad_op, ldr_op, str_op, br_op, jmp_op, jsr_op, lea_op, trap_op, ldb_op, stb_op, ldi_op, sti_op, no_op);
 	TYPE EX_CONTROL IS RECORD
 	    aluop : LC3B_ALUOP;
 	    ALUMuxsel : std_logic;

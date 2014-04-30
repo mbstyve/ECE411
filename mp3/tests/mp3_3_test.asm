@@ -7,6 +7,10 @@ SEGMENT        CodeSegment:	; Version 0.11  1/13/2005
 	NOP
 	NOP
 	BRnzp skip
+	NOP
+	NOP
+	NOP
+	NOP
 SEGMENT        DataSegment:
 ZERO:	       DATA2 0
 ONETWELVE:	             DATA2 112
@@ -512,8 +516,7 @@ portland:
 	NOP
 	NOP
 	NOP
-	LEA R1, DataSegment2
-		;the following STB instructions store to mem[RES17]
+	LEA R1, DataSegment2 ;the following STB instructions store to mem[RES17]
 	NOP
 	NOP
 	NOP

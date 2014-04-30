@@ -20,6 +20,7 @@ ENTITY NZP IS
     GENCCOUT  : IN    LC3B_CC;
     CLK       : IN    std_logic;
     LoadNZP   : IN    std_logic;
+    RESET_L   : IN    std_logic;
     N         : OUT   std_logic;
     Z         : OUT   std_logic;
     P         : OUT   std_logic
@@ -33,11 +34,12 @@ ARCHITECTURE UNTITLED OF NZP IS
 SIGNAL PRE_NZP : STD_LOGIC_VECTOR (2 DOWNTO 0);
 BEGIN
 	------------------------------
-	VHDL_NZP : PROCESS (CLK, GENCCOUT)
+	VHDL_NZP : PROCESS (CLK, GENCCOUT, RESET_L)
 	------------------------------
 	BEGIN
-	  PRE_NZP <= "010";
-		IF (CLK'EVENT AND (CLK = '1') AND (CLK'LAST_VALUE = '0')) THEN
+	  IF(RESET_L = '0') THEN
+	    PRE_NZP <= "010";
+		ELSIF (CLK'EVENT AND (CLK = '1') AND (CLK'LAST_VALUE = '0')) THEN
 			IF (LOADNZP = '1') THEN
 				PRE_NZP <= GENCCOUT;
 			END IF;
