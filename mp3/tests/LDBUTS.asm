@@ -1,6 +1,6 @@
 SEGMENT BOOT:
     LEA R1, BULLSHIT
-    LDB R2, R1, 3
+    ADD R2, R1, 3
     STB R2, R1, 6 
     
     FIN:

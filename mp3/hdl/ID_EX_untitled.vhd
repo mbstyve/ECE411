@@ -61,7 +61,9 @@ ENTITY ID_EX IS
       EXEControl      : IN      Control_word;
       EXEControl_Out  : OUT     Control_word;
       MEMControl      : IN      Control_word;
-      MEMControl_Out  : OUT     Control_word
+      MEMControl_Out  : OUT     Control_word;
+      MEM2FWD         : IN       Lc3b_word;
+      MEM2FWD_Out     : OUT       LC3b_word
       );
 
 -- Declarations
@@ -94,6 +96,7 @@ BEGIN
   VARIABLE tempMEMData  : LC3B_WORD;
   VARIABLE tempEXEControl : Control_word;
   VARIABLE tempMEMControl : Control_word;
+  VARIABLE tempMEM2FWD    : LC3b_word;
   BEGIN
    IF (RESET_L = '0') THEN
      tempiPC := "0000000000000000";
@@ -138,6 +141,7 @@ BEGIN
      tempMEMControl.memory.D_MREAD := '0';
      tempEXEControl.write.Reg_Write := '0'; 
      tempMEMControl.write.Reg_Write := '0'; 
+     tempMEM2FWD := "0000000000000000";
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
@@ -163,6 +167,7 @@ BEGIN
       tempMEMData := MEMData;
       tempEXEControl := EXEControl;
       tempMEMControl := MEMControl;
+      tempMEM2FWD := MEM2FWD;
     END IF;
   END IF;
   iPC_out   <= tempiPC AFTER DELAY_REG;
@@ -187,6 +192,7 @@ BEGIN
   EXEControl_Out  <= tempEXEControl AFTER DELAY_REG;
   MEMControl_Out  <= tempMEMControl AFTER DELAY_REG;
   trapvector8_out <= temptrapvector8 AFTER DELAY_REG;
+  MEM2FWD_Out     <= tempMEM2FWD AFTER DELAY_REG;
 END PROCESS vhdl_REG_IF;
 END ARCHITECTURE untitled;
 
