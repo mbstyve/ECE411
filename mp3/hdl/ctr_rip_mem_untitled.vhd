@@ -27,8 +27,8 @@ ENTITY ctr_rip_mem IS
       TRAPMuxSel   : OUT    std_logic;
       LDBMuxSel    : OUT    std_logic;
       STBMuxSel    : OUT    STD_LOGIC;
-      Indirect      : OUT   std_logic;
-      STIndirect    : OUT   std_logic
+      Indirect     : OUT    std_logic;
+      STIndirect   : OUT    std_logic
    );
 
 -- Declarations

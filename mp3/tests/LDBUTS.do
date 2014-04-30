@@ -14,8 +14,8 @@ echo "Done initializing processor, loading ../mp3/ECE411/mp3/tests/LDBUTS.asm pr
 run 5
 change /mp3_cpu/TM/VHDL_MEMORY/mem(0) X"07"
 change /mp3_cpu/TM/VHDL_MEMORY/mem(1) X"E2"
-change /mp3_cpu/TM/VHDL_MEMORY/mem(2) X"43"
-change /mp3_cpu/TM/VHDL_MEMORY/mem(3) X"24"
+change /mp3_cpu/TM/VHDL_MEMORY/mem(2) X"63"
+change /mp3_cpu/TM/VHDL_MEMORY/mem(3) X"14"
 change /mp3_cpu/TM/VHDL_MEMORY/mem(4) X"46"
 change /mp3_cpu/TM/VHDL_MEMORY/mem(5) X"34"
 change /mp3_cpu/TM/VHDL_MEMORY/mem(6) X"FF"

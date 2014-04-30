@@ -8,16 +8,11 @@ unitName "std_logic_1164"
 )
 (DmPackageRef
 library "ieee"
-unitName "NUMERIC_STD"
-)
-(DmPackageRef
-library "ece411"
-unitName "LC3b_types"
+unitName "std_logic_arith"
 )
 ]
 libraryRefs [
 "ieee"
-"ece411"
 ]
 )
 version "25.1"
@@ -25,11 +20,12 @@ appVersion "2012.1 (Build 6)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-suid 3,0
+ordering 1
+suid 2,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
-uid 60,0
+uid 53,0
 optionalChildren [
 *2 (RefLabelRowHdr
 )
@@ -66,22 +62,23 @@ tm "EolColHdrMgr"
 )
 *14 (LogPort
 port (LogicalPort
+lang 11
 m 1
 decl (Decl
-n "C"
-t "STD_LOGIC"
-o 39
-suid 3,0
+n "Out0"
+t "std_logic"
+o 1
+suid 1,0
 )
 )
-uid 173,0
+uid 113,0
 )
 ]
 )
 pdm (PhysicalDM
 displayShortBounds 1
 editShortBounds 1
-uid 73,0
+uid 66,0
 optionalChildren [
 *15 (Sheet
 sheetRow (SheetRow
@@ -102,35 +99,35 @@ font "courier,10,0"
 )
 emptyMRCItem *16 (MRCItem
 litem &1
-pos 3
+pos 1
 dimension 20
 )
-uid 75,0
+uid 68,0
 optionalChildren [
 *17 (MRCItem
 litem &2
 pos 0
 dimension 20
-uid 76,0
+uid 69,0
 )
 *18 (MRCItem
 litem &3
 pos 1
 dimension 23
-uid 77,0
+uid 70,0
 )
 *19 (MRCItem
 litem &4
 pos 2
 hidden 1
 dimension 20
-uid 78,0
+uid 71,0
 )
 *20 (MRCItem
 litem &14
 pos 0
 dimension 20
-uid 174,0
+uid 114,0
 )
 ]
 )
@@ -141,74 +138,74 @@ fontColor "0,0,0"
 font "courier,10,0"
 textAngle 90
 )
-uid 79,0
+uid 72,0
 optionalChildren [
 *21 (MRCItem
 litem &5
 pos 0
 dimension 20
-uid 80,0
+uid 73,0
 )
 *22 (MRCItem
 litem &7
 pos 1
 dimension 50
-uid 81,0
+uid 74,0
 )
 *23 (MRCItem
 litem &8
 pos 2
 dimension 100
-uid 82,0
+uid 75,0
 )
 *24 (MRCItem
 litem &9
 pos 3
 dimension 50
-uid 83,0
+uid 76,0
 )
 *25 (MRCItem
 litem &10
 pos 4
 dimension 100
-uid 84,0
+uid 77,0
 )
 *26 (MRCItem
 litem &11
 pos 5
 dimension 100
-uid 85,0
+uid 78,0
 )
 *27 (MRCItem
 litem &12
 pos 6
 dimension 50
-uid 86,0
+uid 79,0
 )
 *28 (MRCItem
 litem &13
 pos 7
 dimension 80
-uid 87,0
+uid 80,0
 )
 ]
 )
 fixedCol 4
 fixedRow 2
 name "Ports"
-uid 74,0
+uid 67,0
 vaOverrides [
 ]
 )
 ]
 )
-uid 59,0
+uid 52,0
 )
 genericsCommonDM (CommonDM
 ldm (LogicalDM
 emptyRow *29 (LEmptyRow
 )
-uid 89,0
+uid 82,0
 optionalChildren [
 *30 (RefLabelRowHdr
 )
@@ -245,7 +242,7 @@ tm "GenericEolColHdrMgr"
 pdm (PhysicalDM
 displayShortBounds 1
 editShortBounds 1
-uid 101,0
+uid 94,0
 optionalChildren [
 *41 (Sheet
 sheetRow (SheetRow
@@ -266,29 +263,29 @@ font "courier,10,0"
 )
 emptyMRCItem *42 (MRCItem
 litem &29
-pos 3
+pos 0
 dimension 20
 )
-uid 103,0
+uid 96,0
 optionalChildren [
 *43 (MRCItem
 litem &30
 pos 0
 dimension 20
-uid 104,0
+uid 97,0
 )
 *44 (MRCItem
 litem &31
 pos 1
 dimension 23
-uid 105,0
+uid 98,0
 )
 *45 (MRCItem
 litem &32
 pos 2
 hidden 1
 dimension 20
-uid 106,0
+uid 99,0
 )
 ]
 )
@@ -299,62 +296,62 @@ fontColor "0,0,0"
 font "courier,10,0"
 textAngle 90
 )
-uid 107,0
+uid 100,0
 optionalChildren [
 *46 (MRCItem
 litem &33
 pos 0
 dimension 20
-uid 108,0
+uid 101,0
 )
 *47 (MRCItem
 litem &35
 pos 1
 dimension 50
-uid 109,0
+uid 102,0
 )
 *48 (MRCItem
 litem &36
 pos 2
 dimension 100
-uid 110,0
+uid 103,0
 )
 *49 (MRCItem
 litem &37
 pos 3
 dimension 100
-uid 111,0
+uid 104,0
 )
 *50 (MRCItem
 litem &38
 pos 4
 dimension 50
-uid 112,0
+uid 105,0
 )
 *51 (MRCItem
 litem &39
 pos 5
 dimension 50
-uid 113,0
+uid 106,0
 )
 *52 (MRCItem
 litem &40
 pos 6
 dimension 80
-uid 114,0
+uid 107,0
 )
 ]
 )
 fixedCol 3
 fixedRow 2
 name "Ports"
-uid 102,0
+uid 95,0
 vaOverrides [
 ]
 )
 ]
 )
-uid 88,0
+uid 81,0
 type 1
 )
 VExpander (VariableExpander
@@ -369,11 +366,11 @@ value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@high@sig/interface.info"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/std_one/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@high@sig/interface.user"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/std_one/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
@@ -385,7 +382,7 @@ value "HDL Designer"
 )
 (vvPair
 variable "arch_name"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "config"
@@ -393,11 +390,11 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@high@sig"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/std_one"
 )
 (vvPair
 variable "d_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/HighSig"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/std_one"
 )
 (vvPair
 variable "date"
@@ -417,7 +414,7 @@ value "30"
 )
 (vvPair
 variable "entity_name"
-value "HighSig"
+value "std_one"
 )
 (vvPair
 variable "ext"
@@ -425,15 +422,15 @@ value "<TBD>"
 )
 (vvPair
 variable "f"
-value "interface"
+value "symbol.sb"
 )
 (vvPair
 variable "f_logical"
-value "interface"
+value "symbol.sb"
 )
 (vvPair
 variable "f_noext"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "group"
@@ -461,7 +458,7 @@ value "04"
 )
 (vvPair
 variable "module_name"
-value "HighSig"
+value "std_one"
 )
 (vvPair
 variable "month"
@@ -473,11 +470,11 @@ value "April"
 )
 (vvPair
 variable "p"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/@high@sig/interface"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/std_one/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/styve1/ece411/mp3/ECE411/mp3/hds/HighSig/interface"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/std_one/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -521,23 +518,23 @@ value "<TBD>"
 )
 (vvPair
 variable "this_ext"
-value "<TBD>"
+value "sb"
 )
 (vvPair
 variable "this_file"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "this_file_logical"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "time"
-value "14:42:04"
+value "14:32:10"
 )
 (vvPair
 variable "unit"
-value "HighSig"
+value "std_one"
 )
 (vvPair
 variable "user"
@@ -549,7 +546,7 @@ value "2012.1 (Build 6)"
 )
 (vvPair
 variable "view"
-value "interface"
+value "symbol"
 )
 (vvPair
 variable "year"
@@ -562,55 +559,55 @@ value "14"
 ]
 )
 LanguageMgr "VhdlLangMgr"
-uid 58,0
+uid 48,0
 optionalChildren [
 *53 (SymbolBody
 uid 8,0
 optionalChildren [
 *54 (CptPort
-uid 168,0
+uid 108,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 169,0
+uid 109,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "23000,7625,23750,8375"
+xt "42000,27625,42750,28375"
 )
 tg (CPTG
-uid 170,0
+uid 110,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 171,0
+uid 111,0
 va (VaSet
 font "courier,8,0"
 )
-xt "21500,7550,22000,8450"
-st "C"
+xt "39000,27550,41000,28450"
+st "Out0"
 ju 2
-blo "22000,8250"
+blo "41000,28250"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 172,0
+uid 112,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,1800,55000,2700"
-st "C : OUT    STD_LOGIC 
-"
+xt "44000,1800,56500,2700"
+st "Out0 : OUT    std_logic "
 )
 thePort (LogicalPort
+lang 11
 m 1
 decl (Decl
-n "C"
-t "STD_LOGIC"
-o 39
-suid 3,0
+n "Out0"
+t "std_logic"
+o 1
+suid 1,0
 )
 )
 )
@@ -623,7 +620,7 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "15000,6000,23000,10000"
+xt "36000,26000,42000,29000"
 )
 biTextGroup (BiTextGroup
 uid 10,0
@@ -634,18 +631,18 @@ uid 11,0
 va (VaSet
 font "courier,8,1"
 )
-xt "17250,7100,20250,8000"
+xt "37750,26100,40750,27000"
 st "ece411"
-blo "17250,7800"
+blo "37750,26800"
 )
 second (Text
 uid 12,0
 va (VaSet
 font "courier,8,1"
 )
-xt "17250,8000,20750,8900"
-st "HighSig"
-blo "17250,8700"
+xt "37750,27000,41250,27900"
+st "std_one"
+blo "37750,27700"
 )
 )
 gi *55 (GenericInterface
@@ -658,7 +655,7 @@ uid 15,0
 va (VaSet
 font "courier,8,0"
 )
-xt "-8000,4000,2500,4900"
+xt "13000,23000,23500,23900"
 st "Generic Declarations"
 )
 header "Generic Declarations"
@@ -669,12 +666,10 @@ elements [
 )
 portInstanceVisAsIs 1
 portInstanceVis (PortSigDisplay
-sTC 0
-sF 0
+sIVOD 1
 )
 portVis (PortSigDisplay
-sTC 0
-sF 0
+sIVOD 1
 )
 )
 *56 (Grouping
@@ -985,7 +980,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "courier,8,0"
 )
-xt "32200,49050,44700,49950"
+xt "32200,49050,43200,49950"
 st "
 %library/%unit/%view
 "
@@ -1024,11 +1019,11 @@ yShown 1
 color "26368,26368,26368"
 )
 packageList *67 (PackageList
-uid 48,0
+uid 49,0
 stg "VerticalLayoutStrategy"
 textVec [
 *68 (Text
-uid 49,0
+uid 50,0
 va (VaSet
 font "courier,8,1"
 )
@@ -1037,23 +1032,22 @@ st "Package List"
 blo "0,700"
 )
 *69 (MLText
-uid 50,0
+uid 51,0
 va (VaSet
 font "courier,8,0"
 )
-xt "0,900,14500,5400"
+xt "0,900,15000,3600"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE ieee.NUMERIC_STD.all;
-LIBRARY ece411;
-USE ece411.LC3b_types.all;"
+USE ieee.std_logic_arith.all;"
 tm "PackageList"
 )
 ]
 )
-windowSize "0,0,1015,690"
-viewArea "0,0,0,0"
-cachedDiagramExtent "0,0,0,0"
+windowSize "-6,2,1009,692"
+viewArea "-500,-500,70780,48730"
+cachedDiagramExtent "0,0,69000,51000"
+hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
 defaultCommentText (CommentText
 shape (Rectangle
@@ -1132,9 +1126,9 @@ tm "PanelText"
 )
 )
 parentGraphicsRef (HdmGraphicsRef
-libraryName "ece411"
-entityName "MEMCALL"
-viewName "struct.bd"
+libraryName ""
+entityName ""
+viewName ""
 )
 defaultSymbolBody (SymbolBody
 shape (Rectangle
@@ -1323,6 +1317,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 174,0
-activeModelName "Symbol:CDM"
+lastUid 114,0
+activeModelName "Symbol"
 )

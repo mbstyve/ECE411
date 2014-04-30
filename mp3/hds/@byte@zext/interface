@@ -25,7 +25,7 @@ appVersion "2012.1 (Build 6)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-suid 2,0
+suid 6,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -70,22 +70,22 @@ m 1
 decl (Decl
 n "B2"
 t "LC3B_WORD"
-o 64
-suid 1,0
+o 36
+suid 5,0
 )
 )
-uid 61,0
+uid 192,0
 )
 *15 (LogPort
 port (LogicalPort
 decl (Decl
 n "WriteData"
 t "LC3b_word"
-o 47
-suid 2,0
+o 13
+suid 6,0
 )
 )
-uid 63,0
+uid 194,0
 )
 ]
 )
@@ -141,13 +141,13 @@ uid 85,0
 litem &14
 pos 0
 dimension 20
-uid 62,0
+uid 193,0
 )
 *22 (MRCItem
 litem &15
 pos 1
 dimension 20
-uid 64,0
+uid 195,0
 )
 ]
 )
@@ -418,7 +418,7 @@ value "/home/styve1/ece411/mp3/ECE411/mp3/hds/ByteZext"
 )
 (vvPair
 variable "date"
-value "04/16/14"
+value "04/30/14"
 )
 (vvPair
 variable "day"
@@ -430,7 +430,7 @@ value "Wednesday"
 )
 (vvPair
 variable "dd"
-value "16"
+value "30"
 )
 (vvPair
 variable "entity_name"
@@ -458,7 +458,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-20.ews.illinois.edu"
+value "gelib-057-03.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -550,7 +550,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "17:14:40"
+value "14:42:04"
 )
 (vvPair
 variable "unit"
@@ -585,10 +585,10 @@ optionalChildren [
 uid 8,0
 optionalChildren [
 *56 (CptPort
-uid 51,0
+uid 182,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 52,0
+uid 183,0
 ro 90
 va (VaSet
 vasetType 1
@@ -597,11 +597,11 @@ fg "0,65535,0"
 xt "20000,6625,20750,7375"
 )
 tg (CPTG
-uid 53,0
+uid 184,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 54,0
+uid 185,0
 va (VaSet
 font "courier,8,0"
 )
@@ -613,28 +613,29 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 55,0
+uid 186,0
 va (VaSet
 font "courier,8,0"
 )
 xt "44000,2700,59000,3600"
-st "B2        : OUT    LC3B_WORD "
+st "B2        : OUT    LC3B_WORD 
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "B2"
 t "LC3B_WORD"
-o 64
-suid 1,0
+o 36
+suid 5,0
 )
 )
 )
 *57 (CptPort
-uid 56,0
+uid 187,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 57,0
+uid 188,0
 ro 90
 va (VaSet
 vasetType 1
@@ -643,11 +644,11 @@ fg "0,65535,0"
 xt "14250,6625,15000,7375"
 )
 tg (CPTG
-uid 58,0
+uid 189,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 59,0
+uid 190,0
 va (VaSet
 font "courier,8,0"
 )
@@ -658,19 +659,20 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 60,0
+uid 191,0
 va (VaSet
 font "courier,8,0"
 )
 xt "44000,1800,60000,2700"
-st "WriteData : IN     LC3b_word  ;"
+st "WriteData : IN     LC3b_word  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "WriteData"
 t "LC3b_word"
-o 47
-suid 2,0
+o 13
+suid 6,0
 )
 )
 )
@@ -1383,6 +1385,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 121,0
+lastUid 195,0
 activeModelName "Symbol:CDM"
 )
