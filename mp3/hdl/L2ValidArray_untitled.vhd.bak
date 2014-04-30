@@ -1,0 +1,33 @@
+--
+-- VHDL Architecture ece411.L2ValidArray.untitled
+--
+-- Created:
+--          by - draguna1.ews (gelib-057-22.ews.illinois.edu)
+--          at - 22:12:15 04/24/14
+--
+-- using Mentor Graphics HDL Designer(TM) 2012.1 (Build 6)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+USE ieee.NUMERIC_STD.all;
+
+LIBRARY ece411;
+USE ece411.LC3b_types.all;
+
+ENTITY L2ValidArray IS
+   PORT( 
+      DataWrite : IN     std_logic;
+      Index     : IN     LC3b_L2_index;
+      RESET_L   : IN     std_logic;
+      ValidOut  : OUT    std_logic
+   );
+
+-- Declarations
+
+END L2ValidArray ;
+
+--
+ARCHITECTURE untitled OF L2ValidArray IS
+BEGIN
+END ARCHITECTURE untitled;
+
