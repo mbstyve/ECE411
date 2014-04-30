@@ -69,7 +69,7 @@ port (LogicalPort
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 1
+o 11
 suid 1,0
 )
 )
@@ -80,7 +80,7 @@ port (LogicalPort
 decl (Decl
 n "LRUWrite"
 t "std_logic"
-o 2
+o 10
 suid 2,0
 )
 )
@@ -90,8 +90,8 @@ uid 205,0
 port (LogicalPort
 decl (Decl
 n "Addr_Index"
-t "LC3b_L2_Index"
-o 3
+t "LC3b_c_Index"
+o 1
 suid 3,0
 )
 )
@@ -102,7 +102,7 @@ port (LogicalPort
 decl (Decl
 n "Hit0"
 t "std_logic"
-o 4
+o 2
 suid 4,0
 )
 )
@@ -113,7 +113,7 @@ port (LogicalPort
 decl (Decl
 n "Hit1"
 t "std_logic"
-o 5
+o 3
 suid 5,0
 )
 )
@@ -124,7 +124,7 @@ port (LogicalPort
 decl (Decl
 n "Hit2"
 t "std_logic"
-o 6
+o 4
 suid 6,0
 )
 )
@@ -135,7 +135,7 @@ port (LogicalPort
 decl (Decl
 n "Hit3"
 t "std_logic"
-o 7
+o 5
 suid 7,0
 )
 )
@@ -146,7 +146,7 @@ port (LogicalPort
 decl (Decl
 n "Hit4"
 t "std_logic"
-o 8
+o 6
 suid 8,0
 )
 )
@@ -157,7 +157,7 @@ port (LogicalPort
 decl (Decl
 n "Hit5"
 t "std_logic"
-o 9
+o 7
 suid 9,0
 )
 )
@@ -168,7 +168,7 @@ port (LogicalPort
 decl (Decl
 n "Hit6"
 t "std_logic"
-o 10
+o 8
 suid 10,0
 )
 )
@@ -179,7 +179,7 @@ port (LogicalPort
 decl (Decl
 n "Hit7"
 t "std_logic"
-o 11
+o 9
 suid 11,0
 )
 )
@@ -251,7 +251,7 @@ m 1
 decl (Decl
 n "PickWay6"
 t "std_logic"
-o 17
+o 18
 suid 18,0
 )
 )
@@ -263,7 +263,7 @@ m 1
 decl (Decl
 n "PickWay5"
 t "std_logic"
-o 18
+o 17
 suid 19,0
 )
 )
@@ -714,19 +714,19 @@ value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/L2_LRU"
 )
 (vvPair
 variable "date"
-value "04/25/14"
+value "04/30/14"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Wed"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Wednesday"
 )
 (vvPair
 variable "dd"
-value "25"
+value "30"
 )
 (vvPair
 variable "entity_name"
@@ -754,7 +754,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-23.ews.illinois.edu"
+value "gelib-057-08.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -846,7 +846,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "09:45:40"
+value "01:23:46"
 )
 (vvPair
 variable "unit"
@@ -920,7 +920,7 @@ thePort (LogicalPort
 decl (Decl
 n "RESET_L"
 t "std_logic"
-o 1
+o 11
 suid 1,0
 )
 )
@@ -965,7 +965,7 @@ thePort (LogicalPort
 decl (Decl
 n "LRUWrite"
 t "std_logic"
-o 2
+o 10
 suid 2,0
 )
 )
@@ -1002,15 +1002,15 @@ uid 122,0
 va (VaSet
 font "courier,8,0"
 )
-xt "44000,1800,62500,2700"
-st "Addr_Index : IN     LC3b_L2_Index  ;
+xt "44000,1800,62000,2700"
+st "Addr_Index : IN     LC3b_c_Index  ;
 "
 )
 thePort (LogicalPort
 decl (Decl
 n "Addr_Index"
-t "LC3b_L2_Index"
-o 3
+t "LC3b_c_Index"
+o 1
 suid 3,0
 )
 )
@@ -1055,7 +1055,7 @@ thePort (LogicalPort
 decl (Decl
 n "Hit0"
 t "std_logic"
-o 4
+o 2
 suid 4,0
 )
 )
@@ -1100,7 +1100,7 @@ thePort (LogicalPort
 decl (Decl
 n "Hit1"
 t "std_logic"
-o 5
+o 3
 suid 5,0
 )
 )
@@ -1145,7 +1145,7 @@ thePort (LogicalPort
 decl (Decl
 n "Hit2"
 t "std_logic"
-o 6
+o 4
 suid 6,0
 )
 )
@@ -1190,7 +1190,7 @@ thePort (LogicalPort
 decl (Decl
 n "Hit3"
 t "std_logic"
-o 7
+o 5
 suid 7,0
 )
 )
@@ -1235,7 +1235,7 @@ thePort (LogicalPort
 decl (Decl
 n "Hit4"
 t "std_logic"
-o 8
+o 6
 suid 8,0
 )
 )
@@ -1280,7 +1280,7 @@ thePort (LogicalPort
 decl (Decl
 n "Hit5"
 t "std_logic"
-o 9
+o 7
 suid 9,0
 )
 )
@@ -1325,7 +1325,7 @@ thePort (LogicalPort
 decl (Decl
 n "Hit6"
 t "std_logic"
-o 10
+o 8
 suid 10,0
 )
 )
@@ -1370,7 +1370,7 @@ thePort (LogicalPort
 decl (Decl
 n "Hit7"
 t "std_logic"
-o 11
+o 9
 suid 11,0
 )
 )
@@ -1652,7 +1652,7 @@ m 1
 decl (Decl
 n "PickWay6"
 t "std_logic"
-o 17
+o 18
 suid 18,0
 )
 )
@@ -1699,7 +1699,7 @@ m 1
 decl (Decl
 n "PickWay5"
 t "std_logic"
-o 18
+o 17
 suid 19,0
 )
 )
@@ -2460,6 +2460,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 240,0
+lastUid 539,0
 activeModelName "Symbol"
 )
