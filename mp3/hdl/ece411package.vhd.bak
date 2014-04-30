@@ -47,6 +47,8 @@ PACKAGE LC3B_TYPES IS
 	    ALUAMuxsel : std_logic;
 	    Shift : std_logic;
 	    ALUTrapSel : std_logic;
+	    READA      : std_logic;
+	    READB      : std_logic;
 	END RECORD;
 	
 	TYPE DEC_CONTROL IS RECORD

@@ -18,7 +18,7 @@ ENTITY Shifter IS
    PORT( 
       SHFTOP  : IN     LC3B_SHFTOP;
       SFTOUT  : OUT    LC3b_word;
-      RegAOut : IN     LC3b_word;
+      ADATA : IN     LC3b_word;
       ADJ4    : IN     LC3B_WORD
    );
 
@@ -29,22 +29,22 @@ END Shifter ;
 --
 ARCHITECTURE untitled OF Shifter IS
 BEGIN
-  PROCESS (SHFTOP,RegAOut, ADJ4,SFTOUT)
+  PROCESS (SHFTOP,ADATA, ADJ4,SFTOUT)
     variable state : LC3b_word;
     variable count : integer;
   BEGIN
     case SHFTOP is
       when SHFT_SRL =>
-        state := std_logic_vector("srl"(unsigned(RegAOut), to_integer(unsigned(ADJ4))));
+        state := std_logic_vector("srl"(unsigned(ADATA), to_integer(unsigned(ADJ4))));
       when SHFT_SLL =>
-        state := std_logic_vector("sll"(unsigned(RegAOut), to_integer(unsigned(ADJ4))));
+        state := std_logic_vector("sll"(unsigned(ADATA), to_integer(unsigned(ADJ4))));
       when SHFT_SRA =>
         COUNT := to_integer(unsigned(ADJ4(3 downto 0)));
           if (ADJ4(3 downto 0) = "0000") then
-            state := RegAOut; --Perform no shifting
+            state := ADATA; --Perform no shifting
           else
-            state(15 - COUNT downto 0) := RegAOut(15 downto COUNT);
-            state(15 downto (15 - COUNT + 1)) := (others => RegAOut(15));
+            state(15 - COUNT downto 0) := ADATA(15 downto COUNT);
+            state(15 downto (15 - COUNT + 1)) := (others => ADATA(15));
           end if;
     when others =>
       state := (OTHERS => 'X');
