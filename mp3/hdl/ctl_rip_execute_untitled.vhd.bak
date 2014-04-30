@@ -22,6 +22,9 @@ ENTITY ctl_rip_execute IS
       ALUAMuxSel : OUT   std_logic;
       Shift     : OUT    std_logic;
       ALUTrapSel : OUT  std_logic;
+      STBMuxSel : OUT  std_logic;
+      D_MWRITEH : OUT std_logic;
+      D_MWRITEL : OUT std_logic;
       ISBranch    : OUT   std_logic_vector(1 DOWNTO 0) 
    );
 
@@ -37,5 +40,10 @@ BEGIN
   ALUAMuxSel <= control.ex.ALUAMuxsel;
   Shift <= control.ex.Shift;
   ALUTrapSel <= control.ex.ALUTrapSel;
+  ISBranch <= control.memory.ISBranch;
+  STBMuxSel <= Control.memory.STBMuxSel;
+  D_MWRITEH <= Control.memory.D_MWRITEH;
+  D_MWRITEL <= Control.memory.D_MWRITEL;
+
 END ARCHITECTURE untitled;
 

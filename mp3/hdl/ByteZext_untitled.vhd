@@ -26,6 +26,6 @@ END ByteZext ;
 --
 ARCHITECTURE untitled OF ByteZext IS
 BEGIN
-  B2 <= "00000000" & WriteData(7 DOWNTO 0);
+  B2 <= WriteData(7 DOWNTO 0) & WriteData(7 DOWNTO 0);
 END ARCHITECTURE untitled;
 
