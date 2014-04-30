@@ -69,7 +69,7 @@ port (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 7
+o 6
 suid 1,0
 )
 )
@@ -80,7 +80,7 @@ port (LogicalPort
 decl (Decl
 n "rst"
 t "std_logic"
-o 8
+o 7
 suid 2,0
 )
 )
@@ -92,7 +92,7 @@ m 1
 decl (Decl
 n "PMRead_L"
 t "std_logic"
-o 9
+o 12
 suid 3,0
 )
 )
@@ -104,7 +104,7 @@ m 1
 decl (Decl
 n "PMWrite_L"
 t "std_logic"
-o 10
+o 13
 suid 4,0
 )
 )
@@ -116,7 +116,7 @@ m 1
 decl (Decl
 n "CheckHitState"
 t "std_logic"
-o 11
+o 10
 suid 5,0
 )
 )
@@ -128,7 +128,7 @@ m 1
 decl (Decl
 n "WriteBackState"
 t "std_logic"
-o 12
+o 15
 suid 6,0
 )
 )
@@ -140,7 +140,7 @@ m 1
 decl (Decl
 n "PMReadState"
 t "std_logic"
-o 13
+o 11
 suid 7,0
 )
 )
@@ -163,7 +163,7 @@ port (LogicalPort
 decl (Decl
 n "toWB"
 t "std_logic"
-o 1
+o 9
 suid 10,0
 )
 )
@@ -174,7 +174,7 @@ port (LogicalPort
 decl (Decl
 n "toPMRead"
 t "std_logic"
-o 2
+o 8
 suid 11,0
 )
 )
@@ -185,7 +185,7 @@ port (LogicalPort
 decl (Decl
 n "Miss"
 t "std_logic"
-o 3
+o 4
 suid 12,0
 )
 )
@@ -196,7 +196,7 @@ port (LogicalPort
 decl (Decl
 n "Hit"
 t "std_logic"
-o 4
+o 3
 suid 13,0
 )
 )
@@ -207,7 +207,7 @@ port (LogicalPort
 decl (Decl
 n "Dirty"
 t "std_logic"
-o 5
+o 2
 suid 14,0
 )
 )
@@ -218,7 +218,7 @@ port (LogicalPort
 decl (Decl
 n "CacheAccess"
 t "std_logic"
-o 6
+o 1
 suid 15,0
 )
 )
@@ -229,7 +229,7 @@ port (LogicalPort
 decl (Decl
 n "PMResp_H"
 t "std_logic"
-o 15
+o 5
 suid 19,0
 )
 )
@@ -644,19 +644,19 @@ value "/home/draguna1/ece411/mp3/ECE411/mp3/hds/L2Cache_Controller"
 )
 (vvPair
 variable "date"
-value "04/24/14"
+value "04/29/14"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Tue"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Tuesday"
 )
 (vvPair
 variable "dd"
-value "24"
+value "29"
 )
 (vvPair
 variable "entity_name"
@@ -684,7 +684,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-22.ews.illinois.edu"
+value "evrt-252-17.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -776,7 +776,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "21:28:24"
+value "20:05:23"
 )
 (vvPair
 variable "unit"
@@ -843,13 +843,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,6300,62500,7200"
-st "clk            : IN     std_logic  ;"
+st "clk            : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "clk"
 t "std_logic"
-o 7
+o 6
 suid 1,0
 )
 )
@@ -887,13 +888,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,7200,62500,8100"
-st "rst            : IN     std_logic  ;"
+st "rst            : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "rst"
 t "std_logic"
-o 8
+o 7
 suid 2,0
 )
 )
@@ -932,14 +934,15 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,11700,62500,12600"
-st "PMRead_L       : OUT    std_logic  ;"
+st "PMRead_L       : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "PMRead_L"
 t "std_logic"
-o 9
+o 12
 suid 3,0
 )
 )
@@ -978,14 +981,15 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,12600,62500,13500"
-st "PMWrite_L      : OUT    std_logic  ;"
+st "PMWrite_L      : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "PMWrite_L"
 t "std_logic"
-o 10
+o 13
 suid 4,0
 )
 )
@@ -1024,14 +1028,15 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9900,62500,10800"
-st "CheckHitState  : OUT    std_logic  ;"
+st "CheckHitState  : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "CheckHitState"
 t "std_logic"
-o 11
+o 10
 suid 5,0
 )
 )
@@ -1070,14 +1075,15 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,14400,61500,15300"
-st "WriteBackState : OUT    std_logic "
+st "WriteBackState : OUT    std_logic 
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "WriteBackState"
 t "std_logic"
-o 12
+o 15
 suid 6,0
 )
 )
@@ -1116,14 +1122,15 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,10800,62500,11700"
-st "PMReadState    : OUT    std_logic  ;"
+st "PMReadState    : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "PMReadState"
 t "std_logic"
-o 13
+o 11
 suid 7,0
 )
 )
@@ -1162,7 +1169,8 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,13500,62500,14400"
-st "WaitHitState   : OUT    std_logic  ;"
+st "WaitHitState   : OUT    std_logic  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1207,13 +1215,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,9000,62500,9900"
-st "toWB           : IN     std_logic  ;"
+st "toWB           : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "toWB"
 t "std_logic"
-o 1
+o 9
 suid 10,0
 )
 )
@@ -1251,13 +1260,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,8100,62500,9000"
-st "toPMRead       : IN     std_logic  ;"
+st "toPMRead       : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "toPMRead"
 t "std_logic"
-o 2
+o 8
 suid 11,0
 )
 )
@@ -1295,13 +1305,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,4500,62500,5400"
-st "Miss           : IN     std_logic  ;"
+st "Miss           : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "Miss"
 t "std_logic"
-o 3
+o 4
 suid 12,0
 )
 )
@@ -1339,13 +1350,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,3600,62500,4500"
-st "Hit            : IN     std_logic  ;"
+st "Hit            : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "Hit"
 t "std_logic"
-o 4
+o 3
 suid 13,0
 )
 )
@@ -1383,13 +1395,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,2700,62500,3600"
-st "Dirty          : IN     std_logic  ;"
+st "Dirty          : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "Dirty"
 t "std_logic"
-o 5
+o 2
 suid 14,0
 )
 )
@@ -1427,13 +1440,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,1800,62500,2700"
-st "CacheAccess    : IN     std_logic  ;"
+st "CacheAccess    : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "CacheAccess"
 t "std_logic"
-o 6
+o 1
 suid 15,0
 )
 )
@@ -1472,13 +1486,14 @@ va (VaSet
 font "courier,8,0"
 )
 xt "44000,5400,62500,6300"
-st "PMResp_H       : IN     std_logic  ;"
+st "PMResp_H       : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
 n "PMResp_H"
 t "std_logic"
-o 15
+o 5
 suid 19,0
 )
 )
@@ -2192,6 +2207,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 217,0
+lastUid 240,0
 activeModelName "Symbol"
 )

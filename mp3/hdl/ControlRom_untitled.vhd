@@ -227,11 +227,11 @@ BEGIN
                 newControl.memory.LoadSETCCSEL :='1';
                 newControl.memory.Load_dMDR :='1';
                 newControl.memory.Load_dMAR :='1';
-                newControl.memory.D_MREAD :='1';
-                newControl.write.Reg_Write := '1';
+                newControl.memory.D_MREAD :='0';
+                newControl.write.Reg_Write := '0';
                 newControl.memory.ISBranch := "00";
                 newControl.memory.D_MWRITEH := '0';
-                newControl.memory.D_MWRITEL := '1';
+                newControl.memory.D_MWRITEL := '0';
                 newControl.memory.TRAPMuxSel := '0';
                 newControl.ex.Shift := '0';
                 newControl.memory.STBMuxSel := '1';

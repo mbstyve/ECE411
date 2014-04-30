@@ -1,14 +1,14 @@
 SEGMENT BOOT:
     LEA R1, BULLSHIT
-    NOP
-    NOP
-    NOP
     LDB R2, R1, 3
-    NOP
-    NOP
-    NOP
-    NOP
+    STB R2, R1, 6 
     
+    FIN:
+    BRnzp FIN
+    NOP
+    NOP
+    NOP
+    NOP
 
 
 
@@ -17,7 +17,7 @@ SEGMENT BOOT:
 
 BULLSHIT:
     DATA2 4X0001
-    DATA2 4x0101
-    DATA2 4x1010
-    DATA2 4x1111
+    DATA2 4x600D
+    DATA2 4xFFFF
+    BLA: DATA2 4x1111
     
