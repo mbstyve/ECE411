@@ -16,7 +16,9 @@ USE ece411.LC3b_types.all;
 
 ENTITY MEM_DF_RIP1 IS
    PORT( 
-      MEMALU_CONT : IN     control_word
+      MEMALU_CONT : IN     control_word;
+      MEMALU_REG_WRITE : OUT std_logic;
+      MEMALU_MREAD  : OUT std_logic
    );
 
 -- Declarations
@@ -26,7 +28,7 @@ END MEM_DF_RIP1 ;
 --
 ARCHITECTURE untitled OF MEM_DF_RIP1 IS
 BEGIN
-    MEMREG_Write <= MEMControl.write.Reg_Write; 
-  MEMMREAD <= MEMControl.memory.D_MREAD;
+    MEMALU_REG_Write <= MEMALU_Cont.write.Reg_Write; 
+  MEMALU_MREAD <= MEMALU_Cont.memory.D_MREAD;
 END ARCHITECTURE untitled;
 

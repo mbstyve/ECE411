@@ -18,7 +18,8 @@ ENTITY MEM_DF_RIP1 IS
    PORT( 
       MEMALU_CONT : IN     control_word;
       MEMALU_REG_WRITE : OUT std_logic;
-      MEMALU_MREAD  : OUT std_logic
+      MEMALU_MREAD  : OUT std_logic;
+      MEMALU_RFMUXSEL : OUT std_logic
    );
 
 -- Declarations
@@ -30,5 +31,6 @@ ARCHITECTURE untitled OF MEM_DF_RIP1 IS
 BEGIN
     MEMALU_REG_Write <= MEMALU_Cont.write.Reg_Write; 
   MEMALU_MREAD <= MEMALU_Cont.memory.D_MREAD;
+  MEMALU_RFMUXSEL <= MEMALU_Cont.write.RFMUXSel;
 END ARCHITECTURE untitled;
 
