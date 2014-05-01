@@ -1,7 +1,6 @@
 SEGMENT BOOT:
     LEA R1, BULLSHIT
     LDB R2, R1, 2
-    NOP
     STB R2, R1, 7
     
     FIN:

@@ -213,6 +213,7 @@ BEGIN
                 newControl.memory.STBMuxSel := '0';
                 newControl.memory.Indirect := '0';
                 newControl.memory.STIndirect := '0';
+                newControl.write.Reg_Write := '0';
                 
             WHEN OP_STB =>
                 newControl.name := stb_op;
@@ -256,6 +257,7 @@ BEGIN
                 newControl.memory.STBMuxSel := '0';
                 newControl.memory.Indirect := '1';
                 newControl.memory.STIndirect := '1';
+                newControl.write.Reg_Write := '0';
             -- add more opcodes
             WHEN OP_BR =>
                 IF (NOPSig = "000") THEN

@@ -8,6 +8,14 @@ SEGMENT BOOT:
     ADD R2, R4, 1 ;Makes r2 0100
     ADD R5, R2, 3
     STI R5, R1, BULL10
+    
+FIN:
+    BRnzp FIN
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
 
     
 SEGMENT BULLSHIT:
@@ -22,3 +30,6 @@ SEGMENT HORSE:
 COW0    : DATA2 4x8008 ; line 60
 SHIT2   : DATA2 4x4004 ;
     
+    
+;;LDI puts addr of COW0 into R1 + BULL 10 so the LDI will get cow0
+;;STI will store in the cow0 spot

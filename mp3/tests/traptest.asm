@@ -19,6 +19,12 @@ SEGMENT CODESEGMENT:
     
     BOOBS:
         LDR R2, R0, GOOD
+        RET
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
         BRnzp FIN
         NOP
         NOP
@@ -31,9 +37,20 @@ SEGMENT CODESEGMENT:
     BAD:
        LDR R2, R0, BADD
        BRnzp FIN
+       NOP
+       NOP
+       NOP
+       NOP
+       NOP
        
     FIN:
         BRnzp FIN
+        NOP
+        NOP
+        NOP
+        NOP
+        NOP
+        
         
         
     SEGMENT BULLSHIT:

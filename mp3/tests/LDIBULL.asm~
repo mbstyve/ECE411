@@ -1,25 +1,18 @@
 SEGMENT BOOT:
     LEA R1, BULLSHIT
-    NOP
-    NOP
-    NOP
-    NOP
     ;ADD R1, R1, 1
     LEA R3, COW0
-    NOP
-    NOP
-    NOP
-    NOP
     STR R3, R1, BULL10
     ;LDB R2, R1, BULL10 ;Loads 0011 into R2
     LDI R4, R1, BULL10
     ADD R2, R4, 1 ;Makes r2 0100
     ADD R5, R2, 3
-    NOP
-    NOP
-    NOP
-    NOP
     STI R5, R1, BULL10
+    
+FIN:
+    BRnzp FIN
+    NOP
+    NOP
     NOP
     NOP
     NOP
@@ -37,3 +30,5 @@ SEGMENT HORSE:
 COW0    : DATA2 4x8008 ; line 60
 SHIT2   : DATA2 4x4004 ;
     
+    
+;;
