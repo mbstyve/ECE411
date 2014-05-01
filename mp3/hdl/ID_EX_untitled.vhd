@@ -63,7 +63,13 @@ ENTITY ID_EX IS
       MEMControl      : IN      Control_word;
       MEMControl_Out  : OUT     Control_word;
       MEM2FWD         : IN       Lc3b_word;
-      MEM2FWD_Out     : OUT       LC3b_word
+      MEM2FWD_Out     : OUT       LC3b_word;
+      WBData          : IN      LC3b_word;
+      WBData_Out      : OUT     LC3b_word;
+      WBDest          : IN      LC3b_reg;
+      WBDest_Out      : OUT     LC3b_reg;
+      WBWrite          : IN      std_logic;
+      WBWrite_Out      : OUT     std_logic
       );
 
 -- Declarations
@@ -97,6 +103,9 @@ BEGIN
   VARIABLE tempEXEControl : Control_word;
   VARIABLE tempMEMControl : Control_word;
   VARIABLE tempMEM2FWD    : LC3b_word;
+  VARIABLE tempWBData     : LC3b_word;
+  VARIABLE tempWBDest     : LC3b_reg;
+  VARIABLE tempWBWrite     : std_logic;
   BEGIN
    IF (RESET_L = '0') THEN
      tempiPC := "0000000000000000";
@@ -142,6 +151,9 @@ BEGIN
      tempEXEControl.write.Reg_Write := '0'; 
      tempMEMControl.write.Reg_Write := '0'; 
      tempMEM2FWD := "0000000000000000";
+     tempWBData := "0000000000000000";
+     tempWBDest := "000";
+     tempWBWrite:= '0';
      
    ELSIF (clk'event AND (clk = '1') AND (clk'last_value = '0')) THEN
      IF (Load = '1') THEN
@@ -168,6 +180,9 @@ BEGIN
       tempEXEControl := EXEControl;
       tempMEMControl := MEMControl;
       tempMEM2FWD := MEM2FWD;
+      tempWBData := WBData;
+      tempWBDest := WBDest;
+      tempWBWrite := WBWrite;
     END IF;
   END IF;
   iPC_out   <= tempiPC AFTER DELAY_REG;
@@ -193,6 +208,9 @@ BEGIN
   MEMControl_Out  <= tempMEMControl AFTER DELAY_REG;
   trapvector8_out <= temptrapvector8 AFTER DELAY_REG;
   MEM2FWD_Out     <= tempMEM2FWD AFTER DELAY_REG;
+  WBData_Out      <= tempWBData AFTER DELAY_REG;
+  WBDest_Out      <= tempWBDest AFTER DELAY_REG;
+  WBWrite_Out      <= tempWBWrite AFTER DELAY_REG;
 END PROCESS vhdl_REG_IF;
 END ARCHITECTURE untitled;
 

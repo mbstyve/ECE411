@@ -1,7 +1,8 @@
 SEGMENT BOOT:
     LEA R1, BULLSHIT
-    ADD R2, R1, 3
-    STB R2, R1, 6 
+    LDB R2, R1, 2
+    NOP
+    STB R2, R1, 7
     
     FIN:
     BRnzp FIN
