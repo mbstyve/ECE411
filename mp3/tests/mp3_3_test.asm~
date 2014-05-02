@@ -28,21 +28,22 @@ GOOD:	      DATA2 4x5460
 five:	       DATA2 5
 TT:	           DATA2 4x646
 RES1:	       DATA2 0		;
-RES2:	       DATA2 0		;
-RES3:	       DATA2 0		;
-RES4:	       DATA2 0		;
-RES5:	       DATA2 0
-RES6:	       DATA2 0		;
-RES7:	       DATA2 0		;
-RES8:	       DATA2 0		;
-RES9:	       DATA2 0		;
-RES10:	     DATA2 0		;
-RES11:	     DATA2 0		;
-RES12:	     DATA2 0		;
-RES13:	     DATA2 0		;
-RES14:	     DATA2 0		;
-RES15:	     DATA2 0
-RES16:	     DATA2 0		;
+RES2:	       DATA2 0	
+	;
+RES3:	       DATA2 0		;3A
+RES4:	       DATA2 0		;3C
+RES5:	       DATA2 0      ;3E
+RES6:	       DATA2 0		;40
+RES7:	       DATA2 0		;42
+RES8:	       DATA2 0		;44
+RES9:	       DATA2 0		;46
+RES10:	     DATA2 0		;48
+RES11:	     DATA2 0		;4A
+RES12:	     DATA2 0		;4C
+RES13:	     DATA2 0		;4E
+RES14:	     DATA2 0		;50
+RES15:	     DATA2 0        ;52
+RES16:	     DATA2 0		;54
 Bear:	      DATA2 CatchMe
 	
 		
@@ -516,8 +517,7 @@ portland:
 	NOP
 	NOP
 	NOP
-	LEA R1, DataSegment2
-		;the following STB instructions store to mem[RES17]
+	LEA R1, DataSegment2 ;the following STB instructions store to mem[RES17]
 	NOP
 	NOP
 	NOP
@@ -533,10 +533,10 @@ portland:
 	NOP
 
 SEGMENT DataSegment2:
-	TS:       DATA2 4x646	
-	RES17:	  DATA2 0
-	RES18:	  DATA2 0
-	RES19:	  DATA2 0
+	TS:       DATA2 4x646	;41E
+	RES17:	  DATA2 0       ;420
+	RES18:	  DATA2 0       ;422
+	RES19:	  DATA2 0       ;424
 	CatchMe:	LDR R5, R0, PAT3
         NOP
         NOP
@@ -725,7 +725,7 @@ Indy:	ADD R1, R1, 12
 	NOP
 	NOP
 	NOP
-	BRzp paris
+	BRzp paris  ;;THIS IS WHERR WE GO TO PARIS
 	NOP
 	NOP
 	NOP
@@ -843,8 +843,8 @@ FINISH: ; Bypassing code section goes here
 	SEGMENT DataSegment3:
 	NINE:          DATA2 4x0009
 	BIGNUMBER:     DATA2 4x70CF
-	BYP1:          DATA2 4x0000
-	BYP2:          DATA2 4x0000	
+	BYP1:          DATA2 4x0000 ;656
+	BYP2:          DATA2 4x0000	;658
 
 dallas: NOT R6, R7
 	NOP

@@ -44,8 +44,8 @@ BEGIN
 	      STATE:=NOT(STATE);
 	    END IF;
 		END IF;
-		Q <= STATE AFTER 4 NS;
-		Qbar <= not(STATE) AFTER 4 NS;
+		Q <= STATE AFTER 1 NS;
+		Qbar <= not(STATE) AFTER 1 NS;
 	END PROCESS JKFFP;
 END ARCHITECTURE untitled;
 

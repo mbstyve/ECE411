@@ -38,7 +38,7 @@ BEGIN
 		ELSIF(EN /= '0' AND EN /= '1') THEN
 			STATE := (OTHERS => 'X');
 		END IF;
-		Q <= STATE AFTER 4NS;
-		Qbar <= not(STATE) AFTER 4ns;
+		Q <= STATE AFTER 2NS;
+		Qbar <= not(STATE) AFTER 2ns;
 	END PROCESS DFF16;
 END ARCHITECTURE untitled;

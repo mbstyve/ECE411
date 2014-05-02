@@ -238,7 +238,7 @@ font "courier,10,0"
 )
 emptyMRCItem *28 (MRCItem
 litem &1
-pos 14
+pos 13
 dimension 20
 )
 uid 68,0
@@ -569,23 +569,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "/home/freed2/ece411/ECE411/mp3/hdl"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hdl"
 )
 (vvPair
 variable "HDSDir"
-value "/home/freed2/ece411/ECE411/mp3/hds"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "/home/freed2/ece411/ECE411/mp3/hds/cache_mem/symbol.sb.info"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/cache_mem/symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "/home/freed2/ece411/ECE411/mp3/hds/cache_mem/symbol.sb.user"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/cache_mem/symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "/home/freed2/ece411/ECE411/mp3/hds"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds"
 )
 (vvPair
 variable "appl"
@@ -601,27 +601,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "/home/freed2/ece411/ECE411/mp3/hds/cache_mem"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/cache_mem"
 )
 (vvPair
 variable "d_logical"
-value "/home/freed2/ece411/ECE411/mp3/hds/cache_mem"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/cache_mem"
 )
 (vvPair
 variable "date"
-value "04/04/14"
+value "05/01/14"
 )
 (vvPair
 variable "day"
-value "Fri"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Friday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "04"
+value "01"
 )
 (vvPair
 variable "entity_name"
@@ -649,7 +649,7 @@ value "ews"
 )
 (vvPair
 variable "host"
-value "gelib-057-15.ews.illinois.edu"
+value "gelib-057-08.ews.illinois.edu"
 )
 (vvPair
 variable "language"
@@ -665,7 +665,7 @@ value "$HDS_PROJECT_DIR/compile"
 )
 (vvPair
 variable "mm"
-value "04"
+value "05"
 )
 (vvPair
 variable "module_name"
@@ -673,19 +673,19 @@ value "cache_mem"
 )
 (vvPair
 variable "month"
-value "Apr"
+value "May"
 )
 (vvPair
 variable "month_long"
-value "April"
+value "May"
 )
 (vvPair
 variable "p"
-value "/home/freed2/ece411/ECE411/mp3/hds/cache_mem/symbol.sb"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/cache_mem/symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "/home/freed2/ece411/ECE411/mp3/hds/cache_mem/symbol.sb"
+value "/home/styve1/ece411/mp3/ECE411/mp3/hds/cache_mem/symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -741,7 +741,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "00:44:45"
+value "10:03:35"
 )
 (vvPair
 variable "unit"
@@ -749,7 +749,7 @@ value "cache_mem"
 )
 (vvPair
 variable "user"
-value "freed2"
+value "styve1"
 )
 (vvPair
 variable "version"
@@ -785,7 +785,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,6625,15000,7375"
+xt "26250,18625,27000,19375"
 )
 tg (CPTG
 uid 138,0
@@ -796,9 +796,9 @@ uid 139,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,6550,17500,7450"
+xt "28000,18550,29500,19450"
 st "clk"
-blo "16000,7250"
+blo "28000,19250"
 tm "CptPortNameMgr"
 )
 )
@@ -825,25 +825,27 @@ uid 141,0
 ps "OnEdgeStrategy"
 shape (Triangle
 uid 142,0
-ro 90
+ro 180
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,7625,15000,8375"
+xt "30625,5250,31375,6000"
 )
 tg (CPTG
 uid 143,0
 ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
+stg "RightVerticalLayoutStrategy"
 f (Text
 uid 144,0
+ro 270
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,7550,19500,8450"
+xt "30550,7000,31450,10500"
 st "RESET_L"
-blo "16000,8250"
+ju 2
+blo "31250,7000"
 tm "CptPortNameMgr"
 )
 )
@@ -869,25 +871,26 @@ uid 171,0
 ps "OnEdgeStrategy"
 shape (Triangle
 uid 172,0
-ro 90
+ro 270
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,13625,15000,14375"
+xt "41000,13625,41750,14375"
 )
 tg (CPTG
 uid 173,0
 ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
+stg "RightVerticalLayoutStrategy"
 f (Text
 uid 174,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,13550,20500,14450"
+xt "35500,13550,40000,14450"
 st "D_DATAOUT"
-blo "16000,14250"
+ju 2
+blo "40000,14250"
 tm "CptPortNameMgr"
 )
 )
@@ -913,25 +916,26 @@ uid 176,0
 ps "OnEdgeStrategy"
 shape (Triangle
 uid 177,0
-ro 90
+ro 270
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,14625,15000,15375"
+xt "41000,14625,41750,15375"
 )
 tg (CPTG
 uid 178,0
 ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
+stg "RightVerticalLayoutStrategy"
 f (Text
 uid 179,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,14550,20500,15450"
+xt "35500,14550,40000,15450"
 st "D_ADDRESS"
-blo "16000,15250"
+ju 2
+blo "40000,15250"
 tm "CptPortNameMgr"
 )
 )
@@ -957,25 +961,26 @@ uid 181,0
 ps "OnEdgeStrategy"
 shape (Triangle
 uid 182,0
-ro 90
+ro 270
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,15625,15000,16375"
+xt "41000,16625,41750,17375"
 )
 tg (CPTG
 uid 183,0
 ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
+stg "RightVerticalLayoutStrategy"
 f (Text
 uid 184,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,15550,22000,16450"
+xt "34000,16550,40000,17450"
 st "D_MWRITEH_L"
-blo "16000,16250"
+ju 2
+blo "40000,17250"
 tm "CptPortNameMgr"
 )
 )
@@ -1001,25 +1006,26 @@ uid 186,0
 ps "OnEdgeStrategy"
 shape (Triangle
 uid 187,0
-ro 90
+ro 270
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,16625,15000,17375"
+xt "41000,15625,41750,16375"
 )
 tg (CPTG
 uid 188,0
 ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
+stg "RightVerticalLayoutStrategy"
 f (Text
 uid 189,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,16550,22000,17450"
+xt "34000,15550,40000,16450"
 st "D_MWRITEL_L"
-blo "16000,17250"
+ju 2
+blo "40000,16250"
 tm "CptPortNameMgr"
 )
 )
@@ -1045,25 +1051,26 @@ uid 191,0
 ps "OnEdgeStrategy"
 shape (Triangle
 uid 192,0
-ro 90
+ro 270
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,17625,15000,18375"
+xt "41000,17625,41750,18375"
 )
 tg (CPTG
 uid 193,0
 ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
+stg "RightVerticalLayoutStrategy"
 f (Text
 uid 194,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,17550,20500,18450"
+xt "35500,17550,40000,18450"
 st "D_MREAD_L"
-blo "16000,18250"
+ju 2
+blo "40000,18250"
 tm "CptPortNameMgr"
 )
 )
@@ -1094,7 +1101,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "39000,6625,39750,7375"
+xt "41000,6625,41750,7375"
 )
 tg (CPTG
 uid 239,0
@@ -1105,10 +1112,10 @@ uid 240,0
 va (VaSet
 font "courier,8,0"
 )
-xt "34500,6550,38000,7450"
+xt "36500,6550,40000,7450"
 st "DDATAIN"
 ju 2
-blo "38000,7250"
+blo "40000,7250"
 tm "CptPortNameMgr"
 )
 )
@@ -1140,7 +1147,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "39000,7625,39750,8375"
+xt "41000,7625,41750,8375"
 )
 tg (CPTG
 uid 244,0
@@ -1151,10 +1158,10 @@ uid 245,0
 va (VaSet
 font "courier,8,0"
 )
-xt "34000,7550,38000,8450"
+xt "36000,7550,40000,8450"
 st "DMRESP_H"
 ju 2
-blo "38000,8250"
+blo "40000,8250"
 tm "CptPortNameMgr"
 )
 )
@@ -1186,7 +1193,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "39000,8625,39750,9375"
+xt "41000,8625,41750,9375"
 )
 tg (CPTG
 uid 249,0
@@ -1197,10 +1204,10 @@ uid 250,0
 va (VaSet
 font "courier,8,0"
 )
-xt "34000,8550,38000,9450"
+xt "36000,8550,40000,9450"
 st "IMRESP_H"
 ju 2
-blo "38000,9250"
+blo "40000,9250"
 tm "CptPortNameMgr"
 )
 )
@@ -1232,7 +1239,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "39000,9625,39750,10375"
+xt "41000,9625,41750,10375"
 )
 tg (CPTG
 uid 254,0
@@ -1243,10 +1250,10 @@ uid 255,0
 va (VaSet
 font "courier,8,0"
 )
-xt "34500,9550,38000,10450"
+xt "36500,9550,40000,10450"
 st "IDATAIN"
 ju 2
-blo "38000,10250"
+blo "40000,10250"
 tm "CptPortNameMgr"
 )
 )
@@ -1273,25 +1280,26 @@ uid 284,0
 ps "OnEdgeStrategy"
 shape (Triangle
 uid 285,0
-ro 90
+ro 270
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,18625,15000,19375"
+xt "41000,18625,41750,19375"
 )
 tg (CPTG
 uid 286,0
 ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
+stg "RightVerticalLayoutStrategy"
 f (Text
 uid 287,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,18550,20500,19450"
+xt "35500,18550,40000,19450"
 st "I_ADDRESS"
-blo "16000,19250"
+ju 2
+blo "40000,19250"
 tm "CptPortNameMgr"
 )
 )
@@ -1317,25 +1325,26 @@ uid 289,0
 ps "OnEdgeStrategy"
 shape (Triangle
 uid 290,0
-ro 90
+ro 270
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,19625,15000,20375"
+xt "41000,19625,41750,20375"
 )
 tg (CPTG
 uid 291,0
 ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
+stg "RightVerticalLayoutStrategy"
 f (Text
 uid 292,0
 va (VaSet
 font "courier,8,0"
 )
-xt "16000,19550,20500,20450"
+xt "35500,19550,40000,20450"
 st "I_MREAD_L"
-blo "16000,20250"
+ju 2
+blo "40000,20250"
 tm "CptPortNameMgr"
 )
 )
@@ -1365,8 +1374,9 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "15000,6000,39000,26000"
+xt "27000,6000,41000,26000"
 )
+oxt "15000,6000,39000,26000"
 biTextGroup (BiTextGroup
 uid 10,0
 ps "CenterOffsetStrategy"
@@ -1376,18 +1386,18 @@ uid 11,0
 va (VaSet
 font "courier,8,1"
 )
-xt "24750,15100,27750,16000"
+xt "28750,15100,31750,16000"
 st "ece411"
-blo "24750,15800"
+blo "28750,15800"
 )
 second (Text
 uid 12,0
 va (VaSet
 font "courier,8,1"
 )
-xt "24750,16000,29250,16900"
+xt "28750,16000,33250,16900"
 st "cache_mem"
-blo "24750,16700"
+blo "28750,16700"
 )
 )
 gi *91 (GenericInterface
@@ -1400,7 +1410,7 @@ uid 15,0
 va (VaSet
 font "courier,8,0"
 )
-xt "0,12000,10500,12900"
+xt "2000,12000,12500,12900"
 st "Generic Declarations"
 )
 header "Generic Declarations"
@@ -1792,8 +1802,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "683,257,1698,947"
-viewArea "-500,-500,70780,48730"
+windowSize "1155,258,2170,948"
+viewArea "-500,-500,63652,43807"
 cachedDiagramExtent "0,0,69000,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
@@ -2065,6 +2075,8 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 454,0
+lastUid 477,0
+okToSyncOnLoad 1
+OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"
 )
