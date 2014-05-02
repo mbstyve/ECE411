@@ -28,5 +28,8 @@ END ADJ4 ;
 --
 ARCHITECTURE untitled OF ADJ4 IS
 BEGIN
-  ADJ4out <= "000000000000" & imm4 AFTER DELAY_MUX2;
+  ADJ4out <= imm4(3) & imm4(3) & imm4(3) & imm4(3) &
+             imm4(3) & imm4(3) & imm4(3) & imm4(3) &
+             imm4(3) & imm4(3) & imm4(3) & imm4(3) &
+             imm4 AFTER DELAY_MUX2;
 END ARCHITECTURE untitled;
